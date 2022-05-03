@@ -1,0 +1,5 @@
+IF YOUR IN-GAME FRAMERATE IS CAPPED AT 45 PLEASE READ THE FOLLOWING:
+
+Due to a ModLoader bug, the game has a lower framerate on monitors
+with higher refresh rates, the only known solution is to change the
+refresh rate from the monitor's settings to a value of 120hz or 60hz.
