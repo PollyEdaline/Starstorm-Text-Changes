@@ -1,4 +1,4 @@
-To change certain aspects of Starstorm you can enter the following RoRML profile flags:
+To change certain aspects of Starstorm, you can enter the following RoRML profile flags:
 
 - ss_menubind_[key]: Binds the TAB menu to the desired key
 - ss_pingbind_[key]: Binds the Ping action to the desired key
@@ -8,7 +8,7 @@ To change certain aspects of Starstorm you can enter the following RoRML profile
 - ss_disable_submenu: Disables the survivor variant (and rulesets) submenu
 - ss_disable_reskin: Disables Starstorm's UI visual changes
 - ss_disable_menu_music_remix: Disables Starstorm's main menu music remix
-- ss_disable_bettercrates: Disables crate improvements
+- ss_disable_bettercrates: Disables Command crate improvements
 - ss_disable_betterpickups: Disables pickup improvements
 - ss_disable_command_mimics: Disables Security Chest from spawning when the artifacts of Command and Sacrifice are enabled
 - ss_classic_exploder: Returns exploders to their pre-Starstorm 1.8.6 appearance
@@ -18,7 +18,7 @@ To change certain aspects of Starstorm you can enter the following RoRML profile
 
 Specials
 
-- ss_accessibility_mode: Enables accessibility mode which currently only highlights spite bombs and displays enemy elite types as small icons
+- ss_accessibility_mode: Enables accessibility mode, which currently only highlights spite bombs and displays enemy elite types as small icons
 - ss_filter_[r][g][b]: Enables a filter overlay with the desired colors (e.g. "ss_filter_rg" will make the game yellow tinted)
 - ss_april_fools: Forces 2020's April Fools' Day event
 - ss_halloween: Forces 2020's Halloween event
