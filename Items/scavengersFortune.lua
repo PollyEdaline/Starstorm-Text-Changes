@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.LifetimeFortune = Item.new("Lifetime Fortune")
 it.LifetimeFortune.displayName = "Scavenger's Fortune"
-it.LifetimeFortune.pickupText = "Gain a buff every 10000 gold earned." 
+it.LifetimeFortune.pickupText = "Gain a buff every $10,000 earned." 
 it.LifetimeFortune.sprite = Sprite.load("Scavenger's Fortune", path.."Scavenger's Fortune.png", 1, 15, 15)
 itp.legendary:add(it.LifetimeFortune)
 it.LifetimeFortune.color = "y"
 it.LifetimeFortune:setLog{
 	group = "boss",
-	description = "Every 10000 gold collected, &y&earn a damage and health buff&!& for 30 seconds.",
+	description = "For every $10,000 collected, &y&earn a 50% damage and health buff&!& for 30 seconds.",
 	story = "I never cared much about wealth, the poison of the powerful. But I have to admit it brought me opportunities, higher chances at survival in ways I would have assumed were useless.\nI am left thankful for the legacy of those who lurk and hoard.",
 	priority = "&b&Field-Found&!&",
 	destination = "R#2,\nYacks St.,\nEarth",

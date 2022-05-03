@@ -2,7 +2,7 @@ local path = "Items/Resources/"
 
 it.PylonFragment = Item.new("Pylon Fragment")
 local sPylonFragment = Sound.load("PylonFragment", path.."pylonFragment")
-it.PylonFragment.pickupText = "Partially restore the Pylon (Single use)." 
+it.PylonFragment.pickupText = "Partially restore the Pylon (single use)." 
 it.PylonFragment.sprite = Sprite.load("PylonFragment", path.."Pylon Fragment.png", 2, 13, 14)
 it.PylonFragment.isUseItem = true
 it.PylonFragment.useCooldown = 20

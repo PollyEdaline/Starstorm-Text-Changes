@@ -6,8 +6,8 @@ it.Malice.sprite = Sprite.load("Malice", path.."Malice.png", 1, 13, 14)
 it.Malice:setTier("common")
 it.Malice:setLog{
 	group = "common",
-	description = "&y&Damage dealt spreads&!& to nearby enemies for &y&45% damage&!& each time.",
-	story = "Contain at all costs, this specimen can be high threat if not handled correctly, you don't know how much we lost already in order to keep this at bay.",
+	description = "&y&Damage dealt spreads&!& to a nearby enemy for &y&45% damage&!&.",
+	story = "Contain at all costs. This specimen can be a massive threat if not handled correctly. You don't know how much we lost already in order to keep this at bay.",
 	destination = "P24,\nRomeo,\nPol-A Station",
 	date = "02/11/2056"
 }

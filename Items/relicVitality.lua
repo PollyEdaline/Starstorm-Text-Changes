@@ -2,14 +2,14 @@ local relicColor = Color.fromHex(0xC649AD)
 
 local itRelicVitality = Item.new("Relic of Vitality")
 local parRelicVitality = par.HealPixel
-itRelicVitality.pickupText = "Strongly raise your health regeneration BUT subside your health." 
+itRelicVitality.pickupText = "Strongly raise your health regeneration, BUT subsume your health." 
 itRelicVitality.sprite = Sprite.load("RelicVitality", "Items/Resources/Relic of Vitality.png", 1, 12, 13)
 itp.relic:add(itRelicVitality)
 itRelicVitality.color = relicColor
 itRelicVitality:setLog{
 	group = "boss_locked",
-	description = "&g&Strongly raise your health regeneration &p&BUT &r&subside your health.",
-	story = "And so... I was remunerated with a choice: to heal all my wounds and become frail or to carve my own path as a lost survivor.",
+	description = "&g&Increases health regeneration by 12, &p&BUT &r&reduces health by 75%.",
+	story = "And so... I was presented with a choice: to heal all my wounds and become frail, or to carve my own path as a lost survivor.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

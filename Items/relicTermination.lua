@@ -2,13 +2,13 @@ local relicColor = Color.fromHex(0xC649AD)
 
 it.RelicTermination = Item.new("Relic of Termination")
 --local sRelicGratification = Sprite.load("RelicGratificationDisplay", "Items/Resources/relicGratificationdis.png", 1, 18, 18)
-it.RelicTermination.pickupText = "Slaying a marked enemy earns you an item BUT failing to do so increases its power."
+it.RelicTermination.pickupText = "Slaying a marked enemy earns you an item, BUT failing to do so increases its power."
 it.RelicTermination.sprite = Sprite.load("RelicGratification", "Items/Resources/Relic of Termination.png", 1, 15, 15)
 itp.relic:add(it.RelicTermination)
 it.RelicTermination.color = relicColor
 it.RelicTermination:setLog{
 	group = "end",
-	description = "&y&Slaying a marked enemy earns you an item &p&BUT &r&failing to do so increases its power.",
+	description = "&y&Slaying a marked enemy earns you an item, &p&BUT &r&failing to do so increases its power.",
 	story = "A crescent light and a shivering compass. The danger it led to, always rewarding. But I failed it once, one time too many.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

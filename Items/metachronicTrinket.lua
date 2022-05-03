@@ -2,14 +2,14 @@ local path = "Items/Resources/"
 
 it.Metatrinket = Item.new("Metachronic Trinket")
 local sMetatrinket = Sound.load("MetachronicTrinket", path.."metachronicTrinket")
-it.Metatrinket.pickupText = "Reduce teleporter charge time." 
+it.Metatrinket.pickupText = "Teleporters charge faster." 
 it.Metatrinket.sprite = Sprite.load("MetachronicTrinket", path.."Metachronic Trinket.png", 1, 14, 14)
 it.Metatrinket:setTier("uncommon")
 it.Metatrinket:setLog{
 	group = "uncommon_locked",
-	description = "Reduce &y&teleporter charge time by 5 seconds.",
-	story = [["Time is the most valuable resource of all the universe", my mother used to say, but the more time I spend with this, the more I realize how wrong she was, how naive I've been.
-Maybe nothing is what we believe, our strides towards knowledge could be in vain but for all I've done I can tell you, the time echoes your name.]],
+	description = "Reduces &y&Teleporter charge time by 10 seconds.",
+	story = [["Time is the most valuable resource in the universe", my mother used to say. But the more time I spend with this, the more I realize how wrong she was, and how naive I've been.
+Maybe nothing is what we think it is. Our quest for knowledge could be in vain, but there's one thing I can tell you': Time echoes your name.]],
 	destination = "P2592323,\nSagooj,\nEarth",
 	date = "11/11/2056"
 }

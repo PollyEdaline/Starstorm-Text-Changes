@@ -1,14 +1,14 @@
 local path = "Items/Resources/"
 
 it.ToxicTail = Item.new("Toxic Tail")
-it.ToxicTail.pickupText = "Obtain two friendly boars." 
+it.ToxicTail.pickupText = "Spawn two friendly boars." 
 it.ToxicTail.sprite = Sprite.load("Toxic Tail", path.."Toxic Tail.png", 1, 15, 15)
 itp.legendary:add(it.ToxicTail)
 it.ToxicTail.color = "y"
 it.ToxicTail:setLog{
 	group = "boss",
-	description = "Obtain two &y&friendly boars.",
-	story = "Wiggle wiggle.",
+	description = "Spawn two &y&friendly boars.",
+	story = "Wiggle wiggle. So cute.",
 	priority = "&b&Field-Found&!&",
 	destination = "My room,\nHome,\nEarth",
 	date = "Unknown"

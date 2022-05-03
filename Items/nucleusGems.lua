@@ -10,7 +10,7 @@ it.NucleusGems.color = Color.fromHex(0xFFCCED)
 it.NucleusGems:setLog{
 	group = "end",
 	description = "Gold drops become sharp gems, &y&dealing damage to enemies on contact.",
-	story = "Finding treasure, a rush of excitement. My weakness? taking it all.",
+	story = "Finding treasure, a rush of excitement. My weakness? Taking it all.",
 	priority = "&"..it.NucleusGems.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

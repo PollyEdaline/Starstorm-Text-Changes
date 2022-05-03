@@ -8,8 +8,8 @@ local sprSwiftSkateDis = Sprite.load("SwiftSkateboardDis", path.."swiftSkateDis.
 it.SwiftSkateboard:setTier("rare")
 it.SwiftSkateboard:setLog{
 	group = "rare_locked",
-	description = "&b&Attack while moving.",
-	story = "Good day Sir Morse, This month's GOLDEN reward is the Rudolph D30 Skateboard Replica.\nEnjoy your freebie!\nDescription: In the last Century the D30s were widely praised as the peak in performance for the D series, particularly after the professional skateboarder Hobbert used one at Sydney's Skate Championship and won at first place.",
+	description = "&b&You can move while using any skill.",
+	story = "Good day Sir Morse. This month's GOLDEN reward is the Rudolph D30 Skateboard Replica.\nEnjoy your freebie!\nDescription: In the last century, the D30s were widely praised as the peak in performance for the D series, particularly after the professional skateboarder Hobbert used one at Sydney's Skate Championship and won at first place.",
 	destination = "221,\nHill Hills,\nEarth",
 	date = "01/03/2056"
 }

@@ -9,7 +9,7 @@ it.GiftCard:setTier("common")
 it.GiftCard:setLog{
 	group = "common",
 	description = "15% chance for on-hit effects to &b&roll twice." ,
-	story = "Jacob's birthday is soon and I won't be able to see him personally, so please, give him this, an please, tell him that I won't miss his next one. I swear I won't.",
+	story = "Jacob's birthday is soon and I won't be able to see him personally, so please, give him this. And please, tell him that I won't miss his next one. I swear I won't.",
 	destination = "22-2,\nTau Sector,\nMars",
 	date = "05/22/2056"
 }

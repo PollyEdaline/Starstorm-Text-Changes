@@ -1,14 +1,14 @@
 local relicColor = Color.fromHex(0xC649AD)
 
 local itRelicForce = Item.new("Relic of Force") 
-itRelicForce.pickupText = "All skills deal an attack BUT cooldowns are longer." 
+itRelicForce.pickupText = "All skills deal an extra attack, BUT cooldowns are longer." 
 itRelicForce.sprite = Sprite.load("RelicForce", "Items/Resources/Relic of Force.png", 1, 14, 14)
 itp.relic:add(itRelicForce)
 itRelicForce.color = relicColor
 itRelicForce:setLog{
 	group = "end",
-	description = "&y&All skills deal an attack for 100% damage &p&BUT &r&increase cooldown durations by 40%.",
-	story = "Nothing in life is free. This strange object glows with a power I can only harness with concentration. I can become vigorous, unstoppable, but I will never be the same ever again, I lost something and I can't recall what it was... Once again, nothing in life was free.",
+	description = "&y&All skills deal an extra attack for 100% damage, &p&BUT &r&cooldown durations are increased by 40%.",
+	story = "Nothing in life is free. This strange object glows with a power I can only harness with concentration. I can become vigorous, unstoppable, but I will never be the same again. I lost something and I can't recall what it was... Once again, nothing in life was free.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

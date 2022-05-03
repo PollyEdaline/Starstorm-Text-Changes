@@ -9,13 +9,13 @@ objNkotaHdis.depth = 1
 local smallChest = obj.Chest1
 local mediumChest = obj.Chest2
 local goldChest = obj.Chest5
-it.NkotaH.pickupText = "Receive a chest upon level up." 
+it.NkotaH.pickupText = "Create a free chest on level up." 
 it.NkotaH.sprite = Sprite.load("NkotaH", path.."Nkota's Heritage.png", 1, 11, 13)
 it.NkotaH:setTier("rare")
 it.NkotaH:setLog{
 	group = "rare",
-	description = "Receive a &b&free chest&!& upon &b&level up.",
-	story = "After Nkota's siblings started the dispute attempting to get the heritage for themselves, an unidentified individual stole the article in what seemed to be vengeance.\nIt only fell in my hands after a young man sold it for an adequate amount of money. I am sending it to you as you might be able to help me analyze it.\n\nI am willing to sell it to a museum and give you a cut if it IS the authentic one.",
+	description = "Create a &b&free chest&!& on &b&level up.",
+	story = "After Nkota's siblings attempted to get the heritage for themselves, someone stole the article in what seemed to be an act of vengeance.\nIt only fell into my hands after a young man sold it for an adequate amount of money. I am sending it to you as you might be able to help me analyze it.\n\nI am willing to sell it to a museum and give you a cut if it IS the authentic one.",
 	destination = "Naaga 23,\nH4D3S,\nEarth",
 	date = "05/05/2056"
 }

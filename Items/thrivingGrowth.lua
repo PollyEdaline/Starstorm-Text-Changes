@@ -8,8 +8,8 @@ itp.sibylline:add(it.ThrivingGrowth)
 it.ThrivingGrowth.color = Color.fromHex(0xFFCCED)
 it.ThrivingGrowth:setLog{
 	group = "end",
-	description = "Nearby enemy deaths sprout flowers which &g&heal &!&and &y&buff you temporarily.",
-	story = "In given time, the cycle continues, giving to receive, losing to find, dying to live.",
+	description = "Nearby enemy deaths sprout flowers which &g&heal&!& and &y&buff you.",
+	story = "In time, the cycle continues. Giving to receive, losing to find, dying to live.",
 	priority = "&"..it.ThrivingGrowth.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

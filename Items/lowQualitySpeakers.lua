@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.LowQualitySpeakers = Item.new("Low Quality Speakers")
 local sLowQualitySpeakers = Sound.load("LowQualitySpeakers", path.."lowQualitySpeakers")
-it.LowQualitySpeakers.pickupText = "Gain a speed boost below half your health." 
+it.LowQualitySpeakers.pickupText = "Gain a move speed boost below half health." 
 it.LowQualitySpeakers.sprite = Sprite.load("LowQualitySpeakers", path.."Low Quality Speakers.png", 1, 10, 12)
 it.LowQualitySpeakers:setTier("uncommon")
 it.LowQualitySpeakers:setLog{
 	group = "uncommon",
-	description = "Gain a &b&55% speed boost&!& while at below 50% health.",
-	story = "Congratulations [REDACTED]! Thank you for participating in our monthly raffle, this is your prize, in case you have any doubts or for further information on your product visit RERAFFLES.mul/help.",
+	description = "Gain a &b&55% movement speed boost&!& while at or below 50% HP.",
+	story = "Congratulations [REDACTED]! Thank you for participating in our monthly raffle. Here is your prize! If you have any questions, or for further information on your product, please visit RERAFFLES.mul/help.",
 	destination = "Floor 2,\nBetween Ridy & Low,\nEarth",
 	date = "03/30/2058"
 }

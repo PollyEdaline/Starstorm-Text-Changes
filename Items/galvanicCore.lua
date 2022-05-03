@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.GalvanicCore = Item.new("Galvanic Core")
 local sGalvanicCore = Sound.load("GalvanicCore", path.."galvanicCore")
-it.GalvanicCore.pickupText = "Chance to stun. Stunned enemies radiate a health and damage debuff." 
+it.GalvanicCore.pickupText = "Chance to stun. Stunned enemies radiate a debuff." 
 it.GalvanicCore.sprite = Sprite.load("GalvanicCore", path.."Galvanic Core.png", 1, 15, 15)
 it.GalvanicCore:setTier("rare")
 it.GalvanicCore:setLog{
 	group = "rare_locked",
-	description = "&y&+10% chance to stun.&!& Stunned enemies debuff nearby enemies.",
-	story = "\nPower is yours.\nWelcome to the latest generation of power core technology in the galaxy. The Galvanic Core is the most revolutionary invention since the hardlight, don't blink, it's time to embrace the future.\nEnjoy your product.\n\nOMNI.co",
+	description = "Attacks have a &y&10% chance to stun.&!& Stunned enemies debuff nearby enemies, reducing their HP by 20%, movement speed by 0.8, and damage by 30%.",
+	story = "\nThe power is yours.\nWelcome to the latest generation of power core technology in the galaxy. The Galvanic Core is the most revolutionary invention since the Hardlight Afterburner! Don't blink, it's time to embrace the future.\nThank you for your purchase.\n\nOMNI.co",
 	destination = "Science Plaza,\n#42,\nMV Prime",
 	date = "04/22/2056"
 }

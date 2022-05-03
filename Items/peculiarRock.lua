@@ -7,4 +7,5 @@ it.PeculiarRock.color = "p"
 
 --it.PeculiarRock:addCallback("pickup", function(player)
 	-- hi
+	-- hello!
 --end)

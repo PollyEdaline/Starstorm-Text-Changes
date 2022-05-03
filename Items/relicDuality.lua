@@ -4,14 +4,14 @@ local itRelicDuality = Item.new("Relic of Duality")
 local parRelicDuality = par.Fire3
 parRelicDuality:color(Color.YELLOW,Color.RED,Color.BLACK)
 parRelicDuality:scale(0.6, 0.6)
-itRelicDuality.pickupText = "All attacks deal blazing damage BUT all taken damage freezes you." 
+itRelicDuality.pickupText = "All attacks deal blazing damage, BUT all damage taken freezes you." 
 itRelicDuality.sprite = Sprite.load("RelicDuality", "Items/Resources/Relic of Duality.png", 1, 13, 14)
 itp.relic:add(itRelicDuality)
 itRelicDuality.color = relicColor
 itRelicDuality:setLog{
 	group = "end",
-	description = "&y&All attacks deal blazing damage &p&BUT &r&all taken damage freezes you.",
-	story = "A strange, yet familiar force was awakened as I approached, a risk to be taken in exchange for valuable power, as every light comes with darkness and every pain comes with great joy.",
+	description = "&y&All attacks deal blazing damage &p&BUT &r&all damage taken freezes you.",
+	story = "A strange, yet familiar force was awakened as I approached. A risk to be taken in exchange for valuable power. Every light comes with darkness, every pain comes with great joy.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

@@ -1,7 +1,7 @@
 if not global.rormlflag.ss_og_snakeeyes then
 -- Better Snake Eyes
-it.SnakeEyes.pickupText = "Gain increased critical chance and damage on failing a shrine. Removed on succeeding a shrine."
-it.SnakeEyes:setLog{description = "Failing a shrine &b&increases&!& critical chance by &y&6%&1& and &y&damage by 1."}
+it.SnakeEyes.pickupText = "Gain increased Critical Strike chance and damage on failing a shrine, until you succeed."
+it.SnakeEyes:setLog{description = "Failing a shrine &b&increases&!& Critical Strike chance by &y&6%&1& and &y&damage by 1."}
 
 local dicebuffs = {buff.dice1, buff.dice2, buff.dice3, buff.dice4, buff.dice5, buff.dice6}
 for i, dicebuff in ipairs(dicebuffs) do

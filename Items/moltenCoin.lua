@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.MoltenCoin = Item.new("Molten Coin")
 local sMoltenCoin = Sound.load("MoltenCoin", path.."moltenCoin")
-it.MoltenCoin.pickupText = "Chance to incinerate on hit and earn +$1." 
+it.MoltenCoin.pickupText = "Chance on hit to incinerate and earn $1." 
 it.MoltenCoin.sprite = Sprite.load("MoltenCoin", path.."Molten Coin.png", 1, 11, 13)
 it.MoltenCoin:setTier("common")
 it.MoltenCoin:setLog{
 	group = "common",
-	description = "&y&6% chance to incinerate enemies&!& on hit, &y&earning $1&!&.",
-	story = "Hey! Uh, I am sorry, I am really sorry... I know you really wanted me to keep this coin but I can't take the responsibility any more...\nSee, I accidentally put the coin at the edge of a plasma furnance so... well... it's a bit burnt on the side, please don't get mad at me.",
+	description = "&y&6% chance to incinerate enemies&!& for 6 seconds on hit, &y&earning $1&!&.",
+	story = "Hey! Uh, I'm sorry, I'm really sorry... I know you really wanted me to keep this coin but I can't take the responsibility any more...\nSee, I accidentally put the coin at the edge of a plasma furnance so... well... it's a bit burnt on the side, please don't get mad at me...",
 	destination = "Toera 2,\nB44,\nMother Station",
 	date = "05/22/2056"
 }

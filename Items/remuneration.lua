@@ -9,7 +9,7 @@ it.Remuneration.color = Color.fromHex(0xFFCCED)
 it.Remuneration:setLog{
 	group = "end",
 	description = "Each stage entry offers you benefits.",
-	story = "A currency unlike any other, my own value felt diminished with every second I held it. Yet, I didn't let go. I needed it in hope it would help me survive what was yet to come.",
+	story = "A currency unlike any other. My own value felt diminished with every second I held it. Yet, I didn't let go. I needed it, hoping it would help me survive what was yet to come.",
 	priority = "&"..it.StirringSoul.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

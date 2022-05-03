@@ -9,8 +9,8 @@ itp.legendary:add(it.RegurgitatedRock)
 it.RegurgitatedRock.color = "y"
 it.RegurgitatedRock:setLog{
 	group = "boss",
-	description = "After standing idle for 3 seconds, burrow underground &b&becoming invincible briefly.",
-	story = "The towering creature collapsed, like a demolished column of stone.\nYet in it's last breath, it had one final struggle, to spit something out:\nA rock. not a huge rock, but a rock hard enough to trouble any specimen that tries to swallow it.\n\nNot like I needed any reminders to not ingest the soil.",
+	description = "After standing idle for 3 seconds, burrow underground, &b&becoming invincible briefly.",
+	story = "The towering creature collapsed, like a demolished column of stone.\nYet in its last breath, it had one final struggle, to spit something out.\nA rock. not a huge rock, but a rock hard enough to trouble any specimen that tries to swallow it.\n\nNot like I needed any reminders to not ingest the soil.",
 	priority = "&b&Field-Found&!&",
 	destination = "Menon Exhibit,\nPlora,\nEarth",
 	date = "Unknown"

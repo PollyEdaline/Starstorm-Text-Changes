@@ -6,8 +6,8 @@ it.FieldAccelerator.sprite = Sprite.load("FieldAccelerator", path.."Field Accele
 it.FieldAccelerator:setTier("uncommon")
 it.FieldAccelerator:setLog{
 	group = "uncommon",
-	description = "Increases teleporter &y&charge speed by 100%&!& while no enemies are nearby.",
-	story = "After extensive testing the product is now ready to be shipping by the holidays, please contact our sponsors, I'll be away during the lockdown.\nRefrain from mentioning my cooperation with Dannah to the leads, we need to make sure we get the investment as soon as possible.\n\nReply with auth.",
+	description = "Teleporters &y&charge 100% faster&!& when no enemies are around.",
+	story = "After extensive testing, the product is now ready for shipping by the holidays! Please contact our sponsors, I'll be away during the lockdown.\nRefrain from mentioning my cooperation with Dannah to the leads, we need to make sure we get the investment as soon as possible.\n\nReply with auth.",
 	destination = "Room 14,\nBay 2,\nUES Gamma",
 	date = "12/10/2056"
 }

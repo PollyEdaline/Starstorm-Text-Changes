@@ -2,15 +2,15 @@ local relicColor = Color.fromHex(0xC649AD)
 
 local itRelicEntropy = Item.new("Relic of Entropy")
 local sRelicEntropy = Sound.load("RelicEntropy", "Items/Resources/relicEntropy")
-itRelicEntropy.pickupText = "Roll a random effect BUT the outcome can be detrimental." 
+itRelicEntropy.pickupText = "Roll a random effect, BUT the outcome can be detrimental." 
 itRelicEntropy.sprite = Sprite.load("RelicEntropy", "Items/Resources/Relic of Entropy.png", 2, 13, 14)
 itp.relic:add(itRelicEntropy)
 itRelicEntropy.isUseItem = true
 itRelicEntropy.color = relicColor
 itRelicEntropy:setLog{
 	group = "end",
-	description = "&y&Roll a random effect &p&BUT &r&the outcome can be detrimental.",
-	story = [[Not unlike ancient mythologies. The so called "Pandora's Box": full of mysteries, full of chances at survival and full of chances of my own death.]],
+	description = "&y&Roll a random effect, &p&BUT &r&the outcome can be detrimental.",
+	story = [[Not unlike ancient mythologies. The so called "Pandora's Box": full of mysteries, full of chances at survival, and full of chances at my own death.]],
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

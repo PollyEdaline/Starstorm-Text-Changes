@@ -87,7 +87,7 @@ it.R4M.sprite = Sprite.load("R4M", path.."R4M.png", 1, 16, 16)
 it.R4M:setTier("uncommon")
 it.R4M:setLog{
 	group = "uncommon_locked",
-	description = "Moving in a constant direction deals 50% damage and knocks back enemies.",
+	description = "Moving in a constant direction deals &y&50% damage&!& and knocks back enemies.",
 	story = "",
 	destination = "A,\nB,\nC",
 	date = "06/07/2056"

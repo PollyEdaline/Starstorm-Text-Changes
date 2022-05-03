@@ -1,13 +1,13 @@
 local path = "Items/Resources/"
 
 it.Needles = Item.new("Needles")
-it.Needles.pickupText = "Chance to mark enemies for guaranteed critical strikes." 
+it.Needles.pickupText = "Chance on hit to mark enemies for guaranteed Critical Strikes." 
 it.Needles.sprite = Sprite.load("Needles", path.."Needles.png", 1, 15, 15)
 it.Needles:setTier("common")
 it.Needles:setLog{
 	group = "common_locked",
-	description = "4% chance to &y&mark enemies&!& to deal 100% &y&critical strike chance against them.",
-	story = "Uh... madre dice que si puedes leer esto es porque no eres tan torpe como pensaba, y pues eso. Esperamos que te sirvan estas agujas, me temo que no son las que pediste pero no hace mucha diferencia, quiero creer.\nYa no recuerdo si las enviamos bien embaladas, ten cuidado.",
+	description = "4% chance on hit to &y&mark enemies&!& for 100% &y&critical Strike chance against them.",
+	story = "Uh... madre dice que si puedes leer esto, es porque no eres tan torpe como pensaba, y pues eso. Esperamos que te sirvan estas agujas. Me temo que no son las que pediste, pero no hace mucha diferencia, pienso.\nNo recuerdo si los enviamos bien embalados. Ten cuidado.",
 	priority = "&y&Piercing&!&",
 	destination = "E2,\nOren's Loop,\nVenus",
 	date = "[REDACTED]"

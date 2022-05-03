@@ -7,8 +7,8 @@ it.HottestSauce.sprite = Sprite.load("HottestSauce", path.."Hottest Sauce.png", 
 it.HottestSauce:setTier("uncommon")
 it.HottestSauce:setLog{
 	group = "uncommon",
-	description = "Activating use items &y&set the surroundings on fire.",
-	story = "The branding of this thing is pretty exaggerated but don't let that trick you, this burns like hell, and I DO MEAN IT.",
+	description = "Activating use items &y&sets the surroundings on fire.",
+	story = "The branding of this thing is pretty exaggerated, but don't let that trick you. This burns like hell, and I DO MEAN IT.",
 	destination = "Home 3,\nApla,\nEarth",
 	date = "12/02/2056"
 }

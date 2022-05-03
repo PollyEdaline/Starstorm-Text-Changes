@@ -1,5 +1,5 @@
 if not global.rormlflag.ss_og_headstompers then
-it.Headstompers.pickupText = "Hurt enemies by falling, hold down to fall faster."
+it.Headstompers.pickupText = "Hurt enemies by falling. Hold down to fall faster."
 
 local onPlayerStepCall = function(player)
 	local headstompers = player:countItem(it.Headstompers)

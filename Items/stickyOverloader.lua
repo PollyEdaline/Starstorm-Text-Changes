@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.StickyBattery = Item.new("Sticky Overloader")
 --local sStickyBattery = Sound.load("StickyBattery", path.."")
-it.StickyBattery.pickupText = "Attacking a foe stores damage, damage is dealt on pause."
+it.StickyBattery.pickupText = "Attacking a foe builds up damage. Stop attacking to unleash."
 it.StickyBattery.sprite = Sprite.load("StickyOverloader", path.."Sticky Overloader.png", 1, 16, 15)
 it.StickyBattery:setTier("uncommon")
 it.StickyBattery:setLog{
 	group = "uncommon_locked",
-	description = "&y&Attacking a foe charges damage by 32% up to 800%.&!& Damage is done after not attacking for a second",
-	story = "So you're telling me they took a literal BOMB and reengineered it into a throwable BATTERY?\nHow does one thing relate to the other??? I'm not even going to try and use it, one simply does not use a battery frivolously, it's asking for chaos.\nI don't blame them, they are jerks but [REDACTED] really? It's widely known that contact energy transfers NEED to be stable for them to fundamentally WORK.\nIf this is considered stable then call me a cow and watch me fly.",
+	description = "&y&Attacking a foe charges damage by 32%, up to 800%.&!& Stop attacking to &y&unleash the damage&!&.",
+	story = "So you're telling me they took a literal BOMB and reengineered it into a throwable BATTERY?\nHow do these things relate??? I'm not even going to try and use it, you can't just use a battery like that, it's asking for chaos.\nI don't blame them, they're jerks, but [REDACTED], really? It's widely known that contact energy transfers NEED to be stable for them to fundamentally WORK.\nIf this is considered, stable then call me a pig and watch me fly.",
 	destination = "Amber's,\nDesean Lake,\nVenus",
 	date = "06/07/2056"
 }

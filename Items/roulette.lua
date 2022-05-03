@@ -11,7 +11,7 @@ local rouletteVars = {
 	armor = {value = 34, subimage = 8}
 }
 local sRoulette = Sound.load("Roulette", path.."roulette")
-it.Roulette.pickupText = "Gain a random stat up each minute." 
+it.Roulette.pickupText = "Gain a random buff that changes every minute." 
 it.Roulette.sprite = Sprite.load("Roulette", path.."Roulette.png", 1, 14, 9)
 local roulettedis = Sprite.load("RouletteDisplay", path.."roulettedis.png", 8, 20, 20)
 objRoulette = Object.new("Roulette")
@@ -19,8 +19,8 @@ objRoulette.sprite = roulettedis
 it.Roulette:setTier("uncommon")
 it.Roulette:setLog{
 	group = "uncommon_locked",
-	description = "Get a &y&random stat increase each minute.",
-	story = "Replacement Roulette model 144Bella-1 in follow-up to the recent events that unfolded in the casino. For further inquiries please contact us at the E-direction given by our representatives.",
+	description = "Get a &y&random buff&!& that changes every minute.",
+	story = "Replacement Roulette model 144Bella-1 in follow-up to the recent events that unfolded in the casino. For further inquiries, please contact us at the E-direction given by our representatives.",
 	destination = "PRoom 3.1,\nSecva Casino,\nEarth",
 	date = "7/17/2057"
 }

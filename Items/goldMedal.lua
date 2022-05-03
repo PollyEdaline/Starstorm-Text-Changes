@@ -6,8 +6,8 @@ it.GoldMedal.sprite = Sprite.load("GoldMedal", path.."Gold Medal.png", 1, 15, 15
 it.GoldMedal:setTier("uncommon")
 it.GoldMedal:setLog{
 	group = "uncommon_locked",
-	description = "Spending gold &g&heals you for 5 seconds.",
-	story = "My hard work hasn't felt the same to me, but maybe you can do more with this than I can.\nIt's always rewarding to be the winner but I no longer feel fulfilled by collecting little rewards and trophies, so as an act of solidarity I give this to you. Do as you will.",
+	description = "Spending gold &g&heals you over 5 seconds.",
+	story = "My hard work hasn't felt the same to me, but maybe you can do more with this than I can.\nIt's always rewarding to be the winner, but I no longer feel fulfilled by collecting little rewards and trophies. So, as an act of solidarity, I give this to you. Do with it as you wish.",
 	destination = "The Lighthouse,\nAmstem,\nEarth",
 	date = "02/02/2056"
 }

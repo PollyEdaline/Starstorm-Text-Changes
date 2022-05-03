@@ -2,14 +2,14 @@ local relicColor = Color.fromHex(0xC649AD)
 
 local itRelicMass = Item.new("Relic of Mass")
 local sprRelicMass = Sprite.load("RelicMassDisplay", "Items/Resources/relicMassdis.png", 1, 10, 10)
-itRelicMass.pickupText = "Your health is doubled BUT your movement has momentum." 
+itRelicMass.pickupText = "Your health is doubled, BUT your movement has momentum." 
 itRelicMass.sprite = Sprite.load("RelicMass", "Items/Resources/Relic of Mass.png", 1, 12, 13)
 itp.relic:add(itRelicMass)
 itRelicMass.color = relicColor
 itRelicMass:setLog{
 	group = "end",
-	description = "&g&Double your total health &p&BUT &r&your movement has momentum.",
-	story = "A long-due fatigue led me to the ancient stone, rewarding me with will to endure the pain and outweight my situation.",
+	description = "&g&Increases health by 100%, &p&BUT &r&your movement has momentum.",
+	story = "Fatigue led me to the ancient stone, rewarding me with the will to endure, and the strength and outweigh my situation.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

@@ -1,7 +1,7 @@
 if not global.rormlflag.ss_og_spikestrip then
 -- Better Spikestrip
-it.Spikestrip.pickupText = "Drop spikestrip on being hit, slowing and bleeding enemies."
-it.Spikestrip:setLog{description = "When hit, drop spikestrips that &y&slow and bleed enemies by 20% speed and 25% damage&!&."}
+it.Spikestrip.pickupText = "Drop spikestrips when hit, slowing and bleeding enemies."
+it.Spikestrip:setLog{description = "When hit, drop spikestrips that &y&slow enemies by 20%&!& and bleed them for and &y&25% damage&!&."}
 obj.EfSpikestrip:addCallback("create", function(self)
 	local nearestPlayer = obj.P:findNearest(self.x, self.y)
 	self:getData().parent = nearestPlayer

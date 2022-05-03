@@ -11,7 +11,7 @@ it.ShellPiece.color = "y"
 it.ShellPiece:setLog{
 	group = "boss",
 	description = "Gain &b&immunity for 3 seconds&!& when lethally hit (once per stage).",
-	story = "And so I fought through. Its shell was solid as graphene; cutting through it, blasting it, nothing seemed to be enough until this piece fell off it, leaving the colossal creature exposed.\nNothing will compare to how glorious my victory was, all thanks to this unlikely event.",
+	story = "Its shell was solid as graphene; cutting through it, blasting it, nothing seemed to be enough until this piece fell off it, leaving the colossal creature exposed.\nNothing will compare to how glorious my victory was, all thanks to this unlikely event.",
 	priority = "&b&Field-Found&!&",
 	destination = "Menon Exhibit,\nPlora,\nEarth",
 	date = "Unknown"

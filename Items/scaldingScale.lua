@@ -1,14 +1,14 @@
 local path = "Items/Resources/"
 
 it.ScaldingScale = Item.new("Scalding Scale")
-it.ScaldingScale.pickupText = "Earn a massive armor boost." 
+it.ScaldingScale.pickupText = "Gain a massive Armor boost." 
 it.ScaldingScale.sprite = Sprite.load("Scalding Scale", path.."Scalding Scale.png", 1, 15, 15)
 itp.legendary:add(it.ScaldingScale)
 it.ScaldingScale.color = "y"
 it.ScaldingScale:setLog{
 	group = "boss",
-	description = "&b&Increase your armor by 60.",
-	story = "Soil burning, scarce resources and a threat of fortitude meant I had to fight like never before. But I am alive and this scale will serve me as a catalyst for the magnitude that my survival will convey.",
+	description = "&b&Increase Armor by 60.",
+	story = "Burning soil, scarce resources and a resilient threat meant I had to fight like never before. But I am alive, and this scale will serve as proof of my achievement.",
 	priority = "&b&Field-Found&!&",
 	destination = "STAR Museum,\nLone Summit,\nEarth",
 	date = "Unknown"

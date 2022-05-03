@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.GemBreacher = Item.new("Gem-Breacher")
 --local sGemBreacher = Sound.load("GemBreacher", path.."")
-it.GemBreacher.pickupText = "Critical strikes give you temporary shield."
+it.GemBreacher.pickupText = "Critical Strikes give you a temporary shield."
 it.GemBreacher.sprite = Sprite.load("GemBreacher", path.."Gem Breacher.png", 1, 15, 16)
 it.GemBreacher:setTier("rare")
 it.GemBreacher:setLog{
 	group = "rare_locked",
-	description = "&y&Critical strikes give you &b&+3 temporary shield. &!&Up to 500",
-	story = "Your continued correspondence, as always, has been exceptionally helpful in our endeavor. \n\nWith our most recent prototype, the Mark I, gem core stability is up by sixteen percent, and our team estimates that number will double with our next model. \n\nOne major problem still remains; efficiency. Our facilities are no longer equipped to handle the electrical burden of this prototype. Further testing will have to be reserved for the Mark II.\n\nFor now, I’ve sent the Mark I as a keepsake, dedicated to your generosity, forgiveness, and - hopefully - continued support thru grant.\n\nSincerely: Alex Deluca.",
+	description = "&y&Critical Strikes give you &b&+3 temporary shield&!&, up to 500.",
+	story = "Your continued correspondence, as always, has been exceptionally helpful in our endeavor.\n\nWith our most recent prototype, the Mark I, gem core stability is up by sixteen percent, and our team estimates that number will double with our next model.\n\nOne major problem still remains: efficiency. Our facilities are no longer equipped to handle the electrical burden of this prototype. Further testing will have to be reserved for the Mark II.\n\nFor now, I’ve sent the Mark I as a keepsake, dedicated to your generosity, forgiveness, and - hopefully - continued support through grant.\n\nSincerely: Alex Deluca.",
 	destination = "Oncorp,\nSchwerin,\nEarth",
 	date = "2/02/2056"
 }

@@ -1,7 +1,7 @@
 local path = "Items/Resources/"
 
 it.X4Stimulant = Item.new("X-4 Stimulant")
-it.X4Stimulant.pickupText = "Reduced secondary cooldown." 
+it.X4Stimulant.pickupText = "Reduced secondary skill cooldown." 
 it.X4Stimulant.sprite = Sprite.load("X-4 Stimulant", path.."X-4 Stimulant.png", 1, 15, 15)
 it.X4Stimulant:setTier("common")
 it.X4Stimulant:setLog{

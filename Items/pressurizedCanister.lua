@@ -2,7 +2,7 @@ local path = "Items/Resources/"
 
 it.PressurizedPropeller = Item.new("Pressurized Canister")
 local sPressurizedPropeller = Sound.load("PressurizedCanister", path.."pressurizedPropeller")
-it.PressurizedPropeller.pickupText = "Launch yourself into the air." 
+it.PressurizedPropeller.pickupText = "Launch yourself high in the air." 
 it.PressurizedPropeller.sprite = Sprite.load("PressurizedPropeller", path.."Pressurized Propeller.png", 2, 8, 14)
 it.PressurizedPropeller.isUseItem = true
 it.PressurizedPropeller.useCooldown = 15
@@ -11,7 +11,7 @@ itp.enigma:add(it.PressurizedPropeller)
 it.PressurizedPropeller:setLog{
 	group = "use",
 	description = "&b&Launch yourself high in the air.",
-	story = "'A swift, highly pressurized canister that makes sure nothing is too heavy for any machine to lift!' Does this sound good for the ad? You do you but ya gotta sell it real good if we want some $ our way this summer... Also, friendly reminder to handle it carefully and all that jazz.",
+	story = "'A swift, highly pressurized canister that makes sure nothing is too heavy for any machine to lift!' Does this sound good for the ad? You do you, but ya gotta sell it real good if we want some $ our way this summer... Also, friendly reminder to handle it carefully and all that jazz.",
 	destination = "Joe,\nMaL,\nIgma",
 	date = "01/02/2056"
 }

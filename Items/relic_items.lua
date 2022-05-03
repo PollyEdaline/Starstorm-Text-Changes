@@ -22,7 +22,7 @@ require(path.."relicEntropy")
 
 --require(path.."relicHunger")
 
-local itRelicofUh = Item.new("Relic of uuuh")
+local itRelicofUh = Item.new("Relic of uuuh") -- yea h,
 itRelicofUh.pickupText = "new relic" 
 itRelicofUh.sprite = Sprite.load("RelicUuuh", "Items/Resources/Relic of uuuh.png", 1, 15, 15)
 itRelicofUh.color = relicColor

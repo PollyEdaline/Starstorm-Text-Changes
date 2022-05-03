@@ -3,14 +3,14 @@ local relicColor = Color.fromHex(0xC649AD)
 local itRelicEchelon = Item.new("Relic of Echelon")
 local sprRelicEchelon = Sprite.load("RelicEchelonDisplay", "Items/Resources/EchelonDis.png", 1, 10, 10)
 local sEchelon = Sound.load("RelicEchelon", "Items/Resources/relicEchelon")
-itRelicEchelon.pickupText = "Activating use items buffs you greatly BUT the cooldown is increased each time."
+itRelicEchelon.pickupText = "Activating use items buffs you greatly, BUT the cooldown is increased each time."
 itRelicEchelon.sprite = Sprite.load("RelicEchelon", "Items/Resources/Relic of Echelon.png", 1, 15, 15)
 itp.relic:add(itRelicEchelon)
 itRelicEchelon.color = relicColor
 itRelicEchelon:setLog{
 	group = "end",
-	description = "&y&Use item activation buffs you greatly &p&BUT &r&the cooldown is increased each time.",
-	story = "Holding the handle felt like something was missing, this object had been fractured, all that remains of it seems unstable. Should I keep it? I will take the chances.",
+	description = "&y&Activating use items buffs you greatly, &p&BUT &r&the cooldown is increased each time.",
+	story = "Holding the handle felt like something was missing. This object had been fractured. All that remains of it seems unstable. Should I keep it? I will take the chance.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

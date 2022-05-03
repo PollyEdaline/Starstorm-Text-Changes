@@ -3,13 +3,13 @@ local path = "Items/Resources/"
 it.StrangeCan = Item.new("Strange Can")
 local parStrangeCan = par.Radioactive
 local sStrangeCan = Sound.load("StrangeCan", path.."strangeCan")
-it.StrangeCan.pickupText = "Chance to intoxicate enemies." 
+it.StrangeCan.pickupText = "Chance on hit to intoxicate enemies." 
 it.StrangeCan.sprite = Sprite.load("StrangeCan", path.."Strange Can.png", 1, 14, 11)
 it.StrangeCan:setTier("uncommon")
 it.StrangeCan:setLog{
 	group = "uncommon",
-	description = "Chance to &y&intoxicate&!& enemies, causing &r&damage over time&!&.",
-	story = "These are as delicious as I told you, I just hope it doesn't crack open on the way there like the last one.\nI should get a job...",
+	description = "8.5% chance on hit to &y&intoxicate&!& enemies, causing &r&damage over time&!&.",
+	story = "These are as delicious as I told you. I just hope it doesn't crack open on the way there like the last one.\nI should get a job...",
 	destination = "1530,\n563,\nA-LC12",
 	date = "05/22/2056"
 }

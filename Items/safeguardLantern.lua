@@ -1,6 +1,6 @@
 if not global.rormlflag.ss_og_lantern then
 -- Better Lantern
-it.SafeguardLantern.pickupText = "Hold a lantern that fears and damages enemies for 10 seconds"
+it.SafeguardLantern.pickupText = "Carry a lantern for 10 seconds that fears and damages enemies."
 it.SafeguardLantern:setLog{description = "Carry a lantern for 10 seconds. &r&Fears&!& and damges enemies for &y&20% damage."}
 obj.EfLantern.sprite = Sprite.load("EfLantern", "Gameplay/EfLantern", 1, 2, 10)
 obj.EfLantern.depth = -10

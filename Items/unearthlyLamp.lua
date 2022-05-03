@@ -2,14 +2,14 @@ local path = "Items/Resources/"
 
 it.UnearthlyLamp = Item.new("Unearthly Lamp")
 --local sUnearthyLamp = Sound.load("UnearthlyLamp", path.."UnearthlyLamp")
-it.UnearthlyLamp.pickupText = "Every second attack fires a haunted projectile." 
+it.UnearthlyLamp.pickupText = "Every other attack fires a haunted projectile." 
 it.UnearthlyLamp.sprite = Sprite.load("Unearthly Lamp", path.."Unearthly Lamp.png", 1, 15, 15)
 itp.legendary:add(it.UnearthlyLamp)
 it.UnearthlyLamp.color = "y"
 it.UnearthlyLamp:setLog{
 	group = "boss",
-	description = "Every second attack &y&fires a haunted projectile which deals 100% damage.",
-	story = "What I witnessed transcended my understanding, not only did the remains glow for me, but they sensed something I wasn't aware of, something of a different nature. May this light guide me in my journey.",
+	description = "Every other attack fires a haunted projectile for &y&100% damage.",
+	story = "What I witnessed transcended my understanding. Not only did the remains glow for me, but they sensed something I wasn't aware of, something of a different nature. May this light guide me in my journey.",
 	priority = "&b&Field-Found&!&",
 	destination = "ROMEO 3,\nCollector 335,\nMars",
 	date = "Unknown"

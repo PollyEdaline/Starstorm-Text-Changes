@@ -9,7 +9,7 @@ it.PortableReactor:setTier("rare")
 it.PortableReactor:setLog{
 	group = "rare",
 	description = "Become &b&invincible for 40 seconds&!& after entering a stage.",
-	story = "My buddy, this should fix your engine problem for the time being. It's a little used but it does the trick marvelously! Uhh I forgot if I sent the manual but you know the drill: hook it up, fuse the core and voila. I think that was all, maybe I am wrong, I really hope not but mail me if so.",
+	story = "Hey buddy, this should fix your engine problem for the time being. It's a little banged up, but it does the trick marvelously! Uhh, I forgot if I sent the manual but you know the drill: hook it up, fuse the core and voila. I think that was all, maybe I'm wrong. I really hope not but mail me if so.",
 	destination = "Floor 1,\nR&C co.,\nEarth",
 	date = "07/25/2056"
 }

@@ -9,7 +9,7 @@ it.HazardousBarrel:setTier("use")
 itp.enigma:add(it.HazardousBarrel)
 it.HazardousBarrel:setLog{
 	group = "use",
-	description = "Place a barrel at your position which &y&explodes on hit for 450% damage.",
+	description = "Place a barrel which &y&explodes on hit for 450% damage&!&, plus &y&5x35% corrosive damage over time&!&.",
 	story = "What a trope! Go pew pew and they go BOOM BOOM!!",
 	priority = "&y&Volatile&!&",
 	destination = "E1M3\nToxin Refinery,\nMars",

@@ -8,8 +8,8 @@ it.Insecticide.sprite = Sprite.load("Insecticide", path.."Insecticide.png", 1, 1
 it.Insecticide:setTier("rare")
 it.Insecticide:setLog{
 	group = "rare_locked",
-	description = "All dealt damage is &y&poisonous&!&, inflicting &r&damage over time.",
-	story = "I heard you were having trouble with the 'quitoes, this stuff is wonderful! I always keep two in reserve so I wanted to give you one; it'll save you a bunch of troubles.\nI recommend spraying it in the corners, works everytime!",
+	description = "All attacks poison enemies for 17.5% damage over 4 seconds.",
+	story = "I heard you were having trouble with the 'squitos. This stuff is wonderful! I always keep two in reserve so I wanted to give you one; it'll save you a bunch of trouble.\nI recommend spraying it in the corners, works every time!",
 	priority = "&y&Volatile&!&",
 	destination = "d3,\nMimnat,\nEarth",
 	date = "04/02/2056"
