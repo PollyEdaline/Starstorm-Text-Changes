@@ -20,7 +20,7 @@ Sprite.load("NemesisExecutionerSelect", path.."Select", 19, 2, 0),
 	shoot5 = Sprite.load("NemesisExecutionerShoot5", path.."Shoot5", 14, 29, 24)
 }, Color.fromHex(0xCC4D4D))
 SurvivorVariant.setInfoStats(NExecutioner, {{"Strength", 7}, {"Vitality", 5}, {"Toughness", 4}, {"Agility", 5}, {"Difficulty", 4}, {"Punishment", 8}})
-SurvivorVariant.setDescription(NExecutioner, "The &y&Nemesis Executioner&!& takes away the lives of those who he condemns for what he envisions as the greater welfare.")
+SurvivorVariant.setDescription(NExecutioner, "The &y&Nemesis Executioner&!& takes away the lives of those who he condemns for what he envisions as the greater welfare. Use the energy from slain enemies to raise ion allies.")
 
 local sprSkills = Sprite.load("NemesisExecutionerSkills", path.."Skills", 8, 0, 0)
 local sShoot1a = Sound.find("NemesisExecutionerShoot1a", "Starstorm")
@@ -34,7 +34,7 @@ SurvivorVariant.setLoadoutSkill(NExecutioner, "Chaotic Energy",
 "Materialize 3 projectiles, each dealing &y&90% damage&!& on impact.", sprSkills)
 
 SurvivorVariant.setLoadoutSkill(NExecutioner, "Puppeteer", 
-"Unearth allied ion minions which attack foes for &y&50% damage&!&. Every slain enemy &y&adds a charge.", sprSkills, 3)
+"Every slain enemy adds a charge. Spend all charges to unearth up to 10 allied ion minions which attack foes for &y&50% damage&!&.", sprSkills, 3)
 
 SurvivorVariant.setLoadoutSkill(NExecutioner, "Reaper", 
 "Charge forward and slash with a projected scythe for &y&900% damage.", sprSkills, 7)

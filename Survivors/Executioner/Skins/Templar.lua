@@ -19,7 +19,7 @@ local Templar = SurvivorVariant.new(survivor, "Templar", sprSelect, {
 	shoot5 = Sprite.load("TemplarShoot5", path.."Shoot5", 16, 15, 26),
 }, Color.fromHex(0x6B94DB))
 SurvivorVariant.setInfoStats(Templar, {{"Strength", 7}, {"Vitality", 5}, {"Toughness", 6}, {"Agility", 6}, {"Difficulty", 5}, {"Faith", 7}})
-SurvivorVariant.setDescription(Templar, "The &y&Templar&!& carves her own path towards a hidden truth, and the planet won't hold her back.")
+SurvivorVariant.setDescription(Templar, "The &y&Templar&!& carves her own path towards a hidden truth, and the planet won't hold her back. Your sacred energy grows with each heretic slain.")
 Templar.tag = "Comission"
 
 local sprSkills = Sprite.load("TemplarSkills", path.."SkillsLoadout", 3, 0, 0)
@@ -33,10 +33,10 @@ SurvivorVariant.setLoadoutSkill(Templar, "Custom-Tuned Weapon",
 "Fire a bullet dealing &y&50% damage.", sprSkills)
 
 SurvivorVariant.setLoadoutSkill(Templar, "Consecration", 
-[[Consume all charges and become consecrated, 
+[[Slain enemies charge your sacred energy.
+Consume all charges and become consecrated, 
 &g&healing yourself&!& and dealing &y&Cryo damage&!&. 
-10 charges also grants an &b&attack and movement speed bonus&!&.
-Every slain enemy &y&adds a charge.]], sprSkills, 2)
+10 charges also grants an &b&attack and movement speed bonus&!&.]], sprSkills, 2)
 
 SurvivorVariant.setLoadoutSkill(Templar, "Heretic's End", 
 [[Sweep in front with your ion longsword, dealing &y&550x2% damage&!&. 

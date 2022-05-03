@@ -44,8 +44,10 @@ executioner.loadoutSprite = Sprite.load("Executioner_Select", path.."select", 17
 executioner:setLoadoutInfo(
 [[The &y&Executioner&!& is a mobile fighter who specializes in counting heads.
 Using ion projectors, the Executioner fabricates illusions which cause foes to
-run away in fear, and an axe to take out the strongest enemies. Make sure to 
-chain kills with &y&Ion burst&!& and &y&Execution&!& to keep the damage flowing.]], sprSkills3)
+run away in fear, and an axe to take out the strongest enemies. Slain enemies 
+charge your &y&Ion Pistol&!&. Make sure to chain kills with &y&Ion Burst&!& 
+and &y&Execution&!& to keep the damage flowing.
+]], sprSkills3)
 
 -- Skill descriptions
 
@@ -53,8 +55,8 @@ executioner:setLoadoutSkill(1, "Pistol",
 [[Shoot enemies for &y&90% damage.]])
 
 executioner:setLoadoutSkill(2, "Ion Burst",
-[[Fire ionized bullets for &y&300% damage&!& each.
-Every slain enemy &y&adds a bullet.]])
+[[Slain enemies ionize your bullets. Spend your charges to
+fire up to 10 ionized bullets for &y&300% damage&!& each.]])
 
 executioner:setLoadoutSkill(3, "Crowd Dispersion",
 [[&y&Dash forward&!& and &y&fear nearby enemies&!&.
@@ -63,8 +65,7 @@ You &b&cannot be hit&!& while dashing.]])
 executioner:setLoadoutSkill(4, "Execution",
 [[Launch into the air and slam down with a projected axe.
 &y&Deals less damage the more enemies are hit.
-&y&Max damage of 1500% on single target.
-Successful kills &b&reduce all cooldowns by one second.]])
+&y&Max damage of 1500% on single target.]])
 
 -- Color of highlights during selection
 executioner.loadoutColor = Color.fromHex(0xB5D6F2)
@@ -105,7 +106,7 @@ executioner:addCallback("init", function(player)
 	player:setSkill(3, "Crowd Dispersion", "Dash forward and fear enemies.",
 	sprSkills, 7, 7 * 60)
 		
-	player:setSkill(4, "Execution", "Leap up and slam down with an axe, dealing 1500% damage to one target, less to fewer. Kills reduce cooldowns by 1 second.",
+	player:setSkill(4, "Execution", "Leap up and slam down with an axe, dealing 1500% damage to one target, less to fewer.",
 	sprSkills, 8, 8 * 60)
 end)
 
@@ -119,7 +120,7 @@ end)
 executioner:addCallback("scepter", function(player)
 	player:setSkill(4,
 		"Crowd Execution",
-		"Leap up and slam down with an axe, dealing 1500% damage to one target and fearing enemies, less to fewer. Kills reduce cooldowns by 1 second.",
+		"Leap up and slam down with an axe, fearing nearby enemies and dealing 1500% damage to one target, less to fewer.",
 		sprSkills, 9,
 		9 * 60
 	)

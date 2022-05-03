@@ -19,7 +19,7 @@ local Electrocutioner = SurvivorVariant.new(survivor, "Electrocutioner", sprSele
 	shoot5 = Sprite.load("ElectrocutionerShoot5", path.."Shoot5", 14, 17, 34),
 }, Color.fromHex(0x8882C4))
 SurvivorVariant.setInfoStats(Electrocutioner, {{"Strength", 8}, {"Vitality", 5}, {"Toughness", 4}, {"Agility", 6}, {"Difficulty", 4}, {"Social Skills", 0}})
-SurvivorVariant.setDescription(Electrocutioner, "The &y&Electrocutioner&!& manipulates voltage into deadly doses of electric bolts to stop all and any contenders.")
+SurvivorVariant.setDescription(Electrocutioner, "The &y&Electrocutioner&!& manipulates voltage into deadly doses of electric bolts to stop all and any contenders. Slain enemies charge your &y&Ion Pistol&!&.")
 
 local sprSkill = Sprite.load("ElectrocutionerSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("ElectrocutionerShoot1", path.."Shoot1")
@@ -40,7 +40,7 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Deadly Voltage",
-		"Shoot lightning forward dealing 200% damage per second.",
+		"Shoot lightning forward, dealing 200% damage per second.",
 		sprSkill, 1, 13)
 	end
 end)
