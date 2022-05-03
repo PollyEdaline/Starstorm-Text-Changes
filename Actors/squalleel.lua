@@ -248,10 +248,10 @@ mcard.SquallEel.canBlight = true
 mlog.SquallEel = MonsterLog.new("SquallEel")
 MonsterLog.map[obj.SquallEel] = mlog.SquallEel
 mlog.SquallEel.displayName = "Squall Eel"
-mlog.SquallEel.story = "Once soaring the skies, now its weight chains it to the ground.\n\nBlind...\n\nYet it sees.\nNot by sensing movement through the ground, nor by hearing clues, but rather by the Elvers they protect.\n\nThe Elvers will chant to the Eel, almost like talking to it, even from the greatest distances.\n\nWithout Elvers, would the Eels succumb?\nIt's an unusual way to depend on reproduction."
+mlog.SquallEel.story = "It is blind...\n\nYet it sees.\nNot by sensing movement through the ground, nor by hearing clues, but rather by the Elvers they protect.\n\nThe Elvers will chant to the Eel, even from the greatest distances.\n\nWithout Elvers, would the Eels succumb?\nIt's an unusual symbiosis."
 mlog.SquallEel.statHP = 1100
 mlog.SquallEel.statDamage = 28
-mlog.SquallEel.statSpeed = 3
+mlog.SquallEel.statSpeed = 0
 mlog.SquallEel.sprite = sprLogBook
 mlog.SquallEel.portrait = sprPortrait
 

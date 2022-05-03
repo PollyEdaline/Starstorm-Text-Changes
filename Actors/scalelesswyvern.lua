@@ -1413,13 +1413,14 @@ mcard.Wyvern.sprite =  spr.Nothing
 mcard.Wyvern.isBoss = true
 mcard.Wyvern.canBlight = false
 mcard.Wyvern.eliteTypes:add(elt.Blazing)
+
 --[[
 mlog.wyvern = MonsterLog.new("wyvern")
 MonsterLog.map[obj.Wyvern] = mlog.wyvern
 mlog.wyvern.displayName = "Scaleless Wyvern"
 mlog.wyvern.story = "Biggestest boi."
-mlog.wyvern.statHP = 1400
-mlog.wyvern.statDamage = 30
+mlog.wyvern.statHP = 2100
+mlog.wyvern.statDamage = 40
 mlog.wyvern.statSpeed = 1.3
 mlog.wyvern.sprite = sprLogBook
 mlog.wyvern.portrait = sprPortrait]]

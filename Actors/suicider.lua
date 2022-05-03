@@ -109,10 +109,10 @@ mcard.Suicider.canBlight = false
 mlog.Suicider = MonsterLog.new("Exploder")
 MonsterLog.map[obj.Suicider] = mlog.Suicider
 mlog.Suicider.displayName = "Exploder"
-mlog.Suicider.story = "Oh man, there's nothing I hate more than being chased down by these creatures. Although they can be easily dealt with alone; whenever they come in packs I'm better off running away. It's as if their entire bloodstream was filled with this viscous, acidic material that managed to dissolve the circuits of one of my drones with a single drop.\n\nI... really don't want to know what it would do to the human skin."
+mlog.Suicider.story = "There's nothing I hate more than being chased down by these creatures. Although they can be easily dealt with alone, whenever they come in packs, I'm better off running away. It's as if their entire bloodstream is filled with this viscous, acidic material that managed to dissolve the circuits of one of my drones with a single drop.\n\nI... really don't want to know what it would do to my skin."
 mlog.Suicider.statHP = 100
-mlog.Suicider.statDamage = 34
-mlog.Suicider.statSpeed = 1.1
+mlog.Suicider.statDamage = 17
+mlog.Suicider.statSpeed = 1.3
 mlog.Suicider.sprite = sprWalk
 mlog.Suicider.portrait = sprPortrait
 

@@ -421,9 +421,9 @@ mlog.SandCrabKing = MonsterLog.new("SandCrabKing")
 MonsterLog.map[obj.SandCrabKing] = mlog.SandCrabKing
 mlog.SandCrabKing.displayName = "Sand Crab King"
 mlog.SandCrabKing.story = "Biggest boi."
-mlog.SandCrabKing.statHP = 1400
+mlog.SandCrabKing.statHP = 1200
 mlog.SandCrabKing.statDamage = 30
-mlog.SandCrabKing.statSpeed = 1.3
+mlog.SandCrabKing.statSpeed = 0.8
 mlog.SandCrabKing.sprite = sprLogBook
 mlog.SandCrabKing.portrait = sprPortrait]]
 
