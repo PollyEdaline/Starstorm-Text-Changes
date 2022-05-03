@@ -33,14 +33,14 @@ SurvivorVariant.setLoadoutSkill(Templar, "Custom-Tuned Weapon",
 "Fire a bullet dealing &y&50% damage.", sprSkills)
 
 SurvivorVariant.setLoadoutSkill(Templar, "Consecration", 
-"Consume all charges and become consecrated, 
+[[Consume all charges and become consecrated, 
 &g&healing yourself&!& and dealing &y&Cryo damage&!&. 
 10 charges also grants an &b&attack and movement speed bonus&!&.
-Every slain enemy &y&adds a charge.", sprSkills, 2)
+Every slain enemy &y&adds a charge.]], sprSkills, 2)
 
 SurvivorVariant.setLoadoutSkill(Templar, "Heretic's End", 
-"Sweep in front with your ion longsword, dealing &y&550x2% damage&!&. 
-Cryo-affected kills grant &b&Frost Armor, reducing incoming damage and freezing enemies when hit.", sprSkills, 3)
+[[Sweep in front with your ion longsword, dealing &y&550x2% damage&!&. 
+Cryo-affected kills grant &b&Frost Armor, reducing incoming damage and freezing enemies when hit.]], sprSkills, 3)
 
 Templar.endingQuote = "..and so she left, illuminated with newly attained knowledge."
 
