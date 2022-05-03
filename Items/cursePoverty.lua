@@ -1,7 +1,7 @@
 local path = "Items/Resources/"
 
 it.CursePoverty = Item.new("Curse of Poverty")
-it.CursePoverty.pickupText = "Lose money every second." 
+it.CursePoverty.pickupText = "Lose gold every second." 
 it.CursePoverty.sprite = Sprite.load("CursePoverty", path.."Curse of Poverty.png", 1, 15, 15)
 itp.curse:add(it.CursePoverty)
 it.CursePoverty.color = "dk"

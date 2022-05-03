@@ -3,7 +3,7 @@ local path = "Items/Resources/"
 it.BrokenBT = Item.new("Broken Blood Tester")
 local sbrokenBT = Sound.load("BrokenBT", path.."brokenBT")
 local brokenBTDis = Sprite.load("brokenBTdisplay", path.."brokenBTdis.png", 1, 3, 3)
-it.BrokenBT.pickupText = "Earn money when healing." 
+it.BrokenBT.pickupText = "Earn gold when healing." 
 it.BrokenBT.sprite = Sprite.load("BrokenCBT", path.."Broken Blood Tester.png", 1, 14, 10)
 it.BrokenBT:setTier("uncommon")
 it.BrokenBT:setLog{

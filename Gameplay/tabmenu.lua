@@ -43,7 +43,7 @@ local items = {}
 		{name = "Energy Cell", maxStack = 4, info = "Attack speed increases in relation to remaining health.", stackInfo = "+20% attack speed."},
 		{name = "Filial Imprinting", maxStack = nil, info = "Hatch a creature which drops a buff every 20 seconds.", stackInfo = "+1 creature."},
 		{name = "Frost Relic", maxStack = nil, info = "Slaying enemies surrounds you with 3 icicles. Each icicle deals 33% damage.", stackInfo = "+1 icicle."},
-		{name = "Golden Gun", maxStack = nil, info = "Deal additional damage based on money, up to 40% at 700 money (scales over time).", stackInfo = "halves money amount needed for max damage."},
+		{name = "Golden Gun", maxStack = nil, info = "Deal additional damage based on gold, up to 40% at 700 gold (scales over time).", stackInfo = "halves gold amount needed for max damage."},
 		{name = "Guardian's Heart", maxStack = nil, info = "+60 shield. Recharges after 7 seconds out of combat.", stackInfo = "+60 shield."},
 		{name = "Harvester's Scythe", maxStack = nil, info = "+5% Critical Strike chance. Heal 8 HP on Critical Strikes.", stackInfo = "+5% Critical Strike chance, +2 HP."},
 		{name = "Hopoo Feather", maxStack = nil, info = "Gain an additional jump.", stackInfo = "+1 jump."},
@@ -54,7 +54,7 @@ local items = {}
 		{name = "Prison Shackles", maxStack = nil, info = "Slow enemies by 20% on hit.", stackInfo = "+0.5 seconds duration."},
 		{name = "Red Whip", maxStack = 14, info = "+80% movement speed upon leaving combat for 1.5 seconds.", stackInfo = "+50% movement speed."},
 		{name = "Rusty Jetpack", maxStack = 15, info = "Halves gravity, +10% jump height.", stackInfo = "+10% jump height."},
-		{name = "Smart Shopper", maxStack = nil, info = "+25% money from enemies.", stackInfo = "+25% money."},
+		{name = "Smart Shopper", maxStack = nil, info = "+25% gold from enemies.", stackInfo = "+25% gold."},
 		{name = "Time Keeper's Secret", maxStack = 8, info = "Stops time for 3 seconds upon reaching critical health.", stackInfo = "+1 second."},
 		{name = "Tough Times", maxStack = nil, info = "Increases Armor by 14.", stackInfo = "+14 Armor."},
 		{name = "Toxic Centipede", maxStack = nil, info = "Infect an enemy on touch, dealing 50% DPS.", stackInfo = "increases damage."},
@@ -96,7 +96,7 @@ local items = {}
 
 		{name = "Small Enigma", maxStack = nil, info = "Reduces cooldown of use items by 5%.", stackInfo = "+5% cooldown reduction."},
 		{name = "Keycard", maxStack = 4, info = nil, stackInfo = nil},
-		{name = "White Undershirt (M)", maxStack = nil, info = "Increases Armor by 3.", stackInfo = "Doesn't stack.'"},
+		{name = "White Undershirt (M)", maxStack = nil, info = "Increases Armor by 3.", stackInfo = "+3 Armor.'"},
 
 		-- STARSTORM ITEMS
 		{name = "Detritive Trematode", maxStack = 35, info = "Enemies receive damage over time upon dropping below 3% health.", stackInfo = "increases health threshold."},
@@ -130,7 +130,7 @@ local items = {}
 		{name = "Watch Metronome", maxStack = nil, info = "Standing still for up to 4 seconds charges bonus movement speed for up to 2 seconds.", stackInfo = "+2 second duration."},
 		{name = "Cryptic Source", maxStack = nil, info = "Changing direction creates bursts of energy that deal 70% damage.", stackInfo = "+55% damage."},
 		{name = "Field Accelerator", maxStack = 20, info = "Teleporters charge 100% faster when no enemies are around.", stackInfo = "+100% speed."},
-		{name = "Gold Medal", maxStack = 10, info = "Spending money heals you over 5 seconds.", stackInfo = "+2 seconds."},
+		{name = "Gold Medal", maxStack = 10, info = "Spending gold heals you over 5 seconds.", stackInfo = "+2 seconds."},
 		{name = "Hunter's Sigil", maxStack = nil, info = "Standing still increases Armor by 15 and Critical Strike chance by 25%.", stackInfo = "+10 Armor, +20% Critical Strike chance."},
 		{name = "Man-o'-war", maxStack = nil, info = "Slaying enemies creates an electric discharge dealing 70% damage.", stackInfo = "+40% damage."},
 		{name = "Vaccine", maxStack = 7, info = "20% chance to negate debuffs.", stackInfo = "Increases chance multiplicatively."},
@@ -175,7 +175,7 @@ local items = {}
 		{name = "Thriving Growth", maxStack = 1, info = "Nearby enemy deaths sprout flowers which heal and buff you.", stackInfo = "Doesn't stack."},
 		{name = "Oracle's Ordeal", maxStack = 1, info = "Points of interest are pointed at by arrows.", stackInfo = "Doesn't stack."},
 		{name = "Bleeding Contract", maxStack = nil, info = "Restart the stage on death. Consumed on activation.", stackInfo = "+1 use."},
-		{name = "Nucleus Gems", maxStack = nil, info = "Money drops become sharp gems, dealing 25% damage on contact with enemies.", stackInfo = "Doesn't stack."},
+		{name = "Nucleus Gems", maxStack = nil, info = "Gold drops become sharp gems, dealing 25% damage on contact with enemies.", stackInfo = "Doesn't stack."},
 		{name = "Remuneration", maxStack = nil, info = "Each stage entry offers you three choices.", stackInfo = "Doesn't stack."},
 		{name = "All-Holding Hand", maxStack = nil, info = "Activating the teleporter offers you a random super-buff.", stackInfo = "Doesn't stack."},
 		
@@ -184,7 +184,7 @@ local items = {}
 		{name = "Curse of Impairment", maxStack = nil, info = "33% chance to miss an attack.", stackInfo = "Increases chances multiplicatively."},
 		{name = "Curse of Misfortune", maxStack = 2, info = "Reduce the rarity of nearby items, rerolling them.", stackInfo = "Items always reroll at common rarity."},
 		{name = "Curse of Mortality", maxStack = nil, info = "Consecutive hits deal more damage to you.", stackInfo = "Increases time frame for consecutive hits."},
-		{name = "Curse of Poverty", maxStack = nil, info = "Lose money every second.", stackInfo = "Increases amount of money lost."}
+		{name = "Curse of Poverty", maxStack = nil, info = "Lose gold every second.", stackInfo = "Increases amount of gold lost."}
 	}
 	
 	if disabledstacks then
