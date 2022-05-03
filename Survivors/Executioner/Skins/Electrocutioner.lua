@@ -24,7 +24,7 @@ SurvivorVariant.setDescription(Electrocutioner, "The &y&Electrocutioner&!& manip
 local sprSkill = Sprite.load("ElectrocutionerSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("ElectrocutionerShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Electrocutioner, "Deadly Voltage", "Shoot lightning forward dealing &y&200% damage per second.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Electrocutioner, "Deadly Voltage", "Shoot lightning forward, dealing &y&200% damage per second.", sprSkill)
 
 Electrocutioner.endingQuote = "..and so he left, with a spark of uncertainty."
 

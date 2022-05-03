@@ -30,9 +30,14 @@ local sShoot2b = Sound.find("NemesisExecutionerShoot2b", "Starstorm")
 local sShoot4a = Sound.find("NemesisExecutionerShoot4a", "Starstorm")
 local sShoot4b = Sound.find("NemesisExecutionerShoot4b", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(NExecutioner, "Chaotic Energy", "Materialize 3 projectiles, each dealing &y&90% damage on impact.", sprSkills)
-SurvivorVariant.setLoadoutSkill(NExecutioner, "Puppeteer", "Unearth ally ion minions which attack foes for &y&50% damage&!&. Every slayed enemy &y&adds a charge.", sprSkills, 3)
-SurvivorVariant.setLoadoutSkill(NExecutioner, "Reaper", "Charge and slash a projected scythe forwards for &y&900% damage.", sprSkills, 7)
+SurvivorVariant.setLoadoutSkill(NExecutioner, "Chaotic Energy", 
+"Materialize 3 projectiles, each dealing &y&90% damage&!& on impact.", sprSkills)
+
+SurvivorVariant.setLoadoutSkill(NExecutioner, "Puppeteer", 
+"Unearth allied ion minions which attack foes for &y&50% damage&!&. Every slain enemy &y&adds a charge.", sprSkills, 3)
+
+SurvivorVariant.setLoadoutSkill(NExecutioner, "Reaper", 
+"Charge forward and slash with a projected scythe for &y&900% damage.", sprSkills, 7)
 
 NExecutioner.endingQuote = "..and so he left, fading into the unknown."
 
@@ -70,11 +75,11 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkills, 1, 60)
 		player:setSkill(2,
 		"Puppeteer",
-		"Unearth ally ion minions which attack foes for 50% damage. Every slayed enemy adds a charge.",
+		"Unearth allied ion minions which attack foes for 50% damage.",
 		sprSkills, 2, 60 * 5)
 		player:setSkill(4,
 		"Reaper",
-		"Slash a projected scythe forwards for 900% damage.",
+		"Slash forward with a projected scythe for 900% damage.",
 		sprSkills, 7, 60 * 9)
 		
 		tcallback.register("onPlayerHUDDraw", onPlayerHUDDrawCall)
@@ -90,7 +95,7 @@ survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == NExecutioner then
 		player:setSkill(4,
 			"Abyssal Reaper",
-			"Slash a projected scythe forwards for 900% damage, fearing surviving enemies.",
+			"Slash forward with a projected scythe for 900% damage, fearing surviving enemies.",
 			sprSkills, 8,
 			9 * 60
 		)

@@ -43,9 +43,9 @@ executioner.loadoutSprite = Sprite.load("Executioner_Select", path.."select", 17
 -- Selection description
 executioner:setLoadoutInfo(
 [[The &y&Executioner&!& is a mobile fighter who specializes in counting heads.
-Using Ion projectors, the Executioner fabricates illusions which cause foes to
-run away in fear, while also projecting an axe to take out the strongest enemies. 
-Make sure to chain kills with &y&Ion burst&!& and &y&Execution&!& to keep the damage pouring.]], sprSkills3)
+Using ion projectors, the Executioner fabricates illusions which cause foes to
+run away in fear, and an axe to take out the strongest enemies. Make sure to 
+chain kills with &y&Ion burst&!& and &y&Execution&!& to keep the damage flowing.]], sprSkills3)
 
 -- Skill descriptions
 
@@ -54,16 +54,17 @@ executioner:setLoadoutSkill(1, "Pistol",
 
 executioner:setLoadoutSkill(2, "Ion Burst",
 [[Fire ionized bullets for &y&300% damage&!& each.
-Every slayed enemy &y&adds a bullet.]])
+Every slain enemy &y&adds a bullet.]])
 
 executioner:setLoadoutSkill(3, "Crowd Dispersion",
 [[&y&Dash forward&!& and &y&fear nearby enemies&!&.
 You &b&cannot be hit&!& while dashing.]])
 
 executioner:setLoadoutSkill(4, "Execution",
-[[Launch into the air, and slam down with a projected axe.
+[[Launch into the air and slam down with a projected axe.
 &y&Deals less damage the more enemies are hit.
-&y&(Max damage of 1500% on single target).]])
+&y&Max damage of 1500% on single target.
+Successful kills &b&reduce all cooldowns by one second.]])
 
 -- Color of highlights during selection
 executioner.loadoutColor = Color.fromHex(0xB5D6F2)
@@ -101,10 +102,10 @@ executioner:addCallback("init", function(player)
 	player:setSkill(2, "Ion Burst", "Fire all your ion bullets of 300% damage each.",
 	sprSkills, 2, 2 * 60)
 		
-	player:setSkill(3, "Crowd Dispersion", "Dash causing nearby enemies to become afraid.",
+	player:setSkill(3, "Crowd Dispersion", "Dash forward and fear enemies.",
 	sprSkills, 7, 7 * 60)
 		
-	player:setSkill(4, "Execution", "Bash an Ion Axe, dealing a maximum of 1500% damage. The more enemies are hit the lesser damage is dealt. Successful executions reduce all cooldowns by one second.",
+	player:setSkill(4, "Execution", "Leap up and slam down with an axe, dealing 1500% damage to one target, less to fewer. Kills reduce cooldowns by 1 second.",
 	sprSkills, 8, 8 * 60)
 end)
 
@@ -118,7 +119,7 @@ end)
 executioner:addCallback("scepter", function(player)
 	player:setSkill(4,
 		"Crowd Execution",
-		"Bash an Ion Axe fearing close enemies while dealing 1500% damage. Successful executions reduce all cooldowns by one second.",
+		"Leap up and slam down with an axe, dealing 1500% damage to one target and fearing enemies, less to fewer. Kills reduce cooldowns by 1 second.",
 		sprSkills, 9,
 		9 * 60
 	)

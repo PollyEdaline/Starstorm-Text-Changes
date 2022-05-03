@@ -19,7 +19,7 @@ local Templar = SurvivorVariant.new(survivor, "Templar", sprSelect, {
 	shoot5 = Sprite.load("TemplarShoot5", path.."Shoot5", 16, 15, 26),
 }, Color.fromHex(0x6B94DB))
 SurvivorVariant.setInfoStats(Templar, {{"Strength", 7}, {"Vitality", 5}, {"Toughness", 6}, {"Agility", 6}, {"Difficulty", 5}, {"Faith", 7}})
-SurvivorVariant.setDescription(Templar, "The &y&Templar&!& carves her own path towards a hidden truth, and the planet won't hold her back. Each kill earns templar a charge.")
+SurvivorVariant.setDescription(Templar, "The &y&Templar&!& carves her own path towards a hidden truth, and the planet won't hold her back.")
 Templar.tag = "Comission"
 
 local sprSkills = Sprite.load("TemplarSkills", path.."SkillsLoadout", 3, 0, 0)
@@ -29,9 +29,18 @@ local sShoot2 = Sound.load("TemplarShoot2",  path.."shoot2")
 local sShoot4_1 = Sound.load("TemplarShoot4_1",  path.."shoot4_1")
 local sShoot4_2 = Sound.load("TemplarShoot4_2",  path.."shoot4_2")
 
-SurvivorVariant.setLoadoutSkill(Templar, "Custom Tuned Weapon", "Fire a bullet with high firerate dealing &y&50% damage.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Templar, "Consecration", "Consume all charges and become consecrated, healing yourself and dealing &y&Cryo damage.&!& 10 charges also grants an &b&attack and movement speed bonus.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Templar, "Heretic's End", "The Templar uses her ion longsword to sweep in front of her &y&dealing 550x2% damage.&!& Cryo affected kills give the Templar &b&Frost Armor, reducing incoming damage and freezing enemies when hit.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Templar, "Custom-Tuned Weapon", 
+"Fire a bullet dealing &y&50% damage.", sprSkills)
+
+SurvivorVariant.setLoadoutSkill(Templar, "Consecration", 
+"Consume all charges and become consecrated, 
+&g&healing yourself&!& and dealing &y&Cryo damage&!&. 
+10 charges also grants an &b&attack and movement speed bonus&!&.
+Every slain enemy &y&adds a charge.", sprSkills, 2)
+
+SurvivorVariant.setLoadoutSkill(Templar, "Heretic's End", 
+"Sweep in front with your ion longsword, dealing &y&550x2% damage&!&. 
+Cryo-affected kills grant &b&Frost Armor, reducing incoming damage and freezing enemies when hit.", sprSkills, 3)
 
 Templar.endingQuote = "..and so she left, illuminated with newly attained knowledge."
 
@@ -45,15 +54,15 @@ callback.register("onSkinInit", function(player, skin)
 			player:survivorSetInitialStats(102, 12, 0.012)
 		end
 		player:setSkill(1,
-		"Custom Tuned Weapon",
-		"Fire a bullet with high firerate dealing 60% damage.",
+		"Custom-Tuned Weapon",
+		"Fire a bullet dealing 50% damage.",
 		sprSkills2, 1, 5)
 		player:setSkill(2,
 		"Consecration",
-		"Templar becomes Consecrated, healing herself and dealing Cryo damage. Cryo slows enemies down. At maximum charges also grants an attack and movement speed bonus.",
+		"Become consecrated, healing yourself and dealing Cryo damage. 10 charges grants attack and move speed. Every slain enemy adds a charge.",
 		sprSkills2, 2, 8 * 60)
 		player:setSkill(4,
-		"Heretic's End", "The Templar uses her ion longsword to sweep in front of her dealing 550x2% damage. Cryo affected kills give the Templar Frost Armor, reducing incoming damage and freezing enemies when hit.",
+		"Heretic's End", "Sweep in front with your ion longsword, dealing 550x2% damage. Cryo-affected kills grant Frost Armor, reducing damage and freezing enemies.",
 		sprSkills2, 5, 9 * 60)
 	end
 end)
@@ -66,7 +75,7 @@ end)
 survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == Templar then
 		player:setSkill(4,
-		"Heretic's Demise", "The Templar uses her ion longsword to sweep in front of her dealing 650x2% damage. Cryo affected kills give the Templar Frost Armor, reducing incoming damage and freezing enemies when hit.",
+		"Heretic's Demise", "Sweep in front with your ion longsword, dealing 650x2% damage. Cryo-affected kills grant Frost Armor, reducing damage and freezing enemies.",
 		sprSkills2, 6, 9 * 60)
 	end
 end)
