@@ -8,7 +8,7 @@ it.BabyToys:setTier("rare")
 it.BabyToys:setLog{
 	group = "rare_locked",
 	description = "Go back 3 levels while keeping all your stats.",
-	story = "Hey sweetheart! I'm sorry I couldn't go, but please, please take these for your baby. He's so little but one day he could be the next big UES captain, who knows! I really want to see you two as soon as possible, things have been rough over here since I got ill and I don't want to put your baby in danger. Love you, please, PLEASE take care!",
+	story = "Hey sweetheart! I'm sorry I couldn't go, but please, please take these for your baby. He's so little, but one day he could be the next big UES captain, who knows! I really want to see you two as soon as possible, things have been rough over here since I got ill and I don't want to put your baby in danger. Love you, please, PLEASE take care!",
 	destination = "431,\nGolden Shore,\nEarth",
 	date = "06/07/2056"
 }

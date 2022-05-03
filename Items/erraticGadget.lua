@@ -4,13 +4,13 @@ it.ErraticGadget = Item.new("Erratic Gadget")
 local objErraticGadget = Object.new("ErraticGadget")
 local sErraticGadget = Sound.load("ErraticGadget", path.."erraticGadget")
 objErraticGadget.sprite = Sprite.load("ErraticGadgetDisplay", path.."erraticGadgetdis.png", 4, 5, 5)
-it.ErraticGadget.pickupText = "Critical strikes deal extra damage." 
+it.ErraticGadget.pickupText = "Critical Strikes deal extra damage." 
 it.ErraticGadget.sprite = Sprite.load("ErraticGadget", path.."Erratic Gadget.png", 1, 11, 15)
 it.ErraticGadget:setTier("rare")
 it.ErraticGadget:setLog{
 	group = "rare_locked",
-	description = "Critical strikes deal &y&50% extra damage.",
-	story = "Pulse weapons are my favorite in the battlefield, and they might now be your's too! Please take this as I can assure you it will grant you a huge advantage over your enemies if you use it wisely. Always go for the head, leave those [REDACTED] with no chances of survival. Show them what we're made of.\n-Uncle Hoogehn",
+	description = "Critical Strikes deal &y&50% extra damage.",
+	story = "Pulse weapons are my favorite in the battlefield, and now they might be yours too! Please take this, as I can assure you it will grant you a huge advantage over your enemies if you use it wisely. Always go for the head, leave those [REDACTED] with no chances of survival. Show them what we're made of.\n-Uncle Hoogehn",
 	priority = "&y&Volatile&!&",
 	destination = "S159,\nNoev Londa,\nVenus",
 	date = "01/15/2056"

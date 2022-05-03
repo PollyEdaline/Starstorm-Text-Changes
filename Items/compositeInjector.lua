@@ -3,13 +3,13 @@ local path = "Items/Resources/"
 
 it.CompositeInjector = Item.new("Composite Injector")
 local sCompositeInjector = Sound.load("CompositeInjector", path.."compositeInjector")
-it.CompositeInjector.pickupText = "Ability to merge a use item." 
+it.CompositeInjector.pickupText = "You can merge two use items." 
 it.CompositeInjector.sprite = Sprite.load("CompositeInjector", path.."Composite Injector.png", 1, 12, 14)
 it.CompositeInjector:setTier("rare")
 it.CompositeInjector:setLog{
 	group = "rare_locked",
-	description = "Ability to &y&merge a use item.",
-	story = "Technology is getting weird, like seriously weird. There's some things you just can't do these days without one of these, so use it wisely and don't break it like all the other stuff I send you (sigh).\n\nOh, I almost forget! Remember to tell your uncle about the... you-know-what. He's naive but he has to know sooner or later.",
+	description = "Merge one dropped use item with the one equipped.",
+	story = "Technology is getting weird, like seriously weird. There's some things you just can't do these days without one of these, so use it wisely and don't break it like all the other stuff I send you (sigh).\n\nOh, I almost forgot! Remember to tell your uncle about the... you-know-what. He's naive, but he has to know sooner or later.",
 	destination = "Mimnat H3,\nOfeee St.,\nEarth",
 	date = "02/02/2056"
 }

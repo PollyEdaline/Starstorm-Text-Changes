@@ -3,13 +3,13 @@ local path = "Items/Resources/"
 it.BrokenBT = Item.new("Broken Blood Tester")
 local sbrokenBT = Sound.load("BrokenBT", path.."brokenBT")
 local brokenBTDis = Sprite.load("brokenBTdisplay", path.."brokenBTdis.png", 1, 3, 3)
-it.BrokenBT.pickupText = "Gain money on healing." 
+it.BrokenBT.pickupText = "Earn money when healing." 
 it.BrokenBT.sprite = Sprite.load("BrokenCBT", path.."Broken Blood Tester.png", 1, 14, 10)
 it.BrokenBT:setTier("uncommon")
 it.BrokenBT:setLog{
 	group = "uncommon",
-	description = "&y&Gain $2&!& for every &g&15 health points regenerated&!&.",
-	story = "Look, I already told you in a message but the UES requires info on all deliveries so let me just make this clear:\nWhen I ordered this Blood Tester unit (which was not cheap at all!) it arrived and functioned perfectly fine but just two days after normal use it began THROWING OUT the coins instead of, you know... RECEIVING THEM??? Like, all my customers just started staying in front of it, harming themselves just so your [REDACTED] machine made them rich.\nI want my money back, all of it, I'm really sorry but I'm never buying from you again, I wish you luck but you really have to check your quality control processes.",
+	description = "&y&Earn $2&!& for every &g&15 HP regenerated&!&.",
+	story = "Look, I already told you in a message, but the UES requires info on all deliveries so let me just make this clear:\nWhen I ordered this Blood Tester unit (which was not cheap at all!), it arrived and functioned perfectly fine. But just two days after normal use it began THROWING OUT the coins instead of, you know... RECEIVING THEM??? Like, all my customers just started staying in front of it, hitting themselves just so your [REDACTED] machine made them rich.\nI want my money back, all of it. I'm really sorry but I'm never buying from you again. I wish you luck but you really have to check your quality control processes.",
 	destination = "#11 Looeng St.,\nTRR,\nEarth",
 	date = "05/22/2056"
 }

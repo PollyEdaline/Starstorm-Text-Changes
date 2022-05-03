@@ -11,7 +11,7 @@ itp.enigma:add(it.BackThruster)
 it.BackThruster:setLog{
 	group = "use",
 	description = "&b&Gain an acceleration boost for 5 seconds.",
-	story = "What to do, what to do? I know what I must do but I don't know if I should. Anyhow, This goes right into the back of the mainframe, model Epsilon-2. The problem is that I couldn't get it to do anything past the installation process so maybe you can install it for me, sent the mainframe in another shipment.",
+	story = "What to do, what to do? I know what I must do but I don't know if I should. Anyhow, this goes right into the back of the mainframe, model Epsilon-2. The problem is that I couldn't get it to do anything past the installation process, so maybe you can install it for me. Sent the mainframe in another shipment.",
 	destination = "#55,\nAce Home,\nMars",
 	date = "05/15/2056"
 }

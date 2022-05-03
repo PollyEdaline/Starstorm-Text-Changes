@@ -5,13 +5,13 @@ it.CrowningValiance = Item.new("Crowning Valiance")
 local sCrownValiance = Sound.load("CrowningValiance", path.."crowningValiance")
 objCrownValiance = Object.new("CrowningValianceDisplay")
 objCrownValiance.sprite = Sprite.load("CrowningValianceDisplay", path.."crowningValiancedis.png", 2, 4, 4)
-it.CrowningValiance.pickupText = "All stats up when fighting bosses." 
+it.CrowningValiance.pickupText = "Increases all stats when fighting bosses." 
 it.CrowningValiance.sprite = Sprite.load("CrowningValiance", path.."Crowning Valiance.png", 1, 11, 11)
 it.CrowningValiance:setTier("uncommon")
 it.CrowningValiance:setLog{
 	group = "uncommon_locked",
-	description = "&y&All stats up&!& when a boss is nearby.",
-	story = "Remarkable object recovered from tomb #24, it is engraved in a foreign language and seems to have carried a meaning of bravery or heroism. There's no signs of it being used for any functional purpose, could have been merely for identification, although our devices display a dense flux of energy from within, please confirm and fully detail the results before the deadline.",
+	description = "&y&All stats are increased&!& when a boss is nearby.",
+	story = "Remarkable object recovered from tomb #24. It is engraved in a foreign language and seems to have carried a meaning of bravery or heroism. There are no signs of it being used for any functional purpose. Could have been merely for identification, although our devices display a dense flux of energy from within. Please confirm and fully detail the results before the deadline.",
 	destination = "Yoss H1,\nSml,\nSaturn",
 	date = "07/17/2056"
 }

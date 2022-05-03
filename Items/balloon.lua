@@ -7,8 +7,8 @@ it.Balloon.sprite = Sprite.load("Balloon", path.."Balloon.png", 1, 10, 14)
 it.Balloon:setTier("uncommon")
 it.Balloon:setLog{
 	group = "uncommon",
-	description = "&b&Lower your gravity by 34%&!&.",
-	story = "When I was younger I used to love balloons, they are quite fun to watch in places with an atmosphere, however this one is of special value to me, as it was of the first ones to be made out of reinforced rubber, back in the '22s. I hope you take care of it, it might cost a fortune in a few more years (if it's still floating, of course!).",
+	description = "&b&Lower your gravity by 30%&!&.",
+	story = "When I was younger I used to love balloons. They're' quite fun to watch in places with an atmosphere. However, this one is of special value to me, as it was of the first ones to be made out of reinforced rubber, back in the '22s. I hope you take care of it, it might cost a fortune in a few more years (if it's still floating, of course!).",
 	priority = "&g&Priority/Fragile&!&",
 	destination = "55 Mo.,\nPaare Plaza,\nEarth",
 	date = "06/31/2056"

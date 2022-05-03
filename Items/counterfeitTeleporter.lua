@@ -3,7 +3,7 @@ local path = "Items/Resources/"
 it.CounterfeitTeleporter = Item.new("Counterfeit Teleporter")
 local sCounterfeitTeleporter = Sound.load("CounterfeitTeleporter", path.."counterfeitTeleporter")
 sprCounterfeitTeleporter = Sprite.load("CounterfeitTeleporter", path.."counterfeitTeleporterdis.png", 2, 22, 34)
-it.CounterfeitTeleporter.pickupText = "Place a teleporter (Single use)." 
+it.CounterfeitTeleporter.pickupText = "Place a teleporter (single use)." 
 it.CounterfeitTeleporter.sprite = Sprite.load("CounterfeitTeleporterItem", path.."Counterfeit Teleporter.png", 2, 19, 11)
 it.CounterfeitTeleporter.isUseItem = true
 it.CounterfeitTeleporter.useCooldown = 20
@@ -11,7 +11,7 @@ it.CounterfeitTeleporter:setTier("use")
 it.CounterfeitTeleporter:setLog{
 	group = "use",
 	description = "&y&Place a teleporter anywhere&!&, once.",
-	story = "[DATA ERROR!] No indexed information was found for this package in the UES database, please contact a supervisor.",
+	story = "[DATA ERROR!] No indexed information was found for this package in the UES database. Please contact a supervisor.",
 	destination = "[INVALID VALUE]",
 	date = "[INVALID VALUE]"
 }

@@ -2,14 +2,14 @@ local path = "Items/Resources/"
 
 it.BleedingContract = Item.new("Bleeding Contract")
 local sBleedingContract = Sound.load("BleedingContract", path.."bleedingContract")
-it.BleedingContract.pickupText = "Deal settled." 
+it.BleedingContract.pickupText = "Contract sealed." 
 it.BleedingContract.sprite = Sprite.load("BleedingContract", path.."Bleeding Contract.png", 1, 16, 16)
 itp.sibylline:add(it.BleedingContract)
 it.BleedingContract.color = Color.fromHex(0xFFCCED)
 it.BleedingContract:setLog{
 	group = "end",
 	description = "Dying &y&restarts the stage. Consumed on activation.",
-	story = "I knew what I had given up, in the end what only mattered was my prevalence, everything else was secondary, even if that meant I had to leave a husk of me behind.",
+	story = "I knew what I had given up. In the end, all that mattered was my prevalence. Everything else was secondary, even if that meant I had to leave a part of me behind.",
 	priority = "&"..it.BleedingContract.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

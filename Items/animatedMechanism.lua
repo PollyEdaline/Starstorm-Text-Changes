@@ -1,14 +1,14 @@
 local path = "Items/Resources/"
 
 it.AnimatedMechanism = Item.new("Animated Mechanism")
-it.AnimatedMechanism.pickupText = "Passively shoot at nearby enemies, shoot faster at low health." 
+it.AnimatedMechanism.pickupText = "Passively shoot at nearby enemies. Shoot faster at low health." 
 it.AnimatedMechanism.sprite = Sprite.load("Animated Mechanisme", path.."Animated Mechanism.png", 1, 15, 15)
 itp.legendary:add(it.AnimatedMechanism)
 it.AnimatedMechanism.color = "y"
 it.AnimatedMechanism:setLog{
 	group = "boss",
-	description = "Passively &y&shoot at nearby enemies dealing 200% damage&!&. Shoots faster at low health.",
-	story = "What I find interesting is how adaptable this entire planet is. Everything manages to evolve at rates that I was not expecting at all. To me, this is a great reminder of how incredibly supernatural it has all been.\nAaaand here I am talking to a piece of metal, again...",
+	description = "Shoot a projectile at the nearest enemy every 3 seconds for &y&200% damage&!&. Shoots faster at low health.",
+	story = "What I find interesting is how adaptable this entire planet is. Everything manages to evolve at an alarming rate. To me, this is a great reminder of how incredibly supernatural it has all been.\nAaaand here I am talking to a piece of metal, again...",
 	priority = "&b&Field-Found&!&",
 	destination = "Old Reliquary,\n4C Plaza,\nEarth",
 	date = "Unknown"

@@ -9,7 +9,7 @@ it.Augury.color = Color.fromHex(0xFFCCED)
 it.Augury:setLog{
 	group = "end",
 	description = "Taking damage charges a &y&hidden power.",
-	story = "A voice began to whisper my name, over and over again. It also told me about them.\nI don't think it was a warning, it was presage.",
+	story = "A voice began to whisper my name, over and over again. It also told me about them.\nI don't think it was a warning, it was a presage.",
 	priority = "&"..it.Augury.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

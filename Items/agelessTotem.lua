@@ -11,7 +11,7 @@ itp.elite:add(it.AgelessTotem)
 it.AgelessTotem:setLog{
 	group = "use_locked",
 	description = "&y&Become an aspect of ethereality.",
-	story = "Just as words stop making sense the more you repeat them, time does. Reliving the same moment, over and over again. I thought I would lose my sanity, but all I felt was a slow, ethereal descent into what I now see as the true eternity.",
+	story = "Just as words stop making sense the more you repeat them, so too does time. Reliving the same moment, over and over again. I thought I would lose my sanity, but all I felt was a slow, ethereal descent into what I now see as the true eternity.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

@@ -4,13 +4,13 @@ it.ArmBackpack = Item.new("Armed Backpack")
 local sArmBack = Sound.load("ArmedBackPack", path.."armedBackpack")
 local sprArmBackSparks1 = Sprite.load("ArmedBackpack_Sparks1", path.."armbacksparks1", 4, 10, 8)
 local sprArmBackSparks2 = Sprite.load("ArmedBackpack_Sparks2", path.."armbacksparks2", 4, 0, 8)
-it.ArmBackpack.pickupText = "Chance of firing an additional bullet backwards." 
+it.ArmBackpack.pickupText = "Chance of firing a bullet behind you." 
 it.ArmBackpack.sprite = Sprite.load(path.."Armed Backpack.png", 1, 12, 14)
 it.ArmBackpack:setTier("common")
 it.ArmBackpack:setLog{
 	group = "common",
-	description = "&y&18.5%&!& chance of &y&firing an additional bullet&!& from your back.",
-	story = "Being secure is always important, I don't want you to get in danger so please wear this whenever you go out, specially in the canyons, there's a lot of thieves there!\nI'll send you some extra ammunition later this year, alright?",
+	description = "Attacks have an &y&18.5%&!& chance of &y&firing a bullet&!& behind you for &y&150% damage&!&.",
+	story = "Being secure is always important. I don't want you to get in trouble, so please wear this whenever you go out. 'Specially in the canyons, there's a lot of thieves there!\nI'll send you some extra ammunition later this year, alright?",
 	priority = "&y&Volatile&!&",
 	destination = "832B,\nHautenuit,\nEarth",
 	date = "11/7/2056"

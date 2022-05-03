@@ -6,8 +6,8 @@ it.CoffeeBag.sprite = Sprite.load("CoffeBag", path.."Coffee Bag", 1, 15, 15)
 it.CoffeeBag:setTier("common")
 it.CoffeeBag:setLog{
 	group = "common",
-	description = "Increases &b&movement speed by 10%&!& and &y&attack speed by 7%." ,
-	story = "Sleeeeeeeeeeepyheaaaaaaaaaaaaaaad idk why u say u dont like coffee its so gooooood for staying up. Ik ik theres other other ways to get hyped but oh boy I think u will dig this one, its my favorite!!! give it a try before yelling at me mmkay?",
+	description = "Increases &b&movement speed by 10%&!& and &y&attack speed by 7.5%." ,
+	story = "Sleeeeeeeeeeepyheaaaaaaaaaaaaaaad idk why u say u dont like coffee its so gooooood for staying up. ik ik theres other other ways to get hyped but oh boy i think u will dig this one, its my favorite!!! give it a try before yelling at me mmkay?",
 	destination = "n1,\nThe Capital,\nUES PRIME",
 	date = "05/22/2056"
 }

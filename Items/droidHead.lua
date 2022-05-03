@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.DroidHead = Item.new("Droid Head")
 local sDroidHead = Sound.load("DroidHead", path.."droidHead")
-it.DroidHead.pickupText = "Spawn a temporary drone on killing elite enemies." 
+it.DroidHead.pickupText = "Spawn a temporary drone when slaying elite enemies." 
 it.DroidHead.sprite = Sprite.load(path.."Droid Head.png", 1, 10, 13)
 it.DroidHead:setTier("rare")
 it.DroidHead:setLog{
 	group = "rare",
-	description = "Spawn an &!&attack drone&!& for &b&11 seconds&!& at each killed elite enemy.",
-	story = "This is the droid head for the model ER-14 that you requested, fully functional, it just requires wiring. These are quite hard to obtain these days given the whole RaCom controversy.\nDon't forget to disable the security protocols before handling, I don't think you want a hundred backup drones around your shop!\nIf you need any tools or pieces let me know.",
+	description = "Spawn an &!&attack drone&!& for &b&11 seconds&!& after slaying elite enemies.",
+	story = "This is the droid head for the model ER-14 that you requested. Fully functional, just requires wiring. These are quite hard to obtain these days, given the whole RaCom controversy.\nDon't forget to disable the security protocols before handling, I don't think you want a hundred backup drones around your shop!\nIf you need any tools or pieces let me know.",
 	destination = "RoboFix,\nSOL 1,\nMars",
 	date = "20/12/2056"
 }

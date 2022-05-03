@@ -2,13 +2,13 @@ local path = "Items/Resources/"
 
 it.DormFungus = Item.new("Dormant Fungus")
 local sDormFungus = Sound.load("DormantFungus", path.."dormantFungus")
-it.DormFungus.pickupText = "Regenerate health on movement." 
+it.DormFungus.pickupText = "Regenerate health while moving." 
 it.DormFungus.sprite = Sprite.load("DormantFungus", path.."Dormant Fungus.png", 1, 10, 14)
 it.DormFungus:setTier("common")
 it.DormFungus:setLog{
 	group = "common",
-	description = "While moving, &g&heal around 1% of your health&!& every 1.8 seconds.",
-	story = "When you commanded me to explore the fungal caves all I expected to find was... well, fungi of course, although I wasn't excited by any means this specimen caught my eye.\nIt seems to only grow around flowing water, and ever since I collected and contained this sample, both the colouration and the smell faded out quickly.\n\nI hope you can study it further.",
+	description = "Regenerates 2% of your total health every second while moving.",
+	story = "When you commanded me to explore the fungal caves all I expected to find was... well, fungi, of course. Though I wasn't excited by any means, this specimen caught my eye.\nIt seems to only grow around flowing water, and ever since I collected and contained this sample, both the colouration and the smell faded out quickly.\n\nI hope you can study it further.",
 	priority = "&g&Priority&!&",
 	destination = "Gate 1,\nModule 13,\nGea Station",
 	date = "11/01/2056"

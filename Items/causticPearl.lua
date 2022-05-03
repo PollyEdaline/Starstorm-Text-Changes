@@ -11,7 +11,7 @@ itp.elite:add(it.CausticPearl)
 it.CausticPearl:setLog{
 	group = "use_locked",
 	description = "&y&Become an aspect of corrosion.",
-	story = "Once I took the pearl I could not let go, it melted into my body leaving an endless, burning pain. Ever since that moment I was cursed, for I can no longer live the life I had. Everything I touch is gone, as I become entropy itself.",
+	story = "Once I took the pearl, I could not let go. It melted into my body, leaving an endless, burning pain. Everything I touch is gone, as I have become entropy itself.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

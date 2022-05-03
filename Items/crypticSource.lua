@@ -3,13 +3,13 @@ local path = "Items/Resources/"
 
 it.CrypticSource = Item.new("Cryptic Source")
 local cCrypticSource = Color.fromHex(0xD3F257)
-it.CrypticSource.pickupText = "Changing direction creates bursts of electricity." 
+it.CrypticSource.pickupText = "Changing direction creates bursts of energy." 
 it.CrypticSource.sprite = Sprite.load("CrypticSource", path.."Cryptic Source.png", 1, 14, 15)
 it.CrypticSource:setTier("uncommon")
 it.CrypticSource:setLog{
 	group = "uncommon",
-	description = "Changing direction &y&creates bursts of electricity that deal 65% damage.",
-	story = "From atoms to sentient beings, everything comes from energy, however this rather cryptic object seems to emanate energy on its own. High amounts of friction seem to trigger a chain reaction which makes it highly unstable, but also, a manipulable source of (infinite?) energy. Wether this will lead us to the utopian future we crave for is completely uncertain, but this completely changes our previous thoughts about the universe.\nUnless we're mistaken.",
+	description = "Changing direction &y&creates bursts of energy that deal 70% damage.",
+	story = "From atoms to sentient beings, everything comes from energy. However, this rather cryptic object seems to emanate energy on its own. High amounts of friction seem to trigger a chain reaction which makes it highly unstable. However, it may also be a manipulable source of (infinite?) energy. Whether this will lead us to the utopian future we crave for is completely uncertain, but this completely changes our previous thoughts about the universe.",
 	destination = "O32,\nLow End,\nEarth",
 	date = "03/30/2058"
 }

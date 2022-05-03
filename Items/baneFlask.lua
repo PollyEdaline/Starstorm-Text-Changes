@@ -6,8 +6,8 @@ it.BaneFlask.sprite = Sprite.load("BaneFlask", path.."Bane Flask", 1, 15, 15)
 it.BaneFlask:setTier("rare")
 it.BaneFlask:setLog{
 	group = "rare",
-	description = "Inflicts bane which &y&deals 30% damage every 2 seconds&!&. &y&Debuffs spread&!& on enemy death.",
-	story = "Our team has finally created a valuable product, incomparable to the ones before it. While the rival team has done nothing but dawdle and laze about, creating pointless tonics and useless barrels, we were successful in harvesting the deadliest property from this beast. We extracted the contagious toxin EBBA-33 and materialied this deadly compound which behaves similarly to a virus, with extremely contagious properties. However, our compound takes no time to begin spreading.\n\nI firmly believe no other laboratory will top this for the next century. We have made a large step in chemical warfare and we are just awaiting your command, sir.",
+	description = "Applies Bane, dealing &y&30% damage&!& every 2 seconds. &y&Debuffs spread&!& to nearby enemies when slain.",
+	story = "Our team has finally created a valuable product, incomparable to anything before it. While the rival team has done nothing but dawdle and laze about, creating pointless tonics and useless barrels, we were successful in harvesting the beast's deadliest property. We extracted the contagious toxin EBBA-33. It behaves similarly to a virus, and is extremely contagious. However, our compound takes no time to begin spreading.\n\nI firmly believe no other laboratory will top this for the next century. We have made a large step in chemical warfare. We only await your command, sir.",
 	priority = "&r&High Priority/Biological&!&",
 	destination = "Delta M,\nZeus Complex,\nPXP Central",
 	date = "2/10/2057"

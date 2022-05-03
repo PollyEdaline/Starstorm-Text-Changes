@@ -1,6 +1,6 @@
 if not global.rormlflag.ss_og_repairkit then
-it.DroneRepairKit.pickupText = "Repair all active drones. Create one if you have none."
-it.DroneRepairKit:setLog{description = "Repairs all drones to &g&full health. &b&Creates one if none is available."}
+it.DroneRepairKit.pickupText = "Repair all active drones. Create one if you don't have any'."
+it.DroneRepairKit:setLog{description = "Repairs all drones to &g&full health. &b&Creates one if none are available."}
 
 local droneSpawnFunc = setFunc(function(actor, parent)
 	actor:set("master", parent.id)

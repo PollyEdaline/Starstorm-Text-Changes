@@ -11,7 +11,7 @@ itp.enigma:add(it.CloakingHeadband)
 it.CloakingHeadband:setLog{
 	group = "use",
 	description = "&b&Become undetectable for 16 seconds.",
-	story = "Out of all things why is this a silly headband? A belt would have made much more sense, you know? Not to make a tantrum but this just feels off and unnecessary, specially knowing what's out in the market.\nI really can't let you get away with this as it is, reconsider before the end of this season.",
+	story = "Of all things, why is this a silly headband? A belt would have made much more sense, you know? Not to throw a tantrum, but this just feels off and unnecessary. 'Specially knowing what's out on the market.\nI really can't let you get away with this as it is, reconsider before the end of this season.",
 	destination = "Olmos Developments,\nNew Satt,\nEarth",
 	date = "11/10/2056"
 }

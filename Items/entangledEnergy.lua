@@ -8,7 +8,7 @@ it.EntangledEnergy.color = Color.fromHex(0xFFCCED)
 it.EntangledEnergy:setLog{
 	group = "end",
 	description = "Release a &y&lethal energy shock&!& to enemies when they group in front of you.",
-	story = "Surrounded by this spark of power I could only feel my mind blending with the elements that gave birth to my existence. I would not be stopped, or so I was compelled to think.",
+	story = "Surrounded by this spark of power, I could only feel my mind blending with the elements that gave birth to my existence. I would not be stopped.",
 	priority = "&"..it.EntangledEnergy.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

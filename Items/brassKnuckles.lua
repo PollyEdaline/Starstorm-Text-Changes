@@ -7,8 +7,8 @@ it.BrassKnuckles.sprite = Sprite.load("BrassKnuckles", path.."Brass Knuckles.png
 it.BrassKnuckles:setTier("common")
 it.BrassKnuckles:setLog{
 	group = "common",
-	description = "Deal &y&35% extra damage&!& to close enemies.",
-	story = "We found this at the crime scene, we need to check for DNA compatibility with the rest of the evidence. I still cannot believe they got away.\nNote that the back has some kind of symbol, perhaps it could give us a clue. I'll be heading to the west of [REDACTED], I know someone who can help us solve the case.",
+	description = "Deal &y&35% extra damage&!& to enemies at close range.",
+	story = "We found this at the crime scene. We need to check for DNA against the rest of the evidence. I still cant believe they got away.\nThe back has some kind of symbol, maybe that could give us a clue. I'll be heading to the west of [REDACTED], I know someone who can help us solve the case.",
 	priority = "&g&Priority&!&",
 	destination = "UESPD,\nE42,\nUES Halberd B2",
 	date = "03/01/2056"

@@ -1,15 +1,15 @@
 local path = "Items/Resources/"
 
 it.BeatingHeart = Item.new("Beating Heart")
-it.BeatingHeart.pickupText = "Alive as long as a fragment remains..." 
+it.BeatingHeart.pickupText = "Alive, as long as a fragment remains..." 
 it.BeatingHeart.sprite = Sprite.load("Beating Heart", path.."Beating Heart.png", 1, 15, 15)
 spr.BeatingHeartUsed = Sprite.load("Beating Heart Used", path.."Beating Heart Used.png", 1, 15, 15)
 itp.legendary:add(it.BeatingHeart)
 it.BeatingHeart.color = "y"
 it.BeatingHeart:setLog{
 	group = "boss",
-	description = "&y&Opportunity to reanimate after death.",
-	story = "My frail body was once more dependant. Not of a shield or any kind of armor, but a beating heart; to keep going, to have one last breath and reach the end.\nTo this time, I do not know if I made it out alive for my body was once more dependant.",
+	description = "&y&Get another chance at life.",
+	story = "My frail body was once more dependant. Not on a shield or any kind of armor, but a beating heart; to keep going, to have one last breath and reach the end.\nThis time, I do not know if I made it out alive. For my body was once more dependant.",
 	priority = "&b&Field-Found&!&",
 	destination = "#33,\nGate B,\nUES Delta",
 	date = "Unknown"

@@ -1,13 +1,13 @@
 local path = "Items/Resources/"
 
 it.DistinctiveStick = Item.new("Distinctive Stick")
-it.DistinctiveStick.pickupText = "Heal in teleporters' proximity." 
+it.DistinctiveStick.pickupText = "Heal near the teleporter." 
 it.DistinctiveStick.sprite = Sprite.load("DistinctiveStick", path.."Distinctive Stick.png", 1, 14, 13)
 it.DistinctiveStick:setTier("common")
 it.DistinctiveStick:setLog{
 	group = "common_locked",
-	description = "&g&Heal&!& while standing nearby a teleporter.",
-	story = "Darling, I have something special for you...\nThe other day on my mission I came across this, it caught my eye because it is unlike any of the branches I've seen in my life, this branch emanates a peculiar energy, it made me feel connected to nature in a way I could only have thought of being possible in fantasy stories, in honor of our aniversary I give it to you.\nI'll arrive home soon with an even greater present. Please, don't lose faith.",
+	description = "Grows a tree nearby Teleporters, &g&healing nearby players&!&.",
+	story = "Darling, I have something special for you...\nThe other day on my mission I came across this. It caught my eye because it's unlike any of the branches I've seen in my life! This branch excudes a peculiar energy. It made me feel connected to nature in a way I thought was only possible in stories! In honor of our anniversary, I'm giving it to you.\nI'll arrive home soon with an even greater present. Please, don't lose faith.",
 	destination = "Dreq Mineli,\nTesaft,\nEarth",
 	date = "01/15/2056"
 }
