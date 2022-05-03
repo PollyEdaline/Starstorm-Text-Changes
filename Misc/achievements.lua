@@ -354,7 +354,7 @@ local acRegen = Achievement.new("Regen")
 acRegen.requirement = 20000
 acRegen.deathReset = false
 acRegen.unlockText = "This item will now drop."
-acRegen.description = "Regenerate a total of 20,000 hp."
+acRegen.description = "Regenerate a total of 20,000 HP."
 acRegen:assignUnlockable(it.DistinctiveStick)
 if not acRegen:isComplete() then
 	table.insert(call.onPlayerStep, function(player)
@@ -444,7 +444,7 @@ local acIceTool = Achievement.new("IceTool")
 acIceTool.requirement = 1
 acIceTool.deathReset = true
 acIceTool.unlockText = "This item will now drop."
-acIceTool.description = "Travel a distance of 100,000m in a single run."
+acIceTool.description = "Travel a distance of 100,000 meters in a single run."
 acIceTool:assignUnlockable(it.IceTool)
 
 if not acIceTool:isComplete() then
@@ -462,7 +462,7 @@ local acRoulette = Achievement.new("Roulette")
 acRoulette.requirement = 3
 acRoulette.deathReset = false
 acRoulette.unlockText = "This item will now drop."
-acRoulette.description = "Loop back to the first stage thrice."
+acRoulette.description = "Loop back to the first stage three times."
 acRoulette:assignUnlockable(it.Roulette)
 
 if not acRoulette:isComplete() then
@@ -480,7 +480,7 @@ local acPoison = Achievement.new("Poison")
 acPoison.requirement = 1
 acPoison.deathReset = false
 acPoison.unlockText = "This item will now drop."
-acPoison.description = "Stand on a poison cloud for 4 consecutive seconds."
+acPoison.description = "Stand in a poison cloud for 4 consecutive seconds."
 acPoison:assignUnlockable(it.PoisonousGland)
 
 if not acPoison:isComplete() then
@@ -583,7 +583,7 @@ local acWillojelly = Achievement.new("willojelly")
 acWillojelly.requirement = 150
 acWillojelly.deathReset = false
 acWillojelly.unlockText = "This item will now drop."
-acWillojelly.description = "Slay 150 jellyfishes."
+acWillojelly.description = "Slay 150 Jellyfish."
 acWillojelly:assignUnlockable(it.Willojelly)
 
 if not acWillojelly:isComplete() then
@@ -597,7 +597,7 @@ local acStickyOverloader = Achievement.new("StickyOverloader")
 acStickyOverloader.requirement = 1
 acStickyOverloader.deathReset = false
 acStickyOverloader.unlockText = "This item will now drop."
-acStickyOverloader.description = "Reach a total of 3 sticky bombs attached to a single enemy."
+acStickyOverloader.description = "Reach a total of 3 Sticky Bombs attached to a single enemy."
 acStickyOverloader:assignUnlockable(it.StickyBattery)
 
 if not acStickyOverloader:isComplete() then
@@ -633,7 +633,7 @@ local acCrit = Achievement.new("Critical")
 acCrit.requirement = 1
 acCrit.deathReset = true
 acCrit.unlockText = "This item will now drop."
-acCrit.description = "Achieve a 99% critical strike chance."
+acCrit.description = "Achieve a 99% Critical Strike chance."
 acCrit:assignUnlockable(it.ErraticGadget)
 
 if not acCrit:isComplete() then
@@ -669,7 +669,7 @@ local acInjector = Achievement.new("Injector")
 acInjector.requirement = 1
 acInjector.deathReset = true
 acInjector.unlockText = "This item will now drop."
-acInjector.description = "Reach stage 4 without an use item."
+acInjector.description = "Reach stage 4 without a use item."
 acInjector:assignUnlockable(it.CompositeInjector)
 
 if not acInjector:isComplete() then
@@ -724,7 +724,7 @@ local acEgg = Achievement.new("Egg")
 acEgg.requirement = 1
 acEgg.deathReset = true
 acEgg.unlockText = "This item will now drop."
-acEgg.description = "Slay an ethereal mob."
+acEgg.description = "Slay an Ethereal mob."
 acEgg:assignUnlockable(it.JudderingEgg)
 
 if not acEgg:isComplete() then
@@ -870,7 +870,7 @@ local enforcer = sur.Enforcer
 	acHeavy.sprite = Sprite.find("HeavyIdleA", "Starstorm")
 	acHeavy.requirement = 1
 	acHeavy.deathReset = true
-	acHeavy.description = "Enforcer: Stay in Shield Mode for a total of 8 minutes in a single run."
+	acHeavy.description = "Enforcer: Stay in Protect and Serve for a total of 8 minutes in a single run."
 	
 	if not acHeavy:isComplete() then
 		table.insert(call.onPlayerStep, function(player)
@@ -900,7 +900,7 @@ local bandit = sur.Bandit
 	acPoacher.sprite = Sprite.find("PoacherIdle", "Starstorm")
 	acPoacher.requirement = 1
 	acPoacher.deathReset = true
-	acPoacher.description = "Bandit: trade one 'Ifrit's Horn' with the stranger."
+	acPoacher.description = "Bandit: trade one 'Ifrit's Horn' with the Stranger."
 	
 	if not acPoacher:isComplete() then
 		callback.register("onStrangerTrade", function(item, player)
@@ -963,7 +963,7 @@ local hand = sur.HAND
 	acRMOR.sprite = Sprite.find("RMORIdleA", "Starstorm")
 	acRMOR.requirement = 1
 	acRMOR.deathReset = true
-	acRMOR.description = "HAN-D: Reach a total of 150 armor."
+	acRMOR.description = "HAN-D: Reach a total of 150 Armor."
 	
 	if not acRMOR:isComplete() then
 		table.insert(call.onPlayerStep, function(player)
@@ -986,7 +986,7 @@ local engineer = sur.Engineer
 	acNG.sprite = Sprite.find("NGIdle", "Starstorm")
 	acNG.requirement = 15
 	acNG.deathReset = false
-	acNG.description = "Engineer: Acquire a total of 15 shocker drones across runs."
+	acNG.description = "Engineer: Acquire a total of 15 Shocker Drones across runs."
 	
 	if not acNG:isComplete() then
 		callback.register("onMapObjectActivate", function(int, player)
@@ -1061,7 +1061,7 @@ local acrid = sur.Acrid
 	acAcerbid.sprite = Sprite.find("AcerbidIdle", "Starstorm")
 	acAcerbid.requirement = 1
 	acAcerbid.deathReset = true
-	acAcerbid.description = "Acrid: Reach a regeneration of 5 HP per second."
+	acAcerbid.description = "Acrid: Reach a health regeneration rate of 5 per second."
 	
 	if not acAcerbid:isComplete() then
 		table.insert(call.onPlayerStep, function(player)
@@ -1172,7 +1172,7 @@ local executioner = Survivor.find("Executioner", "Starstorm")
 	acElectrocutioner.sprite = Sprite.find("ElectrocutionerIdle", "Starstorm")
 	acElectrocutioner.requirement = 1
 	acElectrocutioner.deathReset = true
-	acElectrocutioner.description = "Executioner: Slay 12 overloading enemies in a single run."
+	acElectrocutioner.description = "Executioner: Slay 12 Overloading enemies in a single run."
 	
 	if not acElectrocutioner:isComplete() then
 		table.insert(call.onNPCDeathProc, function(npc, player)
@@ -1348,7 +1348,7 @@ if not global.rormlflag.ss_disable_enemies then
 	acNemesisHuntress.sprite = Sprite.find("NemesisHuntressIdle", "Starstorm")
 	acNemesisHuntress.requirement = 1
 	acNemesisHuntress.deathReset = true
-	acNemesisHuntress.description = "Defeat Huntress' Vestige."
+	acNemesisHuntress.description = "Defeat Huntress's Vestige."
 	--acNemesisHuntress.parent = Achievement.find("unlock_huntress")
 	
 	-- Nemesis HAN-D

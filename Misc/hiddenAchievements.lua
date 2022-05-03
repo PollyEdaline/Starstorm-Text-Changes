@@ -694,7 +694,7 @@ local commando = sur.Commando
 	acFatmando.sprite = Sprite.find("FatmandoIdle", "Starstorm")
 	acFatmando.requirement = 1
 	acFatmando.deathReset = true
-	acFatmando.description = "Commando: Reach a total of 5001 hp."
+	acFatmando.description = "Commando: Reach a total of 5001 HP."
 
 	table.insert(call.onPlayerStep, function(player)
 		if not net.online or player == net.localPlayer then
@@ -713,7 +713,7 @@ local bandit = sur.Bandit
 	acReaper.sprite = Sprite.find("ReaperIdle", "Starstorm")
 	acReaper.requirement = 1
 	acReaper.deathReset = true
-	acReaper.description = "Bandit: Obtain 'Harvester's Scythe', 'Golden Gun' and 'Wicked Ring' in the same run."
+	acReaper.description = "Bandit: Obtain a 'Harvester's Scythe', 'Golden Gun' and 'Wicked Ring' in the same run."
 	
 	if not acReaper:isComplete() then
 		callback.register("onItemPickup", function(item, player)
@@ -736,7 +736,7 @@ local engineer = sur.Engineer
 	acFungusMan.sprite = Sprite.find("FungusManIdle", "Starstorm")
 	acFungusMan.requirement = 1
 	acFungusMan.deathReset = true
-	acFungusMan.description = "Engineer: Obtain 5 'Bustling fungus' in a single run."
+	acFungusMan.description = "Engineer: Obtain 5 'Bustling Fungus' in a single run."
 	
 	if not HiddenAchievement.isComplete(acFungusMan) then
 		callback.register("onItemPickup", function(item, player)
@@ -759,7 +759,7 @@ local sniper = sur.Sniper
 	acHunter.sprite = Sprite.find("HunterIdle", "Starstorm")
 	acHunter.requirement = 1
 	acHunter.deathReset = true
-	acHunter.description = "Sniper: Defeat Providence with the following items: Ol Lopper, Fireman's Boots, Heaven Cracker."
+	acHunter.description = "Sniper: Defeat Providence while carrying an 'Ol Lopper', 'Fireman's Boots', and 'Heaven Cracker'."
 	
 	if not HiddenAchievement.isComplete(acHunter) then
 		callback.register("onProvidenceDefeat", function(player)
@@ -782,7 +782,7 @@ local mercenary = sur.Mercenary
 	acCombatant.sprite = Sprite.find("CombatantIdle", "Starstorm")
 	acCombatant.requirement = 1
 	acCombatant.deathReset = true
-	acCombatant.description = "Mercenary: Defeat providence using Blinding Assault."
+	acCombatant.description = "Mercenary: Defeat Providence using Blinding Assault."
 	
 	if not HiddenAchievement.isComplete(acCombatant) then
 		callback.register("onProvidenceDefeat", function(player)
@@ -805,7 +805,7 @@ local loader = sur.Loader
 	acPirate.sprite = Sprite.find("PirateIdle", "Starstorm")
 	acPirate.requirement = 1
 	acPirate.deathReset = true
-	acPirate.description = "Loader: Beat the ethereal teleporter on Sunken Tombs."
+	acPirate.description = "Loader: Charge the Ethereal Teleporter in the Sunken Tombs."
 	
 	if not HiddenAchievement.isComplete(acPirate) then
 		callback.register("onPlayerStep", function(player)
@@ -857,7 +857,7 @@ local baroness = Survivor.find("Baroness", "Starstorm")
 	acBoaroness.sprite = Sprite.find("Boaroness_Idle", "Starstorm")
 	acBoaroness.requirement = 1
 	acBoaroness.deathReset = true
-	acBoaroness.description = "Baroness: Collect a White Undershirt."
+	acBoaroness.description = "Baroness: Collect a White Undershirt (M)."
 	
 	if not HiddenAchievement.isComplete(acBoaroness) then
 		callback.register("onItemPickup", function(item, player)
@@ -878,7 +878,7 @@ local knight = Survivor.find("Knight", "Starstorm")
 	acCrusader.sprite = Sprite.find("Crusader_Idle", "Starstorm")
 	acCrusader.requirement = 1
 	acCrusader.deathReset = true
-	acCrusader.description = "Knight: Defeat Providence with the following items: Ol Lopper, BrilliantBehemoth, Repulsion Armor."
+	acCrusader.description = "Knight: Defeat Providence while carrying an 'Ol Lopper', 'Brilliant Behemoth', and 'Repulsion Armor''."
 	
 	if not HiddenAchievement.isComplete(acCrusader) then
 		callback.register("onProvidenceDefeat", function(player)
