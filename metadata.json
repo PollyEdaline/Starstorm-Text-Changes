@@ -1,8 +1,0 @@
-{
-    "name": "Starstorm",
-	"version": "1.13.0",
-    "description": "Starstorm is a content expansion mod which focuses on bringing new survivors, items, artifacts, skins and much more into Risk of Rain! \n\nOptional Profile flags:\n\n- ss_disable_enemies: Disables Starstorm's Enemies\n- ss_disable_survivors: Disables Starstorm's survivors\n- ss_disable_skins: Disables survivor variants\n- ss_disable_artifacts: Disables Starstorm's artifacts\n- ss_menubind_[key]: Binds the Info Menu to the desired key\n- ss_pingbind_[key]: Binds the Ping action to the desired key\n- ss_disable_menu_music_remix: Disables Starstorm's main menu music remix\n- ss_disable_reskin: Disables Starstorm's visual changes\n- ss_disable_bettercrates: Disables crate improvements\n- ss_disable_betterpickups: Disables pickup improvements\n- ss_classic_exploder: Returns exploders to their pre-1.8.6 appearance\n- ss_classic_weakening_elites: Replaces Kinetic elites with their pre-Starstorm 1.11.0 equivalents\n- ss_disable_mp_chest_scaling: Disables added vanilla interactable scaling for multiplayer games\n\n\nFor updates and documentation don't forget to check Starstorm on https://rainfusion.ml !",
-	"internalname": "Starstorm",
-    "author": "Nk (Neik)",
-	"mpcompat": true
-}
