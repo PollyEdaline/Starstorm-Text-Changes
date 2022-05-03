@@ -199,40 +199,40 @@ local dialogueOptions = {
 		{{"Huh?", "A survivor?", "I can't let you devastate my lands."}, {"Huh?", "Survivors?", "I can't let you devastate my lands."}},
 		{"...", "You... here?", "It can't be..."},
 		{"What are you doing?", "Who are you?"},
-		{{"Stranger, this is no place for you.", "There is no point in your actions.", "Stop the slaughter."}, {"Strangers, this is no place for you.", "There is no point in your actions.", "Stop the slaughter."}},
+		{{"Stranger, this is no place for you.", "There is no point to your actions.", "Stop the slaughter."}, {"Strangers, this is no place for you.", "There is no point to your actions.", "Stop the slaughter."}},
 		{"I am disturbed by your presence.", "What do you think you are doing?"},
-		{{"What is this?", "...", "Survivor, I am sorry for I cannot let you thrive.", "Not any longer..."}, {"What is this?", "...", "Survivors, I am sorry for I cannot let you thrive.", "Not any longer..."}},
-		{{"Interesting...", "So you are the last one of them."}, {"Interesting...", "So you are the last ones."}},
-		{"If your intent is to sabotage my work; you are wasting time."},
+		{{"What is this?", "...", "Survivor, I am sorry, for I cannot let you thrive.", "Not any longer..."}, {"What is this?", "...", "Survivors, I am sorry, for I cannot let you thrive.", "Not any longer..."}},
+		{{"Interesting...", "So you are the last one."}, {"Interesting...", "So you are the last ones."}},
+		{"If your intent is to sabotage my work, you are wasting your time."},
 		{"Are you here to spoil all my work?", "This cannot continue."}
 	},
 	{
 		{{"What do you think you are doing?", "You pilferer..."}, {"What do you think you are doing?", "You pilferers..."}},
-		{"I can't withstand your actions...", "You will be judged."},
-		{"A monster... Is that what you are?"},
+		{"I cannot abide your actions...", "You will be judged."},
+		{"A monster... is that what you are?"},
 		{"The end is coming for you."},
-		{"Your people is atrocious.", "But you are the worst."},
-		{"You will pay for what your actions..."},
-		{"My patience is invaluable, yet you are exhausting it."},
+		{"Your people are atrocious.", "But you are the worst."},
+		{"You will pay for your actions..."},
+		{"My patience is unending, yet you are exhausting it."},
 		{"Life gave you another chance, yet all you do is hinder my efforts to bring balance."},
 		{"You are war, you are hatred.", "You are not welcome."}
 	},
 	{
-		{"The worst is yet to come for you.", "And it's deserved..."},
-		{"This won't last for ever.", "You know it.", "Yet you resist..."},
+		{"The worst is yet to come for you.", "And it is deserved..."},
+		{"This won't last forever.", "You know that.", "Yet you resist..."},
 		{"The end of times is near.", "You will perish alongside your race."},
-		{"Stop resisting, this is only right...", "But you are too selfish to see it."},
+		{"Stop resisting, this is only right.", "But you are too selfish to see it."},
 		{"I am doing this for the greater good.", "Your interferance tips the balance to the wrong side."},
-		{"You can't justify your actions on survival.", "What you've done is reprehensible."},
-		{"Over and over again, you do the same thing carelessly.", "Your kind is ill of a ceaseless aversion."}
+		{"You can't justify your actions as survival.", "What you've done is reprehensible."},
+		{"Over and over again, you carelessly repeat your actions.", "Your kind is one of ceaseless aversion."}
 	},
 	{
 		{"...", "Are you satisfied? Haven't you slaughtered enough?"},
-		{"Survivor...", "The extent of your destruction is beyond a justified goal.", "Do you realize?"},
-		{"I had enough of this massacre.", "You are going to be ended."},
+		{"Survivor...", "The extent of your destruction is beyond a justified goal.", "Do you realize that?"},
+		{"I had enough of this massacre.", "This ends now."},
 		{"They won't stop coming for you.", "You are repudiated."},
 		{"You are the embodiment of everything that is wrong with your kind.", "Chaos, desperation, acrimony."},
-		{"Your acts of belligerence won't change your fate.", "There's no room for remorse now."},
+		{"Your acts of belligerence won't change your fate.", "There is no room for remorse now."},
 		{"Your kind will suffer the same fate as all of those you vanquished."}
 	}
 }
