@@ -18,7 +18,7 @@ local Poacher = SurvivorVariant.new(survivor, "Poacher", sprSelect, {
 	shoot5 = Sprite.load("PoacherShoot5", path.."Shoot5", 11, 7, 13),
 }, Color.fromHex(0x6B6B6B))
 SurvivorVariant.setInfoStats(Poacher, {{"Strength", 5}, {"Vitality", 6}, {"Toughness", 3}, {"Agility", 6}, {"Difficulty", 5}, {"Reputation", 4}})
-SurvivorVariant.setDescription(Poacher, "The &y&Poacher&!& has infiltrated to secure contraband, law never stops his interests.")
+SurvivorVariant.setDescription(Poacher, "The &y&Poacher&!& has infiltrated to secure contraband. The law has failed to catch up with him.")
 
 Poacher.endingQuote = "..and so he left, after the hunt of a lifetime."
 
@@ -26,7 +26,7 @@ local sprSkills = Sprite.load("PoacherSkill", path.."Skills", 2, 0, 0)
 local sShoot = Sound.load("PoacherShoot1", path.."Shoot1")
 
 SurvivorVariant.setLoadoutSkill(Poacher, "Night Time", "Fire a tranquilizer dart for &y&140% damage&!&, slowing down enemies. &y&Consecutive hits stun foes, making them vulnerable.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Poacher, "Metal Trap", "Place a trap that &y&stuns an enemy on contact&!&, dealing &y&5x120% damage", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Poacher, "Metal Trap", "Place a trap that &y&stuns an enemy on contact&!&, dealing &y&4x120% damage", sprSkills, 2)
 
 local buffSprite = Sprite.load("PoacherBuff", path.."Buff", 4, 9, 9)
 local buffPoacher1 = Buff.new("poacher1")
@@ -123,7 +123,7 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkills, 1, 31)
 		player:setSkill(2,
 		"Metal Trap",
-		"Place a trap that stuns an enemy on contact, dealing 4x120% damage",
+		"Place a trap that stuns an enemy on contact, dealing 4x120% damage.",
 		sprSkills, 2, 4 * 60)
 		tcallback.register("onHit", onHitCall)
 	end

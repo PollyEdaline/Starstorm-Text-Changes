@@ -18,7 +18,7 @@ local Reaper = SurvivorVariant.new(survivor, "Reaper", sprSelect, {
 	shoot5 = Sprite.load("ReaperShoot5", path.."Shoot5", 9, 7, 13),
 }, Color.fromHex(0xA36929))
 SurvivorVariant.setInfoStats(Reaper, {{"Strength", 10}, {"Vitality", 1}, {"Toughness", 1}, {"Agility", 7.5}, {"Difficulty", 7}, {"Souls Reaped", 8}})
-SurvivorVariant.setDescription(Reaper, "The &y&Reaper&!&'s mission is to bring beings to the afterlife. Sent by The Fireplace, the &y&Reaper&!& found an opportunity amongst survivors. Although very fragile, every shot he deals is fatal.")
+SurvivorVariant.setDescription(Reaper, "The &y&Reaper&!&'s mission is to bring beings to the afterlife. Sent by The Fireplace, the &y&Reaper&!& found an opportunity amongst the survivors. Although very fragile, every shot he deals is fatal.")
 
 Reaper.endingQuote = "..and so he left, seeking more souls to take."
 
@@ -37,8 +37,8 @@ callback.register("onSkinInit", function(player, skin)
 			player:survivorSetInitialStats(18, 50, 0.025)
 		end
 		player:setSkill(1,
-		"Deadeye",
-		"Fire a bullet for 120% damage.",
+		".32 Revolver",
+		"Fire a bullet for 175% damage.",
 		sprSkill, 1, 10)
 	end
 end)

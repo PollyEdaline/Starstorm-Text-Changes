@@ -18,4 +18,4 @@ local ABandit = SurvivorVariant.new(survivor, "Anointed Bandit", sprSelect, {
 	shoot5 = Sprite.load("ABanditShoot5", path.."Shoot5", 11, 6, 13),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(ABandit, {{"Strength", 6}, {"Vitality", 6}, {"Toughness", 3}, {"Agility", 6}, {"Difficulty", 4}, {"Odor", 10}})
-SurvivorVariant.setDescription(ABandit, "With great pride, the lone gunman is enlightened, awaiting his moment to bring and take as he pleases.")
+SurvivorVariant.setDescription(ABandit, "With great pride, the lone gunman is enlightened, awaiting his moment to take what he pleases.")

@@ -21,7 +21,7 @@ if not global.rormlflag.ss_disable_enemies then
 		shoot5 = Sprite.load("NemesisBanditShoot5", path.."Shoot5", 11, 7, 13),
 	}, Color.fromHex(0xEA4F2C))
 	SurvivorVariant.setInfoStats(NemesisBandit, {{"Strength", 7}, {"Vitality", 6}, {"Toughness", 3}, {"Agility", 6}, {"Difficulty", 5}, {"Curse", 6}})
-	SurvivorVariant.setDescription(NemesisBandit, "The &y&Nemesis Bandit&!& doesn't care for pleas, for he only brings misery in those who dare step on his way.")
+	SurvivorVariant.setDescription(NemesisBandit, "The &y&Nemesis Bandit&!& doesn't care for pleas, for he only brings misery to those who dare step in his way.")
 
 	local sprSparks = spr.Sparks9r
 	local sprSkills = Sprite.load("NemesisBanditSkills", path.."Skills", 3, 0, 0)
@@ -32,8 +32,8 @@ if not global.rormlflag.ss_disable_enemies then
 	local sShoot2Original = sfx.CowboyShoot2
 
 	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Gunslinger", "Fire a bullet for &y&220% damage.", sprSkills)
-	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Restrain", "Throw a lasso to &b&restrain&!& and &b&pull&!& enemies on demand. &y&Restrained enemies can be mounted.", sprSkills, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Lights Out", "Fire your shotgun, dealing &y&600% damage&!&. if the ability kills all hit enemies; &b&cooldowns are reset to 0.", spr.CowboySkills, 7)
+	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Restrain", "Throw a lasso to &b&restrain&!& and &b&pull&!& enemies. &y&Restrained enemies can be mounted.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Lights Out", "Fire your shotgun, dealing &y&600% damage&!&. If the ability kills all enemies struck, &b&all cooldowns are reset to 0.", spr.CowboySkills, 7)
 	
 	NemesisBandit.endingQuote = "..and so he left, with absolutely no regrets."
 	
@@ -79,18 +79,20 @@ if not global.rormlflag.ss_disable_enemies then
 				player:survivorSetInitialStats(115, 12, 0.018)
 			end
 			player:setSkill(1,
-			"Gunslinger",
-			"Fire a bullet for 220% damage.",
-			sprSkills, 1, 39)
+				"Gunslinger",
+				"Fire a bullet for 220% damage.",
+				sprSkills, 1, 
+				39
+			)
 			player:setSkill(2,
 				"Restrain",
-				"Throw a lasso to restrain an enemy in front of you for 80% damage.",
+				"Throw a lasso to restrain an enemy in front of you. Enemies can be ridden.",
 				sprSkills, 2,
 				1 * 60
 			)
 			player:setSkill(4,
 				"Lights Out",
-				"Fire your shotgun for 600% damage. If this ability kills all enemies, cooldowns are all reset to 0.",
+				"Fire your shotgun for 600% damage. If the ability kills all enemies struck, all cooldowns are reset to 0.",
 				spr.CowboySkills, 7,
 				8 * 60
 			)
@@ -106,7 +108,7 @@ if not global.rormlflag.ss_disable_enemies then
 		if SurvivorVariant.getActive(player) == NemesisBandit then
 			player:setSkill(4,
 				"Assassinate",
-				"Fire your shotgun for 2x600% damage. If this ability kills all enemies, cooldowns are all reset to 0.",
+				"Fire your shotgun for 2x600% damage. If the ability kills all enemies struck, all cooldowns are reset to 0.",
 				spr.CowboySkills, 5,
 				8 * 60
 			)
