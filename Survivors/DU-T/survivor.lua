@@ -51,7 +51,7 @@ THIS UNIT HAS BEEN GIVEN THE FOLLOWING INSTRUCTIONS:
 -- Skill descriptions
 
 dut:setLoadoutSkill(1, "HARVEST", [[&y&ABSORB HEALTH&!& FROM &y&NEARBY ENEMIES&!& OR &r&YOURSELF&!& TO &y&CHARGE ENERGY.
-RELEASE TO DISCHARGE ENERGY IN A &y&LASER BLAST&!& OR A &g&HEALING AURA]])
+RELEASE TO DISCHARGE ENERGY IN A &y&LASER BLAST&!& OR A &g&HEALING AURA.]])
 
 dut:setLoadoutSkill(2, "TOGGLE MODE", [[SWITCH BETWEEN &g&SELF&!& AND &r&ENEMY&!& HARVEST MODE.]])
 
@@ -90,13 +90,13 @@ dut:addCallback("init", function(player)
 	
 	playerAc.pHmax = playerAc.pHmax - 0.2
 	
-	player:setSkill(1, "HARVEST (ENEMY)", "ABSORB HEALTH FROM ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST",
+	player:setSkill(1, "HARVEST (ENEMY)", "ABSORB HEALTH FROM ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST.",
 	sprSkills, 1, 2)
 		
 	player:setSkill(2, "TOGGLE MODE", "SWITCH BETWEEN SELF AND ENEMY HARVEST MODE.",
 	sprSkills, 2, 45)
 		
-	player:setSkill(3, "PERFORMANCE BOOST", "EARN A TEMPORARY SPEED BOOST.",
+	player:setSkill(3, "PERFORMANCE BOOST", "TEMPORARILY INCREASE MOVEMENT SPEED.",
 	sprSkills, 3, 6 * 60)
 		
 	player:setSkill(4, "ENERGY FLARE", "CREATE A FLARE THAT ABSORBS HEALTH FROM ENEMIES FOR ENERGY. ENERGY GOES BACK TO YOU AS CHARGE.",
@@ -454,7 +454,7 @@ dut:addCallback("useSkill", function(player, skill)
 			--player:survivorActivityState(2, player:getAnimation("shoot2"), 0.25, true, false)
 			if playerData.mode == 1 then
 				playerData.mode = 2
-				player:setSkill(1, "HARVEST (SELF)", "ABSORB HEALTH FROM YOURSELF TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST", sprSkills, 6, 2)
+				player:setSkill(1, "HARVEST (SELF)", "ABSORB HEALTH FROM YOURSELF TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST.", sprSkills, 6, 2)
 				if playerAc.scepter > 0 then
 					player:setSkill(4, "ENERGY FUSILLADE", "CREATE A FUSILLADE THAT HEALS ALLIES FOR ENERGY. ENERGY GOES BACK TO YOU AS CHARGE.", sprSkills, 8, 12 * 60)
 				else
@@ -462,7 +462,7 @@ dut:addCallback("useSkill", function(player, skill)
 				end
 			else
 				playerData.mode = 1
-				player:setSkill(1, "HARVEST (ENEMY)", "ABSORB HEALTH FROM ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST", sprSkills, 1, 2)
+				player:setSkill(1, "HARVEST (ENEMY)", "ABSORB HEALTH FROM ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A LASER BLAST.", sprSkills, 1, 2)
 				if playerAc.scepter > 0 then
 					player:setSkill(4, "ENERGY FUSILLADE", "CREATE A FUSILLADE THAT ABSORBS HEALTH FROM ENEMIES FOR ENERGY. ENERGY GOES BACK TO YOU AS CHARGE.", sprSkills, 5, 12 * 60)
 				else

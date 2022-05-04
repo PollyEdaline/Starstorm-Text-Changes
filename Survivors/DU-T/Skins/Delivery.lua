@@ -17,7 +17,7 @@ local Delivery = SurvivorVariant.new(survivor, "SPEE-D", sprSelect, {
 	shoot3 = Sprite.load("DeliveryShoot3", path.."shoot3", 9, 11, 15),
 }, Color.fromHex(0x7298FF))
 SurvivorVariant.setInfoStats(Delivery, {{"Strength", 5}, {"Vitality", 2}, {"Toughness", 3}, {"Agility", 9}, {"Difficulty", 6}, {"Patience", 2}})
-SurvivorVariant.setDescription(Delivery, "&y&SPEE-D&!& models have one directive, to reach a destination as fast as optimally possible. Often a complicated task for this rustic model's hybrid oil engine.")
+SurvivorVariant.setDescription(Delivery, "&y&SPEE-D&!& models have one directive: to reach a destination as fast and as optimally as possible. Often a complicated task for this dated model's hybrid oil engine.")
 
 local sprSkills = Sprite.load("DeliverySkills", path.."Skills", 5, 0, 0)
 local sSkill4_1 = Sound.find("DU-TSkill4_1")
@@ -26,9 +26,9 @@ local sSkill1_2 = Sound.load("DeliverySkill1_2", path.."shoot1_2")
 local sSkill3 = Sound.load("DeliverySkill3", path.."shoot3")
 
 SurvivorVariant.setLoadoutSkill(Delivery, "HARVEST", "&b&ABSORB SPEED&!& FROM &r&YOURSELF&!& AND &y&NEARBY ENEMIES.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Delivery, "RELEASE EMISSIONS", "CLEANSE THE SYSTEM FROM TOXIC CO2 EMISSIONS WITH A TRAIL FOR &y&100% DAMAGE PER SECOND.&!& &g&HEAL 8% OF YOUR TOTAL HEALTH.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Delivery, "RELEASE EMISSIONS", "CLEANSE THE SYSTEM OF TOXIC CO2 EMISSIONS WITH A TRAIL FOR &y&100% DAMAGE PER SECOND.&!& &g&HEAL 8% OF YOUR TOTAL HEALTH.", sprSkills, 3)
 
-Delivery.endingQuote = "..and so it left, traveling where no unit went before."
+Delivery.endingQuote = "..and so it left, traveling where no unit has gone before."
 
 survivor:addCallback("levelUp", function(player)
 	if SurvivorVariant.getActive(player) == Delivery then
@@ -267,7 +267,7 @@ SurvivorVariant.setSkill(Delivery, 2, function(player)
 	local playerData = player:getData()
 	local playerAc = player:getAccessor()
 	if playerData.mode == 2 then
-		player:setSkill(1, "HARVEST (SPEED)", "ABSORB HEALTH FROM YOURSELF AND NEARBY ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A SPEED BURST", sprSkills, 1, 2)
+		player:setSkill(1, "HARVEST (SPEED)", "ABSORB HEALTH FROM YOURSELF AND NEARBY ENEMIES TO CHARGE. RELEASE TO DISCHARGE IN A SPEED BURST.", sprSkills, 1, 2)
 		if playerAc.scepter > 0 then
 			player:setSkill(4, "ENERGY FUSILLADE", "CREATE A FUSILLADE THAT SUPPLIES SPEED FOR ENERGY. ENERGY GOES BACK TO YOU AS CHARGE.", sprSkills, 5, 12 * 60)
 		else
