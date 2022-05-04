@@ -19,4 +19,4 @@ local ACHEF = SurvivorVariant.new(survivor, "Anointed CHEF", sprSelect, {
 	shoot3_2 = Sprite.load("ACHEFShoot3B", path.."Shoot3_2", 16, 15, 25),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(ACHEF, {{"Strength", 5}, {"Vitality", 5}, {"Toughness", 3}, {"Agility", 5}, {"Difficulty", 5}, {"Cuisine", 10}})
-SurvivorVariant.setDescription(ACHEF, "The attendant is enlightened, from a kitchen to an unexpected place in the universe, locked in.")
+SurvivorVariant.setDescription(ACHEF, "The culinarian is enlightened, from a kitchen to an unexpected place in the universe, locked in.")

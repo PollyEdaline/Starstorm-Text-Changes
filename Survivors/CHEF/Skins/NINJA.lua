@@ -22,7 +22,7 @@ local NINJA = SurvivorVariant.new(survivor, "NINJA", sprSelect, {
 	flash = Sprite.load("NINJAFlash", path.."Flash", 8, 27, 73),
 }, Color.fromHex(0x5C9C8C))
 SurvivorVariant.setInfoStats(NINJA, {{"Strength", 5}, {"Vitality", 4}, {"Toughness", 3}, {"Agility", 7}, {"Difficulty", 5}, {"Mastery", 8}})
-SurvivorVariant.setDescription(NINJA, "The &y&NINJA&!& is merely a show asset, however, circumstances can push it to do much more.")
+SurvivorVariant.setDescription(NINJA, "The &y&NINJA&!& is merely a show asset. However, certain circumstances can push it to do much more.")
 
 local sprSkill = Sprite.load("NINJASkill", path.."Skill", 4, 0, 0)
 local sShoot1 = Sound.load("NINJAShootImpact", path.."Shoot1")
