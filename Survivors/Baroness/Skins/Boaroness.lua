@@ -28,15 +28,15 @@ local Boaroness = SurvivorVariant.new(survivor, "Boaroness", sprSelect, {
 	shoot4_2 = Sprite.load("Boaroness_Shoot4B", path.."Shoot4b", 7, 17, 14),
 }, Color.fromHex(0x9B9183))
 SurvivorVariant.setInfoStats(Boaroness, {{"Strength", 6}, {"Vitality", 5}, {"Toughness", 2}, {"Agility", 9}, {"Difficulty", 4}, {"Instinct", 8}})
-SurvivorVariant.setDescription(Boaroness, "Molded by the planet, the &y&Boaroness&!& makes use of tamed boars to get what she wants whenever she wants it.")
+SurvivorVariant.setDescription(Boaroness, "Molded by the planet, the &y&Boaroness&!& makes use of tamed boars to get whatever she wants, whenever she wants it.")
 
 local sprSkills = Sprite.load("BoaronessSkills", path.."Skills", 6, 0, 0)
 local sShoot4 = Sound.load("BoaronessShoot4", path.."Shoot4")
 
 SurvivorVariant.setLoadoutSkill(Boaroness, "Bo Lance", "Attack at a short range for &y&120% piercing damage.", sprSkills)
 --SurvivorVariant.setLoadoutSkill(Boaroness, "Steady Target", "Pick up an enemy &y&pulling it close and disabling it for 4 seconds.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Boaroness, "Active Relocation", "Summon a war boar &b&increasing movement speed. Can attack while moving.", sprSkills, 3)
-SurvivorVariant.setLoadoutSkill(Boaroness, "Ambush", "Command a &y&group of boars&!& to &y&charge&!& towards the direction you are facing for &y&120% dps.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(Boaroness, "Active Relocation", "Summon a war boar, &b&increasing movement speed. Can attack while moving.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Boaroness, "Ambush", "Command a &y&group of boars&!& to &y&charge&!& towards the direction you are facing for &y&120% DPS.", sprSkills, 4)
 
 Boaroness.endingQuote = "..and so she left, ready to start all over again."
 
@@ -135,11 +135,11 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkills, 1, 23)
 		player:setSkill(2,
 		"Steady Target",
-		"Pickup and focus an enemy at close range, dealing 100% damage.",
+		"Pick up and disable an enemy, dealing 100% damage.",
 		sprSkills, 2, 6 * 60)
 		player:setSkill(4,
 		"Ambush",
-		"Command a group of boars to charge in the direction you are facing for 120% dps.",
+		"Command a group of boars to charge in the direction you are facing for 120% DPS.",
 		sprSkills, 5, 7 * 60)
 		playerData._EfColor = Color.fromHex(0xCC6A78)
 		playerData._SteadyDistance = 30
@@ -154,7 +154,7 @@ survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == Boaroness then
 		player:setSkill(4,
 		"Alpha Ambush",
-		"Command a group of boars to charge in the direction you are facing for 240% dps.",
+		"Command a group of boars to charge in the direction you are facing for 240% DPS.",
 		sprSkills, 6, 7 * 60)
 	end
 end)
@@ -169,7 +169,7 @@ survivor:addCallback("step", function(player)
 			player:setAnimation("shoot1", player:getAnimation("shoot1_2"))
 			player:setSkill(1,
 			"Bo Lance",
-			"Attack twice at a short range for 60% piercing damage.",
+			"Attack twice at a short range for 60% piercing damage each.",
 			sprSkills, 1, 23)
 			player:setSkill(3,
 			"Face to Face",

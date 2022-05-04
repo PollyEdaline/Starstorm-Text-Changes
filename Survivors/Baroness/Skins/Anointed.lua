@@ -25,4 +25,4 @@ local ABaroness = SurvivorVariant.new(survivor, "Anointed Baroness", sprSelect, 
 	shoot4_2 = Sprite.load("ABaronessShoot4B", path.."shoot4b", 7, 16, 15),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(ABaroness, {{"Strength", 7}, {"Vitality", 5}, {"Toughness", 3}, {"Agility", 8}, {"Difficulty", 4}, {"Versatility", 10}})
-SurvivorVariant.setDescription(ABaroness, "The grizzled noble is enlightened, as she loads her weapon and sets a mission: find survivors.")
+SurvivorVariant.setDescription(ABaroness, "The grizzled noble is enlightened, as she loads her weapon and sets a goal: find survivors.")

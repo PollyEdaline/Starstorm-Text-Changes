@@ -55,22 +55,22 @@ baroness.loadoutSprite = Sprite.load("Baroness_Select", path.."select", 23, 2, 0
 
 -- Selection description
 baroness:setLoadoutInfo(
-[[Trained for the front lines, and loaded tooth and nail for crowd control.
-Able to wipe crowds with orbital strikes, and relocate enemies wherever she pleases,
+[[Trained for the front lines, and packing enough heat for crowd control.
+Able to wipe out crowds with grenades and relocate enemies wherever she pleases,
 the &y&Baroness&!& has the tools for the job. 
-&y&Don’t let anything get personal.]], sprSkills)
+&y&Don’t let it get personal.]], sprSkills)
 
 -- Skill descriptions
 baroness:setLoadoutSkill(1, "Pulling the Trigger",
 [[Hurl MG rounds for &y&95% damage&!&.
-&lt&Vehicle:&!& fire a laser &y&increasing in damage the longer it hits enemies.]])
+&lt&Vehicle:&!& Fire a laser &y&increasing in damage the longer it hits enemies.]])
 
 baroness:setLoadoutSkill(2, "Steady Target",
 [[Pick up an enemy, dealing &y&100% damage&!& and disabling them.
 Lasts 4 seconds.]])
 
 baroness:setLoadoutSkill(3, "Active Relocation",
-[[Summon a hovering vehicle that &b&increases movement speed&!&
+[[Summon a hovering vehicle that &b&increases movement speed&!&,
 &r&but strips the ability to jump or climb. &b&Can attack while moving.]])
 
 baroness:setLoadoutSkill(4, "Saturated O-Charge",
@@ -121,13 +121,13 @@ baroness:addCallback("init", function(player)
 		player:survivorSetInitialStats(100, 12, 0.01)
 	end
 	
-	player:setSkill(1, "Pulling the Trigger", "Fire bullets consecutively for 95% damage.",
+	player:setSkill(1, "Pulling the Trigger", "Hurl MG rounds for 95% damage.",
 	sprSkills, 1, 5)
 		
-	player:setSkill(2, "Steady Target", "Pick up and focus an enemy, dealing 100% damage",
+	player:setSkill(2, "Steady Target", "Pick up and disable an enemy, dealing 100% damage",
 	sprSkills, 2, 6 * 60)
 		
-	player:setSkill(3, "Active Relocation", "Summon a personal vehicle, increasing your movement speed.",
+	player:setSkill(3, "Active Relocation", "Summon a hovering vehicle, increasing your movement speed.",
 	sprSkills, 3, 60)
 		
 	player:setSkill(4, "Saturated O-Charge", "Throw a grenade which seeks enemies and explodes for 3x320% damage.",
@@ -457,10 +457,10 @@ baroness:addCallback("onSkill", function(player, skill, relevantFrame)
 				playerData.sounds.skill3_2:play(1 + math.random() * 0.2)
 				playerAc.walk_speed_coeff = 1
 
-				player:setSkill(1, "Pulling the Trigger", "Fire bullets consecutively for 95% damage.",
+				player:setSkill(1, "Pulling the Trigger", "Hurl MG rounds for 95% damage.",
 				sprSkills, 1, 5)
 				
-				player:setSkill(3, "Active Relocation", "Summon a personal vehicle, increasing your movement speed.",
+				player:setSkill(3, "Active Relocation", "Summon a hovering vehicle, increasing your movement speed.",
 				sprSkills, 3, 60)
 			else
 				playerData.sounds.skill3_1:play(1 + math.random() * 0.2)
