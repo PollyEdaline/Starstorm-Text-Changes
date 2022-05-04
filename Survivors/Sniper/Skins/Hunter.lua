@@ -45,8 +45,8 @@ local sShoot1_1 = Sound.load("HunterShoot1_1", path.."shoot1")
 local sShoot1_2 = sfx.Teleporter--Sound.find("HunterShoot1_2", "Starstorm")
 local sShoot2_1 = Sound.find("Baroness_Shoot1A")--Sound.find("HunterShoot2_1", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(Hunter, "Decimate", "Swing an axe dealing &y&160% damage.&!& Generates Heat.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(Hunter, "Barrage", "Fire an SMG dealing &y&45% damage. Fires faster&!& the more Heat you have.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Hunter, "Decimate", "Swing an axe, dealing &y&160% damage.&!& Generates Heat.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(Hunter, "Barrage", "Fire an SMG, dealing &y&45% damage. Fires faster&!& the more Heat you have.", sprSkills, 2)
 SurvivorVariant.setLoadoutSkill(Hunter, "DRONE: CHILL", "Send your drone to &b&freeze all enemies around the most dangerous enemy&!& nearby for 3 seconds, dealing &y&3x25% damage.", sprSkills, 3)
 
 Hunter.endingQuote = "..and so he left, with another trophy for his collection."
@@ -381,15 +381,15 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Decimate",
-		"Swing an axe dealing damage. Generates Heat.",
+		"Swing an axe, dealing 160% damage. Generates Heat.",
 		sprSkills, 1, 55)
 		player:setSkill(2,
 		"Barrage",
-		"Fire an SMG dealing 45% damage. Fires faster the more Heat you have.",
+		"Fire an SMG, dealing 45% damage. Fires faster the more Heat you have.",
 		sprSkills, 2, 16)
 		player:setSkill(4,
 		"DRONE: CHILL",
-		"Send your drone to freeze the most dangerous enemy nearby for 3 seconds.",
+		"Send the DRONE to freeze enemies around the most dangerous enemy nearby for 3 seconds, dealing 3x25% damage.",
 		sprSkills, 3, 12 * 60)
 		player:getData().correctVindex = 3
 		

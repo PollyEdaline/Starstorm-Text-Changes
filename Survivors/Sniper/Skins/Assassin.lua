@@ -24,7 +24,7 @@ local Assassin = SurvivorVariant.new(survivor, "Assassin", sprSelect, {
 	drone_turn = Sprite.load("AssassinDroneTurn", path.."Drone_Turn", 7, 8, 6)
 }, Color.fromHex(0xFC7E95))
 SurvivorVariant.setInfoStats(Assassin, {{"Strength", 10}, {"Vitality", 4}, {"Toughness", 3}, {"Agility", 5}, {"Difficulty", 5}, {"Psychosis", 6}})
-SurvivorVariant.setDescription(Assassin, "The &y&Assassin&!& is a cold-blooded, merciless soldier who often murders for self entertainment.")
+SurvivorVariant.setDescription(Assassin, "The &y&Assassin&!& is a cold-blooded, merciless soldier who often murders for his own entertainment.")
 
 local sprSkill = Sprite.load("AssassinSkill", path.."Skill", 1, 0, 0)
 local sprSparks = spr.Sparks10r
