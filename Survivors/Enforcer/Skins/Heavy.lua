@@ -21,7 +21,7 @@ local Heavy = SurvivorVariant.new(survivor, "Heavy", sprSelect, {
 	shoot3_2 = Sprite.load("HeavyShoot3B", path.."Shoot3_2", 6, 6, 11),
 }, Color.fromHex(0x619A73))
 SurvivorVariant.setInfoStats(Heavy, {{"Strength", 6}, {"Vitality", 6}, {"Toughness", 6}, {"Agility", 4}, {"Difficulty", 3}, {"Training", 9}})
-SurvivorVariant.setDescription(Heavy, "The &y&Heavy&!& is a tactical unit carrying a threatening pump shotgun to keep any situation under control. While initially slower, the Heavy is faster than Enforcer while shielded.")
+SurvivorVariant.setDescription(Heavy, "The &y&Heavy&!& is a tactical unit carrying a threatening pump shotgun to keep any situation under control. While initially slower, the Heavy is faster than the Enforcer while shielded.")
 --Heavy.forceApply = true
 
 Heavy.endingQuote = "..and so he left, overestimating his rightfulness."
@@ -33,7 +33,7 @@ local sprSparks = Sprite.load("HeavyShootSparks", path.."Sparks", 5, 8, 4)
 
 SurvivorVariant.setLoadoutSkill(Heavy, "Pump Shotgun", "Fire 4 bullets at a medium range for &y&280% total damage.", sprSkill)
 
-SurvivorVariant.setLoadoutSkill(Heavy, "Shield Slam", "&b&Dash forward a small distance&!& smashing nearby enemies for &y&200% damage, knocking them back.", sprOriginalSkill, 2)
+SurvivorVariant.setLoadoutSkill(Heavy, "Shield Charge", "&b&Dash forward a small distance&!&, smashing enemies in your path for &y&200% damage and knocking them back.", sprOriginalSkill, 2)
 
 SurvivorVariant.setLoadoutSkill(Heavy, "Protect and Serve", "Take a &b&defensive stance, blocking all damage from the front. &y&Increases attack speed, reducing movement minimally.", sprOriginalSkill, 3)
 
@@ -47,11 +47,15 @@ callback.register("onSkinInit", function(player, skin)
 		player:set("pHmax", player:get("pHmax") - 0.2)
 		player:setSkill(1,
 		"Pump Shotgun",
-		"Fire 4 bullets dealing 70% damage at a scattered medium range.",
+		"Fire 4 bullets at a medium range for 280% total damage.",
 		sprSkill, 1, 32)
+		player:setSkill(2,
+		"Shield Charge",
+		"Dash forward, smashing enemies for 200% damage and knocking them back.",
+		sprOriginalSkill, 2, 5 * 60)
 		player:setSkill(3,
 		"Protect and Serve",
-		"Take a defensive stance, blocking all damage from the front. Increases attack speed, but minimally reduces movement.",
+		"Take a defensive stance, blocking all damage from the front. Increases attack speed, reducing movement minimally.",
 		sprOriginalSkill, 3, 5 * 60)
 	end
 end)

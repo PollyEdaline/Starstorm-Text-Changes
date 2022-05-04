@@ -27,7 +27,7 @@ local animations = {
 	local sprSelect = Sprite.load("NemesisEnforcerSelect", path.."Select", 13, 2, 0)
 	local NemesisEnforcer = SurvivorVariant.new(survivor, "Nemesis Enforcer", sprSelect, animations, Color.fromHex(0xCECE5F))
 	SurvivorVariant.setInfoStats(NemesisEnforcer, {{"Strength", 8}, {"Vitality", 6}, {"Toughness", 5}, {"Agility", 2}, {"Difficulty", 4.5}, {"Grace", 8}})
-	SurvivorVariant.setDescription(NemesisEnforcer, "&y&Nemesis Enforcer&!& is an incarnation of valiance and strength, a supernatural kind who is nobody to take lightly.")
+	SurvivorVariant.setDescription(NemesisEnforcer, "&y&Nemesis Enforcer&!& is an incarnation of valiance and strength, a supernatural being who is not to be taken lightly.")
 
 	local sprSparks = spr.Sparks9r
 	local sprSkill = Sprite.load("NemesisEnforcerSkill", path.."Skill", 4, 0, 0)
@@ -35,9 +35,9 @@ local animations = {
 	local sShoot = sfx.Bullet3
 	local sShootOriginal = sfx.RiotShoot1
 
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Hammer", "Bash a close enemy for &y&500% damage.", sprSkill)
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Minigun", "Fire a minigun for &y&150% damage per second.", sprSkill, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Dominance", "Impact the Hammer against the ground, &y&knocking enemies back for 210% damage.", sprSkill, 4)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Hammer", "Bash enemies for &y&500% damage.", sprSkill)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Minigun", "Fire your minigun for &y&150% damage per second.", sprSkill, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Dominance", "Slam the Golden Hammer against the ground, &y&knocking enemies back for 210% damage.", sprSkill, 4)
 	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Destruction / Supression Stance", "&b&Switch your current weapon.", sprSkill, 3)
 	
 	NemesisEnforcer.endingQuote = "..and so he left, with newfound might to honor."
@@ -56,11 +56,11 @@ local animations = {
 			end
 			player:setSkill(1,
 			"Hammer",
-			"Bash close enemies for 500% damage.",
+			"Bash enemies for 500% damage.",
 			sprSkill, 1, 39)
 			player:setSkill(2,
 			"Dominance",
-			"Impact the Golden Hammer against the ground, knocking enemies back for 210% damage.",
+			"Slam the Golden Hammer against the ground, knocking enemies back for 210% damage.",
 			sprSkill, 4, 3 * 60)
 			player:setSkill(3,
 			"Supression Stance",
@@ -147,7 +147,7 @@ local animations = {
 						player:getData().usingMinigun = false
 						player:setSkill(1,
 						"Golden Hammer",
-						"Bash close enemies for 500% damage.",
+						"Bash enemies for 500% damage.",
 						sprSkill, 1, 39)
 						player:setSkill(3,
 						"Supression Stance",
@@ -161,7 +161,7 @@ local animations = {
 						player:getData().usingMinigun = true
 						player:setSkill(1,
 						"Golden Minigun",
-						"Fire a minigun for 150% damage per second.",
+						"Fire your minigun for 150% damage per second.",
 						sprSkill, 2, 0)
 						player:setSkill(3,
 						"Destruction Stance",

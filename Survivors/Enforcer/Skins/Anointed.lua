@@ -21,7 +21,7 @@ local AEnforcer = SurvivorVariant.new(survivor, "Anointed Enforcer", sprSelect, 
 	shoot3_2 = Sprite.load("AEnforcerShoot3_2", path.."Shoot3_2", 6, 5, 10),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(AEnforcer, {{"Strength", 5}, {"Vitality", 7}, {"Toughness", 7}, {"Agility", 3}, {"Difficulty", 4}, {"Lawfulness", 10}})
-SurvivorVariant.setDescription(AEnforcer, "The unbreakable officer is enlightened, unknowingly serving for a greater law.")
+SurvivorVariant.setDescription(AEnforcer, "The unbreakable officer is enlightened, unknowingly serving a higher court.")
 
 table.insert(call.onPlayerDraw, function(player)
 	if SurvivorVariant.getActive(player) == AEnforcer then
