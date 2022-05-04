@@ -40,17 +40,17 @@ Brawler:setLoadoutInfo(
 -- Skill descriptions
 
 Brawler:setLoadoutSkill(1, "Punch",
-[[Punch enemies at a close range 100%.]])
+[[Punch enemies at close range for &y&100% damage.]])
 
 Brawler:setLoadoutSkill(2, "Throw",
-[[Throw enemies upwards for 250% damage.]])
+[[Throw enemies upwards for &y&250% damage.]])
 
 Brawler:setLoadoutSkill(3, "Pounce",
 [[Launch yourself towards the nearest enemy in front of you.
-Deal 250% damage in impact with the enemy.]])
+Deal &y&250% damage&!& on impact with the enemy.]])
 
 Brawler:setLoadoutSkill(4, "Dive Drop",
-[[Become airborne and drop to the ground dealing up to 1000% damage.
+[[Leap up and drop to the ground, dealing up to &y&1000% damage.&!&
 Deals more damage the higher the drop is executed. Stuns enemies.]])
 
 -- Color of highlights during selection
