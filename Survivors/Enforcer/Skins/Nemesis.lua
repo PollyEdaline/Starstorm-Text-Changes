@@ -27,7 +27,7 @@ local animations = {
 	local sprSelect = Sprite.load("NemesisEnforcerSelect", path.."Select", 13, 2, 0)
 	local NemesisEnforcer = SurvivorVariant.new(survivor, "Nemesis Enforcer", sprSelect, animations, Color.fromHex(0xCECE5F))
 	SurvivorVariant.setInfoStats(NemesisEnforcer, {{"Strength", 8}, {"Vitality", 6}, {"Toughness", 5}, {"Agility", 2}, {"Difficulty", 4.5}, {"Grace", 8}})
-	SurvivorVariant.setDescription(NemesisEnforcer, "&y&Nemesis Enforcer&!& is an incarnation of valiance and strength, a supernatural being who is not to be taken lightly.")
+	SurvivorVariant.setDescription(NemesisEnforcer, "The &y&Nemesis Enforcer&!& is an incarnation of valiance and strength, a supernatural being who is not to be taken lightly.")
 
 	local sprSparks = spr.Sparks9r
 	local sprSkill = Sprite.load("NemesisEnforcerSkill", path.."Skill", 4, 0, 0)
