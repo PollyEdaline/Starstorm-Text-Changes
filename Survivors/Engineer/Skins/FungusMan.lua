@@ -24,7 +24,7 @@ local FungusMan = SurvivorVariant.new(survivor, "Fungus Man", sprSelect, {
 	turretSpawn2 = Sprite.load("FungusManTurretSpawn2", path.."TurretSpawn2", 11, 10, 15)
 }, Color.fromHex(0x74CD7A))
 SurvivorVariant.setInfoStats(FungusMan, {{"Fungus", 10}, {"Fungus", 10}, {"Fungus", 10}, {"Fungus", 10}, {"Fungus", 10}, {"Fungus", 10}})
-SurvivorVariant.setDescription(FungusMan, "The Engineer's passion for fungi is well known so his &y&Fungus Man&!& halloween costume came as no surprise, let's just hope he isn't losing his sanity...")
+SurvivorVariant.setDescription(FungusMan, "The Engineer's passion for fungi is well known, so his &y&Fungus Man&!& Halloween costume came as no surprise. Let's just hope he isn't losing his sanity...")
 
 local sprSkill = Sprite.load("FungusManSkill", path.."Skill", 2, 0, 0)
 local sprSkill2 = Sprite.load("FungusManSkill2", path.."Skill2", 25, 0, 11)
