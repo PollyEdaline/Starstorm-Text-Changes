@@ -101,6 +101,8 @@ function SurvivorVariant.new(survivor, skinName, loadoutSprite, animations, colo
 					--- Hi from further into the future, I fixed this, poopyhead.
 							
 							-- hi from further (further) into the future, i forgot what i even did here... i probably did some hacky (dumb) workaround................
+							
+								-- dont be so mean to neik
 	
 	local pseudoid = 1
 	for n, namespace in ipairs(namespaces) do
