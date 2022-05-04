@@ -57,9 +57,9 @@ nucleator.loadoutSprite = Sprite.load("Nucleator_Select", path.."select", 16, 2,
 nucleator:setLoadoutInfo(
 [[The &y&Nucleator&!& is a radioactive juggernaut with rad-proof armor,
 which allows him to manipulate nuclear components for long periods of time.
-He takes advantage of radiation; &y&being able to inflict it to enemies&!& for the
-strongest contamination effect. Nucleator can &b&charge&!& his skills for &y&maximum output&!&,
-however, be careful as &r&overcharging&!& them may lead to &r&self-harm!]], sprSkills)
+He takes advantage of radiation, &y&able to inflict it on enemies&!& for a
+contamination effect. Nucleator can &b&charge&!& his skills for &y&maximum output&!&.
+Be careful, as &r&overcharging&!& them may lead to &r&self-harm!]], sprSkills)
 
 -- Skill descriptions
 nucleator:setLoadoutSkill(1, "Irradiate",
@@ -70,7 +70,7 @@ nucleator:setLoadoutSkill(2, "Quarantine",
 [[Push enemies in front of you for &y&300% piercing damage.]])
 
 nucleator:setLoadoutSkill(3, "Fission Impulse",
-[[&b&Hold to launch yourself into any direction&!& dealing &y&550% damage.
+[[&b&Hold to launch yourself into any direction&!&, dealing &y&550% damage.
 &b&Control the direction&!& using the movement keys.]])
 
 nucleator:setLoadoutSkill(4, "Radionuclide Surge",
@@ -104,16 +104,16 @@ nucleator:addCallback("init", function(player)
 		player:survivorSetInitialStats(115, 12, 0.0095)
 	end
 	
-	player:setSkill(1, "Irradiate", "Fire a bullet for a minimum of 160% damage, 550% maximum on larger distances.",
+	player:setSkill(1, "Irradiate", "Fire a bullet for up to 500% damage, 900% on overcharge.",
 	sprSkills, 1, 25)
 		
-	player:setSkill(2, "Quarantine", "Push enemies in front of you for 300% pierce-degrading damage",
+	player:setSkill(2, "Quarantine", "Push enemies in front of you for 300% piercing damage.",
 	sprSkills, 2, 4 * 60)
 		
-	player:setSkill(3, "Fission Impulse", "Hold to launch yourself into any direction for 550% damage. Control the direction with the movement controls.",
+	player:setSkill(3, "Fission Impulse", "Hold to launch yourself into any direction for 550% damage. Control the direction with the movement keys.",
 	sprSkills, 3, 6 * 60)
 		
-	player:setSkill(4, "Radionuclide Rush", "Go into a nuclear state, adding radiation DoT to every attack while becoming invulnerable to overcharging skills. Lasts 6 seconds",
+	player:setSkill(4, "Radionuclide Rush", "Enter a nuclear state for 6 seconds, adding a radiation DoT to every attack while becoming invulnerable to overcharging skills.",
 	sprSkills, 4, 13 * 60)
 end)
 
@@ -125,7 +125,7 @@ end)
 -- Called when the player picks up the Ancient Scepter
 nucleator:addCallback("scepter", function(player)
 	player:setSkill(4,
-	"Radionuclide Efflux", "Go into a nuclear state, adding radiation DoT to every attack while becoming invulnerable to overcharging skills. Lasts 12 seconds.", 
+	"Radionuclide Efflux", "Enter a nuclear state for 12 seconds, adding a radiation DoT to every attack while becoming invulnerable to overcharging skills.", 
 	sprSkills, 5, 15 * 60)
 end)
 
