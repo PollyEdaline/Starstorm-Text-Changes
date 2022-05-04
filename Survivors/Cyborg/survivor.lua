@@ -44,14 +44,15 @@ cyborg.loadoutSprite = Sprite.load("Cyborg_Select", path.."select", 17, 2, 0)
 -- Selection description
 cyborg:setLoadoutInfo(
 [[The &y&CYBORG&!& is VERSATILE and very TIME EFFICIENT.
-Both the &y&UNMAKER&!& and &y&OVERHEAT REDRESS&!& allow you to achieve GREAT DAMAGE OUTPUT.
+Both the &y&UNMAKER&!& and &y&OVERHEAT REDRESS&!& allow it to achieve GREAT DAMAGE OUTPUT.
 &y&RISING STAR&!& allows for PRECISE ELIMINATIONS, useful when CONTENDERS are out of reach.
 &y&CYBORG&!& can create personal portals he can &y&RECALL&!& to,
 opening the door for THOUSANDS of opportunities.]], sprSkills)
 
 -- Skill descriptions
 cyborg:setLoadoutSkill(1, "Unmaker",
-[[Shoot a CONTENDER inflicting &y&185% DAMAGE&!&.]])
+[[Shoot CONTENDERS with a GAMMA CANNON, 
+inflicting &y&185% DAMAGE&!&.]])
 
 cyborg:setLoadoutSkill(2, "Rising Star",
 [[Quickly fire THREE shots at CONTENDERS in front of you for
@@ -96,16 +97,16 @@ cyborg:addCallback("init", function(player)
 		player:survivorSetInitialStats(110, 12, 0.025)
 	end
 	
-	player:setSkill(1, "Unmaker", "Fire a gamma cannon for 178% damage.",
+	player:setSkill(1, "Unmaker", "Fire a gamma cannon for 185% damage.",
 	sprSkills, 1, 30)
 		
-	player:setSkill(2, "Rising Star", "Quickly fire three shots at enemies in front of you, stunning them.",
+	player:setSkill(2, "Rising Star", "Quickly fire three shots for 3x240% damage, stunning enemies.",
 	sprSkills, 2, 3 * 60)
 
 	player:setSkill(3, "Recall Point", "Create a personal warp point.",
 	sprSkills, 3, 2 * 60)
 
-	player:setSkill(4, "Overheat Redress", "Blast a greater energy discharge dealing up to 400% damage per second.",
+	player:setSkill(4, "Overheat Redress", "Blast yourself backwards with a greater energy discharge, dealing up to 400% DPS.",
 	sprSkills, 4, 6 * 60)
 end)
 
@@ -122,7 +123,7 @@ end)
 
 -- Called when the player picks up the Ancient Scepter
 cyborg:addCallback("scepter", function(player)
-	player:setSkill(4, "Gamma Overheat Redress", "Blast a greater energy discharge dealing up to 650% dps.",
+	player:setSkill(4, "Gamma Overheat Redress", "Blast yourself backwards with a greater energy discharge, dealing up to 650% DPS.",
 	sprSkills, 5, 6 * 60)
 end)
 

@@ -42,7 +42,7 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Fierce",
-		"Cut in front of you.",
+		"Slice twice in front of you for 170% total damage.",
 		sprSkills, 1, 40)
 		player:setSkill(3,
 		"Hunter",
