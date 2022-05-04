@@ -49,13 +49,13 @@ seraph.loadoutSprite = Sprite.load("Seraph_Select", path.."select", 21, 2, 0)
 seraph:setLoadoutInfo(
 [[The &y&Seraph&!& controls the environment with gravity manipulation
 skills that allow for debuffing and annihilating groups of enemies quickly.
-&y&Grace Field&!& stops time in an area allowing for attack chains with &y&Disturbance&!&
+&y&Grace Field&!& stops time in an area, allowing for attack chains with &y&Disturbance&!&
 and &y&Void Breach&!& without putting yourself or your allies at risk.]], sprSkills)
 
 -- Skill descriptions
 
 seraph:setLoadoutSkill(1, "Seraph's Grasp",
-[[Fire energy at enemies for &y&140% damage on a small area.
+[[Fire energy at enemies for &y&140% damage in a small area.
 You can shoot while moving.]])
 
 seraph:setLoadoutSkill(2, "Void Breach",
@@ -63,12 +63,12 @@ seraph:setLoadoutSkill(2, "Void Breach",
 Enemies with the Shatter debuff &y&explode when hit for 400% damage.]])
 
 seraph:setLoadoutSkill(3, "Disturbance",
-[[&lt&Moving:&!& pull enemies towards you for &y&110% damage, &b&pushing you forward.&!&
-&lt&Still:&!& raise enemies and bash them to the ground for &y&310% damage.]])
+[[&lt&Moving:&!& Pull enemies towards you for &y&110% damage, &b&pushing you forward.&!&
+&lt&Still:&!& Raise enemies and bash them to the ground for &y&310% damage.]])
 
 seraph:setLoadoutSkill(4, "Grace Field",
 [[&y&Create a void energy field around you&!& for 4 seconds.
-In the field; &b&reduced third skill cooldown&!&, &y&enemies get stopped in time.]])
+In the field: &b&Reduced third skill cooldown&!&, while &y&enemies get stopped in time.]])
 
 -- Color of highlights during selection
 seraph.loadoutColor = Color.fromHex(0xD30097)
@@ -94,16 +94,16 @@ seraph:addCallback("init", function(player)
 		player:survivorSetInitialStats(95, 14, 0.011)
 	end
 	
-	player:setSkill(1, "Seraph's Grasp", "Fire energy at enemies for 140% damage on a small area.",
+	player:setSkill(1, "Seraph's Grasp", "Fire energy at enemies for 140% damage in a small area.",
 	sprSkills, 1, 50)
 		
-	player:setSkill(2, "Void Breach", "Create a breach giving the Shatter debuff on contact. Enemies with the Shatter debuff explode when hit for 400% damage.",
+	player:setSkill(2, "Void Breach", "Create a breach, giving the Shatter debuff on contact. Enemies with the Shatter debuff explode when hit for 400% damage.",
 	sprSkills, 2, 6 * 60)
 		
-	player:setSkill(3, "Disturbance", "Pull enemies towards you for 110% damage, pushing you forward. When stationary: Raise nearby enemies and bash them to the ground for 310% damage.",
+	player:setSkill(3, "Disturbance", "Moving: Pull enemies towards you for 110% damage, pushing you forward. Still: Raise nearby enemies and bash them to the ground for 310% damage.",
 	sprSkills, 3, 3 * 60)
 		
-	player:setSkill(4, "Grace Field", "Create an energy field for 4 seconds. In the field; reduced third skill cooldown while enemies get stopped in time.",
+	player:setSkill(4, "Grace Field", "Create a void energy field for 4 seconds. In the field: Reduced third skill cooldown, while enemies get stopped in time.",
 	sprSkills, 4, 11 * 60)
 end)
 
@@ -117,7 +117,7 @@ end)
 seraph:addCallback("scepter", function(player)
 	player:setSkill(4,
 		"Void Field",
-		"Create an energy field for 4 seconds. In the field; reduced third skill cooldown while enemies get stopped in time and receive the Shatter debuff.",
+		"Create a void energy field for 4 seconds. In the field: Reduced third skill cooldown, while enemies get stopped in time and receive the Shatter debuff.",
 		sprSkills, 5,
 		11 * 60
 	)
