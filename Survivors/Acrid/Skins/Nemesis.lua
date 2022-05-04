@@ -25,7 +25,7 @@ local sprSkills = Sprite.load("NemesisAcridSkill", path.."Skills", 1, 0, 0)
 --local sShoot = Sound.load("NemesisAcridShoot1", path.."Shoot1")
 local sprSparks = spr.Sparks5
 
-SurvivorVariant.setLoadoutSkill(NemesisAcrid, "Corroding Spit", "Shoot corrosive matter dealing &y&140% corrosive damage.", sprSkills)
+SurvivorVariant.setLoadoutSkill(NemesisAcrid, "Corroding Spit", "Shoot corrosive matter, dealing &y&140% corrosive damage.", sprSkills)
 
 NemesisAcrid.endingQuote = "..and so he left, with a new thirst: foreign blood."
 
@@ -39,7 +39,7 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Corrosion",
-		"Shoot corrosive matter dealing 140% corrosion damage.",
+		"Shoot corrosive matter, dealing 140% corrosive damage.",
 		sprSkills, 1, 40)
 	end
 end)

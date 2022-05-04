@@ -19,4 +19,4 @@ local AAcrid = SurvivorVariant.new(survivor, "Anointed Acrid", sprSelect, {
 	shoot5 = Sprite.load("AAcridShoot5", path.."Shoot5", 7, 15, 15),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(AAcrid, {{"Strength", 5}, {"Vitality", 5}, {"Toughness", 6}, {"Agility", 6}, {"Difficulty", 5}, {"Hunger", 10}})
-SurvivorVariant.setDescription(AAcrid, "The restless creature is enlightened, eternally bound by it's everlasting will.")
+SurvivorVariant.setDescription(AAcrid, "The restless creature is enlightened, eternally bound by its everlasting will.")

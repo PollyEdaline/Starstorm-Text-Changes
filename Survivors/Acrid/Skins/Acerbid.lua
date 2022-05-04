@@ -19,13 +19,13 @@ local Acerbid = SurvivorVariant.new(survivor, "Acerbid", sprSelect, {
 	shoot5 = Sprite.load("AcerbidShoot5", path.."Shoot5", 7, 15, 15),
 }, Color.fromHex(0x5A38C1))
 SurvivorVariant.setInfoStats(Acerbid, {{"Strength", 5}, {"Vitality", 8}, {"Toughness", 1}, {"Agility", 6}, {"Difficulty", 6}, {"Natural Order", 1}})
-SurvivorVariant.setDescription(Acerbid, "The &y&Acerbid&!& is a ranged creature which immortality seems plausible due to its overwhelming self healing attributes.")
+SurvivorVariant.setDescription(Acerbid, "The &y&Acerbid&!& is a mysterious, acid-spitting creature. It is thought to be nearly immortal, due to its incredible regenerative ability.")
 
 local sprSkill = Sprite.load("AcerbidSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("AcerbidShoot1", path.."Shoot1")
 local sprSparks = spr.Sparks5
 
-SurvivorVariant.setLoadoutSkill(Acerbid, "Corroding Spit", "Shoot corrosive matter dealing &y&140% corrosive damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Acerbid, "Corroding Spit", "Shoot corrosive matter, dealing &y&140% corrosive damage.", sprSkill)
 
 Acerbid.endingQuote = "..and so it left, leaving a trail of what it once was."
 
@@ -39,7 +39,7 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Corrosion",
-		"Shoot corrosive matter dealing 140% corrosion damage.",
+		"Shoot corrosive matter, dealing 140% corrosive damage.",
 		sprSkill, 1, 40)
 	end
 end)
