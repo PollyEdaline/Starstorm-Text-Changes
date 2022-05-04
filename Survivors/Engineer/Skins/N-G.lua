@@ -27,7 +27,7 @@ local sShoot1= Sound.load("NGShoot1", path.."Shoot1")
 local sShoot3= Sound.load("NGShoot3", path.."Shoot3")
 
 SurvivorVariant.setLoadoutSkill(NG, "WELDING BEAM DISCHARGE", "RELEASE A BEAM DEALING &y&100% IMPACT + 100% ELECTRIC DAMAGE. &y&STUNS USERS BRIEFLY.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(NG, "RAPID DISPLACEMENT", "&b&MOVE FORWARD &!&PUSHING ANY USERS IN THE WAY FOR &y&100% DAMAGE.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(NG, "RAPID DISPLACEMENT", "&b&MOVE FORWARD, &!&PUSHING ANY USERS IN THE WAY FOR &y&100% DAMAGE.", sprSkills, 2)
 
 NG.endingQuote = "..and so it left, calculating an improbable fate."
 
@@ -141,10 +141,10 @@ callback.register("onSkinInit", function(player, skin)
 			player:survivorSetInitialStats(120, 12, 0.012)
 		end
 		player:setSkill(1,
-		"Welding Beam Discharge", "Fire a beam dealing 100% impact + 100% electric damage. Stuns enemies briefly.",
+		"WELDING BEAM DISCHARGE", "RELEASE A BEAM DEALING 100% IMPACT + 100% ELECTRIC DAMAGE. STUNS USERS BRIEFLY.",
 		sprSkills, 1, 1 * 60)
 		player:setSkill(3,
-		"Rapid Displacement", "Move forward pushing any enemies in the way for 100% damage.",
+		"RAPID DISPLACEMENT", "MOVE FORWARD, PUSHING ANY USERS IN THE WAY FOR 100% DAMAGE.",
 		sprSkills, 2, 5 * 60)
 		
 		player:getData()._hi = 0

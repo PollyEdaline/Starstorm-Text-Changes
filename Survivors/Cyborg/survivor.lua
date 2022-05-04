@@ -97,16 +97,16 @@ cyborg:addCallback("init", function(player)
 		player:survivorSetInitialStats(110, 12, 0.025)
 	end
 	
-	player:setSkill(1, "Unmaker", "Fire a gamma cannon for 185% damage.",
+	player:setSkill(1, "Unmaker", "Fire a GAMMA CANNON for 185% damage.",
 	sprSkills, 1, 30)
 		
-	player:setSkill(2, "Rising Star", "Quickly fire three shots for 3x240% damage, stunning enemies.",
+	player:setSkill(2, "Rising Star", "Quickly fire THREE shots for 3x240% damage, stunning CONTENDERS.",
 	sprSkills, 2, 3 * 60)
 
-	player:setSkill(3, "Recall Point", "Create a personal warp point.",
+	player:setSkill(3, "Recall Point", "Create a WARP POINT.",
 	sprSkills, 3, 2 * 60)
 
-	player:setSkill(4, "Overheat Redress", "Blast yourself backwards with a greater energy discharge, dealing up to 400% DPS.",
+	player:setSkill(4, "Overheat Redress", "Blast yourself backwards with a GREATER ENERGY BULLET, dealing up to 400% DPS.",
 	sprSkills, 4, 6 * 60)
 end)
 
@@ -123,7 +123,7 @@ end)
 
 -- Called when the player picks up the Ancient Scepter
 cyborg:addCallback("scepter", function(player)
-	player:setSkill(4, "Gamma Overheat Redress", "Blast yourself backwards with a greater energy discharge, dealing up to 650% DPS.",
+	player:setSkill(4, "Gamma Overheat Redress", "Blast yourself backwards with a GREATER ENERGY BULLET, dealing up to 650% DPS.",
 	sprSkills, 5, 6 * 60)
 end)
 
@@ -131,7 +131,7 @@ end)
 
 local removePoint = function(player)
 	sCyborgSkill3c:play(1 + math.random() * 0.2)
-	player:setSkill(3, "Recall Point", "Create a personal warp point.",
+	player:setSkill(3, "Recall Point", "Create a WARP POINT.",
 	sprSkills, 3, 2 * 60)
 	if player:getData().activeTele and player:getData().activeTele:isValid() then
 		player:getData().activeTele:destroy()
@@ -429,7 +429,7 @@ cyborg:addCallback("onSkill", function(player, skill, relevantFrame)
 				player:getData().teleAvailable = true
 				player:getData().activeTele = objTeleport:create(player.x, player.y)
 				player:getData().activeTele:getData().parent = player
-				player:setSkill(3, "Recall", "Teleport back to the personal warp point. Hold to remove.",
+				player:setSkill(3, "Recall", "Teleport back to the WARP POINT. Hold to remove.",
 				sprSkills, 6, 6 * 60)
 				player:activateSkillCooldown(1)
 			end
@@ -461,7 +461,7 @@ cyborg:addCallback("onSkill", function(player, skill, relevantFrame)
 					end
 					player:getData().activeTele:destroy()
 				end
-				player:setSkill(3, "Recall Point", "Create a personal warp point.",
+				player:setSkill(3, "Recall Point", "Create a WARP POINT.",
 				sprSkills, 3, 2 * 60)
 				player:activateSkillCooldown(1)
 			end
@@ -516,7 +516,7 @@ cyborg:addCallback("step", function(player)
 			playerData.cHoldTimer = playerData.cHoldTimer + 1
 		elseif not playerData.holdDone then
 			sCyborgSkill3c:play(1 + math.random() * 0.2)
-			player:setSkill(3, "Recall Point", "Create a personal warp point.",
+			player:setSkill(3, "Recall Point", "Create a WARP POINT.",
 			sprSkills, 3, 2 * 60)
 			player:getData().activeTele:destroy()
 			
@@ -562,7 +562,7 @@ table.insert(call.onStageEntry, function()
 	for _, player in ipairs(misc.players) do
 		if player:getSurvivor() == cyborg then
 			if not SurvivorVariant.getActive(player) then
-				player:setSkill(3, "Recall Point", "Create a personal warp point.",
+				player:setSkill(3, "Recall Point", "Create a WARP POINT.",
 				sprSkills, 3, 2 * 60)
 				player:activateSkillCooldown(1)
 			end
