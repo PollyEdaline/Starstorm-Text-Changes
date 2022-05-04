@@ -29,9 +29,9 @@ if not global.rormlflag.ss_disable_enemies then
 	local sShoot4 = Sound.find("NemJanitorShoot4")
 	local sprSparks = spr.Sparks6
 	
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "SHEAR", "CUT THROUGH CONTENDERS FOR 120% DAMAGE.", sprSkills)
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "FOCUS", "TEMPORARILY REDUCE YOUR MOVEMENT SPEED WHILE DEALING 50% EXTRA DAMAGE.", sprSkills, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "DOUBLE SHAVE", "SAW NEARBY CONTENDERS FOR 12x75% DAMAGE.", sprSkills, 3)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "SHEAR", "CUT THROUGH COMBATANTS FOR &y&120% DAMAGE.", sprSkills)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "FOCUS", "TEMPORARILY &b&REDUCE YOUR MOVEMENT SPEED&!& WHILE DEALING &y&50% EXTRA DAMAGE.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "DOUBLE SHAVE", "SAW NEARBY COMBATANTS FOR &y&12x75% DAMAGE.", sprSkills, 3)
 
 	NemesisHAND.endingQuote = "..and so it left, rebooting itself for once."
 	
@@ -83,7 +83,7 @@ if not global.rormlflag.ss_disable_enemies then
 			end
 			player:setSkill(1,
 			"SHEAR",
-			"CUT THROUGH ENEMIES FOR 120% DAMAGE.",
+			"CUT THROUGH COMBATANTS FOR 120% DAMAGE.",
 			sprSkills, 1, 40)
 			player:setSkill(3,
 			"FOCUS",
@@ -91,7 +91,7 @@ if not global.rormlflag.ss_disable_enemies then
 			sprSkills, 2, 60 * 8)
 			player:setSkill(4,
 			"DUAL SHAVE",
-			"SAW NEARBY CONTENDERS FOR 12x75%DAMAGE.",
+			"SAW NEARBY COMBATANTS FOR 12x75%DAMAGE.",
 			sprSkills, 3, 60 * 6)
 			tcallback.register("postPlayerStep", postPlayerStepCall)
 		end

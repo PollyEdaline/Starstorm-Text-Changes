@@ -25,4 +25,4 @@ local AJanitor = SurvivorVariant.new(survivor, "Anointed HAN-D", sprSelect, {
 	shoot5hot = Sprite.load("AJanitorShoot5B", path.."Shoot4Hot", 18, 32, 39),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(AJanitor, {{"Strength", 6}, {"Vitality", 8}, {"Toughness", 6}, {"Agility", 5}, {"Difficulty", 4}, {"Hygiene", 10}})
-SurvivorVariant.setDescription(AJanitor, "A new sense covers the metallic plates of a hurrying unit. The ever-working robot is enlightened.")
+SurvivorVariant.setDescription(AJanitor, "The ever-working robot is enlightened. A new sense covers the metallic plates of the hurrying unit.")

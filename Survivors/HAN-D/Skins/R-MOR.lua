@@ -25,7 +25,7 @@ local RMOR = SurvivorVariant.new(survivor, "R-MOR", sprSelect, {
 	shoot5hot = Sprite.load("RMORShoot5B", path.."Shoot4_2", 18, 33, 39),
 }, Color.fromHex(0x888E80))
 SurvivorVariant.setInfoStats(RMOR, {{"Strength", 8}, {"Vitality", 5}, {"Toughness", 10}, {"Agility", 4}, {"Difficulty", 4.5}, {"Affection", 2}})
-SurvivorVariant.setDescription(RMOR, "&y&R-MOR&!& is a devastating machine made for critical encounters: extreme armor, retractable blades and missile launchers. An unstoppable behemoth.")
+SurvivorVariant.setDescription(RMOR, "&y&R-MOR&!& is a devastating machine made for critical encounters: extreme armor, retractable blades, and missile launchers. An unstoppable behemoth.")
 
 local sprSkill = Sprite.load("RMORSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("RMORShoot1", path.."Shoot1")
