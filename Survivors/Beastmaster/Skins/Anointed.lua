@@ -20,4 +20,4 @@ local AChirr = SurvivorVariant.new(survivor, "Anointed Chirr", sprSelect, {
 	shoot4 = Sprite.load("AChirrShoot4", path.."shoot4", 10, 3, 4),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(AChirr, {{"Strength", 4}, {"Vitality", 5}, {"Toughness", 2}, {"Agility", 8}, {"Difficulty", 5}, {"Healing", 10}, {"Essence", 10}})
-SurvivorVariant.setDescription(AChirr, "The spirited creature is enlightened, held by unlikely chances, to make necessary changes.")
+SurvivorVariant.setDescription(AChirr, "The spirited creature is enlightened, held by unlikely circumstance, ready to make necessary changes.")

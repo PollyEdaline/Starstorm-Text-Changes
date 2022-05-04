@@ -40,8 +40,8 @@ beastmaster.loadoutSprite = Sprite.load("Beastmaster_Select", path.."select", 15
 -- Selection description
 beastmaster:setLoadoutInfo(
 [[&y&Chirr&!& is a mystical creature who holds a pure connection with the planet.
-Her innate healing properties give her a highly supportive role, being also able to withdraw
-from any battle easily thanks to her high ability to hover.
+Her innate healing properties give her a highly supportive role, able to withdraw
+from any battle easily thanks to her ability to hover.
 Chirr can befriend one creature at a time through her &y&Natural Link&!& skill.]], sprSkills)
 
 -- Skill descriptions
@@ -49,16 +49,16 @@ beastmaster:setLoadoutSkill(1, "Life Thorns",
 [[Shoot 3 projectiles for &y&260% total damage.&y&]])
 
 beastmaster:setLoadoutSkill(2, "Headbutt",
-[[Headbutt the enemies in front of you for &y&300% damage,
+[[Headbutt enemies in front of you for &y&300% damage,
 &y&stunning them&!& for 3 seconds.]])
 
 beastmaster:setLoadoutSkill(3, "Sanative Aura",
 [[&g&Heal yourself and nearby allies for 25% of their total health.&!&
-Healed allies earn &g&increased health regeneration&!& for 6 seconds.]])
+Healed allies gain &g&increased health regeneration&!& for 6 seconds.]])
 
 beastmaster:setLoadoutSkill(4, "Natural Link / Unbreakable Bond",
 [[&g&Befriend&!& the last hit creature if it's &y&below 50% of its total health.
-&y&Pull or call the befriended creature.]])
+&y&Pull or call the befriended creature. Redirect damage to it for as long as you hold it.]])
 
 -- Color of highlights during selection
 beastmaster.loadoutColor = Color.fromHex(0x81A762)
@@ -88,13 +88,13 @@ beastmaster:addCallback("init", function(player)
 		player:survivorSetInitialStats(102, 11, 0.014)
 	end
 	
-	player:setSkill(1, "Life Thorns", "Shoot 3 projectiles for 260% damage",
+	player:setSkill(1, "Life Thorns", "Shoot 3 projectiles for 260% total damage",
 	sprSkills, 1, 30)
 		
-	player:setSkill(2, "Headbutt", "Stun close enemies for 300% damage",
+	player:setSkill(2, "Headbutt", "Headbutt and stun enemies for 300% damage.",
 	sprSkills, 2, 4 * 60)
 		
-	player:setSkill(3, "Sanative Aura", "Heal nearby allies for 25% of their health leaving them with a heal over time.",
+	player:setSkill(3, "Sanative Aura", "Heal nearby allies for 25% of their health, leaving them with a heal over time.",
 	sprSkills, 3, 15 * 60)
 		
 	player:setSkill(4, "Natural Link", "Tame the last hit enemy if it's below 50% of its max health.",
@@ -430,14 +430,14 @@ beastmaster:addCallback("step", function(player)
 		end
 		
 		playerData.tameChild:getData().linked = nil
-		player:setSkill(4, "Unbreakable Bond", "Pull your befriended creature. Redirects all taken hits to the creature.",
+		player:setSkill(4, "Unbreakable Bond", "Pull your befriended creature. Redirects all damage taken to the creature as long as you hold it.",
 		sprSkills, 5, 0)
 	else
 		if player:get("scepter") > 0 then
-			player:setSkill(4, "Prime Natural Link", "Befriend the last hit enemy if it's below 50% health or 30% if it's a boss.",
+			player:setSkill(4, "Prime Natural Link", "Befriend the last hit enemy if it's below 50% health, or 30% if it's a boss.",
 			sprSkills, 6, 4 * 60)
 		else
-			player:setSkill(4, "Natural Link", "Befriend the last hit enemy if it's below 50% health",
+			player:setSkill(4, "Natural Link", "Befriend the last hit enemy if it's below 50% health.",
 			sprSkills, 4, 4 * 60)
 		end
 		if playerData.skill4IconOverride then
