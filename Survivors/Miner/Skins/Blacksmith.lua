@@ -18,13 +18,13 @@ local Blacksmith = SurvivorVariant.new(survivor, "Blacksmith", sprSelect, {
 	shoot4 = Sprite.load("BlacksmithShoot4", path.."Shoot4", 8, 24, 4),
 }, Color.fromHex(0x872F2A))
 SurvivorVariant.setInfoStats(Blacksmith, {{"Strength", 8}, {"Vitality", 6}, {"Toughness", 4}, {"Agility", 9}, {"Difficulty", 4}, {"Burns", 10}})
-SurvivorVariant.setDescription(Blacksmith, "The &y&Blacksmith&!&'s durability and force make him feared by creatures and humans alike, as nobody knows who's behind the mask anymore. Each one of his attacks deal &y&blazing damage&!&.")
+SurvivorVariant.setDescription(Blacksmith, "The &y&Blacksmith&!&'s durability and strength make him feared by creatures and humans alike. Nobody knows who is behind the mask anymore. Each one of his attacks deal &y&blazing damage&!&.")
 
 local sprSkill = Sprite.load("BlacksmithSkill", path.."Skill", 1, 0, 0)
 local sprSparks = spr.Sparks7
 local sShoot = Sound.load("BlacksmithShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Blacksmith, "Forged Slash", "Cut through your enemies in close range for &y&180% damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Blacksmith, "Forged Slash", "Cut through enemies for &y&180% damage.", sprSkill)
 
 Blacksmith.endingQuote = "..and so he left, scarred for eternity."
 
@@ -44,7 +44,7 @@ callback.register("onSkinInit", function(player, skin)
 		player:set("pHmax", player:get("pHmax") - 0.1)
 		player:setSkill(1,
 		"Forged Slash",
-		"Cut through your enemies in close range for 180% damage.",
+		"Cut through enemies for 180% damage.",
 		sprSkill, 1, 50)
 		tcallback.register("onFireSetProcs", onFireSetProcsCall)
 	end

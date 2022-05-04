@@ -26,7 +26,7 @@ local NemesisMiner = SurvivorVariant.new(survivor, "Nemesis Miner", sprSelect, {
 	shoot4 = Sprite.find("NemesisMinerShoot4", "Starstorm")
 }, Color.fromHex(0x9F37FF))
 SurvivorVariant.setInfoStats(NemesisMiner, {{"Strength", 8}, {"Vitality", 6}, {"Toughness", 4}, {"Agility", 9}, {"Difficulty", 4}, {"Rush", 8}})
-SurvivorVariant.setDescription(NemesisMiner, "The &y&Nemesis Miner&!& is a heavy duty underground excavation expert fully equipped with hand-drills to go through even the hardest rocks.")
+SurvivorVariant.setDescription(NemesisMiner, "The &y&Nemesis Miner&!& is a heavy duty underground excavation expert, fully equipped with hand-drills to go through even the hardest rocks.")
 
 local sprSkills = Sprite.load("NemesisMinerSkills", path.."Skills", 4, 0, 0)
 local sShoot1 = Sound.find("NemesisMinerShoot1", "Starstorm")
@@ -35,8 +35,8 @@ local sShoot4_1 = Sound.find("NemesisMinerShoot4_1", "Starstorm")
 local sShoot4_2 = Sound.find("NemesisMinerShoot4_2", "Starstorm")
 
 SurvivorVariant.setLoadoutSkill(NemesisMiner, "Dig", "Attack forward for &y&60% damage&!&. Drill faster at higher speeds. Can move while attacking.", sprSkills)
-SurvivorVariant.setLoadoutSkill(NemesisMiner, "Hyper-Drill", "Transform into a full sized drill dealing &y&18x40% damage around you.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(NemesisMiner, "To The Core", "Dive into the ground creating a shockwave which deals &y&2x250% damage total.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(NemesisMiner, "Hyper-Drill", "Transform into a full sized drill, dealing &y&18x40% damage around you.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(NemesisMiner, "To The Core", "Dive into the ground, creating a shockwave in both directions which deals &y&250% damage each.", sprSkills, 3)
 
 NemesisMiner.endingQuote = "..and so he left, resting for once."
 
@@ -53,11 +53,11 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkills, 1, 20)
 		player:setSkill(3,
 		"Hyper-Drill",
-		"Transform into a full sized drill dealing 40%x18 damage around you.",
+		"Transform into a full sized drill, dealing 18x40% damage around you.",
 		sprSkills, 2, 6 * 60)
 		player:setSkill(4,
 		"To The Core",
-		"Dive into the ground creating a shockwave in both directions which deal 250% damage on impact",
+		"Dive into the ground, creating a shockwave in both directions which deal 250% damage each.",
 		sprSkills, 3, 6 * 60)
 		player:getData().drillDirection = 0
 		player:getData().drillTimer = 1
@@ -73,7 +73,7 @@ survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == NemesisMiner then
 		player:setSkill(4,
 		"Corebound",
-		"Dive into the ground creating two shockwaves in both directions which deal 250% damage on impact",
+		"Dive into the ground, creating two shockwaves in both directions which deal 250% damage each.",
 		sprSkills, 4, 6 * 60)
 	end
 end)
