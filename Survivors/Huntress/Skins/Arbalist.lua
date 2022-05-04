@@ -20,7 +20,7 @@ local Arbalist = SurvivorVariant.new(survivor, "Arbalist", sprSelect, {
 	shoot5 = Sprite.load("ArbalistShoot5", path.."Shoot5", 10, 15, 12),
 }, Color.fromHex(0x9851AA))
 SurvivorVariant.setInfoStats(Arbalist, {{"Strength", 6.5}, {"Vitality", 4}, {"Toughness", 1.5}, {"Agility", 6}, {"Difficulty", 6.5}, {"Temperament", 6.5}})
-SurvivorVariant.setDescription(Arbalist, "A lower firerate but an extra arrow for every attack makes the &y&Arbalist&!& a highly versatile alternative to common archery.")
+SurvivorVariant.setDescription(Arbalist, "A lower firerate with an extra arrow every attack makes the &y&Arbalist&!& a highly versatile alternative to common archery.")
 Arbalist.forceApply = true
 
 Arbalist.endingQuote = "..and so she left, unwilling to relive the catastrophe."
@@ -30,7 +30,6 @@ local sprOriginalSkills = spr.Huntress1Skills
 local sShoot = sfx.HuntressShoot1
 
 SurvivorVariant.setLoadoutSkill(Arbalist, "Dual Serving", "Each &b&attack ability &y&fires an extra shot in front of you.", sprSkill)
-
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == Arbalist then
@@ -48,7 +47,7 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkill, 1, 43)
 		player:setSkill(2,
 		"Laser Glaives",
-		"Throw two glaives that bounce to up to 4 enemies for 300% damage. Increases by 30% per bounce",
+		"Throw two glaives that bounce to up to 4 enemies for 300% damage. Damage increases by 30% per bounce.",
 		sprOriginalSkills, 2, 60 * 4)
 		player:setSkill(4,
 		"Dual Serving",

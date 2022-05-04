@@ -24,7 +24,7 @@ local NemesisHuntress = SurvivorVariant.new(survivor, "Nemesis Huntress", sprSel
 	shoot5 = Sprite.find("NemesisHuntressShoot5", "Starstorm"),
 }, Color.fromHex(0x4DF9DD))
 SurvivorVariant.setInfoStats(NemesisHuntress, {{"Strength", 8}, {"Vitality", 3.5}, {"Toughness", 2}, {"Agility", 7}, {"Difficulty", 5}, {"Style", 7}})
-SurvivorVariant.setDescription(NemesisHuntress, "The &y&Nemesis Huntress&!& engages against enemies slowly but ruthlessly with her deadly longbow and double headed hatchet.")
+SurvivorVariant.setDescription(NemesisHuntress, "The &y&Nemesis Huntress&!& engages enemies slowly but ruthlessly with her deadly longbow and double headed hatchet.")
 NemesisHuntress.forceApply = true
 
 NemesisHuntress.endingQuote = "..and so she left, finding a new home far away."
@@ -36,8 +36,8 @@ local sCharge = Sound.load("NemesisHuntressCharge", path.."charge")
 
 local sprCape = Sprite.find("NemesisHuntressCape", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Packed Bolt", "&y&Hold to charge&!& and fire up to 7 bolts for &y&7x140% damage.", sprSkill)
-SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Laser Hatchet", "Throw a &y&piercing hatchet&!& towards the nearest enemy, &y&dealing 600% damage on contact.", sprSkill, 2)
+SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Packed Bolt", "&y&Hold to charge&!&, releasing to fire up to 7 bolts for &y&7x140% damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Laser Hatchet", "Throw a &y&piercing hatchet&!& towards the nearest enemy, dealing &y&600% damage.", sprSkill, 2)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == NemesisHuntress then
@@ -52,11 +52,11 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Packed Bolt",
-		"Hold to charge and fire up to 7 bolts for 7x140% damage. You can shoot while moving.",
+		"Hold to charge relasing to fire up to 7 bolts for 7x140% damage. You can shoot while moving.",
 		sprSkill, 1, 25)
 		player:setSkill(2,
 		"Laser Hatchet",
-		"Throw a piercing hatchet towards the nearest enemy, dealing 600% damage on contact.",
+		"Throw a piercing hatchet towards the nearest enemy, dealing 600% damage.",
 		sprSkill, 2, 60 * 6)
 	end
 end)
