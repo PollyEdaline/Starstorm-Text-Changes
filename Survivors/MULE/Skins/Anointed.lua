@@ -27,5 +27,5 @@ local AMULE = SurvivorVariant.new(survivor, "Anointed MULE", sprSelect, {
 	drone2_2 = Sprite.load("AMULEDroneB_Repair", path.."dronebRegen", 2, 6, 6)
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(AMULE, {{"Strength", 6}, {"Vitality", 7}, {"Toughness", 5}, {"Agility", 4}, {"Difficulty", 5}, {"Directive", 10}})
-SurvivorVariant.setDescription(AMULE, "The rustic transporter is enlightened, with an unimaginable effort to come.")
+SurvivorVariant.setDescription(AMULE, "The rustic transporter is enlightened, with unimaginable effort yet to come.")
 
