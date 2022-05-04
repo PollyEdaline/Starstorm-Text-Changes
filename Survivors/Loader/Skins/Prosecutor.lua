@@ -26,7 +26,7 @@ local sprSkill = Sprite.load("ProsecutorSkill", path.."Skill", 1, 0, 0)
 local sShoot1 = Sound.load("ProsecutorShoot1", path.."Shoot1")
 local sShootOriginal = sfx.JanitorShoot1_2
 
-SurvivorVariant.setLoadoutSkill(Prosecutor, "Accelerated Jolt", "Kick enemies at close range for &y&130% damage&!&, every third attack &y&knocks back enemies for 200%.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Prosecutor, "Accelerated Jolt", "Kick enemies at close range for &y&130% damage&!&. Every third attack &y&knocks back enemies for 200% damage.", sprSkill)
 
 Prosecutor.endingQuote = "..and so they left, pursuing new goals in life."
 
@@ -45,7 +45,7 @@ callback.register("onSkinInit", function(player, skin)
 		end
 		player:setSkill(1,
 		"Accelerated Jolt",
-		"Kick enemies at close range for 130% damage, every third attack pushes knocks back for 200%.",
+		"Kick enemies at close range for 130% damage. Every third attack knocks back enemies for 200% damage.",
 		sprSkill, 1, 15)
 		player:getData().moving = false
 	end

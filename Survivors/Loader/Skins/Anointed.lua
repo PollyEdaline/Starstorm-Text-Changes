@@ -19,4 +19,4 @@ local ALoader = SurvivorVariant.new(survivor, "Anointed Loader", sprSelect, {
 	shoot2 = Sprite.load("ALoaderShoot2", path.."Shoot2", 11, 9, 8),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(ALoader, {{"Strength", 6}, {"Vitality", 5}, {"Toughness", 7}, {"Agility", 7}, {"Difficulty", 4}, {"Reflex", 10}})
-SurvivorVariant.setDescription(ALoader, "The unexcelled carrier is enlightened, now holding the intangible weight of the universe.")
+SurvivorVariant.setDescription(ALoader, "The unparalleled carrier is enlightened, now holding the intangible weight of the universe.")
