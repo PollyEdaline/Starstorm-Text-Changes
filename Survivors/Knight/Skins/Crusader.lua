@@ -256,7 +256,7 @@ end)
 survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == crusader then
 		player:setSkill(4,
-		"Hell's Gate", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 6 seconds. Sets the ground on fire."
+		"Hell's Gate", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 6 seconds. Sets the ground on fire.",
 		sprSkills, 5, 11 * 60)
 	end
 end)
