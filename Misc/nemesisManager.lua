@@ -257,7 +257,7 @@ callback.register("onLoad", function()
 
 	mlog.Vestige = MonsterLog.new("Vestige")
 	mlog.Vestige.displayName = "Vestige (Nemesis)"
-	mlog.Vestige.story = "I was tired.. I stumbled and fell into a large crack in the terrain. Exhausted, all I wanted was a spark of hope.\n\nI saw you.. and I mistook you for it.\n\nProof that I wasn't alone, that I wouldn't have to do this on my own.\n\nWhy did you attack me?\nHow did you irradiate so much anger while being so emotionless? Was it something i did?\n\nThis planet is taking my sanity away.. Just as it must have taken yours.."
+	mlog.Vestige.story = "I was tired... I stumbled and fell into a large crack in the terrain. Exhausted, all I wanted was a spark of hope.\n\nI saw you... and I mistook you for it.\n\nProof that I wasn't alone, that I wouldn't have to do this on my own.\n\nWhy did you attack me?\nHow did you radiate so much anger while being so emotionless? Was it something O did?\n\nThis planet is taking my sanity away... Just as it must have taken yours."
 	mlog.Vestige.statHP = math.huge
 	mlog.Vestige.statDamage = math.huge
 	mlog.Vestige.statSpeed = 1.3
