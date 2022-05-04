@@ -34,7 +34,7 @@ crusader.endingQuote = "..and so she left, still bound by conviction."
 local sprSkills = Sprite.load("CrusaderSkill", path.."Skills", 6, 0, 0)
 
 SurvivorVariant.setLoadoutSkill(crusader, "Impale", "Stab with your halberd for &y&150% damage.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage on both sides. Strike your halberd against your shield, knocking all enemies back. &y&Allies receive a fire damage bonus for 5 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage on both sides. Strike your halberd against the ground, knocking all enemies back. &y&Allies receive a fire damage bonus for 5 seconds.", sprSkills, 4)
 
 local buffV = Buff.new("crusaderBuff")
 buffV.sprite = Sprite.load("Crusader_Buff", path.."buff", 1, 9, 9)
@@ -71,7 +71,7 @@ callback.register("onSkinInit", function(player, skin)
 		player:setSkill(3, "Strike", "Dash and strike forward for 200% damage. Stuns enemies briefly.",
 		sprSkills, 3, 4 * 60)
 		
-		player:setSkill(4, "Sacrilege's End", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 3 seconds.",
+		player:setSkill(4, "Sacrilege's End", "Fire twice for 400% total damage. Strike your halberd, knocking enemies back. Allies receive a fire damage bonus for 3 seconds.",
 		sprSkills, 4, 11 * 60)
 	end
 end)
@@ -256,7 +256,7 @@ end)
 survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == crusader then
 		player:setSkill(4,
-		"Hell's Gate", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 6 seconds. Sets the ground on fire.",
+		"Hell's Gate", "Fire twice for 400% total damage. Strike your halberd, knocking enemies back. Allies receive a fire damage bonus for 6 seconds. Sets the ground on fire.",
 		sprSkills, 5, 11 * 60)
 	end
 end)
