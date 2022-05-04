@@ -75,27 +75,27 @@ technician.loadoutSprite = Sprite.load("Technician_Select", path.."select", 15, 
 
 -- Selection description
 technician:setLoadoutInfo(
-[[The &y&Technician&!& is the best at handling high-tech devices.
-While fixing robot janitors is the daily routine for the Technician;
+[[The &y&Technician&!& is incredibly skilled at handling high-tech devices.
+While fixing robot janitors is the daily routine for the Technician,
 deploying turrets and drinking energy drinks is what he loves the most.
-Set up all the gadgets to make the best out of the technician in any situation!]], sprSkills)
+Set up and upgrade your gadgets to make the most of any situation.]], sprSkills)
 
 -- Skill descriptions
 technician:setLoadoutSkill(1, "Troubleshoot",
-[[Throw a wrench which pierces enemies by &y&120% damage&!&.
-Hitting &y&gadgets&!& thrice &b&upgrades them&!&.]])
+[[Throw a wrench which pierces enemies for &y&150% damage&!&.
+Hitting &y&gadgets&!& three times &b&upgrades them&!&.]])
 
 technician:setLoadoutSkill(2, "Forced Shutdown",
 [[Drop a &y&bomb&!& which deals &y&700% damage&!& on manual detonation.
-&b&Upgraded:&!& &y&stuns and pulls enemies for 400% damage&!& on detonation.]])
+&b&Upgraded:&!& &y&Stuns and pulls enemies for 400% damage&!& on detonation.]])
 
 technician:setLoadoutSkill(3, "24/7 Energy",
-[[Deploy a vending machine. Which gives a &b&move&!& and &y&attack speed boost&!&.
-&b&Upgraded:&!& grants an additional &y&critical strike chance.]])
+[[Deploy a vending machine which grants a &b&move&!& and &y&attack speed boost&!& when used.
+&b&Upgraded:&!& Also grants &y&Critical Strike chance.]])
 
 technician:setLoadoutSkill(4, "Backup Firewall",
-[[Place a stationary drone turret firing forward for &y&70% damage.&!&
-&b&Upgraded:&!& fires forward for &y&80% damage.]])
+[[Place a stationary drone turret that fires for &y&70% damage.&!&
+&b&Upgraded:&!& Fires for &y&80% damage.]])
 
 -- Color of highlights during selection
 technician.loadoutColor = Color.fromRGB(107,173,186)
@@ -135,16 +135,16 @@ technician:addCallback("init", function(player)
 		player:survivorSetInitialStats(102, 11, 0.011)
 	end
 	
-	player:setSkill(1, "Troubleshoot", "Throw a wrench for 150% damage. Can upgrade gadgets.",
+	player:setSkill(1, "Troubleshoot", "Throw a piercing wrench for 150% damage. Can upgrade gadgets.",
 	sprSkills, 1, 45)
 		
-	player:setSkill(2, "Forced Shutdown", "Drop bomb which deals 700% damage on detonation. On upgrade: stuns and pulls nearby enemies.",
+	player:setSkill(2, "Forced Shutdown", "Drop a bomb which deals 700% damage on detonation. Upgraded: Stuns and pulls nearby enemies for 400% damage.",
 	sprSkills, 2, 3 * 60)
 		
-	player:setSkill(3, "24/7 Energy", "Deploy a vending machine which grants a temporary speed and attack rate boost. On upgrade: gives additional critical strike chance.",
+	player:setSkill(3, "24/7 Energy", "Deploy a vending machine which grants a move and attack speed boost. Upgraded: Also grants Critical Strike chance.",
 	sprSkills, 3, 12 * 60)
 		
-	player:setSkill(4, "Backup Firewall", "Place a helping turret firing forward for 216% DPS. On upgrade: deals 350% DPS.",
+	player:setSkill(4, "Backup Firewall", "Place a turret that fires for 70% damage. Upgraded: Deals 80% damage.",
 	sprSkills, 4, 7 * 60)
 end)
 
@@ -156,7 +156,7 @@ end)
 -- Called when the player picks up the Ancient Scepter
 technician:addCallback("scepter", function(player)
 	player:setSkill(4,
-	"Backup Firewall 2.0", "Place an upgraded turret firing rapidly for 350% damage per second. On upgrade: launches missiles.", 
+	"Backup Firewall 2.0", "Place an upgraded turret that  fires rapidly for 350% damage per second. Upgraded: Launches missiles.", 
 	sprSkills, 5, 5 * 60)
 	if player:getData().activeTurret and player:getData().activeTurret:isValid() then
 		player:getData().activeTurret:getData().scepter = true
@@ -681,7 +681,7 @@ end
 local onStageEntryCall = function()
 	for _, player in ipairs(misc.players) do
 		if player:getSurvivor() == technician then
-			player:setSkill(2, "Forced Shutdown", "Drop bomb which deals 700% damage on detonation. On upgrade: stuns and pulls nearby enemies.",
+			player:setSkill(2, "Forced Shutdown", "Drop a bomb which deals 700% damage on detonation. Upgraded: Stuns and pulls nearby enemies for 400% damage.",
 			sprSkills, 2, 3 * 60)
 		end
 	end
@@ -700,11 +700,11 @@ technician:addCallback("useSkill", function(player, skill)
 				-- X skill
 				if player:getData().childMine and player:getData().childMine:isValid() then
 					player:getData().childMine = nil
-					player:setSkill(2, "Forced Shutdown", "Drop bomb which deals 700% damage on detonation. On upgrade: stuns and pulls nearby enemies.",
+					player:setSkill(2, "Forced Shutdown", "Drop a bomb which deals 700% damage on detonation. Upgraded: Stuns and pulls nearby enemies for 400% damage.",
 					sprSkills, 2, 3 * 60)
 				else
 					player:survivorActivityState(2, player:getAnimation("shoot2_1"), 0.2, true, true)
-					player:setSkill(2, "The Red Button", "Detonate the dropped mine for 700% damage.",
+					player:setSkill(2, "The Red Button", "Detonate the dropped bomb for 700% damage.",
 					sprSkills, 6, 30)
 				end
 			elseif skill == 3 then
@@ -726,11 +726,11 @@ technician:addCallback("useSkill", function(player, skill)
 				-- X skill
 				if player:getData().childMine and player:getData().childMine:isValid() then
 					player:getData().childMine = nil
-					player:setSkill(2, "Forced Shutdown", "Drop bomb which deals 700% damage on detonation. On upgrade: stuns and pulls nearby enemies.",
+					player:setSkill(2, "Forced Shutdown", "Drop a bomb which deals 700% damage on detonation. Upgraded: Stuns and pulls nearby enemies for 400% damage.",
 					sprSkills, 2, 3 * 60)
 				else
 					player:survivorActivityState(2, player:getAnimation("shoot2_2"), 0.2, true, true)
-					player:setSkill(2, "The Red Button", "Detonate the dropped mine for 700% damage.",
+					player:setSkill(2, "The Red Button", "Detonate the dropped bomb for 700% damage.",
 					sprSkills, 6, 30)
 				end
 			elseif skill == 3 then

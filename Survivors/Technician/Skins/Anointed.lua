@@ -39,4 +39,4 @@ local ATechnician = SurvivorVariant.new(survivor, "Anointed Technician", sprSele
 	turret3_2 = Sprite.load("ATechnicianTurretC_Shoot", path.."turretcshoot", 4, 9, 9),
 }, Color.fromHex(0xB5F7FF))
 SurvivorVariant.setInfoStats(ATechnician, {{"Strength", 4}, {"Vitality", 5}, {"Toughness", 3}, {"Agility", 4}, {"Difficulty", 6}, {"Service", 10}})
-SurvivorVariant.setDescription(ATechnician, "The cutting edge artisan is enlightened, pushing all known sciences to the sde.")
+SurvivorVariant.setDescription(ATechnician, "The cutting edge artisan is enlightened, pushing science to the side.")
