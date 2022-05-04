@@ -8,10 +8,10 @@ global.rules = {
 		content = 
 		{
 			{displayName = "Difficulty Scaling", type = "choice", options = {0, 25, 50, 75, 100, 125, 150, 200, 500, 1000}, default = 100, suffix = "%", tooltip = "The rate at which the world's difficulty will increase."},
-			{displayName = "Gravity", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5}, default = 1, suffix = "x", tooltip = "The fall acceleration affecting players and enemies."},
+			{displayName = "Gravity", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5}, default = 1, suffix = "x", tooltip = "Fall acceleration. Affects both players and enemies."},
 			{displayName = "Disable Water", type = "checkbox", default = false, tooltip = "Whether water is removed from stages."},
 			{displayName = "Base Teleporter Charge Time", type = "choice", options = {15, 30, 60, 90, 120, 150, 180, 240, 300}, default = 90, suffix = "s", tooltip = "The base time required to fully charge the teleporter."},
-			{displayName = "Bypass 'Kill Remaining Enemies'", type = "checkbox", default = false, tooltip = "Disable the requirement of killing all enemies before teleporting."},
+			{displayName = "Bypass 'Kill Remaining Enemies'", type = "checkbox", default = false, tooltip = "Disable the requirement to kill all enemies before teleporting."},
 			{displayName = "Head Start", type = "checkbox", default = false, tooltip = "Whether players start with items and added Difficulty."},
 			{displayName = "Shared Items", type = "checkbox", default = false, tooltip = "[Multiplayer] Whether items are shared between players."},
 			{displayName = "Item amount", type = "choice", options = {1, 2, 3, 4, 5, 10, 20, 50, 100, 150, 200}, default = 1, isSub = 6, tooltip = "The amount of starting items."},
@@ -28,11 +28,11 @@ global.rules = {
 			{displayName = "Shrines", type = "checkbox", default = true, isSub = 15, tooltip = "Whether shrines should spawn naturally."},
 			{displayName = "Drones", type = "checkbox", default = true, isSub = 15, tooltip = "Whether drones should spawn naturally."},
 			{displayName = "Teleporters", type = "checkbox", default = true, isSub = 15, tooltip = "Whether teleporters should spawn naturally."},
-			{displayName = "Use Item Timeout", type = "checkbox", default = false, tooltip = "Whether Use items despawn after 45 seconds."},
+			{displayName = "Use Item Timeout", type = "checkbox", default = false, tooltip = "Whether use items should despawn after 45 seconds."},
 			{displayName = "Item Blacklist", type = "submenu", page = 3, default = {}, tooltip = "Select items to disable from spawning in the run."},
 			{displayName = "Reroll Blacklist Tiers", type = "checkbox", default = true, isSub = 23, tooltip = "Whether blacklisted items reroll into other tiers when the entire tier is disabled."},
 			{displayName = "Eggplants", type = "checkbox", default = false, isSub = 23, tooltip = "Whether empty item tiers spawn eggplants."},
-			{displayName = "Artifact of Sacrifice Drones", type = "checkbox", default = true, tooltip = "Whether drones will spawn with the Artifact of Sacrifice."}
+			{displayName = "Artifact of Sacrifice Drones", type = "checkbox", default = true, tooltip = "Whether drones will spawn when the Artifact of Sacrifice is active."}
 		}
 	},
 	{
@@ -43,13 +43,13 @@ global.rules = {
 			{displayName = "HP Multiplier", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.5, 2, 5, 10, 25, 50, 100}, default = 1, suffix = "x", tooltip = "The amount health is multiplied by at all times."},
 			{displayName = "Initial Regeneration", type = "choice", options = {0, 10, 50, 100, 150, 200, 500, 1000, 10000}, default = 100, suffix = "%", tooltip = "The amount of health regeneration players begin with."},
 			{displayName = "HP Cap", type = "choice", options = {1, 99, 999, 9999, 99999, math.huge}, default = 9999, tooltip = "The maximum amount of health obtainable."},
-			{displayName = "Initial Speed", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5}, default = 1, suffix = "x", tooltip = "The speed of horizontal movement players begin with."},
+			{displayName = "Initial Speed", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5}, default = 1, suffix = "x", tooltip = "The horizontal movement speed players begin with."},
 			{displayName = "Initial Gold", type = "choice", options = {0, 5, 15, 25, 50, 100, 200, 500, 1000}, default = 15, prefix = "$", tooltip = "The amount of gold players begin with."},
-			{displayName = "Initial Jump Height", type = "choice", options = {0.85, 1, 1.25, 1.5, 2, 3, 4}, default = 1, suffix = "x", tooltip = "The speed of vertical movement players begin with."},
+			{displayName = "Initial Jump Height", type = "choice", options = {0.85, 1, 1.25, 1.5, 2, 3, 4}, default = 1, suffix = "x", tooltip = "The vertical movement speed players begin with."},
 			{displayName = "Initial Damage", type = "choice", options = {0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10, 50, 100}, default = 1, suffix = "x", tooltip = "The amount of damage players deal on start."},
 			{displayName = "Initial Attack Speed", type = "choice", options = {0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5}, default = 1, suffix = "x", tooltip = "The speed of attacks players begin with."},
-			{displayName = "Initial Critical Strike Chance", type = "choice", options = {0, 1, 5, 10, 25, 50, 75, 100}, default = 1, suffix = "%", tooltip = "The chance for critical strikes on start."},
-			{displayName = "Initial Armor", type = "choice", options = {-500, -100, -50, -25, 0, 25, 50, 100, 500}, default = 0, sign = true, tooltip = "The amount of additional armor players begin with."},
+			{displayName = "Initial Critical Strike Chance", type = "choice", options = {0, 1, 5, 10, 25, 50, 75, 100}, default = 1, suffix = "%", tooltip = "The chance for Critical Strikes on start."},
+			{displayName = "Initial Armor", type = "choice", options = {-500, -100, -50, -25, 0, 25, 50, 100, 500}, default = 0, sign = true, tooltip = "The amount of additional Armor players begin with."},
 			{displayName = "Skill Cooldowns", type = "choice", options = {1, 25, 50, 75, 100, 125, 150, 175, 200, 250}, default = 100, suffix = "%", tooltip = "The time it takes for skills to become usable after activation."},
 			{displayName = "Level Up Auto-Balance", type = "checkbox", default = true, tooltip = "[Multiplayer] Whether dead players automatically level up to stay scaled."},
 			{displayName = "Leveling Bias", type = "choice", options = {"Below Average", "Average", "Above Average", "Highest"}, default = "Average", isString = true, isSub = 13, tooltip = "Defines how dead players level up on revival.\nBelow Average: Level is based on the lower average level of all players.\nAverage: Level is based on the average level of all players.\nAbove Average: Level is based on the higher average level of all players.\nHighest: Level is based on the highest leveled player in the team."},
@@ -68,13 +68,13 @@ global.rules = {
 			{displayName = "HP", type = "choice", options = {0.01, 0.1, 1, 10, 50, 100, 150, 200, 500, 1000, 10000}, default = 100, suffix = "%", tooltip = "The health enemies have on spawn."},
 			{displayName = "Speed", type = "choice", options = {0, 0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 5}, default = 1, suffix = "x", tooltip = "The horizontal speed enemies move at."},
 			{displayName = "Spawn Rate", type = "choice", options = {0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10}, default = 1, suffix = "x", tooltip = "The frequency of natural enemy spawns."},
-			{displayName = "Director Budget", type = "choice", options = {0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10, 100}, default = 1, suffix = "x", tooltip = "The amount of points the director earns to spawn enemies, more means stronger enemy types"},
+			{displayName = "Director Budget", type = "choice", options = {0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10, 100}, default = 1, suffix = "x", tooltip = "The amount of points the Director earns to spawn enemies. More means stronger enemy types."},
 			{displayName = "Can Jump", type = "choice", options = {"None", "Classic", "All"}, default = "Classic", isString = true, tooltip = "Determines the enemies that can jump over ledges."},
 			{displayName = "Jump Height", type = "choice", options = {0.85, 1, 1.25, 1.5, 2, 5, 10}, default = 1, suffix = "x", tooltip = "The speed at which enemies jump, if applicable."},
 			{displayName = "High Difficulty Elite Attacks", type = "checkbox", default = true, tooltip = "Whether elite enemies can do special attacks on Monsoon and Typhoon."},
 			{displayName = "Damage", type = "choice", options = {0.01, 0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10, 50, 100, 1000}, default = 1, suffix = "x", tooltip = "The amount of damage enemies deal."},
 			{displayName = "Critical Strike Chance", type = "choice", options = {0, 1, 5, 10, 25, 50, 75, 100}, default = 0, prefix = "+", suffix = "%", tooltip = "The added chance for dealing critical strikes."},
-			{displayName = "Armor", type = "choice", options = {-1000, -500, -100, -50, -25, 0, 25, 50, 100, 500, 1000}, default = 0, sign = true, tooltip = "The amount of added armor enemies have on spawn."},
+			{displayName = "Armor", type = "choice", options = {-1000, -500, -100, -50, -25, 0, 25, 50, 100, 500, 1000}, default = 0, sign = true, tooltip = "The amount of added Armor enemies have on spawn."},
 			{displayName = "Worth Value", type = "choice", options = {0, 25, 50, 75, 100, 125, 150, 175, 200, 500, 1000}, default = 100, suffix = "%", tooltip = "The base value in experience and gold enemies are worth."},
 		}
 	},
@@ -84,7 +84,7 @@ global.rules = {
 		{
 			{displayName = "Show HUD", type = "checkbox", default = true, tooltip = "Whether to show the Heads Up Display."},
 			{displayName = "Show Gold", type = "checkbox", default = true, isSub = 1, tooltip = "Whether to show the gold counter on the screen."},
-			{displayName = "Show Items", type = "checkbox", default = true, isSub = 1, tooltip = "Whether to show the collected items on the screen."},
+			{displayName = "Show Items", type = "checkbox", default = true, isSub = 1, tooltip = "Whether to show collected items on the screen."},
 			{displayName = "Show Time", type = "checkbox", default = true, isSub = 1, tooltip = "Whether to show the time counter on the screen."},
 			{displayName = "Show Skills", type = "checkbox", default = true, isSub = 1, tooltip = "Whether to show the skills on the screen."},
 			{displayName = "Show '56 Leaf Clover' Percentage", type = "checkbox", default = false, isSub = 1, tooltip = "Whether to show the stacked percentage of '56 Leaf Clover's effect."},
@@ -100,10 +100,10 @@ global.rules = {
 			{displayName = "Events", type = "checkbox", default = true, tooltip = "Whether random world events occur."},
 			{displayName = "New Elites", type = "checkbox", default = true, tooltip = "Whether Weakening, Dazing and Poisoning elites spawn."},
 			{displayName = "Event Rate", type = "choice", options = {0.1, 0.25, 0.5, 1, 1.5, 2, 5, 10}, default = 1, suffix = "x", isSub = 1, tooltip = "The frequency of world events."},
-			{displayName = "Ethereal Teleporters", type = "checkbox", default = true, tooltip = "Whether Ethereal Teleporters Spawn Naturally."},
+			{displayName = "Ethereal Teleporters", type = "checkbox", default = true, tooltip = "Whether Ethereal Teleporters should spawn naturally."},
 			{displayName = "Event Intensity", type = "choice", options = {0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 5, 10}, default = 1, suffix = "x", isSub = 1, tooltip = "The multiplier for the effect events will have."},
 			{displayName = "Ultra Enemies", type = "checkbox", default = true, tooltip = "Whether Ultra enemies can be created."},
-			{displayName = "Stats Menu", type = "checkbox", default = true, tooltip = "Whether the Stats menu (Binded to Tab by default) can be used."},
+			{displayName = "Stats Menu", type = "checkbox", default = true, tooltip = "Whether the Stats menu (bound to Tab by default) can be used."},
 			{displayName = "Ultras Before Ethereal", type = "checkbox", default = false, isSub = 6, tooltip = "Whether Ultra enemies can spawn before activating an Ethereal Teleporter."},
 			{displayName = "Stackable Unstackables", type = "checkbox", default = true, tooltip = "Whether Red Whip and Dio's Friend can be stacked."},
 			{displayName = "Ultra Spawn Rate", type = "choice", options = {0, 0.25, 0.5, 1, 1.5, 2, 5, 10, 50, 100, 1000}, default = 1, suffix = "x", isSub = 6, tooltip = "The frequency of Ultra enemy spawns."},
@@ -116,15 +116,15 @@ global.rules = {
 			{displayName = "Shrines of Trial", type = "checkbox", default = true, isSub = 11, tooltip = "Whether Shrines of Trial spawn naturally."},
 			{displayName = "Story Dialogue", type = "checkbox", default = false, tooltip = "[Singleplayer] Whether dialogue textboxes appear during the game."},
 			{displayName = "Broken Escape Pods", type = "checkbox", default = true, isSub = 11, tooltip = "Whether Broken Escape Pods spawn naturally."},
-			{displayName = "New Stages", type = "checkbox", default = true, tooltip = "Whether new stages are eligible by the game."},
+			{displayName = "New Stages", type = "checkbox", default = true, tooltip = "Whether new stages are available."},
 			{displayName = "Sword Shrines", type = "checkbox", default = true, isSub = 11, tooltip = "Whether Sword Shrines spawn naturally."},
 			{displayName = "Void Portals", type = "checkbox", default = true, isSub = 20, tooltip = "Whether Void Portals can spawn naturally."}, --22
 			{displayName = "Refabricators", type = "checkbox", default = true, isSub = 11, tooltip = "Whether Refabricators spawn naturally."},
-			{displayName = "Void Hideout", type = "checkbox", default = true, isSub = 22, tooltip = "Whether Void Hideout Portals can spawn naturally after Ethereal teleporters charge."},
+			{displayName = "Void Hideout", type = "checkbox", default = true, isSub = 22, tooltip = "Whether Void Hideout Portals can spawn naturally after Ethereal Teleporters charge."},
 			{displayName = "Void Catalysts", type = "checkbox", default = true, isSub = 22, tooltip = "Whether Void Catalysts spawn naturally, allowing you to reach the Void Gates."},
 			{displayName = "Void Portal Spawn Rate", type = "choice", options = {0.1, 0.25, 0.5, 1, 1.5, 2, 5, 10, 50, 75, 100}, default = 1, suffix = "x", isSub = 22, tooltip = "Controls how early a Void Portal can spawn."},
 			{displayName = "Portal Arrows", type = "checkbox", default = false, isSub = 22, tooltip = "Whether an arrow pointing towards existing Void and Void Hideout portals is displayed."},
-			{displayName = "Relic of Extinction Friendly Fire", type = "checkbox", default = false, tooltip = "Whether allies receive damage from the relic of Extinction."}
+			{displayName = "Relic of Extinction Friendly Fire", type = "checkbox", default = false, tooltip = "Whether allies receive damage from the Relic of Extinction."}
 		}
 	},
 	--[[{
