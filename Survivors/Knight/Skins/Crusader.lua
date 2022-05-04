@@ -20,7 +20,7 @@ local crusader = SurvivorVariant.new(survivor, "Crusader", sprSelect, {
 	shoot4ef = Sprite.load("Crusader_Shoot4Ef", path.."shoot4ef", 5, 76, 19)
 }, Color.fromHex(0xDEEAE5))
 SurvivorVariant.setInfoStats(crusader, {{"Strength", 8}, {"Vitality", 4}, {"Toughness", 5}, {"Agility", 3}, {"Difficulty", 6}, {"Faith", 8}})
-SurvivorVariant.setDescription(crusader, "The &y&Crusader&!& embarks on a journey to spread faith to those who follow her and death to those who dare oppose. Contending with her shield turns her next primary attack into a deadly bullet fire.")
+SurvivorVariant.setDescription(crusader, "The &y&Crusader&!& embarks on a journey to spread faith to those who follow her and death to those who dare oppose. Contending with her shield turns her next primary attack into deadly bullet fire.")
 crusader.tag = "Comission"
 
 local shootSounds = {
@@ -33,8 +33,8 @@ crusader.endingQuote = "..and so she left, still bound by conviction."
 
 local sprSkills = Sprite.load("CrusaderSkill", path.."Skills", 6, 0, 0)
 
-SurvivorVariant.setLoadoutSkill(crusader, "Impale", "Perform a stab for &y&170% damage.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage on both sides and strike your halberd knocking all enemies back, &y&allies receive a fire damage bonus for 5 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(crusader, "Impale", "Stab with your halberd for &y&150% damage.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage on both sides. Strike your halberd against your shield, knocking all enemies back. &y&Allies receive a fire damage bonus for 5 seconds.", sprSkills, 4)
 
 local buffV = Buff.new("crusaderBuff")
 buffV.sprite = Sprite.load("Crusader_Buff", path.."buff", 1, 9, 9)
@@ -62,16 +62,16 @@ callback.register("onSkinInit", function(player, skin)
 		else
 			player:survivorSetInitialStats(103, 13, 0.005)
 		end
-		player:setSkill(1, "Impale", "Perform a stab for 150% damage.",
+		player:setSkill(1, "Impale", "Stab with your halberd for 150% damage.",
 		sprSkills, 1, 50)
 		
-		player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry any incoming attacks for a short window of time, deflecting them back for 800% damage. Can interrupt other skills.",
+		player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry attacks, deflecting them for 800% damage. Can interrupt other skills.",
 		sprSkills, 2, 2 * 60)
 		
 		player:setSkill(3, "Strike", "Dash and strike forward for 200% damage. Stuns enemies briefly.",
 		sprSkills, 3, 4 * 60)
 		
-		player:setSkill(4, "Sacrilege's End", "Fire a concealed gun twice for 400% total damage on both sides and strike your halberd knocking all enemies back, allies receive a fire damage bonus for 5 seconds.",
+		player:setSkill(4, "Sacrilege's End", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 3 seconds.",
 		sprSkills, 4, 11 * 60)
 	end
 end)
@@ -124,7 +124,7 @@ callback.register("onSkinSkill", function(player, skill, relevantFrame, variant)
 			if relevantFrame == 6 then
 				if player:getData().fireGun then
 					player:getData().fireGun = nil
-					player:setSkill(1, "Impale", "Perform a stab for 150% damage.", sprSkills, 1, 50)
+					player:setSkill(1, "Impale", "Stab with your halberd for 150% damage.", sprSkills, 1, 50)
 				end
 				if onScreen(player) then
 					misc.shakeScreen(2)
@@ -256,7 +256,7 @@ end)
 survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == crusader then
 		player:setSkill(4,
-		"Hell's Gate", "Fire a concealed gun twice for 400% total damage on both sides and strike your halberd knocking all enemies back, allies receive a fire damage bonus for 7 seconds. Sets the ground on fire.",
+		"Hell's Gate", "Fire twice for 400% total damage. Strike your shield, knocking enemies back. Allies receive a fire damage bonus for 6 seconds. Sets the ground on fire."
 		sprSkills, 5, 11 * 60)
 	end
 end)

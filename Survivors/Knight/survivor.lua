@@ -60,15 +60,15 @@ Knight:setLoadoutSkill(1, "Duel",
 
 Knight:setLoadoutSkill(2, "Contend",
 [[Hold to &b&reduce all incoming damage by 50%&!&.
-For a short window of time: parry enemy attacks for &y&800% damage.]])
+For a short window of time, parry enemy attacks for &y&800% damage.]])
 
 Knight:setLoadoutSkill(3, "Strike",
 [[Dash and slash forward for &y&200% damage.
 &y&Stuns enemies briefly.]])
 
 Knight:setLoadoutSkill(4, "Invigorate",
-[[Slash twice for &y&400% damage and strike your shield knocking all
-enemies back&y&, &b&allies receive an attack speed bonus for 3 seconds.]])
+[[Slash twice for &y&400% damage. Strike your shield, knocking all
+enemies back&y&. &b&Allies receive an attack speed bonus for 3 seconds.]])
 
 -- Color of highlights during selection
 Knight.loadoutColor = Color.fromHex(0xEAB779)
@@ -80,7 +80,7 @@ Knight.idleSprite = sprites.idle
 Knight.titleSprite = sprites.walk
 
 -- Endquote
-Knight.endingQuote = "..and so he left, battered to the core of hope."
+Knight.endingQuote = "..and so he left, stripped of all hope."
  
 local buffInvigorate = Buff.new("knightBuff")
 buffInvigorate.sprite = Sprite.load("Knight_Buff", path.."buff", 1, 9, 9)
@@ -112,13 +112,13 @@ Knight:addCallback("init", function(player)
 	player:setSkill(1, "Duel", "Slash forward for 100% damage.",
 	sprSkills, 1, 25)
 		
-	player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry any incoming attacks for a short window of time, deflecting them back for 800% damage. Can interrupt other skills.",
+	player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry attacks, deflecting them for 800% damage. Can interrupt other skills.",
 	sprSkills, 2, 2 * 60)
 		
 	player:setSkill(3, "Strike", "Dash and slash forward for 200% damage. Stuns enemies briefly.",
 	sprSkills, 3, 4 * 60)
 		
-	player:setSkill(4, "Invigorate", "Slash twice for 400% damage and strike your shield knocking all enemies back, allies receive an attack speed bonus for 3 seconds.",
+	player:setSkill(4, "Invigorate", "Slash twice for 400% damage. Strike your shield, knocking enemies back. Allies receive an attack speed bonus for 3 seconds.",
 	sprSkills, 4, 10 * 60)
 end)
 
@@ -130,7 +130,7 @@ end)
 -- Called when the player picks up the Ancient Scepter
 Knight:addCallback("scepter", function(player)
 	player:setSkill(4,
-		"Invigorate", "Slash twice for 400% damage and strike your shield knocking all enemies back, allies receive an attack speed bonus for 6 seconds. Sets the ground forward on fire.",
+		"Invigorate", "Slash twice for 400% damage. Strike your shield, knocking enemies back. Allies receive an attack speed bonus for 6 seconds. Sets the ground on fire.",
 		sprSkills, 5, 10 * 60
 	)
 end)

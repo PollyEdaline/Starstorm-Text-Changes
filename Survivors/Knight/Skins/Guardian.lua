@@ -19,18 +19,18 @@ local guardian = SurvivorVariant.new(survivor, "Guardian", sprSelect, {
 	shoot4ef = Sprite.load("Guardian_Shoot4Ef", path.."shoot4ef", 5, 76, 19)
 }, Color.fromHex(0xC5C0DE))
 SurvivorVariant.setInfoStats(guardian, {{"Strength", 8}, {"Vitality", 4}, {"Toughness", 6}, {"Agility", 3}, {"Difficulty", 6}, {"Endurance", 8}})
-SurvivorVariant.setDescription(guardian, "The &y&Guardian&!& is a heavy bruiser dealing slow but hard strikes. Every primary attack after contending &y&throws a hammer.")
+SurvivorVariant.setDescription(guardian, "The &y&Guardian&!& is a heavy bruiser dealing slow but powerful strikes. Every primary attack after Contending &y&throws a hammer.")
 
 local sShoot1_1 = Sound.load("Guardian_Shoot1_1", path.."shoot1_1")
 local sShoot1_2 = Sound.load("Guardian_Shoot1_2", path.."shoot1_2")
 local sShoot1_3 = Sound.load("Guardian_Shoot1_3", path.."shoot1_3")
 
-guardian.endingQuote = "..and so he left, leaving all heavy armor behind."
+guardian.endingQuote = "..and so he left, leaving his heavy armor behind."
 
 local sprSkills = Sprite.load("GuardianSkill", path.."Skills", 6, 0, 0)
 
-SurvivorVariant.setLoadoutSkill(guardian, "Maul", "Swing a hammer dealing &y&250% damage forward.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(guardian, "Fortify", "Bash twice for &y&400% damage and strike your shield knocking all enemies back&y&, &b&allies receive a shield bonus for 3 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(guardian, "Maul", "Swing your hammer, dealing &y&250% damage.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(guardian, "Fortify", "Bash twice for &y&400% damage. Strike your shield, knocking all enemies back. &b&Allies receive a shield bonus for 3 seconds.", sprSkills, 4)
 
 local buffV = Buff.new("guardianBuff")
 buffV.sprite = Sprite.load("Guardian_Buff", path.."buff", 1, 9, 9)
@@ -65,16 +65,16 @@ callback.register("onSkinInit", function(player, skin)
 		else
 			player:survivorSetInitialStats(103, 13, 0.005)
 		end
-		player:setSkill(1, "Maul", "Swing a hammer dealing 250% damage forward.",
+		player:setSkill(1, "Maul", "Swing your hammer, dealing 250% damage.",
 		sprSkills, 1, 20)
 		
-		player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry any incoming attacks for a short window of time, deflecting them back for 800% damage. Can interrupt other skills.",
+		player:setSkill(2, "Contend", "Hold to reduce incoming damage by 50%. Parry attacks, deflecting them for 800% damage. Can interrupt other skills.",
 		sprSkills, 2, 2 * 60)
 		
-		player:setSkill(3, "Strike", "Dash and strike forward for 200% damage. Stuns enemies briefly.",
+		player:setSkill(3, "Strike", "Dash and swing forward for 200% damage. Stuns enemies briefly.",
 		sprSkills, 3, 4 * 60)
 		
-		player:setSkill(4, "Fortify", "Bash twice for 400% damage and strike your shield knocking all enemies back, allies receive a shield bonus for 3 seconds.",
+		player:setSkill(4, "Fortify", "Bash twice for 400% damage. Strike your shield, knocking enemies back. Allies receive a shield bonus for 3 seconds.",
 		sprSkills, 4, 10 * 60)
 	end
 end)
@@ -200,7 +200,7 @@ callback.register("onSkinSkill", function(player, skill, relevantFrame, variant)
 			if relevantFrame == 6 then
 				if player:getData().throwHammer then
 				player:getData().throwHammer = nil
-				player:setSkill(1, "Maul", "Swing a hammer dealing 250% damage forward.", sprSkills, 1, 20)
+				player:setSkill(1, "Maul", "Swing your hammer, dealing 250% damage.", sprSkills, 1, 20)
 				end
 				for i = 0, playerAc.sp do
 					local hammer = objHammer:create(player.x, player.y - 4 - i * 4)
@@ -211,7 +211,7 @@ callback.register("onSkinSkill", function(player, skill, relevantFrame, variant)
 			end
 		elseif skill > 1.9 and skill < 3 and not player:getData().throwHammer then
 			player:getData().throwHammer = true
-			player:setSkill(1, "Hammer Throw", "Throw your hammer dealing 250% damage on impact.", sprSkills, 6, 20)
+			player:setSkill(1, "Hammer Throw", "Throw your hammer, dealing 250% damage on impact.", sprSkills, 6, 20)
 		end
 	end
 end)
@@ -219,7 +219,7 @@ end)
 survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == guardian then
 		player:setSkill(4,
-		"Invigorate", "Bash twice for 400% damage and strike your shield knocking all enemies back, allies receive a shield bonus for 6 seconds. Sets the ground forward on fire.",
+		"Invigorate", "Bash twice for 400% damage. Strike your shield, knocking enemies back. Allies receive a shield bonus for 6 seconds. Sets the ground on fire.",
 		sprSkills, 5, 10 * 60)
 	end
 end)
