@@ -195,45 +195,45 @@ local teleCount = 0
 local dialogueOptions = {
 	{
 		{"Who are you?", "Why are you here?", "..."},
-		{{"I sense your presence, stranger.", "And I do not tolerate it."}, {"I sense your presence, strangers.", "And I do not tolerate it."}},
-		{{"Huh?", "A survivor?", "I can't let you devastate my lands."}, {"Huh?", "Survivors?", "I can't let you devastate my lands."}},
+		{{"I sense your presence, stranger.", "I will not tolerate it."}, {"I sense your presence, strangers.", "I will not tolerate it."}},
+		{{"Hmm?", "A survivor?", "I will not allow you to desecrate this place."}, {"Hmm?", "Survivors?", "I will not allow you to desecrate this place."}},
 		{"...", "You... here?", "It can't be..."},
 		{"What are you doing?", "Who are you?"},
-		{{"Stranger, this is no place for you.", "There is no point to your actions.", "Stop the slaughter."}, {"Strangers, this is no place for you.", "There is no point to your actions.", "Stop the slaughter."}},
-		{"I am disturbed by your presence.", "What do you think you are doing?"},
-		{{"What is this?", "...", "Survivor, I am sorry, for I cannot let you thrive.", "Not any longer..."}, {"What is this?", "...", "Survivors, I am sorry, for I cannot let you thrive.", "Not any longer..."}},
+		{{"Stranger, this is no place for you.", "Your actions are meaningless.", "Stop this slaughter."}, {"Strangers, this is no place for you.", "Your actions are meaningless.", "Stop this slaughter."}},
+		{"I am disturbed by your presence.", "What do you hope to accomplish?"},
+		{{"What is this?", "...", "Survivor, I am sorry. I cannot let you live.", "Not any longer..."}, {"What is this?", "...", "Survivors, I am sorry. I cannot let you live.", "Not any longer..."}},
 		{{"Interesting...", "So you are the last one."}, {"Interesting...", "So you are the last ones."}},
 		{"If your intent is to sabotage my work, you are wasting your time."},
-		{"Are you here to spoil all my work?", "This cannot continue."}
+		{"Are you here to spoil all I have worked towards?", "This cannot continue."}
 	},
 	{
 		{{"What do you think you are doing?", "You pilferer..."}, {"What do you think you are doing?", "You pilferers..."}},
 		{"I cannot abide your actions...", "You will be judged."},
 		{"A monster... is that what you are?"},
 		{"The end is coming for you."},
-		{"Your people are atrocious.", "But you are the worst."},
+		{"Your people are atrocious.", "But you... you are the worst."},
 		{"You will pay for your actions..."},
 		{"My patience is unending, yet you are exhausting it."},
 		{"Life gave you another chance, yet all you do is hinder my efforts to bring balance."},
 		{"You are war, you are hatred.", "You are not welcome."}
 	},
 	{
-		{"The worst is yet to come for you.", "And it is deserved..."},
+		{"The worst is yet to come for you.", "It will be deserved."},
 		{"This won't last forever.", "You know that.", "Yet you resist..."},
-		{"The end of times is near.", "You will perish alongside your race."},
-		{"Stop resisting, this is only right.", "But you are too selfish to see it."},
-		{"I am doing this for the greater good.", "Your interferance tips the balance to the wrong side."},
-		{"You can't justify your actions as survival.", "What you've done is reprehensible."},
-		{"Over and over again, you carelessly repeat your actions.", "Your kind is one of ceaseless aversion."}
+		{"The end of times is near.", "You will perish alongside the rest of your kind."},
+		{"Stop fighting. This is just retribution.", "...but you are too selfish to see it."},
+		{"I do this for the greater good.", "Your interference tips the balance to the wrong side."},
+		{"You cannot justify your actions as mere survival.", "What you've done is reprehensible."},
+		{"Over and over again, you carelessly repeat your actions.", "The sickness pervading your kind has no cure."}
 	},
 	{
-		{"...", "Are you satisfied? Haven't you slaughtered enough?"},
-		{"Survivor...", "The extent of your destruction is beyond a justified goal.", "Do you realize that?"},
+		{"...", "Are you satisfied? Haven't you destroyed enough?"},
+		{"Survivor...", "The extent of your destruction is unjustifiable.", "Do you realize that?"},
 		{"I had enough of this massacre.", "This ends now."},
-		{"They won't stop coming for you.", "You are repudiated."},
+		{"They won't stop coming for you.", "You have been abandoned."},
 		{"You are the embodiment of everything that is wrong with your kind.", "Chaos, desperation, acrimony."},
 		{"Your acts of belligerence won't change your fate.", "There is no room for remorse now."},
-		{"Your kind will suffer the same fate as all of those you vanquished."}
+		{"Your kind will suffer the same fate as all of those you slaughtered."}
 	}
 }
 
