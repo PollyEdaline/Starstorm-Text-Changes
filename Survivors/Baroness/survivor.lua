@@ -58,7 +58,7 @@ baroness:setLoadoutInfo(
 [[Trained for the front lines, and packing enough heat for crowd control.
 Able to wipe out crowds with grenades and relocate enemies wherever she pleases,
 the &y&Baroness&!& has the tools for the job. 
-&y&Don’t let it get personal.]], sprSkills)
+&y&Don't let it get personal.]], sprSkills)
 
 -- Skill descriptions
 baroness:setLoadoutSkill(1, "Pulling the Trigger",
