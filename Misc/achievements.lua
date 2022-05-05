@@ -6,7 +6,7 @@ if not global.rormlflag.ss_disable_survivors then
 local acExecutioner = Achievement.new("Executioner")
 acExecutioner.requirement = 1
 acExecutioner.deathReset = false
-acExecutioner.unlockText = "This character is now playable."
+acExecutioner.unlockText = "The Executioner is now playable."
 acExecutioner.description = "Kill an enemy by dealing 250% or more of its health as damage."
 acExecutioner.highscoreText = "Executioner Unlocked"
 acExecutioner:assignUnlockable(sur.Executioner)
@@ -29,7 +29,7 @@ end
 local acMule = Achievement.new("MULE")
 acMule.requirement = 1
 acMule.deathReset = false
-acMule.unlockText = "This character is now playable."
+acMule.unlockText = "The MULE is now playable."
 acMule.description = "Survive a storm."
 acMule.highscoreText = "MULE Unlocked"
 acMule:assignUnlockable(sur.MULE)
@@ -48,7 +48,7 @@ end
 local acCyborg = Achievement.new("Cyborg")
 acCyborg.requirement = 1
 acCyborg.deathReset = false
-acCyborg.unlockText = "This character is now playable."
+acCyborg.unlockText = "The Cyborg is now playable."
 acCyborg.description = "Carry a 'Laser Turbine' and 'Repulsion Armor' at the same time."
 acCyborg.highscoreText = "Cyborg Unlocked"
 acCyborg:assignUnlockable(sur.Cyborg)
@@ -66,7 +66,7 @@ end
 local acTech = Achievement.new("Technician")
 acTech.requirement = 1
 acTech.deathReset = false
-acTech.unlockText = "This character is now playable."
+acTech.unlockText = "The Technician is now playable."
 acTech.description = "Call the orbited survivor."
 acTech.highscoreText = "Technician Unlocked"
 acTech:assignUnlockable(sur.Technician)
@@ -127,7 +127,7 @@ end)
 local acNucleator = Achievement.new("Nucleator")
 acNucleator.requirement = 1
 acNucleator.deathReset = false
-acNucleator.unlockText = "This character is now playable."
+acNucleator.unlockText = "The Nucleator is now playable."
 acNucleator.description = "Obtain two relic items in a single run."
 acNucleator.highscoreText = "Nucleator Unlocked"
 acNucleator:assignUnlockable(sur.Nucleator)
@@ -149,7 +149,7 @@ end
 local acBaroness = Achievement.new("Baroness")
 acBaroness.requirement = 1
 acBaroness.deathReset = false
-acBaroness.unlockText = "This character is now playable."
+acBaroness.unlockText = "The Baroness is now playable."
 acBaroness.description = "Charge the mysterious unpowered vehicle."
 acBaroness.highscoreText = "Baroness Unlocked"
 acBaroness:assignUnlockable(sur.Baroness)
@@ -241,7 +241,7 @@ end)
 local acChirr = Achievement.new("Chirr")
 acChirr.requirement = 1
 acChirr.deathReset = false
-acChirr.unlockText = "This character is now playable."
+acChirr.unlockText = "Chirr is now playable."
 acChirr.description = "Eliminate the infestation in the Verdant Woodland."
 acChirr.highscoreText = "Chirr Unlocked"
 acChirr:assignUnlockable(sur.Chirr)
@@ -260,7 +260,7 @@ end
 local acPyro = Achievement.new("Pyro")
 acPyro.deathReset = false
 acPyro.requirement = 3
-acPyro.unlockText = "This character is now playable."
+acPyro.unlockText = "The Pyro is now playable."
 acPyro.description = "Find the bloated survivor 3 times."
 acPyro.highscoreText = "Pyro Unlocked"
 acPyro:assignUnlockable(sur.Pyro)
@@ -294,7 +294,7 @@ local acDUT = Achievement.new("DUT")
 
 acDUT.deathReset = false
 acDUT.requirement = 3
-acDUT.unlockText = "This character is now playable."
+acDUT.unlockText = "DU-T is now playable."
 acDUT.description = "Survive the Deep Void 3 times."
 acDUT.highscoreText = "DU-T Unlocked"
 acDUT:assignUnlockable(sur.DUT)
@@ -313,7 +313,7 @@ end)
 local acKnight = Achievement.new("Knight")
 acKnight.deathReset = false
 acKnight.requirement = 1
-acKnight.unlockText = "This character is now playable."
+acKnight.unlockText = "The Knight is now playable."
 acKnight.description = "Defeat Ultra Providence."
 acKnight.highscoreText = "Knight Unlocked"
 acKnight:assignUnlockable(sur.Knight)
@@ -330,7 +330,7 @@ acSeraph = Achievement.new("Seraph")
 
 acSeraph.deathReset = false
 acSeraph.requirement = 1
-acSeraph.unlockText = "This character is now playable."
+acSeraph.unlockText = "The Seraph is now playable."
 acSeraph.description = "Collect the 6 shards from The Stranger."
 acSeraph.highscoreText = "Seraph Unlocked"
 acSeraph:assignUnlockable(sur.Seraph)
@@ -342,7 +342,7 @@ if not global.rormlflag.ss_disable_items then
 local acCountTele = Achievement.new("CounterfeitTeleporter")
 acCountTele.requirement = 1
 acCountTele.deathReset = false
-acCountTele.unlockText = "This item will now drop."
+acCountTele.unlockText = "Counterfeit Teleporter will now drop."
 acCountTele.description = "Defeat Providence."
 acCountTele:assignUnlockable(it.CounterfeitTeleporter)
 callback.register("onProvidenceDefeat", function()
@@ -353,7 +353,7 @@ end)
 local acRegen = Achievement.new("Regen")
 acRegen.requirement = 20000
 acRegen.deathReset = false
-acRegen.unlockText = "This item will now drop."
+acRegen.unlockText = "Distinctive Stick will now drop."
 acRegen.description = "Regenerate a total of 20,000 HP."
 acRegen:assignUnlockable(it.DistinctiveStick)
 if not acRegen:isComplete() then
@@ -371,7 +371,7 @@ end
 local acFork = Achievement.new("Fork")
 acFork.requirement = 1
 acFork.deathReset = true
-acFork.unlockText = "This item will now drop."
+acFork.unlockText = "Fork will now drop."
 acFork.description = "Reach level 20."
 acFork:assignUnlockable(it.Fork)
 
@@ -389,7 +389,7 @@ end
 local acGiftCard = Achievement.new("Gift Card")
 acGiftCard.deathReset = false
 acGiftCard.requirement = 50
-acGiftCard.unlockText = "This item will now drop."
+acGiftCard.unlockText = "Gift Card will now drop."
 acGiftCard.description = "Open 50 broken escape pods."
 acGiftCard:assignUnlockable(it.GiftCard)
 
@@ -407,7 +407,7 @@ end]]
 local acNeedles = Achievement.new("Needles")
 acNeedles.requirement = 1
 acNeedles.deathReset = true
-acNeedles.unlockText = "This item will now drop."
+acNeedles.unlockText = "Needles will now drop."
 acNeedles.description = "Defeat a Blighted enemy."
 acNeedles:assignUnlockable(it.Needles)
 
@@ -425,7 +425,7 @@ end
 local acHerbs = Achievement.new("WonderHerbs")
 acHerbs.requirement = 6
 acHerbs.deathReset = false
-acHerbs.unlockText = "This item will now drop."
+acHerbs.unlockText = "Wonder Herbs will now drop."
 acHerbs.description = "Get dazed a total of 6 times."
 acHerbs:assignUnlockable(it.WonderHerbs)
 
@@ -443,7 +443,7 @@ end
 local acIceTool = Achievement.new("IceTool")
 acIceTool.requirement = 1
 acIceTool.deathReset = true
-acIceTool.unlockText = "This item will now drop."
+acIceTool.unlockText = "Ice Tool will now drop."
 acIceTool.description = "Travel a distance of 100,000 meters in a single run."
 acIceTool:assignUnlockable(it.IceTool)
 
@@ -461,7 +461,7 @@ end
 local acRoulette = Achievement.new("Roulette")
 acRoulette.requirement = 3
 acRoulette.deathReset = false
-acRoulette.unlockText = "This item will now drop."
+acRoulette.unlockText = "Roulette will now drop."
 acRoulette.description = "Loop back to the first stage three times."
 acRoulette:assignUnlockable(it.Roulette)
 
@@ -479,7 +479,7 @@ end
 local acPoison = Achievement.new("Poison")
 acPoison.requirement = 1
 acPoison.deathReset = false
-acPoison.unlockText = "This item will now drop."
+acPoison.unlockText = "Poisonous Gland will now drop."
 acPoison.description = "Stand in a poison cloud for 4 consecutive seconds."
 acPoison:assignUnlockable(it.PoisonousGland)
 
@@ -503,7 +503,7 @@ end
 local acCrown = Achievement.new("CrowningVal")
 acCrown.requirement = 1
 acCrown.deathReset = true
-acCrown.unlockText = "This item will now drop."
+acCrown.unlockText = "Crowning Valiance will now drop."
 acCrown.description = "Eliminate 25 bosses in a single run."
 acCrown:assignUnlockable(it.CrowningValiance)
 
@@ -521,7 +521,7 @@ end
 local acHunterSigil = Achievement.new("HuntersSigil")
 acHunterSigil.requirement = 1
 acHunterSigil.deathReset = false
-acHunterSigil.unlockText = "This item will now drop."
+acHunterSigil.unlockText = "Hunter's Sigil' will now drop."
 acHunterSigil.description = "Kill the Overseer."
 acHunterSigil:assignUnlockable(it.HuntersSigil)
 
@@ -535,7 +535,7 @@ end
 local acMedal = Achievement.new("GoldMedal")
 acMedal.requirement = 1000000
 acMedal.deathReset = false
-acMedal.unlockText = "This item will now drop."
+acMedal.unlockText = "Gold Medal will now drop."
 acMedal.description = "Earn an accumulated total of 1,000,000 gold."
 acMedal:assignUnlockable(it.GoldMedal)
 
@@ -557,7 +557,7 @@ end
 local acMetaTrinket = Achievement.new("MetachronicTrinket")
 acMetaTrinket.requirement = 1
 acMetaTrinket.deathReset = false
-acMetaTrinket.unlockText = "This item will now drop."
+acMetaTrinket.unlockText = "Metachronic Trinket will now drop."
 acMetaTrinket.description = "Fully charge a teleporter while time is stopped."
 acMetaTrinket:assignUnlockable(it.Metatrinket)
 
@@ -582,7 +582,7 @@ end
 local acWillojelly = Achievement.new("willojelly")
 acWillojelly.requirement = 150
 acWillojelly.deathReset = false
-acWillojelly.unlockText = "This item will now drop."
+acWillojelly.unlockText = "Man-o'-war will now drop."
 acWillojelly.description = "Slay 150 Jellyfish."
 acWillojelly:assignUnlockable(it.Willojelly)
 
@@ -596,7 +596,7 @@ end
 local acStickyOverloader = Achievement.new("StickyOverloader")
 acStickyOverloader.requirement = 1
 acStickyOverloader.deathReset = false
-acStickyOverloader.unlockText = "This item will now drop."
+acStickyOverloader.unlockText = "Sticky Overloader will now drop."
 acStickyOverloader.description = "Reach a total of 3 Sticky Bombs attached to a single enemy."
 acStickyOverloader:assignUnlockable(it.StickyBattery)
 
@@ -614,7 +614,7 @@ end
 local acInsecticide = Achievement.new("Insecticide")
 acInsecticide.requirement = 150
 acInsecticide.deathReset = false
-acInsecticide.unlockText = "This item will now drop."
+acInsecticide.unlockText = "Insecticide will now drop."
 acInsecticide.description = "Slay 150 Archer Bugs."
 acInsecticide:assignUnlockable(it.Insecticide)
 
@@ -632,7 +632,7 @@ end
 local acCrit = Achievement.new("Critical")
 acCrit.requirement = 1
 acCrit.deathReset = true
-acCrit.unlockText = "This item will now drop."
+acCrit.unlockText = "Erratic Gadget will now drop."
 acCrit.description = "Achieve a 99% Critical Strike chance."
 acCrit:assignUnlockable(it.ErraticGadget)
 
@@ -650,7 +650,7 @@ end
 local acToys = Achievement.new("Toys")
 acToys.requirement = 1
 acToys.deathReset = true
-acToys.unlockText = "This item will now drop."
+acToys.unlockText = "Baby's Toys will now drop."
 acToys.description = "Die after fully charging a teleporter."
 acToys:assignUnlockable(it.BabyToys)
 
@@ -668,7 +668,7 @@ end
 local acInjector = Achievement.new("Injector")
 acInjector.requirement = 1
 acInjector.deathReset = true
-acInjector.unlockText = "This item will now drop."
+acInjector.unlockText = "Composite Injector will now drop."
 acInjector.description = "Reach stage 4 without a use item."
 acInjector:assignUnlockable(it.CompositeInjector)
 
@@ -695,7 +695,7 @@ end
 local acSkateboard = Achievement.new("Skateboard")
 acSkateboard.requirement = 1
 acSkateboard.deathReset = false
-acSkateboard.unlockText = "This item will now drop."
+acSkateboard.unlockText = "Swift Skateboard will now drop."
 acSkateboard.description = "Spend a total of 10 consecutive seconds mid-air."
 acSkateboard:assignUnlockable(it.SwiftSkateboard)
 
@@ -723,7 +723,7 @@ end
 local acEgg = Achievement.new("Egg")
 acEgg.requirement = 1
 acEgg.deathReset = true
-acEgg.unlockText = "This item will now drop."
+acEgg.unlockText = "Juddering Egg will now drop."
 acEgg.description = "Slay an Ethereal mob."
 acEgg:assignUnlockable(it.JudderingEgg)
 
@@ -741,7 +741,7 @@ end
 local acGalvanicCore = Achievement.new("GalvanicCore")
 acGalvanicCore.requirement = 1
 acGalvanicCore.deathReset = false
-acGalvanicCore.unlockText = "This item will now drop."
+acGalvanicCore.unlockText = "Galvanic Core will now drop."
 acGalvanicCore.description = "Apply a total of 5 debuffs to a single enemy."
 acGalvanicCore:assignUnlockable(it.GalvanicCore)
 
@@ -763,7 +763,7 @@ end
 local acGemBreacher = Achievement.new("GemBreacher")
 acGemBreacher.requirement = 1
 acGemBreacher.deathReset = false
-acGemBreacher.unlockText = "This item will now drop."
+acGemBreacher.unlockText = "Gem-Breacher will now drop."
 acGemBreacher.description = "Attain 400 shield."
 acGemBreacher:assignUnlockable(it.GemBreacher)
 
@@ -781,7 +781,7 @@ end
 local acRoller = Achievement.new("Roller")
 acRoller.requirement = 1
 acRoller.deathReset = false
-acRoller.unlockText = "This item will now drop."
+acRoller.unlockText = "Roller will now drop."
 acRoller.description = "Obtain a curse."
 acRoller:assignUnlockable(it.Roller)
 
@@ -801,7 +801,7 @@ end
 local acWhiteFlag = Achievement.new("WhiteFlag")
 acWhiteFlag.requirement = 1
 acWhiteFlag.deathReset = false
-acWhiteFlag.unlockText = "This item will now drop."
+acWhiteFlag.unlockText = "White Flag will now drop."
 acWhiteFlag.description = "Die from a single hit at full health."
 acWhiteFlag:assignUnlockable(it.WhiteFlag)
 
@@ -819,7 +819,7 @@ end
 local acBackThruster = Achievement.new("BackThruster")
 acBackThruster.requirement = 1
 acBackThruster.deathReset = false
-acBackThruster.unlockText = "This item will now drop."
+acBackThruster.unlockText = "Back Thruster will now drop."
 acBackThruster.description = "Reach a total speed of 800%."
 acBackThruster:assignUnlockable(it.BackThruster)
 
@@ -1452,7 +1452,7 @@ local acRule1 = Achievement.new("RulesetSettings1")
 SSInteractable.find("Void Catalyst").achievementRequirement = acRule1
 acRule1.sprite = sprite
 acRule1.requirement = 1
-acRule1.unlockText = "New ruleset settings are now available."
+acRule1.unlockText = "Basic ruleset settings are now available."
 acRule1.description = "Beat the game."
 acRule1.highscoreText = "'Basic ruleset settings' Unlocked"
 callback.register("onGameBeat", function()
@@ -1479,7 +1479,7 @@ local acRule2 = Achievement.new("RulesetSettings2")
 acRule2.sprite = sprite
 acRule2.requirement = 3
 acRule2.deathReset = false
-acRule2.unlockText = "New ruleset settings are now available."
+acRule2.unlockText = "Advantageous ruleset settings are now available."
 acRule2.description = "Beat the game 3 times."
 acRule2.highscoreText = "'Advantageous ruleset settings' Unlocked"
 callback.register("onGameBeat", function()
@@ -1513,7 +1513,7 @@ Rule.find("High Difficulty Elite Attacks", "Enemies").parentAchievement = acRule
 local acRule3 = Achievement.new("RulesetSettings3")
 acRule3.sprite = sprite
 acRule3.requirement = 1
-acRule3.unlockText = "New ruleset settings are now available."
+acRule3.unlockText = "Multiplayer ruleset settings are now available."
 acRule3.description = "Beat the game with a friend."
 acRule3.highscoreText = "'Multiplayer ruleset settings' Unlocked"
 callback.register("onGameBeat", function()
