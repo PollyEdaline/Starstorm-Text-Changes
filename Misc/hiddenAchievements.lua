@@ -713,7 +713,7 @@ local bandit = sur.Bandit
 	acReaper.sprite = Sprite.find("ReaperIdle", "Starstorm")
 	acReaper.requirement = 1
 	acReaper.deathReset = true
-	acReaper.description = "Bandit: Obtain a 'Harvester's Scythe', 'Golden Gun' and 'Wicked Ring' in the same run."
+	acReaper.description = "Bandit: Obtain a 'Harvester's Scythe', 'Golden Gun', and 'Wicked Ring' in the same run."
 	
 	if not acReaper:isComplete() then
 		callback.register("onItemPickup", function(item, player)
@@ -878,7 +878,7 @@ local knight = Survivor.find("Knight", "Starstorm")
 	acCrusader.sprite = Sprite.find("Crusader_Idle", "Starstorm")
 	acCrusader.requirement = 1
 	acCrusader.deathReset = true
-	acCrusader.description = "Knight: Defeat Providence while carrying an 'Ol Lopper', 'Brilliant Behemoth', and 'Repulsion Armor''."
+	acCrusader.description = "Knight: Defeat Providence while carrying an 'Ol Lopper', 'Brilliant Behemoth', and 'Repulsion Armor'."
 	
 	if not HiddenAchievement.isComplete(acCrusader) then
 		callback.register("onProvidenceDefeat", function(player)

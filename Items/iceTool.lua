@@ -8,7 +8,7 @@ it.IceTool.sprite = Sprite.load("Spring", path.."Ice Tool.png", 1, 12, 13)
 it.IceTool:setTier("common")
 it.IceTool:setLog{
 	group = "common_locked",
-	description = "&b&Gain a jump&!& while in &y&contact with a wall&!&. Increases your &b&speed while climbing.",
+	description = "&b&Gain a jump&!& while in &y&contact with a wall&!&. Increases your &b&speed while climbing&!&.",
 	story = "Good day fellow hiking friend, I found the ice tool you lost last time we went to Mt. [REDACTED]. Please keep an eye out for the snow next time!\nI wonder if the ice tool is still usable though, it's been through so much!",
 	destination = "Mon's Tower #33,\nSolei Shore,\nEarth",
 	date = "03/12/2056"

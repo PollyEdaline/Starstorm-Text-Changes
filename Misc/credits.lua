@@ -120,7 +120,7 @@ Whistling Basin Music -
 Altzeus
 G-Hook & Gem-Breacher
 Logs - QandQuestion
-Text revision - Polly Edaline
+Copy editing - Polly Edaline
 
 = Testing =
 

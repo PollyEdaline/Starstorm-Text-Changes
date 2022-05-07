@@ -9,7 +9,7 @@ itRelicEntropy.isUseItem = true
 itRelicEntropy.color = relicColor
 itRelicEntropy:setLog{
 	group = "end",
-	description = "&y&Roll a random effect, &p&BUT &r&the outcome can be detrimental.",
+	description = "&y&Roll a random effect, &p&BUT &r&the outcome can be detrimental&!&.",
 	story = [[Not unlike ancient mythologies. The so called "Pandora's Box": full of mysteries, full of chances at survival, and full of chances at my own death.]],
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

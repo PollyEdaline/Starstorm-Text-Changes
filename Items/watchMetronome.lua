@@ -6,8 +6,8 @@ it.WatchMetronome.sprite = Sprite.load("WatchMetronome", path.."Watch Metronome.
 it.WatchMetronome:setTier("uncommon")
 it.WatchMetronome:setLog{
 	group = "uncommon",
-	description = "Standing still &y&charges speed&!& for your &b&next movement.",
-	story = "Grandpa gave me this as a relic of the past. He says it belonged to our great-great-great-great-great grandfather. I couldn't care less about antiques and family belongings so I think it's best if you have it instead.\nNot like it's of any use anyways...",
+	description = "Standing still &y&charges speed&!& for your &b&next movement&!&.",
+	story = "Grandpa gave me this as a relic of the past. He says it belonged to our great-great-great-great-great grandfather. I couldn't care less about antiques and family belongings so I think it's best if you have it instead.\nNot like it's of any use anyways..",
 	destination = "Cage 1,\nG-44 (Underground),\nEarth",
 	date = "09/05/2054"
 }

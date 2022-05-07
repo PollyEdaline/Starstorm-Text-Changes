@@ -8,8 +8,8 @@ itp.relic:add(itRelicVitality)
 itRelicVitality.color = relicColor
 itRelicVitality:setLog{
 	group = "boss_locked",
-	description = "&g&Increases health regeneration by 12, &p&BUT &r&reduces health by 75%.",
-	story = "And so... I was presented with a choice: to heal all my wounds and become frail, or to carve my own path as a lost survivor.",
+	description = "&g&Increases health regeneration by 12, &p&BUT &r&reduces health by 75%&!&.",
+	story = "And so.. I was presented with a choice: to heal all my wounds and become frail, or to carve my own path as a lost survivor.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
 	date = "Unknown"

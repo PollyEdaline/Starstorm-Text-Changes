@@ -7,8 +7,8 @@ it.MoltenCoin.sprite = Sprite.load("MoltenCoin", path.."Molten Coin.png", 1, 11,
 it.MoltenCoin:setTier("common")
 it.MoltenCoin:setLog{
 	group = "common",
-	description = "&y&6% chance to incinerate enemies&!& for 6 seconds on hit, &y&earning $1&!&.",
-	story = "Hey! Uh, I'm sorry, I'm really sorry... I know you really wanted me to keep this coin but I can't take the responsibility any more...\nSee, I accidentally put the coin at the edge of a plasma furnance so... well... it's a bit burnt on the side, please don't get mad at me...",
+	description = "&y&6% chance on hit to incinerate enemies&!& for 6 seconds, &y&earning $1&!&.",
+	story = "Hey! Uh, I'm sorry, I'm really sorry.. I know you really wanted me to keep this coin but I can't take the responsibility any more..\nSee, I accidentally put the coin at the edge of a plasma furnance so.. well.. it's a bit burnt on the side, please don't get mad at me..",
 	destination = "Toera 2,\nB44,\nMother Station",
 	date = "05/22/2056"
 }

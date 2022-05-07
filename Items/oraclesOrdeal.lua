@@ -8,7 +8,7 @@ itp.sibylline:add(it.OraclesOrdeal)
 it.OraclesOrdeal.color = Color.fromHex(0xFFCCED)
 it.OraclesOrdeal:setLog{
 	group = "end",
-	description = "The location of points of interest is &y&always revealed.",
+	description = "The location of points of interest is &y&always revealed&!&.",
 	story = "It came to my mind as a blinding light at the end of the corridor. It was clear now: where I had to go, what I had to do. Until the light faded.",
 	priority = "&"..it.OraclesOrdeal.color.gml.."&Unknown",
 	destination = "",

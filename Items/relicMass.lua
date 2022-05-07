@@ -8,7 +8,7 @@ itp.relic:add(itRelicMass)
 itRelicMass.color = relicColor
 itRelicMass:setLog{
 	group = "end",
-	description = "&g&Increases health by 100%, &p&BUT &r&your movement has momentum.",
+	description = "&g&Increases health by 100%, &p&BUT &r&your movement has momentum&!&.",
 	story = "Fatigue led me to the ancient stone, rewarding me with the will to endure, and the strength and outweigh my situation.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

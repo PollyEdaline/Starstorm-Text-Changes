@@ -10,7 +10,7 @@ it.SimpleMagnet:setTier("use")
 itp.enigma:add(it.SimpleMagnet)
 it.SimpleMagnet:setLog{
 	group = "use",
-	description = "&b&Pull the surrounding pickups towards you. &y&Chance to unearth a treasure.",
+	description = "&b&Pull the surrounding pickups towards you. &y&Chance to unearth a treasure&!&.",
 	story = "It doesn't have a strong magnetic effect, but it's a pretty interesting magnet nonetheless. It's fun and intriguing to think that people of the last century actually used them. Enjoy your purchase!\n\n-Ben's Antiques.",
 	destination = "1124\nHill Hills,\nEarth",
 	date = "11/08/2056"

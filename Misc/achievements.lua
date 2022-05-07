@@ -444,7 +444,7 @@ local acIceTool = Achievement.new("IceTool")
 acIceTool.requirement = 1
 acIceTool.deathReset = true
 acIceTool.unlockText = "Ice Tool will now drop."
-acIceTool.description = "Travel a distance of 100,000 meters in a single run."
+acIceTool.description = "Travel a distance of 100,000m in a single run."
 acIceTool:assignUnlockable(it.IceTool)
 
 if not acIceTool:isComplete() then
@@ -521,7 +521,7 @@ end
 local acHunterSigil = Achievement.new("HuntersSigil")
 acHunterSigil.requirement = 1
 acHunterSigil.deathReset = false
-acHunterSigil.unlockText = "Hunter's Sigil' will now drop."
+acHunterSigil.unlockText = "Hunter's Sigil will now drop."
 acHunterSigil.description = "Kill the Overseer."
 acHunterSigil:assignUnlockable(it.HuntersSigil)
 
@@ -900,7 +900,7 @@ local bandit = sur.Bandit
 	acPoacher.sprite = Sprite.find("PoacherIdle", "Starstorm")
 	acPoacher.requirement = 1
 	acPoacher.deathReset = true
-	acPoacher.description = "Bandit: trade one 'Ifrit's Horn' with the Stranger."
+	acPoacher.description = "Bandit: Trade one 'Ifrit's Horn' with the Stranger."
 	
 	if not acPoacher:isComplete() then
 		callback.register("onStrangerTrade", function(item, player)
@@ -1348,7 +1348,7 @@ if not global.rormlflag.ss_disable_enemies then
 	acNemesisHuntress.sprite = Sprite.find("NemesisHuntressIdle", "Starstorm")
 	acNemesisHuntress.requirement = 1
 	acNemesisHuntress.deathReset = true
-	acNemesisHuntress.description = "Defeat Huntress's Vestige."
+	acNemesisHuntress.description = "Defeat Huntress' Vestige."
 	--acNemesisHuntress.parent = Achievement.find("unlock_huntress")
 	
 	-- Nemesis HAN-D

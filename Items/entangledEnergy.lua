@@ -1,13 +1,13 @@
 local path = "Items/Resources/"
 
 it.EntangledEnergy = Item.new("Entangled Energy")
-it.EntangledEnergy.pickupText = "It grows on me..." 
+it.EntangledEnergy.pickupText = "It grows on me.." 
 it.EntangledEnergy.sprite = Sprite.load("EntangledEnergy", path.."Entangled Energy.png", 1, 15, 15)
 itp.sibylline:add(it.EntangledEnergy)
 it.EntangledEnergy.color = Color.fromHex(0xFFCCED)
 it.EntangledEnergy:setLog{
 	group = "end",
-	description = "Release a &y&lethal energy shock&!& to enemies when they group in front of you.",
+	description = "Create an &y&energetic discharge&!& if 4 or more enemies stand in a line in front of you.",
 	story = "Surrounded by this spark of power, I could only feel my mind blending with the elements that gave birth to my existence. I would not be stopped.",
 	priority = "&"..it.EntangledEnergy.color.gml.."&Unknown",
 	destination = "",

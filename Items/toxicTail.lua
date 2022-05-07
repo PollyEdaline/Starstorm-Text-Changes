@@ -7,7 +7,7 @@ itp.legendary:add(it.ToxicTail)
 it.ToxicTail.color = "y"
 it.ToxicTail:setLog{
 	group = "boss",
-	description = "Spawn two &y&friendly boars.",
+	description = "Spawn two &y&friendly boars&!&.",
 	story = "Wiggle wiggle. So cute.",
 	priority = "&b&Field-Found&!&",
 	destination = "My room,\nHome,\nEarth",

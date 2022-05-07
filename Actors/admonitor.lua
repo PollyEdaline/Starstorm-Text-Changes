@@ -167,7 +167,7 @@ end)
 mlog.ClayAdmonitor = MonsterLog.new("Clay Admonitor")
 MonsterLog.map[obj.Admonitor] = mlog.ClayAdmonitor
 mlog.ClayAdmonitor.displayName = "Clay Admonitor"
-mlog.ClayAdmonitor.story = "Upright, right next to me it stood. Bothered by my prolonged wandering without a specific destination, knowing I didn't belong here.\n\nIt knew I was alert and ready to pull the trigger.\n\nIt didn't like that.\nIt despised having its territory disturbed with my hurry.\n\nIt knew it was me or them."
+mlog.ClayAdmonitor.story = "Upright, just next to me, it stood. Bothered by my prolonged wandering, knowing I didn't belong here.\n\nIt knew I was alert and ready to pull the trigger.\n\nIt didn't like that.\nIt despised having its territory disturbed with my hurry.\n\nIt knew it was me or them."
 mlog.ClayAdmonitor.statHP = 350
 mlog.ClayAdmonitor.statDamage = 17
 mlog.ClayAdmonitor.statSpeed = 0.8

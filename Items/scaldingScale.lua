@@ -7,7 +7,7 @@ itp.legendary:add(it.ScaldingScale)
 it.ScaldingScale.color = "y"
 it.ScaldingScale:setLog{
 	group = "boss",
-	description = "&b&Increase Armor by 60.",
+	description = "&b&Increase Armor by 60&!&.",
 	story = "Burning soil, scarce resources and a resilient threat meant I had to fight like never before. But I am alive, and this scale will serve as proof of my achievement.",
 	priority = "&b&Field-Found&!&",
 	destination = "STAR Museum,\nLone Summit,\nEarth",

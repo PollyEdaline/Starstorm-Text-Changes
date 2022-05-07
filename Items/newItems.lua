@@ -7,7 +7,7 @@ it.AcuteReflexes.sprite = Sprite.load("AcuteReflexes", path.."Acute Reflexes.png
 it.AcuteReflexes:setTier("common")
 it.AcuteReflexes:setLog{
 	group = "common_locked",
-	description = "&b&Tap a direction twice to dash. &!&Recharges every 10 seconds.",
+	description = "&b&Tap a direction twice to dash&!&. Recharges every 10 seconds.",
 	story = "",
 	destination = "A,\nB,\nC",
 	date = "06/07/2056"

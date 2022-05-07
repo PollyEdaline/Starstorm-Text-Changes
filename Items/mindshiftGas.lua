@@ -11,7 +11,7 @@ itp.enigma:add(it.MindshiftGas)
 it.MindshiftGas:setLog{
 	group = "use_locked",
 	description = "Throw a gas canister. &y&Enemies inside the gas attack each other for 10 seconds.",
-	story = "I'm worried, Dom.\nThe universe we live in can be... unforgiving, cruel. We all knew that.\nHowever... I'm astounded.\nProgress, evolution, and our fight for technological supremacy gave us our reach for the stars, but it also gave us war. A silent one, in which our minds are simple contraptions to take a hold of.\nIt gave us this.",
+	story = "I'm worried, Dom.\nThe universe we live in can be.. unforgiving, cruel. We all knew that.\nHowever.. I'm astounded.\nProgress, evolution, and our fight for technological supremacy gave us our reach for the stars, but it also gave us war. A silent one, in which our minds are simple contraptions to take a hold of.\nIt gave us this.",
 	priority = "&y&Volatile&!&",
 	destination = "Corridor A-LT,\nZeus Complex,\nEarth",
 	date = "11/18/2056"

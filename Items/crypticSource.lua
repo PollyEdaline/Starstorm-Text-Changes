@@ -8,7 +8,7 @@ it.CrypticSource.sprite = Sprite.load("CrypticSource", path.."Cryptic Source.png
 it.CrypticSource:setTier("uncommon")
 it.CrypticSource:setLog{
 	group = "uncommon",
-	description = "Changing direction &y&creates bursts of energy that deal 70% damage.",
+	description = "Changing direction creates &y&bursts of energy&!& that deal &y&70% damage&!&.",
 	story = "From atoms to sentient beings, everything comes from energy. However, this rather cryptic object seems to emanate energy on its own. High amounts of friction seem to trigger a chain reaction which makes it highly unstable. However, it may also be a manipulable source of (infinite?) energy. Whether this will lead us to the utopian future we crave for is completely uncertain, but this completely changes our previous thoughts about the universe.",
 	destination = "O32,\nLow End,\nEarth",
 	date = "03/30/2058"

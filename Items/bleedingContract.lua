@@ -8,7 +8,7 @@ itp.sibylline:add(it.BleedingContract)
 it.BleedingContract.color = Color.fromHex(0xFFCCED)
 it.BleedingContract:setLog{
 	group = "end",
-	description = "Dying &y&restarts the stage. Consumed on activation.",
+	description = "Dying &y&restarts the stage&!&. Consumed on activation.",
 	story = "I knew what I had given up. In the end, all that mattered was my prevalence. Everything else was secondary, even if that meant I had to leave a part of me behind.",
 	priority = "&"..it.BleedingContract.color.gml.."&Unknown",
 	destination = "",

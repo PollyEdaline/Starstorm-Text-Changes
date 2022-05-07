@@ -46,7 +46,7 @@ Chirr can befriend one creature at a time through her &y&Natural Link&!& skill.]
 
 -- Skill descriptions
 beastmaster:setLoadoutSkill(1, "Life Thorns",
-[[Shoot 3 projectiles for &y&260% total damage.&y&]])
+[[Shoot 3 projectiles for &y&260% total damage&y&.]])
 
 beastmaster:setLoadoutSkill(2, "Headbutt",
 [[Headbutt enemies in front of you for &y&300% damage,

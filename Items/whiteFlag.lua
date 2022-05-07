@@ -9,7 +9,7 @@ it.WhiteFlag.useCooldown = 45
 it.WhiteFlag:setTier("use")
 it.WhiteFlag:setLog{
 	group = "use_locked",
-	description = "Place a white flag. &b&Everyone around it is unable to attack for 8 seconds.",
+	description = "Place a white flag. &b&Everyone around it is unable to attack for 8 seconds&!&.",
 	story = [[Save this for me until I get back home, I didn't need it. In fact, we became friends! I can't wait to tell you all about it soon. It's been a long trip and an unexpected series of events. I've told them about you and they want me to invite you over the next time. How's that, huh!? Love you.]],
 	destination = "Room 2B,\nSomnus Hotel,\nEarth",
 	date = "10/5/2056"

@@ -9,7 +9,7 @@ it.ErraticGadget.sprite = Sprite.load("ErraticGadget", path.."Erratic Gadget.png
 it.ErraticGadget:setTier("rare")
 it.ErraticGadget:setLog{
 	group = "rare_locked",
-	description = "Critical Strikes deal &y&50% extra damage.",
+	description = "Critical Strikes deal &y&50% extra damage&!&.",
 	story = "Pulse weapons are my favorite in the battlefield, and now they might be yours too! Please take this, as I can assure you it will grant you a huge advantage over your enemies if you use it wisely. Always go for the head, leave those [REDACTED] with no chances of survival. Show them what we're made of.\n-Uncle Hoogehn",
 	priority = "&y&Volatile&!&",
 	destination = "S159,\nNoev Londa,\nVenus",

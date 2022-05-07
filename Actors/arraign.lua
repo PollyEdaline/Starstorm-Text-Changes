@@ -26,14 +26,14 @@ local sprites = {
 
 local phrases = {
 	phase1 = {
-		"Show me what you are made of...",
+		"Show me what you're made of.",
 		"Bring it on!",
 		"Candidate, demonstrate!",
 		"Candidate, endure!",
 		"Interesting candidate.",
-		"Astounding resilience...",
-		"Powerful being...",
-		"Fair contender...",
+		"Astounding resilience..",
+		"Powerful being..",
+		"Fair contender..",
 		"Step up your strength!"
 	},
 	phase2 = {
@@ -288,7 +288,7 @@ obj.Arraign1:addCallback("create", function(self)
 	obj.EfFlash:create(0,0):set("parent", self.id):set("rate", 0.08)
 	
 	if not net.online then
-		createDialogue({"You have gotten this far...", "Candidate, prevail. Or fall victim to my judgement."}, {{sprArraignPortrait, 1}, {sprArraignPortrait, 1}})
+		createDialogue({"You have gotten this far..", "Candidate, prevail. Or fall victim to my judgement."}, {{sprArraignPortrait, 1}, {sprArraignPortrait, 1}})
 	end
 end)
 
@@ -670,7 +670,7 @@ obj.Arraign2:addCallback("create", function(self)
 	Event.setActive(Event.find("Storm"), 1, 999999)
 	
 	if not net.online then
-		createDialogue({"You are unlike anything I've witnessed before...", "That strength...", "That power...", "We are not done yet.", "I shall not hold back!"}, {{sprArraignPortrait, 2}, {sprArraignPortrait, 2}, {sprArraignPortrait, 2}, {sprArraignPortrait, 2}})
+		createDialogue({"You are unlike anything that I have witnessed before..", "That strength..", "That power..", "We are not done yet.", "I shall not hold back!"}, {{sprArraignPortrait, 2}, {sprArraignPortrait, 2}, {sprArraignPortrait, 2}, {sprArraignPortrait, 2}})
 	end
 end)
 
@@ -795,7 +795,7 @@ obj.Arraign2:addCallback("destroy", function(self)
 	death.xscale = self.xscale
 	death.yscale = self.yscale
 	death:getData().final = true
-	death:getData().text = "Ascend..."
+	death:getData().text = "Ascend.."
 	
 	local currentStage = Stage.getCurrentStage()
 	for _, enemy in ipairs(currentStage.enemies:toTable()) do

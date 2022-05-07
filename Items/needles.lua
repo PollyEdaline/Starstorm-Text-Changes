@@ -6,8 +6,8 @@ it.Needles.sprite = Sprite.load("Needles", path.."Needles.png", 1, 15, 15)
 it.Needles:setTier("common")
 it.Needles:setLog{
 	group = "common_locked",
-	description = "4% chance on hit to &y&mark enemies&!& for 100% &y&critical Strike chance against them.",
-	story = "Uh... madre dice que si puedes leer esto, es porque no eres tan torpe como pensaba, y pues eso. Esperamos que te sirvan estas agujas. Me temo que no son las que pediste, pero no hace mucha diferencia, pienso.\nNo recuerdo si los enviamos bien embalados. Ten cuidado.",
+	description = "4% chance on hit to &y&mark enemies&!& for 100% &y&Critical Strike chance against them.",
+	story = "Uh.. madre dice que si puedes leer esto, es porque no eres tan torpe como pensaba, y pues eso. Esperamos que te sirvan estas agujas. Me temo que no son las que pediste, pero no hace mucha diferencia, pienso.\nNo recuerdo si los enviamos bien embalados. Ten cuidado.",
 	priority = "&y&Piercing&!&",
 	destination = "E2,\nOren's Loop,\nVenus",
 	date = "[REDACTED]"

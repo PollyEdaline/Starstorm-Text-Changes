@@ -8,7 +8,7 @@ it.GreenChocolate:setTier("rare")
 it.GreenChocolate:setLog{
 	group = "rare",
 	description = "Receiving 15% or more of your health as damage increases your &y&damage and Critical Strike chance&!&.",
-	story = "Here is your souvenir from Mars! Green Chocolate is super expensive to purchase anywhere else so I'm sending you a pair, just don't eat both the same day! (Seriously, don't)\nYou will feel like never before while eating it! They say it enhances your body but IDK about that honestly.\nAlso please check in on uncle Jeff, he wasn't feeling very well last time I talked to him...",
+	story = "Here is your souvenir from Mars! Green Chocolate is super expensive to purchase anywhere else so I'm sending you a pair, just don't eat both the same day! (Seriously, don't)\nYou will feel like never before while eating it! They say it enhances your body but IDK about that honestly.\nAlso please check in on uncle Jeff, he wasn't feeling very well last time I talked to him..",
 	destination = "Montee,\nGamma East,\nEarth",
 	date = "03/11/2056"
 }

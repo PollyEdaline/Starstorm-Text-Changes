@@ -7,7 +7,7 @@ it.GalvanicCore.sprite = Sprite.load("GalvanicCore", path.."Galvanic Core.png", 
 it.GalvanicCore:setTier("rare")
 it.GalvanicCore:setLog{
 	group = "rare_locked",
-	description = "Attacks have a &y&10% chance to stun.&!& Stunned enemies debuff nearby enemies, reducing their HP by 20%, movement speed by 0.8, and damage by 30%.",
+	description = "&y&10% chance on hit to stun&!&. Stunned enemies debuff nearby enemies, reducing their &g&HP by 20%&!&, &b&movement speed by 0.8&!&, and &y&damage by 30%&!&.",
 	story = "\nThe power is yours.\nWelcome to the latest generation of power core technology in the galaxy. The Galvanic Core is the most revolutionary invention since the Hardlight Afterburner! Don't blink, it's time to embrace the future.\nThank you for your purchase.\n\nOMNI.co",
 	destination = "Science Plaza,\n#42,\nMV Prime",
 	date = "04/22/2056"

@@ -8,8 +8,8 @@ itp.sibylline:add(it.YearningDemise)
 it.YearningDemise.color = Color.fromHex(0xFFCCED)
 it.YearningDemise:setLog{
 	group = "end",
-	description = "Picking up items &y&obliterates near enemies.",
-	story = "As I fought, I kept looking for more. More things to collect, more power. I had long since become the embodiment of all that contaminates our race.\n...and yet, it wasn't enough.",
+	description = "Picking up items &y&obliterates near enemies&!&.",
+	story = "As I fought, I kept looking for more. More things to collect, more power. I had long since become the embodiment of all that contaminates our race.\n..and yet, it wasn't enough.",
 	priority = "&"..it.StirringSoul.color.gml.."&Unknown",
 	destination = "",
 	date = "Unknown"

@@ -2,7 +2,7 @@ local path = "Items/Resources/"
 
 it.CausticPearl = Item.new("Caustic Pearl")
 local sCausticPearl = Sound.load("CausticPearl", path.."causticPearl")
-it.CausticPearl.pickupText = "You feel a burning pain..." 
+it.CausticPearl.pickupText = "You feel a burning pain.." 
 it.CausticPearl.sprite = Sprite.load("CausticPearl", path.."Caustic Pearl.png", 2, 10, 10)
 it.CausticPearl.isUseItem = true
 it.CausticPearl.useCooldown = 0
@@ -10,7 +10,7 @@ it.CausticPearl.color = "or"
 itp.elite:add(it.CausticPearl)
 it.CausticPearl:setLog{
 	group = "use_locked",
-	description = "&y&Become an aspect of corrosion.",
+	description = "&y&Become an aspect of corrosion&!&.",
 	story = "Once I took the pearl, I could not let go. It melted into my body, leaving an endless, burning pain. Everything I touch is gone, as I have become entropy itself.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

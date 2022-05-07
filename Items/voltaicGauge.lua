@@ -6,7 +6,7 @@ it.MagneticGauge.sprite = Sprite.load("GaugeMagnetic", path.."Voltaic Gauge.png"
 it.MagneticGauge:setTier("uncommon")
 it.MagneticGauge:setLog{
 	group = "uncommon",
-	description = "Slaying elites &y&generates orbs&!& that &y&grant 15 temporary shield when picked up.",
+	description = "Slaying elites &y&generates orbs&!& that grant &b&15 temporary shield&!& when picked up.",
 	story = "Hola primo.\nThe 30th is gaming night, you should probably practice more so we don't leave you behind during the boss fight.\nIf anything this could help you out. I'll send an overclocker the next week so your system doesn't hold you back lol.",
 	destination = "Tebas 3,\nTriple G,\nEarth",
 	date = "08/04/2056"

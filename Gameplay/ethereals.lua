@@ -294,9 +294,9 @@ table.insert(call.onStep, function()
 				
 				if teleporter:getData().step == 0 then
 					if gamepad then
-						teleporter:getData().display = "Press '"..acceptInput.."' to activate the ethereal teleporter"
+						teleporter:getData().display = "Press '"..acceptInput.."' to activate the Ethereal Teleporter"
 					else
-						teleporter:getData().display = "Press &y&'"..acceptInput.."'&!& to activate the ethereal teleporter"
+						teleporter:getData().display = "Press &y&'"..acceptInput.."'&!& to activate the Ethereal Teleporter"
 					end
 				elseif teleporter:getData().step == 1 then
 					if hardmode == 0 then

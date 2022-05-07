@@ -7,7 +7,7 @@ it.PoisonousGland.sprite = Sprite.load("PoisonousGland", path.."Poisonous Gland.
 it.PoisonousGland:setTier("uncommon")
 it.PoisonousGland:setLog{
 	group = "uncommon_locked",
-	description = "Create a &y&cloud of poison&!& when getting hit at &r&full health&!&.",
+	description = "Getting hit while at &g&full health&!& creates a cloud of poison for &y&300% DPS&!&. Lasts 5 seconds.",
 	story = "While we were in the field, we found those eerie mushroom-like creatures you told us about. We managed to take this from a dead one and keep it in cryo, so you can check it out in the lab. Maybe we can repurpose it. Up to you.",
 	priority = "&g&Priority/Biological&!&",
 	destination = "Block 2,\nBiology,\nTeimax Station 2",

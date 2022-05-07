@@ -99,7 +99,7 @@ local dialogue = {
 	},
 	idle = {
 		"Gate, bring. gate, take...",
-		"Strand, breath... Gelid...",
+		"Stranger, breath... Gelid...",
 		"Stranger, company...",
 		"Stranger, presence, warm...",
 		"Mischief... Consequence...",

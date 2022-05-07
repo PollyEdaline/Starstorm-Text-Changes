@@ -8,8 +8,8 @@ it.HuntersSigil.sprite = Sprite.load("HuntersSigil", path.."Hunter's Sigil.png",
 it.HuntersSigil:setTier("uncommon")
 it.HuntersSigil:setLog{
 	group = "uncommon_locked",
-	description = "Standing still grants &b&15% Armor&!& and &y&25% Critical Strike chance.",
-	story = "Hey Sett, welcome to the club. We've been looking for candidates and now that you're with us, we can begin working next season. We're 'counting on you.\n\n-Irix out",
+	description = "Standing still grants &b&15% Armor&!& and &y&25% Critical Strike chance&!&.",
+	story = "Hey Sett, welcome to the club. We've been looking for candidates and now that you're with us, we can begin working next season. We're counting on you.\n\n-Irix out",
 	destination = "2East,\nBeckham Building,\nEarth",
 	date = "02/02/2056"
 }

@@ -51,24 +51,24 @@ Knight:setLoadoutInfo(
 and empower his allies with an old-school sword and shield combo.
 Capable of deflecting attacks when timed correctly, his shield mastery
 brings him a level of protection unlike any other warrior of his class.
-Every primary attack after using &y&Contend &b&stuns enemies.]], sprSkills)
+Every primary attack after using &y&Contend &b&stuns enemies&!&.]], sprSkills)
 
 -- Skill descriptions
 
 Knight:setLoadoutSkill(1, "Duel",
-[[Slash forward for &y&100% damage.]])
+[[Slash forward for &y&100% damage&!&.]])
 
 Knight:setLoadoutSkill(2, "Contend",
 [[Hold to &b&reduce all incoming damage by 50%&!&.
-For a short window of time, parry enemy attacks for &y&800% damage.]])
+For a short window of time, parry enemy attacks for &y&800% damage&!&.]])
 
 Knight:setLoadoutSkill(3, "Strike",
 [[Dash and slash forward for &y&200% damage.
-&y&Stuns enemies briefly.]])
+&y&Stuns enemies briefly&!&.]])
 
 Knight:setLoadoutSkill(4, "Invigorate",
 [[Slash twice for &y&400% damage. Strike your shield, knocking all
-enemies back&y&. &b&Allies receive an attack speed bonus for 3 seconds.]])
+enemies back&y&. &b&Allies receive an attack speed bonus for 3 seconds&!&.]])
 
 -- Color of highlights during selection
 Knight.loadoutColor = Color.fromHex(0xEAB779)

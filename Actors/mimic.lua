@@ -482,7 +482,7 @@ end
 mlog.Mimic = MonsterLog.new("Mimic")
 MonsterLog.map[obj.Mimic] = mlog.Mimic
 mlog.Mimic.displayName = "Security Chest"
-mlog.Mimic.story = "Who had the crazy idea of giving chests a failsafe? I know they want to make it harder for pirates, but they probably didn't think about emergencies.\nI'll never get used to chasing a mechanical box because it thinks I stole something.\n\n\n...Or maybe it's the berries I ate."
+mlog.Mimic.story = "Who had the crazy idea of giving chests a failsafe? I know they want to make it harder for pirates, but they probably didn't think about emergencies.\nI'll never get used to chasing a mechanical box because it thinks I stole something.\n\n\n..Or maybe it's the berries I ate."
 mlog.Mimic.statHP = 200
 mlog.Mimic.statDamage = 0
 mlog.Mimic.statSpeed = 1.3

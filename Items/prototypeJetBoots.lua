@@ -11,8 +11,8 @@ it.PrototypeJetBoots.sprite = Sprite.load("PrototypeJetBoots", path.."Prototype 
 it.PrototypeJetBoots:setTier("uncommon")
 it.PrototypeJetBoots:setLog{
 	group = "uncommon",
-	description = "&y&Explode on jump for 150% damage.",
-	story = "Hey [REDACTED], these are the prototype jet boots we've been working on. Same as last time: take them out for a ride, test the output, blah blah. Please just tell us if anything goes wrong.\nAlso please remember not to press the blue component that sticks out on the back; we don't want any more accidents... Hopefully we can get that fixed and reinforced on the next revision. I don't know yet, [REDACTED] is still busy solving the battery problem.\nWe're already running out of time so please send us your log ASAP.",
+	description = "&y&Explode on jump for 150% damage&!&.",
+	story = "Hey [REDACTED], these are the prototype jet boots we've been working on. Same as last time: take them out for a ride, test the output, blah blah. Please just tell us if anything goes wrong.\nAlso please remember not to press the blue component that sticks out on the back; we don't want any more accidents.. Hopefully we can get that fixed and reinforced on the next revision. I don't know yet, [REDACTED] is still busy solving the battery problem.\nWe're already running out of time so please send us your log ASAP.",
 	priority = "&y&Volatile&!&",
 	destination = "Pget #45,\nNooret,\nMars",
 	date = "03/11/2056"

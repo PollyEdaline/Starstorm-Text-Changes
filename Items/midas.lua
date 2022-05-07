@@ -10,8 +10,8 @@ it.Midas:setTier("use")
 itp.enigma:add(it.Midas)
 it.Midas:setLog{
 	group = "use",
-	description = "&r&Deduct 50% of your health, &y&earning the same amount in gold.",
-	story = [["A miracle from the gods..."
+	description = "&r&Deduct 50% of your health, &y&earning the same amount in gold&!&.",
+	story = [["A miracle from the gods.."
 You keep saying it over and over again. Are you out of your mind? You keep treating us like we're ignorant when all we tried to do was to SAVE YOU.
 Do us a favour and keep it. Do whatever you want with it, we do NOT want to see you around here anymore. We do NOT want to be part of whatever is going on with you and this thing.
 It's making you a greedy, souless person and I hope you know it.]],

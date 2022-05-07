@@ -10,7 +10,7 @@ it.SeismicOscillator:setTier("use")
 itp.enigma:add(it.SeismicOscillator)
 it.SeismicOscillator:setLog{
 	group = "use",
-	description = "Start an earthquake which &y&damages all grounded enemies.",
+	description = "Start an earthquake which &y&damages all grounded enemies&!&.",
 	story = "We've gotten a fairly good trade with the lambda group. We probably won't use this anymore, so it's yours to keep. You'll probably use it more over there than we did, with all the recent earthquakes.\nWatch out for the beeping, it could mean a catastrophe.",
 	destination = "Miean #676,2,\nPlausamdi,\nTitan",
 	date = "04/05/2056"

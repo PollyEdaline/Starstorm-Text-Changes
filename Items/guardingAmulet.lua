@@ -7,8 +7,8 @@ it.GuardingAmulet.sprite = Sprite.load("GuardingAmulet", path.."Guarding Amulet.
 it.GuardingAmulet:setTier("common")
 it.GuardingAmulet:setLog{
 	group = "common",
-	description = "Reduce damage from behind you by 40%.",
-	story = "I know he's somewhere out there, I know you can find him... but you must be persistent. By the time my soul leaves this shell, the words will be spoken and you will take my place. He will be the one to show you the path to the answers you always wanted from me.\nEmbrace this amulet; you will depend on it, and it will keep you from ever looking back.",
+	description = "&b&Reduces damage&!& from behind you by 40%.",
+	story = "I know he's somewhere out there, I know you can find him.. but you must be persistent. By the time my soul leaves this shell, the words will be spoken and you will take my place. He will be the one to show you the path to the answers you always wanted from me.\nEmbrace this amulet; you will depend on it, and it will keep you from ever looking back.",
 	destination = "C8,\nAzure Garden,\nSanctuary",
 	date = "03/11/2056"
 }

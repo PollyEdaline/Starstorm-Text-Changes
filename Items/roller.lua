@@ -10,8 +10,8 @@ it.Roller:setTier("use")
 itp.enigma:add(it.Roller)
 it.Roller:setLog{
 	group = "use_locked",
-	description = "Launch a flattening roller, &y&immobilizing enemies on contact for 6 seconds.",
-	story = "Pretty old school, but pretty useful! It's been a while since I last used this, so make sure it's all correct.\nIt's not like it can be broken anyways...",
+	description = "Launch a flattening roller, &y&immobilizing enemies on contact for 6 seconds&!&.",
+	story = "Pretty old school, but pretty useful! It's been a while since I last used this, so make sure it's all correct.\nIt's not like it can be broken anyways..",
 	destination = "377.14.33,\nStrongstone,\nNeptune",
 	date = "10/5/2056"
 }

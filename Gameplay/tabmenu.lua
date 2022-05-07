@@ -7,18 +7,18 @@ local items = {}
 
 	-- VANILLA ITEMS
 	local specialInfo = {
-		{name = "Barbed Wire", maxStack = nil, info = "Deals 50% damage to nearby enemies.", stackInfo = "+20% radius, +17% DPS."},
+		{name = "Barbed Wire", maxStack = nil, info = "Deals 50% damage per second to nearby enemies.", stackInfo = "+20% radius, +17% DPS."},
 		{name = "Bitter Root", maxStack = 38, info = "Gain 8% total health.", stackInfo = "+8% total health."},
 		{name = "Bundle of Fireworks", maxStack = nil, info = "Opening containers shoots out 8 fireworks for 300% damage.", stackInfo = "+2 fireworks."},
-		{name = "Bustling Fungus", maxStack = nil, info = "Heal 4.5% HP after standing still for 2 seconds.", stackInfo = "+4.5% HP."},
+		{name = "Bustling Fungus", maxStack = nil, info = "Heal 4.5% HP per second after standing still for 2 seconds.", stackInfo = "+4.5% HP/s."},
 		{name = "Crowbar", maxStack = nil, info = "Deal 50% bonus damage to enemies with more than 80% HP.", stackInfo = "+30% damage."},
 		{name = "Fire Shield", maxStack = nil, info = "On being hit for 10% or more of your HP, explode for 400% damage.", stackInfo = "+200% damage, +20% knockback."},
 		{name = "First Aid Kit", maxStack = nil, info = "Heal 10 HP 1.1 seconds after being hit.", stackInfo = "+10 HP."},
-		{name = "Gasoline", maxStack = nil, info = "Burn the ground upon slaying an enemy for 60% DPS.", stackInfo = "+40% DPS."},
+		{name = "Gasoline", maxStack = nil, info = "Burn the ground after slaying an enemy for 60% DPS.", stackInfo = "+40% DPS."},
 		{name = "Headstompers", maxStack = nil, info = "Hurt enemies by falling for up to 507% damage. Hold down to increase speed.", stackInfo = "+30% damage."},
 		{name = "Hermit's Scarf", maxStack = 6, info = "10% chance to dodge an attack.", stackInfo = "+5% chance."},
 		{name = "Lens Maker's Glasses", maxStack = 14, info = "+7% Critical Strike chance.", stackInfo = "+7% chance."},
-		{name = "Life Savings", maxStack = nil, info = "Earn +$1 every 3 seconds.", stackInfo = "increased rate."},
+		{name = "Life Savings", maxStack = nil, info = "Earn +$1 every 3 seconds.", stackInfo = "Increased rate."},
 		{name = "Meat Nugget", maxStack = nil, info = "Enemies have an 8% chance to drop meat nuggets, which heal 6 HP.", stackInfo = "+6 HP."},
 		{name = "Monster Tooth", maxStack = nil, info = "Slaying an enemy heals you for 10 HP.", stackInfo = "+5 HP."},
 		{name = "Mortar Tube", maxStack = nil, info = "9% chance to fire a mortar for 170% damage.", stackInfo = "+170% damage."},
@@ -29,21 +29,21 @@ local items = {}
 		{name = "Soldier's Syringe", maxStack = 13, info = "+15% attack speed.", stackInfo = "+15% attack speed."},
 		{name = "Spikestrip", maxStack = nil, info = "When hit, drop spikestrips that slow enemies by 20% and bleed them for 25% damage.", stackInfo = "increases duration."},
 		{name = "Sprouting Egg", maxStack = nil, info = "+2.4 health regeneration after not being hit for 7 seconds.", stackInfo = "+2.4 health regeneration."},
-		{name = "Sticky Bomb", maxStack = nil, info = "8% chance to stick a bomb on enemies for 140% damage.", stackInfo = "+40% damage."},
-		{name = "Taser", maxStack = nil, info = "7% chance to snare enemies for 1.5 seconds.", stackInfo = "+0.5 seconds."},
-		{name = "Warbanner", maxStack = nil, info = "Drop a banner on level up, which increases attack and movement speed by 30%, and damage by 4.", stackInfo = "+40% radius."},
+		{name = "Sticky Bomb", maxStack = nil, info = "8% chance on hit to stick a bomb to enemies for 140% damage.", stackInfo = "+40% damage."},
+		{name = "Taser", maxStack = nil, info = "7% chance on hit to snare enemies for 1.5 seconds.", stackInfo = "+0.5 seconds."},
+		{name = "Warbanner", maxStack = nil, info = "Drop a banner on level up which increases attack and movement speed by 30%, and damage by 4.", stackInfo = "+40% radius."},
 
 		{name = "56 Leaf Clover", maxStack = 65, info = "Elites have a 4% chance to drop an item when slain.", stackInfo = "+1.5% chance."},
 		{name = "Arms Race", maxStack = nil, info = "Drones have a 9% chance of firing missiles and mortars.", stackInfo = "+10% chance, +170% mortar damage."},
 		{name = "AtG Missile Mk. 1", maxStack = 10, info = "10% chance on hit to launch a missile for 300% damage.", stackInfo = "+10% chance."},
-		{name = "Boxing Gloves", maxStack = nil, info = "15% chance to deal extra knockback.", stackInfo = "+6% chance, multiplicatively."},
-		{name = "Chargefield Generator", maxStack = nil, info = "Slaying enemies expand a ring which deals 100% DPS for 6 seconds.", stackInfo = "+10% DPS."},
-		{name = "Concussion Grenade", maxStack = nil, info = "+6% chance to stun enemies for 2 seconds.", stackInfo = "+6% chance, multiplicatively."},
+		{name = "Boxing Gloves", maxStack = nil, info = "15% chance on hit to knock enemies back.", stackInfo = "+6% chance, multiplicatively."},
+		{name = "Chargefield Generator", maxStack = nil, info = "Slaying enemies expands a ring which deals 100% DPS for 6 seconds.", stackInfo = "+10% DPS."},
+		{name = "Concussion Grenade", maxStack = nil, info = "+6% chance on hit to stun enemies for 2 seconds.", stackInfo = "+6% chance, multiplicatively."},
 		{name = "Dead Man's Foot", maxStack = nil, info = "Reaching low health drops a poison mine for 4x150% damage.", stackInfo = "+1 poison tick."},
-		{name = "Energy Cell", maxStack = 4, info = "Attack speed increases in relation to remaining health.", stackInfo = "+20% attack speed."},
+		{name = "Energy Cell", maxStack = 4, info = "Attack speed increases the lower your health is.", stackInfo = "+20% attack speed."},
 		{name = "Filial Imprinting", maxStack = nil, info = "Hatch a creature which drops a buff every 20 seconds.", stackInfo = "+1 creature."},
 		{name = "Frost Relic", maxStack = nil, info = "Slaying enemies surrounds you with 3 icicles. Each icicle deals 33% damage.", stackInfo = "+1 icicle."},
-		{name = "Golden Gun", maxStack = nil, info = "Deal additional damage based on gold, up to 40% at 700 gold (scales over time).", stackInfo = "halves gold amount needed for max damage."},
+		{name = "Golden Gun", maxStack = nil, info = "Deal additional damage based on gold, up to 40% at 700 gold (scales over time).", stackInfo = "Halves gold amount needed for max damage."},
 		{name = "Guardian's Heart", maxStack = nil, info = "+60 shield. Recharges after 7 seconds out of combat.", stackInfo = "+60 shield."},
 		{name = "Harvester's Scythe", maxStack = nil, info = "+5% Critical Strike chance. Heal 8 HP on Critical Strikes.", stackInfo = "+5% Critical Strike chance, +2 HP."},
 		{name = "Hopoo Feather", maxStack = nil, info = "Gain an additional jump.", stackInfo = "+1 jump."},
@@ -57,54 +57,54 @@ local items = {}
 		{name = "Smart Shopper", maxStack = nil, info = "+25% gold from enemies.", stackInfo = "+25% gold."},
 		{name = "Time Keeper's Secret", maxStack = 8, info = "Stops time for 3 seconds upon reaching critical health.", stackInfo = "+1 second."},
 		{name = "Tough Times", maxStack = nil, info = "Increases Armor by 14.", stackInfo = "+14 Armor."},
-		{name = "Toxic Centipede", maxStack = nil, info = "Infect an enemy on touch, dealing 50% DPS.", stackInfo = "increases damage."},
-		{name = "Ukulele", maxStack = nil, info = "20% chance to fire chain lightning for 4x33% damage.", stackInfo = "+33% damage."},
+		{name = "Toxic Centipede", maxStack = nil, info = "Infect an enemy on touch, dealing 50% DPS.", stackInfo = "Increases damage."},
+		{name = "Ukulele", maxStack = nil, info = "20% chance on hit to fire chain lightning for 4x33% damage.", stackInfo = "+33% damage."},
 		{name = "Will-o'-the-wisp", maxStack = nil, info = "33% chance to detonate slain enemies for 250% damage.", stackInfo = "+100% damage."},
 
-		{name = "Alien Head", maxStack = 3, info = "Decreases all ability cooldowns by 25%.", stackInfo = "stacks multiplicatively."},
+		{name = "Alien Head", maxStack = 3, info = "Decreases all ability cooldowns by 25%.", stackInfo = "Stacks multiplicatively."},
 		{name = "Ancient Scepter", maxStack = 1, info = "Upgrades your fourth ability.", stackInfo = "Does not stack."},
 		{name = "AtG Missile Mk. 2", maxStack = 15, info = "7% chance on hit to launch 3 missiles dealing 300% damage each.", stackInfo = "+7% chance."},
 		{name = "Beating Embryo", maxStack = 4, info = "Use items have a 30% chance of doubling the effect.", stackInfo = "+30% chance."},
 		{name = "Brilliant Behemoth", maxStack = nil, info = "All damage dealt explodes as 20% extra damage.", stackInfo = "+20% damage."},
-		{name = "Ceremonial Dagger", maxStack = nil, info = "Slain enemies create 4 homing daggers, dealing 100% damage.", stackInfo = "+2 daggers."},
-		{name = "Dio's Friend", maxStack = nil, info = "Earn an extra life.", stackInfo = "+1 life."},
+		{name = "Ceremonial Dagger", maxStack = nil, info = "Slain enemies create 4 homing daggers, dealing 100% damage each.", stackInfo = "+2 daggers."},
+		{name = "Dio's Friend", maxStack = nil, info = "Gain an extra life.", stackInfo = "+1 life."},
 		{name = "Fireman's Boots", maxStack = nil, info = "Leave a trail of fire while walking which deals 35% damage.", stackInfo = "+20% damage."},
-		{name = "Happiest Mask", maxStack = nil, info = "Slain enemies become allied ghosts with 70% HP and 50% damage for 15 seconds.", stackInfo = "increases ghost duration and damage."},
-		{name = "Heaven Cracker", maxStack = 4, info = "Every fourth basic attack pierces enemies.", stackInfo = "reduces the amount of attacks required."},
+		{name = "Happiest Mask", maxStack = nil, info = "Slain enemies become allied ghosts with 70% HP and 50% damage for 15 seconds.", stackInfo = "Increases ghost duration and damage."},
+		{name = "Heaven Cracker", maxStack = 4, info = "Every fourth basic attack pierces enemies.", stackInfo = "Reduces the amount of attacks required."},
 		{name = "Hyper-Threader", maxStack = nil, info = "Every attack fires a laser, bouncing for 40% damage to 2 enemies.", stackInfo = "+1 bounce."},
 		{name = "Interstellar Desk Plant", maxStack = nil, info = "Spawn an alien plant when slaying an enemy which heals you for 8 HP when collected.", stackInfo = "+3 HP."},
-		{name = "Laser Turbine", maxStack = nil, info = "Abilities charge a generator. When full, fire a laser dealing 2000% damage.", stackInfo = "increases charge per ability."},
-		{name = "Old Box", maxStack = nil, info = "Drop a box at low health, fearing enemies for 2 seconds.", stackInfo = "increases minimun health required."},
-		{name = "Permafrost", maxStack = nil, info = "Attacks have a chance to freeze enemies for 1.5 seconds.", stackInfo = "+6% chance."},
-		{name = "Photon Jetpack", maxStack = nil, info = "Fly for up to 1.6 seconds, charges while not in use.", stackInfo = "+0.8 seconds."},
-		{name = "Plasma Chain", maxStack = nil, info = "Attacks have a chance to tether onto enemies, dealing 60% DPS.", stackInfo = "increases max tethers."},
-		{name = "Rapid Mitosis", maxStack = 30, info = "Reduces use item cooldown by 25%.", stackInfo = "stacks multiplicatively."},
-		{name = "Repulsion Armor", maxStack = 5, info = "After 6 hits, reduce incoming damage by 83% for 3 seconds.", stackInfo = "+1 second."},
+		{name = "Laser Turbine", maxStack = nil, info = "Abilities charge a generator. When full, fire a laser dealing 2000% damage.", stackInfo = "Increases charge per ability."},
+		{name = "Old Box", maxStack = nil, info = "Drop a box at low health, fearing enemies for 2 seconds.", stackInfo = "Increases minimun health required."},
+		{name = "Permafrost", maxStack = nil, info = "6% chance on hit to freeze enemies for 1.5 seconds.", stackInfo = "+6% chance."},
+		{name = "Photon Jetpack", maxStack = nil, info = "Fly for up to 1.6 seconds. Charges while not in use.", stackInfo = "+0.8 seconds."},
+		{name = "Plasma Chain", maxStack = nil, info = "Chance on hit to tether onto enemies, dealing 60% DPS.", stackInfo = "Increases max tethers."},
+		{name = "Rapid Mitosis", maxStack = 30, info = "Reduces use item cooldown by 25%.", stackInfo = "Stacks multiplicatively."},
+		{name = "Repulsion Armor", maxStack = 5, info = "After taking 6 hits, reduces incoming damage by 83% for 3 seconds.", stackInfo = "+1 second."},
 		{name = "Shattering Justice", maxStack = nil, info = "Reduces enemy Armor by 5, up to 25.", stackInfo = "+0.5 second duration."},
 		{name = "Telescopic Sight", maxStack = 5, info = "1% chance to instantly slay an enemy.", stackInfo = "+0.5% chance."},
 		{name = "Tesla Coil", maxStack = nil, info = "Shock nearby enemies for 150% damage.", stackInfo = "+50% damage."},
-		{name = "Thallium", maxStack = 1, info = "Attacks have a hance to slow enemies by 100% and deal 500% as damage over time.", stackInfo = "Does not stack."},
+		{name = "Thallium", maxStack = 1, info = "10% chance on hit to slow enemies by 100% and deal 500% as damage over time.", stackInfo = "Does not stack."},
 		{name = "The Hit List", maxStack = nil, info = "Randomly marks an enemy. Slaying marked enemies permanently increases damage by 0.5, up to 20.", stackInfo = "increases marked enemies."},
 		{name = "The Ol' Lopper", maxStack = 8, info = "Deal Critical Strikes to enemies below 9% health.", stackInfo = "+4% minimum health."},
 		{name = "Wicked Ring", maxStack = nil, info = "Critical Strikes reduce all ability cooldowns by 1 second.", stackInfo = "+1 second, +6% Critical Strike chance."},
 
 		{name = "Burning Witness", maxStack = nil, info = "Slaying an enemy grants a fire trail that gives +5% movement speed speed and +1 damage for 6 seconds.", stackInfo = "+5% movement speed, increases duration."},
 		{name = "Colossal Knurl", maxStack = nil, info = "Increases health by 40, health regeneration by 1.2, and Armor by 6.", stackInfo = "+40 health, +1.2 health regeneration, +6 Armor."},
-		{name = "Ifrit's Horn", maxStack = nil, info = "8% chance to create a fire wave, hitting enemies for 220% damage.", stackInfo = "+30% damage."},
+		{name = "Ifrit's Horn", maxStack = nil, info = "8% chance on hit to create a fire wave, hitting enemies for 220% damage.", stackInfo = "+30% damage."},
 		{name = "Imp Overlord's Tentacle", maxStack = nil, info = "Spawn an imp minion.", stackInfo = "increases the imp's stats."},
-		{name = "Legendary Spark", maxStack = nil, info = "8% chance to spawn two sparks on attacking enemies for 100% damage each.", stackInfo = "+1 spark."},
+		{name = "Legendary Spark", maxStack = nil, info = "8% chance on hit to spawn two sparks on attacking enemies for 100% damage each.", stackInfo = "+1 spark."},
 
 		{name = "Small Enigma", maxStack = nil, info = "Reduces cooldown of use items by 5%.", stackInfo = "+5% cooldown reduction."},
 		{name = "Keycard", maxStack = 4, info = "Opens locked doors on the UES Contact Light.", stackInfo = "Open more doors."},
 		{name = "White Undershirt (M)", maxStack = nil, info = "Increases Armor by 3.", stackInfo = "+3 Armor.'"},
 
 		-- STARSTORM ITEMS
-		{name = "Detritive Trematode", maxStack = 35, info = "Enemies receive damage over time upon dropping below 3% health.", stackInfo = "increases health threshold."},
-		{name = "Dormant Fungus", maxStack = nil, info = "Regenerates 2% of your total health every second while moving.", stackInfo = "increases heatlh amount multiplicatively."},
-		{name = "Armed Backpack", maxStack = 14, info = "Attacks have an 18.5% chance of firing a bullet behind you for 150% damage.", stackInfo = "+6.5% chance."},
-		{name = "Brass Knuckles", maxStack = nil, info = "Deal 35% extra damage to enemies at close range.", stackInfo = "increases range by 45%."},
+		{name = "Detritive Trematode", maxStack = 35, info = "Enemies receive damage over time upon dropping below 3% health.", stackInfo = "Increases health threshold."},
+		{name = "Dormant Fungus", maxStack = nil, info = "Regenerates 2% of your total health every second while moving.", stackInfo = "Increases heatlh amount multiplicatively."},
+		{name = "Armed Backpack", maxStack = 14, info = "18.5% chance on hit of firing a bullet behind you for 150% damage.", stackInfo = "+6.5% chance."},
+		{name = "Brass Knuckles", maxStack = nil, info = "Deal 35% extra damage to enemies at close range.", stackInfo = "Increases range by 45%."},
 		{name = "Diary", maxStack = nil, info = "Earn 0.84 experience per second.", stackInfo = "+0.84 experience per second."},
-		{name = "Distinctive Stick", maxStack = nil, info = "Grows a tree nearby Teleporters, healing nearby players.", stackInfo = "increases range."},
+		{name = "Distinctive Stick", maxStack = nil, info = "Grows a tree nearby Teleporters, healing nearby players.", stackInfo = "Increases range."},
 		{name = "Fork", maxStack = nil, info = "Increases base damage by 3.", stackInfo = "+3 base damage."},
 		{name = "Ice Tool", maxStack = nil, info = "Gain an extra jump while in contact with a wall. Increases speed while climbing by 50%.", stackInfo = "+1 jump, increases speed up to 250%."},
 		{name = "Malice", maxStack = nil, info = "Damage dealt spreads to a nearby enemy for 45% damage.", stackInfo = "+1 target, increased range."},
@@ -112,7 +112,7 @@ local items = {}
 		{name = "Coffee Bag", maxStack = nil, info = "Increases movement speed by 10% and attack speed by 7.5%.", stackInfo = "+10% movement speed, +7.5% attack speed."},
 		{name = "Wonder Herbs", maxStack = nil, info = "Increases healing from all sources by 12%.", stackInfo = "+12% healing from all sources."},
 		{name = "Needles", maxStack = 49, info = "4% chance on hit to mark enemies for 100% Critical Strike chance. Lasts 3 seconds.", stackInfo = "+2% mark chance."},
-		{name = "Guarding Amulet", maxStack = nil, info = "Reduces damage taken from behind you by 40%.", stackInfo = "reduces damage multiplicatively."},
+		{name = "Guarding Amulet", maxStack = nil, info = "Reduces damage taken from behind you by 40%.", stackInfo = "Reduces damage multiplicatively."},
 		{name = "Molten Coin", maxStack = nil, info = "6% chance on hit to incinerate enemies for 6 seconds and earn $1.", stackInfo = "+4 seconds, +$1."},
 		{name = "X-4 Stimulant", maxStack = nil, info = "Decreases secondary skill cooldown by 10%.", stackInfo = "-10% multiplicatively."},
 		
@@ -120,11 +120,11 @@ local items = {}
 		{name = "Broken Blood Tester", maxStack = nil, info = "Earn $2 for every 15 HP regenerated.", stackInfo = "+$2."},
 		{name = "Balloon", maxStack = 40, info = "Decreases your gravity by 30%.", stackInfo = "-30% multiplicatively."},
 		{name = "Prototype Jet Boots", maxStack = nil, info = "Explode on jump for 150% damage.", stackInfo = "+100% damage."},
-		{name = "Poisonous Gland", maxStack = nil, info = "Getting hit while at full health\ncreates a cloud of poison for 300% DPS. Lasts 5 seconds.", stackInfo = "+150% DPS."},
-		{name = "Low Quality Speakers", maxStack = nil, info = "Gain 55% movement speed while at or below 50% HP.", stackInfo = "increases duration."},
-		{name = "Roulette", maxStack = nil, info = "Get a random buff that changes every minute.", stackInfo = "increases buff value by 40%."},
-		{name = "Crowning Valiance", maxStack = nil, info = "All stats are increased when a boss is nearby.", stackInfo = "further increases stats."},
-		{name = "Metachronic Trinket", maxStack = "down to 15 seconds.", info = "Reduces Teleporter charge time by 10 seconds.", stackInfo = "-10 seconds."},
+		{name = "Poisonous Gland", maxStack = nil, info = "Getting hit while at full health creates a cloud of poison for 300% DPS. Lasts 5 seconds.", stackInfo = "+150% DPS."},
+		{name = "Low Quality Speakers", maxStack = nil, info = "Gain 55% movement speed while at or below 50% HP.", stackInfo = "Increases duration."},
+		{name = "Roulette", maxStack = nil, info = "Get a random buff that changes every minute.", stackInfo = "Increases buff value by 40%."},
+		{name = "Crowning Valiance", maxStack = nil, info = "All stats are increased when a boss is nearby.", stackInfo = "Further increases stats."},
+		{name = "Metachronic Trinket", maxStack = "Down to 15 seconds.", info = "Reduces Teleporter charge time by 10 seconds.", stackInfo = "-10 seconds."},
 		{name = "Hottest Sauce", maxStack = nil, info = "Activating a use item burns the ground and all nearby enemies for 5 seconds.", stackInfo = "+4 seconds."},
 		{name = "Voltaic Gauge", maxStack = nil, info = "Slaying elites generates orbs that grant 15 temporary shield when picked up.", stackInfo = "+10 shield."},
 		{name = "Watch Metronome", maxStack = nil, info = "Standing still for up to 4 seconds charges bonus movement speed for up to 2 seconds.", stackInfo = "+2 second duration."},
@@ -136,44 +136,44 @@ local items = {}
 		{name = "Vaccine", maxStack = 7, info = "20% chance to negate debuffs.", stackInfo = "Increases chance multiplicatively."},
 		{name = "Sticky Overloader", maxStack = 7, info = "Attacking an enemy charges damage by 32%, up to 800%. Stop attacking for one second to unleash the damage.", stackInfo = "Increases damage charge by 32%."},
 		
-		{name = "Nkota's Heritage", maxStack = nil, info = "Creates a free chest on level up.", stackInfo = "increases chances of a higher rarity chest."},
+		{name = "Nkota's Heritage", maxStack = nil, info = "Creates a free chest on level up.", stackInfo = "Increases chances of a higher rarity chest."},
 		{name = "Droid Head", maxStack = nil, info = "Spawn an attack drone for 11 seconds after slaying elite enemies.", stackInfo = "+4 seconds."},
 		{name = "Green Chocolate", maxStack = 5, info = "Receiving 15% or more of your health as damage increases your Critical Strike chance and damage for 5 seconds.", stackInfo = "+4 seconds."},
 		{name = "Erratic Gadget", maxStack = nil, info = "Critical Strikes deal 50% extra damage.", stackInfo = "+50% damage."},
 		{name = "Insecticide", maxStack = nil, info = "All attacks poison enemies for 17.5% damage over 4 seconds.", stackInfo = "+2 seconds."},
-		{name = "Baby's Toys", maxStack = nil, info = "-3 levels on pickup, keeps all stats (reduced level up experience requirement).", stackInfo = "-3 levels."},
+		{name = "Baby's Toys", maxStack = nil, info = "Go back 3 levels while keeping all your stats.", stackInfo = "-3 levels."},
 		{name = "Composite Injector", maxStack = nil, info = "Merge one dropped use item with the one equipped.", stackInfo = "+1 merge."},
 		{name = "Swift Skateboard", maxStack = 5, info = "You can move while using any skill.", stackInfo = "+70% movement speed while using a skill."},
 		{name = "Juddering Egg", maxStack = nil, info = "A baby wurm protects you, attacking surrounding enemies for 10x90% damage.", stackInfo = "+1 baby wurm."},
 		{name = "Portable Reactor", maxStack = 8, info = "Become invincible for 40 seconds after entering a stage.", stackInfo = "+15 seconds."},
-		{name = "Bane Flask", maxStack = 8, info = "Applies Bane, dealing 30% damage every 2 seconds. Debuffs spread to nearby enemies when slain.", stackInfo = "increases range of spread by 100%."},
-		{name = "Galvanic Core", maxStack = 8, info = "Attacks have a 10% chance to stun. Stunned enemies debuff all nearby enemies, reducing their HP by 20%, movement speed by 0.8, and damage by 30%.", stackInfo = "+7% chance, +30% debuff range."},
+		{name = "Bane Flask", maxStack = 8, info = "All attacks apply Bane, dealing 30% damage every 2 seconds. Debuffs spread to nearby enemies when slain.", stackInfo = "Increases range of spread by 100%."},
+		{name = "Galvanic Core", maxStack = 8, info = "10% chance on hit to stun. Stunned enemies debuff all nearby enemies, reducing their HP by 20%, movement speed by 0.8, and damage by 30%.", stackInfo = "+7% chance, +30% debuff range."},
 		{name = "Gem-Breacher", maxStack = nil, info = "Critical Strikes give you +3 temporary shield, up to 500.", stackInfo = "+500 shield cap."},
 		
 		{name = "Shell Piece", maxStack = nil, info = "Gain immunity for 3 seconds near death (once per stage).", stackInfo = "+1 time per stage."},
 		{name = "Toxic Tail", maxStack = nil, info = "Spawn two friendly boars.", stackInfo = "+2 boars."},
 		{name = "Scalding Scale", maxStack = nil, info = "Increases Armor by 60.", stackInfo = "+60 Armor."},
 		{name = "Unearthly Lamp", maxStack = nil, info = "Every other attack fires a haunted projectile dealing 100% damage.", stackInfo = "+1 projectile."},
-		{name = "Scavenger's Fortune", maxStack = nil, info = "For every $10,000 collected, earn a 50% damage and health buff for 30 seconds.", stackInfo = "+30 seconds."},
+		{name = "Scavenger's Fortune", maxStack = nil, info = "For every $10,000 collected, gain a 50% damage and health buff for 30 seconds.", stackInfo = "+30 seconds."},
 		{name = "Beating Heart", maxStack = nil, info = "Get another chance at life after all players are dead. Single use per stack.", stackInfo = "+1 use."},
 		{name = "Animated Mechanism", maxStack = nil, info = "Shoot a projectile at the nearest enemy every 3 seconds for 200% damage. Shoots faster at low health.", stackInfo = "+100% damage."},
 		{name = "Regurgitated Rock", maxStack = nil, info = "After standing idle for 3 seconds, burrow underground, becoming invincible for 2.5 seconds.", stackInfo = "+2.5 seconds of invincibility."},
 		
-		{name = "Relic of Force", maxStack = nil, info = "All skills deal an extra attack for 100% damage, BUT cooldown durations are increased by 40%.", stackInfo = "stacks multiplicatively."},
-		--{name = "Relic of Gratification", maxStack = nil, info = "Enemies drop 150% experience and gold BUT enemies deal 150% damage to you.", stackInfo = "stacks multiplicatively."},
+		{name = "Relic of Force", maxStack = nil, info = "All skills deal an extra attack for 100% damage, BUT cooldown durations are increased by 40%.", stackInfo = "Stacks multiplicatively."},
+		--{name = "Relic of Gratification", maxStack = nil, info = "Enemies drop 150% experience and gold, BUT enemies deal 150% damage to you.", stackInfo = "Stacks multiplicatively."},
 		{name = "Relic of Mass", maxStack = nil, info = "Increases health by 100%, BUT your movement has momentum.", stackInfo = "+100% health, slower momentum buildup."},
-		{name = "Relic of Duality", maxStack = nil, info = "All attacks deal blazing damage over time, BUT all damage taken freezes you.", stackInfo = "increases the duration of both effects."},
-		{name = "Relic of Termination", maxStack = nil, info = "Slaying a marked enemy earns you an item, BUT failing to do so increases its power.", stackInfo = "decreased mark duration."},
-		{name = "Relic of Vitality", maxStack = nil, info = "Increases health regeneration by 12, BUT reduces health by 75%.", stackInfo = "stacks multiplicatively."},
-		{name = "Relic of Extinction", maxStack = 10, info = "A black hole follows you that deals extreme damage, BUT it can also damage you.", stackInfo = "increases size."},
+		{name = "Relic of Duality", maxStack = nil, info = "All attacks deal blazing damage over time, BUT all damage taken freezes you.", stackInfo = "Increases the duration of both effects."},
+		{name = "Relic of Termination", maxStack = nil, info = "Slaying a marked enemy earns you an item, BUT failing to do so increases its power.", stackInfo = "Decreased mark duration."},
+		{name = "Relic of Vitality", maxStack = nil, info = "Increases health regeneration by 12, BUT reduces health by 75%.", stackInfo = "Stacks multiplicatively."},
+		{name = "Relic of Extinction", maxStack = 10, info = "A black hole follows you that deals extreme damage, BUT it can also damage you.", stackInfo = "Increases size."},
 		{name = "Relic of Echelon", maxStack = nil, info = "Activating use items grants a buff that boosts HP by 5000 and base damage by 150\nfor 8 seconds, BUT increases use item cooldown by 15% each use.", stackInfo = "+6 seconds, +15% cooldown."},
 		
-		{name = "Stirring Soul", maxStack = 1, info = "Slain enemies leave a soul that have a chance to turn into an item on contact.", stackInfo = "Doesn't stack."},
+		{name = "Stirring Soul", maxStack = 1, info = "Slain enemies leave a soul that has a chance to turn into an item on contact.", stackInfo = "Doesn't stack."},
 		{name = "Augury", maxStack = 1, info = "Receiving damage charges dark energy. Unleash a devastating blackout on full charge.", stackInfo = "Doesn't stack."},
 		{name = "Yearning Demise", maxStack = 1, info = "Picking up items annihilates nearby enemies.", stackInfo = "Doesn't stack."},
 		{name = "Entangled Energy", maxStack = 1, info = "Create an energetic discharge if 4 or more enemies stand in a line in front of you.", stackInfo = "Doesn't stack."},
 		{name = "Thriving Growth", maxStack = 1, info = "Nearby enemy deaths sprout flowers which heal and buff you.", stackInfo = "Doesn't stack."},
-		{name = "Oracle's Ordeal", maxStack = 1, info = "Points of interest are pointed at by arrows.", stackInfo = "Doesn't stack."},
+		{name = "Oracle's Ordeal", maxStack = 1, info = "Points of interest are pointed to by arrows.", stackInfo = "Doesn't stack."},
 		{name = "Bleeding Contract", maxStack = nil, info = "Restart the stage on death. Consumed on activation.", stackInfo = "+1 use."},
 		{name = "Nucleus Gems", maxStack = nil, info = "Gold drops become sharp gems, dealing 25% damage on contact with enemies.", stackInfo = "Doesn't stack."},
 		{name = "Remuneration", maxStack = nil, info = "Each stage entry offers you three choices.", stackInfo = "Doesn't stack."},
@@ -188,14 +188,14 @@ local items = {}
 	}
 	
 	if disabledstacks then
-		specialInfo[45] = {name = "Red Whip", maxStack = 1, info = "+80% movement speed upon leaving combat for 1.5 seconds.", stackInfo = nil}
-		specialInfo[59] = {name = "Dio's Friend", maxStack = 1, info = "Earn an extra life.", stackInfo = "Doesn't stack."}
+		specialInfo[45] = {name = "Red Whip", maxStack = 1, info = "+80% movement speed upon leaving combat for 1.5 seconds.", stackInfo = "Doesn't stack."}
+		specialInfo[59] = {name = "Dio's Friend", maxStack = 1, info = "Gain an extra life.", stackInfo = "Doesn't stack."}
 	end
 	if global.rormlflag.ss_og_spikestrip then
-		specialInfo[21] = {name = "Spikestrip", maxStack = nil, info = "Drop spikestrips on getting hit. Spikestrips slow enemies by 20%.", stackInfo = "increases duration."}
+		specialInfo[21] = {name = "Spikestrip", maxStack = nil, info = "When hit, drop spikestrips. Spikestrips slow enemies by 20%.", stackInfo = "Increases duration."}
 	end
 	if not global.rormlflag.ss_og_snakeeyes then
-		specialInfo[19] = {name = "Snake Eyes", maxStack = nil, info = "Increases Critical Strike chance by 5% for every shrine fail.", stackInfo = "+3% chance."}
+		specialInfo[19] = {name = "Snake Eyes", maxStack = nil, info = "Failing a shrine increases Critical Strike chance by 5%. Stacks up to 6 times. Lost when you succeed.", stackInfo = "+3% chance."}
 	end
 	
 export("TabMenu")
@@ -601,7 +601,7 @@ table.insert(call.onHUDDraw, function()
 					table.insert(stats, {"Armor: ", math.floor(player:get("armor")), "Damage reduction."})
 					table.insert(stats, {"Speed: ", math.floor(player:get("pHmax") * 10) / 10, "Movement speed."})
 					table.insert(stats, {"Crit Chance: ", math.min(math.floor(player:get("critical_chance")), 100).."%", "Chance to deal double damage."})
-					table.insert(stats, {"Regen: ", (math.floor(player:get("hp_regen") * 600) / 10).."hp/s", "Health regenerated per second."})
+					table.insert(stats, {"Regen: ", (math.floor(player:get("hp_regen") * 600) / 10).."HP/s", "Health regenerated per second."})
 					
 					local yyv = ((30 + (8)) * scale)
 					if yyv >= block - (20 * scale) then

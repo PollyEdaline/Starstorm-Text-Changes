@@ -10,8 +10,8 @@ it.PressurizedPropeller:setTier("use")
 itp.enigma:add(it.PressurizedPropeller)
 it.PressurizedPropeller:setLog{
 	group = "use",
-	description = "&b&Launch yourself high in the air.",
-	story = "'A swift, highly pressurized canister that makes sure nothing is too heavy for any machine to lift!' Does this sound good for the ad? You do you, but ya gotta sell it real good if we want some $ our way this summer... Also, friendly reminder to handle it carefully and all that jazz.",
+	description = "&b&Launch yourself high in the air&!&.",
+	story = "'A swift, highly pressurized canister that makes sure nothing is too heavy for any machine to lift!' Does this sound good for the ad? You do you, but ya gotta sell it real good if we want some $ our way this summer.. Also, friendly reminder to handle it carefully and all that jazz.",
 	destination = "Joe,\nMaL,\nIgma",
 	date = "01/02/2056"
 }

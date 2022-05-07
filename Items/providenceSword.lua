@@ -1,7 +1,7 @@
 local path = "Items/Resources/"
 
 it.DivineRight = Item.new("Divine Right")
-it.DivineRight.pickupText = table.irandom({"Not quite a crown...", "Heavier than it looks...", "Belongs to a savior..."})
+it.DivineRight.pickupText = table.irandom({"Not quite a crown..", "Heavier than it looks..", "Belongs to a savior.."})
 it.DivineRight.sprite = Sprite.load("DivineRight", path.."Divine Right.png", 2, 15, 16)
 it.DivineRight.isUseItem = true
 it.DivineRight.useCooldown = 15

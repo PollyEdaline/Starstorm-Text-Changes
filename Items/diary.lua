@@ -7,7 +7,7 @@ it.Diary.sprite = Sprite.load("Diary", path.."Diary.png", 1, 12, 13)
 it.Diary:setTier("common")
 it.Diary:setLog{
 	group = "common",
-	description = "Earn &b&experience&!& over time.",
+	description = "Earn &b&0.84 experience&!& per second.",
 	story = "Hey darling!\nI hope your trip is going OK. I saw that you forgot your diary so I'm sending it back to you. Just don't take it to the bathroom next time haha ;)\nTake care! I love you.",
 	destination = "Sterrenstad,\nZondam,\nEarth",
 	date = "06/12/2056"

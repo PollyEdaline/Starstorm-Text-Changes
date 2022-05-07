@@ -7,7 +7,7 @@ it.Willojelly:setTier("uncommon")
 it.Willojelly:setLog{
 	group = "uncommon_locked",
 	description = "Slaying enemies creates an &y&electric discharge dealing 70% damage.",
-	story = "Guys, remember the tiny guy I sent over some time ago? Well... this one is a bit more agressive... although she is a funny little gal! She loves spinnin' around and watching me from inside the bottle. Man, if I hadn't rescued her, she would be in some alien stomach right now.\nI kinda want to name her Ann, thoughts?",
+	story = "Guys, remember the tiny guy I sent over some time ago? Well.. this one is a bit more agressive.. although she is a funny little gal! She loves spinnin' around and watching me from inside the bottle. Man, if I hadn't rescued her, she would be in some alien stomach right now.\nI kinda want to name her Ann, thoughts?",
 	destination = "Hidden Cubby,\nMt. Creation,\nVenus",
 	date = "11/20/2056"
 }

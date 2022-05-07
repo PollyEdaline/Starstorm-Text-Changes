@@ -9,7 +9,7 @@ it.BrokenBT:setTier("uncommon")
 it.BrokenBT:setLog{
 	group = "uncommon",
 	description = "&y&Earn $2&!& for every &g&15 HP regenerated&!&.",
-	story = "Look, I already told you in a message, but the UES requires info on all deliveries so let me just make this clear:\nWhen I ordered this Blood Tester unit (which was not cheap at all!), it arrived and functioned perfectly fine. But just two days after normal use it began THROWING OUT the coins instead of, you know... RECEIVING THEM??? Like, all my customers just started staying in front of it, hitting themselves just so your [REDACTED] machine made them rich.\nI want my money back, all of it. I'm really sorry but I'm never buying from you again. I wish you luck but you really have to check your quality control processes.",
+	story = "Look, I already told you in a message, but the UES requires info on all deliveries so let me just make this clear:\nWhen I ordered this Blood Tester unit (which was not cheap at all!), it arrived and functioned perfectly fine. But just two days after normal use it began THROWING OUT the coins instead of, you know.. RECEIVING THEM??? Like, all my customers just started staying in front of it, hitting themselves just so your [REDACTED] machine made them rich.\nI want my money back, all of it. I'm really sorry but I'm never buying from you again. I wish you luck but you really have to check your quality control processes.",
 	destination = "#11 Looeng St.,\nTRR,\nEarth",
 	date = "05/22/2056"
 }

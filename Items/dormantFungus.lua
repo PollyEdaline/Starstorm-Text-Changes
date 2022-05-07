@@ -8,7 +8,7 @@ it.DormFungus:setTier("common")
 it.DormFungus:setLog{
 	group = "common",
 	description = "Regenerates 2% of your total health every second while moving.",
-	story = "When you commanded me to explore the fungal caves all I expected to find was... well, fungi, of course. Though I wasn't excited by any means, this specimen caught my eye.\nIt seems to only grow around flowing water, and ever since I collected and contained this sample, both the colouration and the smell faded out quickly.\n\nI hope you can study it further.",
+	story = "When you commanded me to explore the fungal caves all I expected to find was.. well, fungi, of course. Though I wasn't excited by any means, this specimen caught my eye.\nIt seems to only grow around flowing water, and ever since I collected and contained this sample, both the colouration and the smell faded out quickly.\n\nI hope you can study it further.",
 	priority = "&g&Priority&!&",
 	destination = "Gate 1,\nModule 13,\nGea Station",
 	date = "11/01/2056"

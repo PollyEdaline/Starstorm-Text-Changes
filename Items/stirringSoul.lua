@@ -8,7 +8,7 @@ itp.sibylline:add(it.StirringSoul)
 it.StirringSoul.color = Color.fromHex(0xFFCCED)
 it.StirringSoul:setLog{
 	group = "end",
-	description = "Slain enemies leave a &y&soul&!& that have a chance to &b&turn into an item&!& on contact.",
+	description = "Slain enemies leave a &y&soul&!& that has a chance to &b&turn into an item&!& on contact.",
 	story = "Can I really justify my actions with survival? What am I fighting for?\n\nI will never get back everything I lost.",
 	priority = "&"..it.StirringSoul.color.gml.."&Unknown",
 	destination = "",

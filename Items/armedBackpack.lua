@@ -9,7 +9,7 @@ it.ArmBackpack.sprite = Sprite.load(path.."Armed Backpack.png", 1, 12, 14)
 it.ArmBackpack:setTier("common")
 it.ArmBackpack:setLog{
 	group = "common",
-	description = "Attacks have an &y&18.5%&!& chance of &y&firing a bullet&!& behind you for &y&150% damage&!&.",
+	description = "&y&18.5%&!& chance on hit of &y&firing a bullet&!& behind you for &y&150% damage&!&.",
 	story = "Being secure is always important. I don't want you to get in trouble, so please wear this whenever you go out. 'Specially in the canyons, there's a lot of thieves there!\nI'll send you some extra ammunition later this year, alright?",
 	priority = "&y&Volatile&!&",
 	destination = "832B,\nHautenuit,\nEarth",

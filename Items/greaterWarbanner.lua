@@ -9,8 +9,8 @@ it.GreaterWarbanner:setTier("use")
 itp.enigma:add(it.GreaterWarbanner)
 it.GreaterWarbanner:setLog{
 	group = "use",
-	description = "Place a warbanner which &y&increases Critical Strike chance&!& and &g&health, and &b&decreases skill cooldowns&!&.",
-	story = "Strength my children, strength! We're closer to the armageddon, we must fight or else we will succumb. This is a gift from the elders, to aid you in your future confrontations.",
+	description = "Place a warbanner which &y&increases Critical Strike chance&!& and &g&health&!&, and &b&decreases skill cooldowns&!&.",
+	story = "Strength my children, strength! We are closer to the armageddon. We must fight, or else we will succumb. This is a gift from the elders, to aid you in your future confrontations.",
 	destination = "L2,\nNorthern Outpost,\nEarth",
 	date = "03/01/2056"
 }

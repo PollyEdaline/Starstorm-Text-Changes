@@ -48,7 +48,7 @@ local Operator = SurvivorVariant.new(survivor, "Operator", sprSelect, {
 	turret3_2 = Sprite.load("OperatorTurretC_Shoot", path.."turretcshoot", 4, 9, 9),
 }, Color.fromHex(0x82A070))
 SurvivorVariant.setInfoStats(Operator, {{"Strength", 5}, {"Vitality", 5}, {"Toughness", 3}, {"Agility", 3}, {"Difficulty", 6}, {"Training", 7}})
-SurvivorVariant.setDescription(Operator, "The &y&Operator&!& controls different devices to stand offensively against groups of enemies.")
+SurvivorVariant.setDescription(Operator, "The &y&Operator&!& prefers to get up close and personal, using his wrench to upgrade gadgets as effectively as he uses it to crack skulls. His &y&Radial Amplifier&!& increases ALL damage done, including by enemies. Use it wisely.")
 
 local sprSkill = Sprite.load("OperatorSkill", path.."Skill", 2, 0, 0)
 local sShoot = Sound.find("Technician_Shoot1A", "Starstorm")
@@ -72,7 +72,7 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkill, 1, 1)
 		player:setSkill(3,
 		"Radial Amplifier",
-		"All damage dealt inside its radius is increased by 50%.",
+		"Place a stationary antenna. All damage dealt inside its radius is increased by 50%. Upgraded: Double range.",
 		sprSkill, 2, 10 * 60)
 		player:getData().attackCount = 1
 	end

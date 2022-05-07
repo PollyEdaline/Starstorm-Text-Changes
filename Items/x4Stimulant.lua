@@ -6,7 +6,7 @@ it.X4Stimulant.sprite = Sprite.load("X-4 Stimulant", path.."X-4 Stimulant.png", 
 it.X4Stimulant:setTier("common")
 it.X4Stimulant:setLog{
 	group = "common",
-	description = "&y&Reduces your secondary skill's cooldown by 10%.",
+	description = "&y&Reduces your secondary skill's cooldown by 10%&!&.",
 	story = "Encased, including manual. Does the machine show symptoms of a 540? If so you may want to avoid using above 100ml of stimulant.\n\nCheers.",
 	priority = "&g&Priority&!&",
 	destination = "Romeo 33,\nBatang Ai National Park,\nEarth",

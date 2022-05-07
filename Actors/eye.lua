@@ -396,7 +396,7 @@ end
 mlog.Overseer = MonsterLog.new("Overseer")
 MonsterLog.map[obj.Eye] = mlog.Overseer
 mlog.Overseer.displayName = "Overseer"
-mlog.Overseer.story = "It is during a moment of peace that I find this extraordinary outlier. The Overseer watches, calmly hidden behind a distant rock formation as I shelter myself for the storm brewing on the horizon.\nRaindrops start falling from the sky as I stare back. It takes notice; it has been caught. However, it doesn't move.\nThe next thing I see is a pair of Imps rapidly approaching it, it blinks away the same way the Imps do. I turn around to hide and there it is, still attentive of my actions but just a few feet away from me. I feel threatened and can't take chances.. it's a duel.\n\nI can't help but wonder if it had good intentions. It's clear its presence wasn't appreciated by the Imps. Could it be an outcast of their family?"
+mlog.Overseer.story = "It is during a moment of peace that I find this extraordinary outlier. The Overseer watches, calmly hidden behind a distant rock formation as I shelter myself for the storm brewing on the horizon.\nRaindrops start falling from the sky as I stare back. It takes notice; it has been caught. However, it doesn't move.\nThe next thing I see is a pair of Imps rapidly approaching it; it blinks away the same way the Imps do. I turn around to hide and there it is, still attentive of my actions, but just a few feet away from me. I feel threatened and can't take chances.. it's a duel.\n\nI can't help but wonder if it had good intentions. It's clear its presence wasn't appreciated by the Imps. Could it be an outcast of their family?"
 mlog.Overseer.statHP = 1200
 mlog.Overseer.statDamage = 22
 mlog.Overseer.statSpeed = 1

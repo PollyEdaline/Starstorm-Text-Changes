@@ -10,7 +10,7 @@ itp.relic:add(itRelicDuality)
 itRelicDuality.color = relicColor
 itRelicDuality:setLog{
 	group = "end",
-	description = "&y&All attacks deal blazing damage &p&BUT &r&all damage taken freezes you.",
+	description = "&y&All attacks deal blazing damage, &p&BUT &r&all damage taken freezes you&!&.",
 	story = "A strange, yet familiar force was awakened as I approached. A risk to be taken in exchange for valuable power. Every light comes with darkness, every pain comes with great joy.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

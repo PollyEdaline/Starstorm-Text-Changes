@@ -2,7 +2,7 @@ local path = "Items/Resources/"
 
 it.EclipsingShard = Item.new("Eclipsing Shard")
 local sEclipsingShard = Sound.load("EclipsingShard", path.."eclipsingShard")
-it.EclipsingShard.pickupText = "You feel the void merging with your soul..." 
+it.EclipsingShard.pickupText = "You feel the void merging with your soul.." 
 it.EclipsingShard.sprite = Sprite.load("EclipsingShard", path.."Eclipsing Shard.png", 2, 11, 15)
 it.EclipsingShard.isUseItem = true
 it.EclipsingShard.useCooldown = 0
@@ -10,7 +10,7 @@ it.EclipsingShard.color = "or"
 itp.elite:add(it.EclipsingShard)
 it.EclipsingShard:setLog{
 	group = "use_locked",
-	description = "&y&Become an aspect of The Void.",
+	description = "&y&Become an aspect of The Void&!&.",
 	story = "Initially, I was afraid of The Void. All I could feel was a strange, dreadful feeling of despair. But this shard opened a door I will never be able to close, a door towards empathy with the unknown, and all the things brought by the whispering one.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

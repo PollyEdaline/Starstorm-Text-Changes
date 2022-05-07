@@ -2,7 +2,7 @@ local path = "Items/Resources/"
 
 it.FracturedCrown = Item.new("Fractured Crown")
 local sFracturedCrown = Sound.load("FracturedCrown", path.."fracturedCrown")
-it.FracturedCrown.pickupText = "You feel a great power grow inside you..." 
+it.FracturedCrown.pickupText = "You feel a great power grow inside you.." 
 it.FracturedCrown.sprite = Sprite.load("FracturedCrown", path.."Fractured Crown.png", 2, 13, 13)
 it.FracturedCrown.isUseItem = true
 it.FracturedCrown.useCooldown = 0
@@ -10,7 +10,7 @@ it.FracturedCrown.color = "or"
 itp.elite:add(it.FracturedCrown)
 it.FracturedCrown:setLog{
 	group = "use_locked",
-	description = "&y&Become an aspect of gold.",
+	description = "&y&Become an aspect of gold&!&.",
 	story = "It came to me in an unexpected onset of events. A crown, a broken gilded crown which brings unreal strength and fortitude to those who take hold of it.\nHowever, what it gave me is a growing sense of danger. I am not the true heir.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

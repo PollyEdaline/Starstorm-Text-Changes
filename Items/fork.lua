@@ -6,7 +6,7 @@ it.Fork.sprite = Sprite.load("Fork", path.."Fork.png", 1, 13, 14)
 it.Fork:setTier("common")
 it.Fork:setLog{
 	group = "common_locked",
-	description = "Increases your &y&base damage by 3.",
+	description = "Increases your &y&base damage by 3&!&.",
 	story = "Surprise! A fork! Hahaha!!!\nYou said any gift was a good gift, HERE YOU GO! Jokes aside, this fork is magical. Trust me Duncan, I once got to eat a salad with it and later that same day I found a cent!\nAlso uh please come play with us someday soon, we miss destroying your build in SS3 (please tell me you changed your main, lol).",
 	destination = "Antima Building - Rooftop,\nBloosom Hills,\nEarth",
 	date = "09/24/2056"

@@ -6,7 +6,7 @@ it.Vaccine.sprite = Sprite.load("Vaccine", path.."Vaccine", 1, 14,14)
 it.Vaccine:setTier("uncommon")
 it.Vaccine:setLog{
 	group = "uncommon",
-	description = "&b&20% chance to negate debuffs.",
+	description = "&b&20% chance to negate debuffs&!&.",
 	story = " I heard about your family. It's a shame really, people as sweet as your mother don't deserve to fall victim to such an illness. I do have a solution though. I'm sending you a high-end, state of the art vaccine. It's quite experimental, but I promise it will heal and prevent any further replicas. She will be cured, as long as you keep her on a steady intake.\n\nThe first one is on my behalf, but following doses will need to be on you. I hope you can understand, this is very costly, and even though I wish I could, I can't afford all of them.",
 	destination = "30,\nRobb Stad,\nEarth",
 	date = "3/3/2056"

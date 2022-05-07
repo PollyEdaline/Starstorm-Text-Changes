@@ -7,7 +7,7 @@ it.JudderingEgg.sprite = Sprite.load("JudderingEgg", path.."Juddering Egg.png", 
 it.JudderingEgg:setTier("rare")
 it.JudderingEgg:setLog{
 	group = "rare_locked",
-	description = "A &y&baby wurm protects you&!&, attacking surrounding enemies for &y&10x90% damage.",
+	description = "A &y&baby wurm protects you&!&, attacking surrounding enemies for &y&10x90% damage&!&.",
 	story = "Another one from the breeder, this time it's a very strange specimen.\nBe extremely cautious, I've heard juveniles can become highly aggressive (and lethal!) in a matter of seconds if you don't handle them correctly. Shouldn't be too long before it hatches, so you better have the structure ready for it.",
 	priority = "&r&Fragile&!&",
 	destination = "Gate B,\nLee Compound,\nEarth",

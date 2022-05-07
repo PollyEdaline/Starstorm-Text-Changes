@@ -94,7 +94,7 @@ technician:setLoadoutSkill(3, "24/7 Energy",
 &b&Upgraded:&!& Also grants &y&Critical Strike chance.]])
 
 technician:setLoadoutSkill(4, "Backup Firewall",
-[[Place a stationary drone turret that fires for &y&70% damage.&!&
+[[Place a stationary drone turret that fires in the direction it was built for &y&70% damage.&!& 
 &b&Upgraded:&!& Fires for &y&80% damage.]])
 
 -- Color of highlights during selection
@@ -144,7 +144,7 @@ technician:addCallback("init", function(player)
 	player:setSkill(3, "24/7 Energy", "Deploy a vending machine which grants a move and attack speed boost. Upgraded: Also grants Critical Strike chance.",
 	sprSkills, 3, 12 * 60)
 		
-	player:setSkill(4, "Backup Firewall", "Place a turret that fires for 70% damage. Upgraded: Deals 80% damage.",
+	player:setSkill(4, "Backup Firewall", "Place a turret that fires forward for 70% damage. Upgraded: Deals 80% damage.",
 	sprSkills, 4, 7 * 60)
 end)
 
@@ -156,7 +156,7 @@ end)
 -- Called when the player picks up the Ancient Scepter
 technician:addCallback("scepter", function(player)
 	player:setSkill(4,
-	"Backup Firewall 2.0", "Place an upgraded turret that  fires rapidly for 350% damage per second. Upgraded: Launches missiles.", 
+	"Backup Firewall 2.0", "Place an upgraded turret that fires forward rapidly for 350% damage per second. Upgraded: Launches missiles.", 
 	sprSkills, 5, 5 * 60)
 	if player:getData().activeTurret and player:getData().activeTurret:isValid() then
 		player:getData().activeTurret:getData().scepter = true

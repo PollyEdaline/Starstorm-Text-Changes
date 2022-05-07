@@ -8,7 +8,7 @@ itp.legendary:add(it.UnearthlyLamp)
 it.UnearthlyLamp.color = "y"
 it.UnearthlyLamp:setLog{
 	group = "boss",
-	description = "Every other attack fires a haunted projectile for &y&100% damage.",
+	description = "Every other attack fires a haunted projectile for &y&100% damage&!&.",
 	story = "What I witnessed transcended my understanding. Not only did the remains glow for me, but they sensed something I wasn't aware of, something of a different nature. May this light guide me in my journey.",
 	priority = "&b&Field-Found&!&",
 	destination = "ROMEO 3,\nCollector 335,\nMars",

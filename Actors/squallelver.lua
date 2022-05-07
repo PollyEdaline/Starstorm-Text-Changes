@@ -303,7 +303,7 @@ end
 mlog.SquallElver = MonsterLog.new("Squall Elver")
 MonsterLog.map[obj.SquallElver] = mlog.SquallElver
 mlog.SquallElver.displayName = "Squall Elver"
-mlog.SquallElver.story = "These creatures are majestic, yet aggressively territorial. They glide in from afar just to make sure you don't get anywhere near their nests... Or at least that's what I assume they are protecting.\n\nWhat captivates me the most about the Elvers is how they manage their flight. I suspect their long, cloth-like appendages may be the culprit, a kind of biological advance I have never seen before.\n\nYet, it is highly reminiscent of fauna commonly found underwater."
+mlog.SquallElver.story = "These creatures are majestic, yet aggressively territorial. They glide in from afar just to make sure you don't get anywhere near their nests.. Or at least that's what I assume they are protecting.\n\nWhat captivates me the most about the Elvers is how they manage their flight. I suspect their long, cloth-like appendages may be the culprit, a kind of biological advance I have never seen before.\n\nYet, it is highly reminiscent of fauna commonly found underwater."
 mlog.SquallElver.statHP = 200
 mlog.SquallElver.statDamage = 14
 mlog.SquallElver.statSpeed = 1.2

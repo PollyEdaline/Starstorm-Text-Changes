@@ -7,7 +7,7 @@ itp.relic:add(itRelicExtinction)
 itRelicExtinction.color = relicColor
 itRelicExtinction:setLog{
 	group = "boss_locked",
-	description = "&y&A black hole follows you, annihilating enemies, &p&BUT &r&it can also annihilate you.",
+	description = "&y&A black hole follows you, annihilating enemies, &p&BUT &r&it can also annihilate you&!&.",
 	story = "As all the books say: 'with creation came destruction.' But only destruction has the ability to reduce our egos into the nothingness they are, for we are ephemeral.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",

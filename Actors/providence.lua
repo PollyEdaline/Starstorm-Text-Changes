@@ -206,17 +206,17 @@ local onStepCall = function()
 			t:set("text1", table.irandom({"¿¿Por qué??", "¡Ayy!", "Eres más fuerte de lo que pensé...", "¿Cómo?", "¿Qué... eres?"}))
 			t:getData().spanished = true --lol
 		elseif t:get("text1") == "What.. are you..?" then
-			t:set("text1", "What... are you?...")
+			t:set("text1", "What... are you..?")
 		elseif t:get("text1") == "You thought me defeated..?!" then
 			t:set("text1", "You thought me defeated?!")
 		elseif t:get("text1") == "How...?" then
-			t:set("text1", "How?...")
+			t:set("text1", "How..?")
 		elseif t:get("text1") == "A challenge..!" then
-			t:set("text1", "A worthy challenge!...")
+			t:set("text1", "A worthy challenge..!")
 		elseif t:get("text1") == "Hmm.." then
 			t:set("text1", "Hmm... you are strong...")
 		elseif t:get("text1") == "Ah.. you are stronger then you look.." then
-			t:set("text1", "Ah! you are stronger than you look...")
+			t:set("text1", "Ah! You are stronger than you look...")
 		elseif t:get("text1") == "Die..!" then
 			t:set("text1", "Die!")
 		elseif t:get("text1") == "You.. monster..." then

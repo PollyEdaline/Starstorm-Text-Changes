@@ -9,7 +9,7 @@ itp.relic:add(itRelicEchelon)
 itRelicEchelon.color = relicColor
 itRelicEchelon:setLog{
 	group = "end",
-	description = "&y&Activating use items buffs you greatly, &p&BUT &r&the cooldown is increased each time.",
+	description = "&y&Activating use items buffs you greatly, &p&BUT &r&the cooldown is increased each time&!&.",
 	story = "Holding the handle felt like something was missing. This object had been fractured. All that remains of it seems unstable. Should I keep it? I will take the chance.",
 	priority = "&b&Field-Found&!&",
 	destination = "Unknown",
