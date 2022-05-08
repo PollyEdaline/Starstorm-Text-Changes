@@ -19,7 +19,7 @@ local guardian = SurvivorVariant.new(survivor, "Guardian", sprSelect, {
 	shoot4ef = Sprite.load("Guardian_Shoot4Ef", path.."shoot4ef", 5, 76, 19)
 }, Color.fromHex(0xC5C0DE))
 SurvivorVariant.setInfoStats(guardian, {{"Strength", 8}, {"Vitality", 4}, {"Toughness", 6}, {"Agility", 3}, {"Difficulty", 6}, {"Endurance", 8}})
-SurvivorVariant.setDescription(guardian, "The &y&Guardian&!& is a heavy bruiser dealing slow but powerful strikes. Every primary attack after Contending &y&throws a hammer.")
+SurvivorVariant.setDescription(guardian, "The &y&Guardian&!& is a heavy bruiser dealing slow but powerful strikes. Every primary attack after Contending &y&throws a hammer&!&.")
 
 local sShoot1_1 = Sound.load("Guardian_Shoot1_1", path.."shoot1_1")
 local sShoot1_2 = Sound.load("Guardian_Shoot1_2", path.."shoot1_2")
@@ -29,8 +29,8 @@ guardian.endingQuote = "..and so he left, leaving his heavy armor behind."
 
 local sprSkills = Sprite.load("GuardianSkill", path.."Skills", 6, 0, 0)
 
-SurvivorVariant.setLoadoutSkill(guardian, "Maul", "Swing your hammer, dealing &y&250% damage.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(guardian, "Fortify", "Bash twice for &y&400% damage. Strike your shield, knocking all enemies back. &b&Allies receive a shield bonus for 3 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(guardian, "Maul", "Swing your hammer, dealing &y&250% damage&!&.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(guardian, "Fortify", "Bash twice for &y&400% damage&!&. Strike your shield, &b&knocking all enemies back&!&. &b&Allies receive a shield bonus for 3 seconds&!&.", sprSkills, 4)
 
 local buffV = Buff.new("guardianBuff")
 buffV.sprite = Sprite.load("Guardian_Buff", path.."buff", 1, 9, 9)

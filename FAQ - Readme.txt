@@ -19,4 +19,5 @@ items show as unlocked; this doesn't mean the item is actually unlocked,
 the Scores and Unlockables menu should show true information about unlocks.
 
 Q: How can I support the mod?
-A: If you want to support me as a creator you can do so through my Ko-Fi: https://ko-fi.com/neikk! Every donation is hugely appreciated and keeps the project going!
+A: If you want to support me as a creator you can do so through my Ko-Fi: https://ko-fi.com/neikk! 
+Every donation is hugely appreciated and keeps the project going!

@@ -27,7 +27,7 @@ SurvivorVariant.setDescription(NINJA, "The &y&NINJA&!& is merely a show asset. H
 local sprSkill = Sprite.load("NINJASkill", path.."Skill", 4, 0, 0)
 local sShoot1 = Sound.load("NINJAShootImpact", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(NINJA, "SHURIKEN", "THROW A PIERCING SHURIKEN FOR &y&115% DAMAGE.", sprSkill)
+SurvivorVariant.setLoadoutSkill(NINJA, "SHURIKEN", "THROW A PIERCING SHURIKEN FOR &y&115% DAMAGE&!&.", sprSkill)
 
 NINJA.endingQuote = "..and so it left, taking the mantle of the Space Ninja Robot."
 

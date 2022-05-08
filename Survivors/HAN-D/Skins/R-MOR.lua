@@ -31,7 +31,7 @@ local sprSkill = Sprite.load("RMORSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("RMORShoot1", path.."Shoot1")
 local sprSparks = spr.Sparks6
 
-SurvivorVariant.setLoadoutSkill(RMOR, "ERADICATE", "SHOOT A MISSILE WHICH &y&EXPLODES ON IMPACT FOR 220% DAMAGE.", sprSkill)
+SurvivorVariant.setLoadoutSkill(RMOR, "ERADICATE", "SHOOT A MISSILE WHICH &y&EXPLODES ON IMPACT&!& FOR &y&220% DAMAGE&!&.", sprSkill)
 
 RMOR.endingQuote = "..and so it left, exposing signs of decay."
 

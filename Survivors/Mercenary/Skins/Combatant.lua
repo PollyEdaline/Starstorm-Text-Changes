@@ -36,9 +36,9 @@ local sShoot2Return = Sound.load("CombatantShoot2Return", path.."Shoot2Return")
 local sShoot4 = Sound.load("CombatantShoot4", path.."Shoot4")
 
  
-SurvivorVariant.setLoadoutSkill(Combatant, "PDW", "Fire a high firerate weapon for 25% damage.", sprSkills)
+SurvivorVariant.setLoadoutSkill(Combatant, "PDW", "Fire a high firerate weapon for &y&25% damage&!&.", sprSkills)
 SurvivorVariant.setLoadoutSkill(Combatant, "Unsheathe", "Ready up your sword, changing your primary skill for 5 seconds.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Combatant, "Marking Blades", "Materialize 3 marking blades. Enemies hit by the blades get guaranteed critical hits for 4 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(Combatant, "Marking Blades", "Materialize 3 marking blades. Enemies hit by the blades take guaranteed Critical Strikes for 4 seconds.", sprSkills, 4)
 
 Combatant.endingQuote = "..and so she left, sheating her weapon for the last time."
 
@@ -46,7 +46,7 @@ survivor:addCallback("scepter", function(player)
 	if SurvivorVariant.getActive(player) == Combatant then
 		player:setSkill(4,
 		"Sealing Blades",
-		"Materialize 6 marking blades. Enemies hit by the blades get guaranteed critical hits for 4 seconds.",
+		"Materialize 6 marking blades. Enemies hit by the blades take guaranteed Critical Strikes for 4 seconds.",
 		sprSkills, 5, 60 * 10)
 	end
 end)

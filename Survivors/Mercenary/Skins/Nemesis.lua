@@ -36,9 +36,9 @@ if not global.rormlflag.ss_disable_enemies then
 	local sprSparks = Sprite.find("NemesisMercenarySlash", "Starstorm")
 	local sprSparks2 = Sprite.load("NemesisMercenarySlash2", path.."Slash2", 5, 26, 25)
 
-	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Quick Trigger", "Fire a shotgun forward dealing &y&500% damage.", sprSkills, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Blinding Slide", "Quickly slide forwards. &y&You can attack while sliding.", sprSkills, 3)
-	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Devitalize", "Target the nearest enemy, attacking them for &y&850% damage. &b&You cannot be hit for the duration.", sprSkills, 5)
+	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Quick Trigger", "Fire a shotgun forward dealing &y&500% damage&!&.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Blinding Slide", "Quickly slide forwards. &b&You can attack while sliding&!&.", sprSkills, 3)
+	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Devitalize", "Target the nearest enemy, attacking them for &y&850% damage&!&. &b&You cannot be hit for the duration&!&.", sprSkills, 5)
 	
 	callback.register("onSkinInit", function(player, skin)
 		if skin == NemesisMercenary then
@@ -53,7 +53,7 @@ if not global.rormlflag.ss_disable_enemies then
 			sprSkills, 2, 3 * 60)
 			player:setSkill(3,
 			"Blinding Slide",
-			"Quickly slide forwards. &y&You can attack while sliding.",
+			"Quickly slide forwards. You can attack while sliding.",
 			sprSkills, 3, 3 * 60)
 			player:setSkill(4,
 			"Devitalize",

@@ -33,8 +33,8 @@ crusader.endingQuote = "..and so she left, still bound by conviction."
 
 local sprSkills = Sprite.load("CrusaderSkill", path.."Skills", 6, 0, 0)
 
-SurvivorVariant.setLoadoutSkill(crusader, "Impale", "Stab with your halberd for &y&150% damage.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage on both sides. Strike your halberd against the ground, knocking all enemies back. &y&Allies receive a fire damage bonus for 5 seconds.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(crusader, "Impale", "Stab with your halberd for &y&150% damage&!&.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(crusader, "Sacrilege's End", "Fire a concealed gun twice for &y&400% total damage&!& on both sides. Strike your halberd against the ground, &b&knocking all enemies back&!&. &y&Allies receive a fire damage bonus for 5 seconds&!&.", sprSkills, 4)
 
 local buffV = Buff.new("crusaderBuff")
 buffV.sprite = Sprite.load("Crusader_Buff", path.."buff", 1, 9, 9)

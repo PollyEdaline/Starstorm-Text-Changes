@@ -24,7 +24,7 @@ local sprSkill = Sprite.load("BlacksmithSkill", path.."Skill", 1, 0, 0)
 local sprSparks = spr.Sparks7
 local sShoot = Sound.load("BlacksmithShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Blacksmith, "Forged Slash", "Cut through enemies for &y&180% damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Blacksmith, "Forged Slash", "Cut through enemies for &y&180% damage&!&.", sprSkill)
 
 Blacksmith.endingQuote = "..and so he left, scarred for eternity."
 

@@ -81,24 +81,24 @@ pyro:setLoadoutInfo(
 [[The &y&Pyro&!& uses heat to his advantage. Equipped with a flamethrower,
 &y&scorch&!& enemies to build up his heat gauge, as with high heat levels, other abilities
 are empowered. The Pyro is also able to distance himself from threats with &y&Suppressive Fire&!&, 
-while clearing groups of enemies with &y&Blazeborne.]], sprSkills)
+while clearing groups of enemies with &y&Blazeborne&!&.]], sprSkills)
 
 -- Skill descriptions
 
 pyro:setLoadoutSkill(1, "Scorch",
 [[Heat up by burning nearby enemies for &y&40% damage&!&.
-]] .. colorString("High heat sets enemies on fire,", pyro.loadoutColor) .. [[ dealing &!&damage over time.]])
+]] .. colorString("High heat sets enemies on fire,", pyro.loadoutColor) .. [[ dealing &!&damage over time&!&.]])
 
 pyro:setLoadoutSkill(2, [["Suppressive Fire"]],
 colorString("Consume heat ", pyro.loadoutColor) .. [[by burning enemies for &y&80% damage, pushing them back&!&.
-]] .. colorString("High heat applies extra damage.", pyro.loadoutColor).." &y&Always sets enemies on fire.")
+]] .. colorString("High heat applies extra damage.", pyro.loadoutColor).." &y&Always sets enemies on fire&!&.")
 
 pyro:setLoadoutSkill(3, "Plan B",
-[[&b&Launch yourself forward at low heat levels.
+[[&b&Launch yourself forward at low heat levels&!&.
 ]] .. colorString("Heat launches you upward instead.", pyro.loadoutColor))
 
 pyro:setLoadoutSkill(4, "Blazeborne",
-[[Launch heat pellets that &y&deal &y&150% damage and set enemies on fire.&!&
+[[Launch heat pellets that &y&deal &y&150% damage and set enemies on fire&!&.
 ]] .. colorString("Higher heat levels yield more fire pellets,", pyro.loadoutColor) .. [[ up to 8.
 Burning enemies return pellets that ]] .. colorString("heat", pyro.loadoutColor) .. " and &g&heal&!& you on contact.")
 

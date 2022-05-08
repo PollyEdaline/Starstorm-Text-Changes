@@ -29,7 +29,7 @@ local sprSkill = Sprite.load("ArbalistSkill", path.."Skill", 1, 0, 0)
 local sprOriginalSkills = spr.Huntress1Skills
 local sShoot = sfx.HuntressShoot1
 
-SurvivorVariant.setLoadoutSkill(Arbalist, "Dual Serving", "Each &b&attack ability &y&fires an extra shot in front of you.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Arbalist, "Dual Serving", "Each &b&attack ability &y&fires an extra shot in front of you&!&.", sprSkill)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == Arbalist then

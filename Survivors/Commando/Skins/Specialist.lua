@@ -23,14 +23,14 @@ local Specialist = SurvivorVariant.new(survivor, "Specialist", sprSelect, {
 SurvivorVariant.setInfoStats(Specialist, {{"Strength", 7}, {"Vitality", 4}, {"Toughness", 3}, {"Agility", 5}, {"Difficulty", 3}, {"Dexterity", 7}})
 SurvivorVariant.setDescription(Specialist, "The &y&Specialist&!& is equipped with a heavy pistol for delivering piercing damage to his enemies, at the cost of a slower firerate.")
 
-Specialist.endingQuote = "..and so he left, unable to redeem a new sorrow." -- im not sure what to change this to but it doesnt really read well
+Specialist.endingQuote = "..and so he left, unable to redeem a new sorrow."
 
 local sprSparks = spr.Sparks1
 local sprSkill = Sprite.load("SpecialistSkill", path.."Skills", 2, 0, 0)
 local sShoot = Sound.load("SpecialistShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Specialist, "Deadeye", "Fire a heavy pistol for &y&165% piercing damage.", sprSkill)
-SurvivorVariant.setLoadoutSkill(Specialist, "Dirt Bomb", "Launch a dirt bomb which &y&stuns&!& and deals &y&310% damage.", sprSkill, 2)
+SurvivorVariant.setLoadoutSkill(Specialist, "Deadeye", "Fire a heavy pistol for &y&165% piercing damage&!&.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Specialist, "Dirt Bomb", "Launch a dirt bomb which &y&stuns&!& and deals &y&310% damage&!&.", sprSkill, 2)
 
 local sprDirtExplosion = Sprite.clone(spr.ChefOilExplosion, "DirtExplosion", 46, 58)
 

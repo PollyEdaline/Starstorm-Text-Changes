@@ -30,7 +30,7 @@ local sShoot4_1 = Sound.load("TemplarShoot4_1",  path.."shoot4_1")
 local sShoot4_2 = Sound.load("TemplarShoot4_2",  path.."shoot4_2")
 
 SurvivorVariant.setLoadoutSkill(Templar, "Custom-Tuned Weapon", 
-"Fire a bullet dealing &y&50% damage.", sprSkills)
+"Fire a bullet dealing &y&50% damage&!&.", sprSkills)
 
 SurvivorVariant.setLoadoutSkill(Templar, "Consecration", 
 [[Slain enemies charge your sacred energy.
@@ -40,7 +40,7 @@ Consume all charges and become consecrated,
 
 SurvivorVariant.setLoadoutSkill(Templar, "Heretic's End", 
 [[Sweep in front with your ion longsword, dealing &y&550x2% damage&!&. 
-Cryo-affected kills grant &b&Frost Armor, reducing incoming damage and freezing enemies when hit.]], sprSkills, 3)
+Cryo-affected kills grant &b&Frost Armor, reducing incoming damage and freezing enemies when hit&!&.]], sprSkills, 3)
 
 Templar.endingQuote = "..and so she left, illuminated with newly attained knowledge."
 

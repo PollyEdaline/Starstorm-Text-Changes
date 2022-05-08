@@ -23,17 +23,17 @@ if not global.rormlflag.ss_disable_enemies then
 		shoot5_2 = Sprite.load("NemesisCommandoShoot5B", path.."Shoot5B", 24, 19, 7),
 	}, Color.fromHex(0xFC4E45))
 	SurvivorVariant.setInfoStats(NemesisCommando, {{"Strength", 7}, {"Vitality", 6}, {"Toughness", 3}, {"Agility", 6}, {"Difficulty", 3}, {"Mercy", 1}})
-	SurvivorVariant.setDescription(NemesisCommando, "The &y&Nemesis Commando&!&'s origins are unknown, but something is clear, he's no longer who he once was.")
+	SurvivorVariant.setDescription(NemesisCommando, "The &y&Nemesis Commando&!&'s origins are unknown, but something is clear: he is no longer who he once was.")
 	
-	NemesisCommando.endingQuote = "..and so he left, carrying new sense of humanity within."
+	NemesisCommando.endingQuote = "..and so he left, carrying a new sense of humanity within."
 	
 	local sprSparks = spr.Sparks9r
 	local sprSkills = Sprite.load("NemesisCommandoSkill", path.."Skill", 2, 0, 0)
 	local sShoot1 = Sound.find("NemesisCommandoShoot1", "Starstorm")
 	local sShoot2 = Sound.find("NemesisCommandoShoot2", "Starstorm")
 
-	SurvivorVariant.setLoadoutSkill(NemesisCommando, "Blade of Cessation", "Cut through close enemies for &y&230% bleeding damage.", sprSkills)
-	SurvivorVariant.setLoadoutSkill(NemesisCommando, "Distant Gash", "Slash forward in a line forward for &y&180% bleeding damage&!&.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisCommando, "Blade of Cessation", "Cut through close enemies for &y&230% bleeding damage&!&.", sprSkills)
+	SurvivorVariant.setLoadoutSkill(NemesisCommando, "Distant Gash", "Slash forward in a line for &y&180% bleeding damage&!&.", sprSkills, 2)
 	
 	callback.register("onSkinInit", function(player, skin)
 		if skin == NemesisCommando then
@@ -45,11 +45,11 @@ if not global.rormlflag.ss_disable_enemies then
 			end
 			player:setSkill(1,
 			"Blade of Cessation",
-			"Swing a blade for 230% bleeding damage at close range.",
+			"Cut through close enemies for 230% bleeding damage.",
 			sprSkills, 1, 39)
 			player:setSkill(2,
 			"Distant Gash",
-			"Slash forward in a line forward for 180% bleeding damage.",
+			"Slash forward in a line for 180% bleeding damage.",
 			sprSkills, 2, 3 * 60)
 		end
 	end)

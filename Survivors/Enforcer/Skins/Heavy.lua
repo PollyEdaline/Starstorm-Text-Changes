@@ -31,11 +31,11 @@ local sprOriginalSkill = spr.RiotSkills
 local sShoot = sfx.HeavyShoot1
 local sprSparks = Sprite.load("HeavyShootSparks", path.."Sparks", 5, 8, 4)
 
-SurvivorVariant.setLoadoutSkill(Heavy, "Pump Shotgun", "Fire 4 bullets at a medium range for &y&280% total damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Heavy, "Pump Shotgun", "Fire 4 bullets at a medium range for &y&280% total damage&!&.", sprSkill)
 
-SurvivorVariant.setLoadoutSkill(Heavy, "Shield Charge", "&b&Dash forward a small distance&!&, smashing enemies in your path for &y&200% damage and knocking them back.", sprOriginalSkill, 2)
+SurvivorVariant.setLoadoutSkill(Heavy, "Shield Charge", "&b&Dash forward a small distance&!&, smashing enemies in your path for &y&200% damage&!& and &b&knocking them back&!&.", sprOriginalSkill, 2)
 
-SurvivorVariant.setLoadoutSkill(Heavy, "Protect and Serve", "Take a &b&defensive stance, blocking all damage from the front. &y&Increases attack speed, reducing movement minimally.", sprOriginalSkill, 3)
+SurvivorVariant.setLoadoutSkill(Heavy, "Protect and Serve", "Take a &b&defensive stance, blocking all damage from the front. &y&Increases attack speed, reducing movement minimally&!&.", sprOriginalSkill, 3)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == Heavy then

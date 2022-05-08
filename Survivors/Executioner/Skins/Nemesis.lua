@@ -37,7 +37,7 @@ SurvivorVariant.setLoadoutSkill(NExecutioner, "Puppeteer",
 "Every slain enemy adds a charge. Spend all charges to unearth up to 10 allied ion minions which attack foes for &y&50% damage&!&.", sprSkills, 3)
 
 SurvivorVariant.setLoadoutSkill(NExecutioner, "Reaper", 
-"Charge forward and slash with a projected scythe for &y&900% damage.", sprSkills, 7)
+"Charge forward and slash with a projected scythe for &y&900% damage&!&.", sprSkills, 7)
 
 NExecutioner.endingQuote = "..and so he left, fading into the unknown."
 

@@ -63,12 +63,12 @@ Knight:setLoadoutSkill(2, "Contend",
 For a short window of time, parry enemy attacks for &y&800% damage&!&.]])
 
 Knight:setLoadoutSkill(3, "Strike",
-[[Dash and slash forward for &y&200% damage.
+[[Dash and slash forward for &y&200% damage&!&.
 &y&Stuns enemies briefly&!&.]])
 
 Knight:setLoadoutSkill(4, "Invigorate",
-[[Slash twice for &y&400% damage. Strike your shield, knocking all
-enemies back&y&. &b&Allies receive an attack speed bonus for 3 seconds&!&.]])
+[[Slash twice for &y&400% damage&!&. Strike your shield, &b&knocking all
+&b&enemies back&!&. &b&Allies receive an attack speed bonus for 3 seconds&!&.]])
 
 -- Color of highlights during selection
 Knight.loadoutColor = Color.fromHex(0xEAB779)

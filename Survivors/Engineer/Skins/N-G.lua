@@ -26,8 +26,8 @@ local sprSkills = Sprite.load("NGSkills", path.."Skills", 2, 0, 0)
 local sShoot1= Sound.load("NGShoot1", path.."Shoot1")
 local sShoot3= Sound.load("NGShoot3", path.."Shoot3")
 
-SurvivorVariant.setLoadoutSkill(NG, "WELDING BEAM DISCHARGE", "RELEASE A BEAM DEALING &y&100% IMPACT + 100% ELECTRIC DAMAGE. &y&STUNS USERS BRIEFLY.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(NG, "RAPID DISPLACEMENT", "&b&MOVE FORWARD, &!&PUSHING ANY USERS IN THE WAY FOR &y&100% DAMAGE.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(NG, "WELDING BEAM DISCHARGE", "RELEASE A BEAM DEALING &y&100% IMPACT + 100% ELECTRIC DAMAGE&!&. &b&STUNS USERS BRIEFLY&!&.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(NG, "RAPID DISPLACEMENT", "&b&MOVE FORWARD&!&, PUSHING ANY USERS IN THE WAY FOR &y&100% DAMAGE&!&.", sprSkills, 2)
 
 NG.endingQuote = "..and so it left, calculating an improbable fate."
 

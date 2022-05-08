@@ -59,19 +59,19 @@ nucleator:setLoadoutInfo(
 which allows him to manipulate nuclear components for long periods of time.
 He takes advantage of radiation, &y&able to inflict it on enemies&!& for a
 contamination effect. Nucleator can &b&charge&!& his skills for &y&maximum output&!&.
-Be careful, as &r&overcharging&!& them may lead to &r&self-harm!]], sprSkills)
+Be careful, as &r&overcharging&!& them may lead to &r&self-harm&!&!]], sprSkills)
 
 -- Skill descriptions
 nucleator:setLoadoutSkill(1, "Irradiate",
-[[Fire a bullet for up to &y&500% damage&!&, &r&900% on overcharge.&!&
-The bullet's &y&damage increases the farther it travels.]])
+[[Fire a bullet for up to &y&500% damage&!&, &r&900% on overcharge&!&.
+The bullet's &y&damage increases the farther it travels&!&.]])
 
 nucleator:setLoadoutSkill(2, "Quarantine",
-[[Push enemies in front of you for &y&300% piercing damage.]])
+[[Push enemies in front of you for &y&300% piercing damage&!&.]])
 
 nucleator:setLoadoutSkill(3, "Fission Impulse",
-[[&b&Hold to launch yourself into any direction&!&, dealing &y&550% damage.
-&b&Control the direction&!& using the movement keys.]])
+[[&b&Hold to launch yourself into any direction&!&, dealing &y&550% damage&!&.
+&b&Control the direction&!& using the movement controls.]])
 
 nucleator:setLoadoutSkill(4, "Radionuclide Surge",
 [[Enter a &y&Nuclear&!& state for 6 seconds.

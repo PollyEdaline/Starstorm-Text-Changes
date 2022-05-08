@@ -24,7 +24,7 @@ SurvivorVariant.setDescription(NemesisLoader, "With a total of 4 mechanical arms
 
 local sprSkills = Sprite.load("NemesisLoaderSkill", path.."Skills", 4, 0, 0)
 SurvivorVariant.setLoadoutSkill(NemesisLoader, "Hydraulic Catch", "Grab an enemy in front of you and keep it in range.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(NemesisLoader, "Integrated Conduit", "Fire a gauntlet. After hitting a foe, lightning surges, dealing 80% damage per second for 7 seconds. Sticks to the last enemy in range.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(NemesisLoader, "Integrated Conduit", "Fire a gauntlet. After hitting a foe, lightning surges, dealing &y&80% damage per second&!& for 7 seconds. Sticks to the last enemy in range.", sprSkills, 4)
 
 NemesisLoader.endingQuote = "..and so he left, exhausted of his profession."
 

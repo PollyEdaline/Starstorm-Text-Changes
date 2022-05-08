@@ -35,10 +35,10 @@ local animations = {
 	local sShoot = sfx.Bullet3
 	local sShootOriginal = sfx.RiotShoot1
 
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Hammer", "Bash enemies for &y&500% damage.", sprSkill)
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Minigun", "Fire your minigun for &y&150% damage per second.", sprSkill, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Dominance", "Slam the Golden Hammer against the ground, &y&knocking enemies back for 210% damage.", sprSkill, 4)
-	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Destruction / Supression Stance", "&b&Switch your current weapon.", sprSkill, 3)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Hammer", "Bash enemies for &y&500% damage&!&.", sprSkill)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Golden Minigun", "Fire your minigun for &y&150% damage per second&!&.", sprSkill, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Dominance", "Slam the Golden Hammer against the ground, &b&knocking enemies back&!& for &y&210% damage&!&.", sprSkill, 4)
+	SurvivorVariant.setLoadoutSkill(NemesisEnforcer, "Destruction / Supression Stance", "&b&Switch your current weapon&!&.", sprSkill, 3)
 	
 	NemesisEnforcer.endingQuote = "..and so he left, with newfound might to honor."
 	

@@ -36,8 +36,8 @@ local sCharge = Sound.load("NemesisHuntressCharge", path.."charge")
 
 local sprCape = Sprite.find("NemesisHuntressCape", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Packed Bolt", "&y&Hold to charge&!&, releasing to fire up to 7 bolts for &y&7x140% damage.", sprSkill)
-SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Laser Hatchet", "Throw a &y&piercing hatchet&!& towards the nearest enemy, dealing &y&600% damage.", sprSkill, 2)
+SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Packed Bolt", "&y&Hold to charge&!&, releasing to fire up to 7 bolts for &y&7x140% damage&!&.", sprSkill)
+SurvivorVariant.setLoadoutSkill(NemesisHuntress, "Laser Hatchet", "Throw a &y&piercing hatchet&!& towards the nearest enemy, dealing &y&600% damage&!&.", sprSkill, 2)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == NemesisHuntress then

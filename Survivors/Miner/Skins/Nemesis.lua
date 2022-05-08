@@ -35,8 +35,8 @@ local sShoot4_1 = Sound.find("NemesisMinerShoot4_1", "Starstorm")
 local sShoot4_2 = Sound.find("NemesisMinerShoot4_2", "Starstorm")
 
 SurvivorVariant.setLoadoutSkill(NemesisMiner, "Dig", "Attack forward for &y&60% damage&!&. Drill faster at higher speeds. Can move while attacking.", sprSkills)
-SurvivorVariant.setLoadoutSkill(NemesisMiner, "Hyper-Drill", "Transform into a full sized drill, dealing &y&18x40% damage around you.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(NemesisMiner, "To The Core", "Dive into the ground, creating a shockwave in both directions which deals &y&250% damage each.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(NemesisMiner, "Hyper-Drill", "Transform into a full sized drill, dealing &y&18x40% damage around you&!&.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(NemesisMiner, "To The Core", "Dive into the ground, creating a shockwave in both directions which deals &y&250% damage each&!&.", sprSkills, 3)
 
 NemesisMiner.endingQuote = "..and so he left, resting for once."
 

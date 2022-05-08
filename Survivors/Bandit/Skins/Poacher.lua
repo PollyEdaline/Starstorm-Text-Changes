@@ -25,8 +25,8 @@ Poacher.endingQuote = "..and so he left, after the hunt of a lifetime."
 local sprSkills = Sprite.load("PoacherSkill", path.."Skills", 2, 0, 0)
 local sShoot = Sound.load("PoacherShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Poacher, "Night Time", "Fire a tranquilizer dart for &y&140% damage&!&, slowing down enemies. &y&Consecutive hits stun foes, making them vulnerable.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Poacher, "Metal Trap", "Place a trap that &y&stuns an enemy on contact&!&, dealing &y&4x120% damage", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Poacher, "Night Time", "Fire a tranquilizer dart for &y&140% damage&!&, slowing down enemies. &y&Consecutive hits stun foes, making them vulnerable&!&.", sprSkills)
+SurvivorVariant.setLoadoutSkill(Poacher, "Metal Trap", "Place a trap that &y&stuns an enemy on contact&!&, dealing &y&4x120% damage&!&.", sprSkills, 2)
 
 local buffSprite = Sprite.load("PoacherBuff", path.."Buff", 4, 9, 9)
 local buffPoacher1 = Buff.new("poacher1")

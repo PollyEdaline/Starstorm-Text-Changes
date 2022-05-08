@@ -29,9 +29,9 @@ if not global.rormlflag.ss_disable_enemies then
 	local sShoot4 = Sound.find("NemJanitorShoot4")
 	local sprSparks = spr.Sparks6
 	
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "SHEAR", "CUT THROUGH COMBATANTS FOR &y&120% DAMAGE.", sprSkills)
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "FOCUS", "TEMPORARILY &b&REDUCE YOUR MOVEMENT SPEED&!& WHILE DEALING &y&50% EXTRA DAMAGE.", sprSkills, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisHAND, "DOUBLE SHAVE", "SAW NEARBY COMBATANTS FOR &y&12x75% DAMAGE.", sprSkills, 3)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "SHEAR", "CUT THROUGH COMBATANTS FOR &y&120% DAMAGE&!&.", sprSkills)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "FOCUS", "TEMPORARILY &b&REDUCE YOUR MOVEMENT SPEED&!& WHILE DEALING &y&50% EXTRA DAMAGE&!&.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisHAND, "DOUBLE SHAVE", "SAW NEARBY COMBATANTS FOR &y&12x75% DAMAGE&!&.", sprSkills, 3)
 
 	NemesisHAND.endingQuote = "..and so it left, rebooting itself for once."
 	

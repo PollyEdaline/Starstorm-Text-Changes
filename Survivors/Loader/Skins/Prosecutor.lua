@@ -20,13 +20,13 @@ local Prosecutor = SurvivorVariant.new(survivor, "Prosecutor", sprSelect, {
 }, Color.fromHex(0xB55E47))
 Prosecutor.displayName = "Chaser"
 SurvivorVariant.setInfoStats(Prosecutor, {{"Strength", 5}, {"Vitality", 6}, {"Toughness", 6}, {"Agility", 10}, {"Difficulty", 4}, {"Coercion", 6}})
-SurvivorVariant.setDescription(Prosecutor, "The &y&Chaser&!& specializes in chasing down threats at all costs, with greater agility but &r&high vulnerability when not moving.")
+SurvivorVariant.setDescription(Prosecutor, "The &y&Chaser&!& specializes in chasing down threats at all costs, with greater agility but &r&high vulnerability when not moving&!&.")
 
 local sprSkill = Sprite.load("ProsecutorSkill", path.."Skill", 1, 0, 0)
 local sShoot1 = Sound.load("ProsecutorShoot1", path.."Shoot1")
 local sShootOriginal = sfx.JanitorShoot1_2
 
-SurvivorVariant.setLoadoutSkill(Prosecutor, "Accelerated Jolt", "Kick enemies at close range for &y&130% damage&!&. Every third attack &y&knocks back enemies for 200% damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Prosecutor, "Accelerated Jolt", "Kick enemies at close range for &y&130% damage&!&. Every third attack &b&knocks back enemies&!& for &y&200% damage&!&.", sprSkill)
 
 Prosecutor.endingQuote = "..and so they left, pursuing new goals in life."
 

@@ -25,8 +25,8 @@ local sSkill4_2 = Sound.find("DU-TSkill4_2")
 local sSkill1_2 = Sound.load("DeliverySkill1_2", path.."shoot1_2")
 local sSkill3 = Sound.load("DeliverySkill3", path.."shoot3")
 
-SurvivorVariant.setLoadoutSkill(Delivery, "HARVEST", "&b&ABSORB SPEED&!& FROM &r&YOURSELF&!& AND &y&NEARBY ENEMIES.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Delivery, "RELEASE EMISSIONS", "CLEANSE THE SYSTEM OF TOXIC CO2 EMISSIONS WITH A TRAIL FOR &y&100% DAMAGE PER SECOND.&!& &g&HEAL 8% OF YOUR TOTAL HEALTH.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Delivery, "HARVEST", "&b&ABSORB SPEED&!& FROM &r&YOURSELF&!& AND &y&NEARBY ENEMIES&!&.", sprSkills)
+SurvivorVariant.setLoadoutSkill(Delivery, "RELEASE EMISSIONS", "CLEANSE THE SYSTEM OF TOXIC CO2 EMISSIONS WITH A TRAIL FOR &y&100% DAMAGE PER SECOND&!&. &g&HEAL 8% OF YOUR TOTAL HEALTH&!&.", sprSkills, 3)
 
 Delivery.endingQuote = "..and so it left, traveling where no unit has gone before."
 

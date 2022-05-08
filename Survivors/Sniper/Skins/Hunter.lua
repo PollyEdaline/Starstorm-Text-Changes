@@ -29,7 +29,7 @@ local Hunter = SurvivorVariant.new(survivor, "Hunter", sprSelect, {
 	shoot3_1 = Sprite.load("HunterShoot3", path.."Shoot3", 12, 5, 14),
 }, efColor)
 SurvivorVariant.setInfoStats(Hunter, {{"Strength", 9}, {"Vitality", 2}, {"Toughness", 2}, {"Agility", 3}, {"Difficulty", 4.5}, {"Instinct", 7}})
-SurvivorVariant.setDescription(Hunter, "The &y&Hunter&!& obliterates enemies with his axe, while firing his SMG at distant foes with no remorse. Build heat and release it with Barrage but beware: overheating stops you from handling your axe!")
+SurvivorVariant.setDescription(Hunter, "The &y&Hunter&!& obliterates enemies with his axe, while firing his SMG at distant foes with no remorse. Build heat and release it with &y&Barrage&!& but beware: overheating stops you from handling your axe!")
 Hunter.tag = "Comission"
 
 local sprSkills = Sprite.load("HunterSkills", path.."Skills", 6, 0, 0)
@@ -45,9 +45,9 @@ local sShoot1_1 = Sound.load("HunterShoot1_1", path.."shoot1")
 local sShoot1_2 = sfx.Teleporter--Sound.find("HunterShoot1_2", "Starstorm")
 local sShoot2_1 = Sound.find("Baroness_Shoot1A")--Sound.find("HunterShoot2_1", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(Hunter, "Decimate", "Swing an axe, dealing &y&160% damage.&!& Generates Heat.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(Hunter, "Barrage", "Fire an SMG, dealing &y&45% damage. Fires faster&!& the more Heat you have.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Hunter, "DRONE: CHILL", "Send your drone to &b&freeze all enemies around the most dangerous enemy&!& nearby for 3 seconds, dealing &y&3x25% damage.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Hunter, "Decimate", "Swing an axe, dealing &y&160% damage&!&. Generates Heat.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(Hunter, "Barrage", "Fire an SMG, dealing &y&45% damage&!&. Fires faster the more Heat you have.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Hunter, "DRONE: CHILL", "Send your drone to &b&freeze all enemies around the most dangerous enemy&!& nearby for 3 seconds, dealing &y&3x25% damage&!&.", sprSkills, 3)
 
 Hunter.endingQuote = "..and so he left, with another trophy for his collection."
 

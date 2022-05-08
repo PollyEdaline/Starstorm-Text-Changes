@@ -22,7 +22,7 @@ randomSurvivor.idleSprite = spr.Random
 randomSurvivor.titleSprite = spr.Random
 
 -- Endquote
-randomSurvivor.endingQuote = "What? This is not supposed to happen... awkward."
+randomSurvivor.endingQuote = "..and so they left, wondering how this could have happened."
 
 -- Stats & Skills
 randomSurvivor:addCallback("init", function(player)

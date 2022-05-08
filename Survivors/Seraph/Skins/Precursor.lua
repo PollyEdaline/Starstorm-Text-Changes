@@ -26,8 +26,8 @@ precursor.endingQuote = "..and so it left, forever undoing its legacy."
 
 local sprSkills = Sprite.load("PrecursorSkill", path.."Skills", 2, 0, 0)
 
-SurvivorVariant.setLoadoutSkill(precursor, "Precursor's Grasp", "Pull enemies in front of you for &y&30% damage.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(precursor, "Derange", "Push enemies forward for &y&280% damage.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(precursor, "Precursor's Grasp", "Pull enemies in front of you for &y&30% damage&!&.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(precursor, "Derange", "Push enemies forward for &y&280% damage&!&.", sprSkills, 2)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == precursor then

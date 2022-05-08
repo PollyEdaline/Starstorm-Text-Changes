@@ -55,20 +55,20 @@ and &y&Void Breach&!& without putting yourself or your allies at risk.]], sprSki
 -- Skill descriptions
 
 seraph:setLoadoutSkill(1, "Seraph's Grasp",
-[[Fire energy at enemies for &y&140% damage in a small area.
+[[Fire energy at enemies for &y&140% damage&!& in a small area.
 You can shoot while moving.]])
 
 seraph:setLoadoutSkill(2, "Void Breach",
 [[&y&Create a breach&!& which gives enemies the &y&Shatter debuff&!&.
-Enemies with the Shatter debuff &y&explode when hit for 400% damage.]])
+Enemies with the Shatter debuff &y&explode when hit for 400% damage&!&.]])
 
 seraph:setLoadoutSkill(3, "Disturbance",
-[[&lt&Moving:&!& Pull enemies towards you for &y&110% damage, &b&pushing you forward.&!&
-&lt&Still:&!& Raise enemies and bash them to the ground for &y&310% damage.]])
+[[&lt&Moving:&!& Pull enemies towards you for &y&110% damage&!&, &b&pushing you forward&!&.
+&lt&Still:&!& Raise enemies and bash them to the ground for &y&310% damage&!&.]])
 
 seraph:setLoadoutSkill(4, "Grace Field",
 [[&y&Create a void energy field around you&!& for 4 seconds.
-In the field: &b&Reduced third skill cooldown&!&, while &y&enemies get stopped in time.]])
+In the field: &b&Reduced third skill cooldown&!&, while &y&enemies get stopped in time&!&.]])
 
 -- Color of highlights during selection
 seraph.loadoutColor = Color.fromHex(0xD30097)

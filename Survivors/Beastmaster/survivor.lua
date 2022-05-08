@@ -42,23 +42,23 @@ beastmaster:setLoadoutInfo(
 [[&y&Chirr&!& is a mystical creature who holds a pure connection with the planet.
 Her innate healing properties give her a highly supportive role, able to withdraw
 from any battle easily thanks to her ability to hover.
-Chirr can befriend one creature at a time through her &y&Natural Link&!& skill.]], sprSkills)
+Chirr can befriend one creature at a time through her &y&Natural Link&!&.]], sprSkills)
 
 -- Skill descriptions
 beastmaster:setLoadoutSkill(1, "Life Thorns",
-[[Shoot 3 projectiles for &y&260% total damage&y&.]])
+[[Shoot 3 projectiles for &y&260% total damage&!&.]])
 
 beastmaster:setLoadoutSkill(2, "Headbutt",
 [[Headbutt enemies in front of you for &y&300% damage,
 &y&stunning them&!& for 3 seconds.]])
 
 beastmaster:setLoadoutSkill(3, "Sanative Aura",
-[[&g&Heal yourself and nearby allies for 25% of their total health.&!&
+[[&g&Heal yourself and nearby allies for 25% of their total health&!&.
 Healed allies gain &g&increased health regeneration&!& for 6 seconds.]])
 
 beastmaster:setLoadoutSkill(4, "Natural Link / Unbreakable Bond",
-[[&g&Befriend&!& the last hit creature if it's &y&below 50% of its total health.
-&y&Pull or call the befriended creature. Redirect damage to it for as long as you hold it.]])
+[[&g&Befriend&!& the last hit creature if it's &y&below 50% of its total health&!&.
+Pull or call the befriended creature. &g&Redirect damage to it for as long as you hold it&!&.]])
 
 -- Color of highlights during selection
 beastmaster.loadoutColor = Color.fromHex(0x81A762)
@@ -88,7 +88,7 @@ beastmaster:addCallback("init", function(player)
 		player:survivorSetInitialStats(102, 11, 0.014)
 	end
 	
-	player:setSkill(1, "Life Thorns", "Shoot 3 projectiles for 260% total damage",
+	player:setSkill(1, "Life Thorns", "Shoot 3 projectiles for 260% total damage.",
 	sprSkills, 1, 30)
 		
 	player:setSkill(2, "Headbutt", "Headbutt and stun enemies for 300% damage.",

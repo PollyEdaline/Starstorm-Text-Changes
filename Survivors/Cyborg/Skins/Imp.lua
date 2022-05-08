@@ -26,7 +26,7 @@ SurvivorVariant.setDescription(CyImp, [["Report 102-B: Subject M. [REDACTED] has
 local sprSkills = Sprite.load("CyImpSkills", path.."Skills", 2, 0, 0)
 local sShoot = sfx.ImpGShoot1--Sound.load("CyImpShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(CyImp, "Fierce", "Slice twice in front of you for &y&170% total damage.", sprSkills)
+SurvivorVariant.setLoadoutSkill(CyImp, "Fierce", "Slice twice in front of you for &y&170% total damage&!&.", sprSkills)
 SurvivorVariant.setLoadoutSkill(CyImp, "Hunter", "Teleport to the nearest grounded enemy.", sprSkills, 2)
 
 CyImp.endingQuote = "..and so it left, ready to assimilate a new identity."

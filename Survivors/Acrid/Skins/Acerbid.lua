@@ -25,7 +25,7 @@ local sprSkill = Sprite.load("AcerbidSkill", path.."Skill", 1, 0, 0)
 local sShoot = Sound.load("AcerbidShoot1", path.."Shoot1")
 local sprSparks = spr.Sparks5
 
-SurvivorVariant.setLoadoutSkill(Acerbid, "Corroding Spit", "Shoot corrosive matter, dealing &y&140% corrosive damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Acerbid, "Corroding Spit", "Shoot corrosive matter, dealing &y&140% corrosive damage&!&.", sprSkill)
 
 Acerbid.endingQuote = "..and so it left, leaving a trail of what it once was."
 

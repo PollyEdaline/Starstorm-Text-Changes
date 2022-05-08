@@ -60,7 +60,7 @@ cyborg:setLoadoutSkill(2, "Rising Star",
 
 cyborg:setLoadoutSkill(3, "Recall",
 [[Create a WARP POINT. Once a WARP POINT is set, &b&teleport
-&b&to its LOCATION&!&. Teleporting &b&REDUCES SKILL COOLDOWNS.]])
+&b&to its LOCATION&!&. Teleporting &b&REDUCES SKILL COOLDOWNS&!&.]])
 
 cyborg:setLoadoutSkill(4, "Overheat Redress",
 [[&y&Blast yourself backwards&!&, firing a GREATER ENERGY BULLET.

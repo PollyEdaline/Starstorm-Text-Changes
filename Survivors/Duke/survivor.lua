@@ -43,8 +43,8 @@ Duke:setLoadoutInfo(
 -- Skill descriptions
 
 Duke:setLoadoutSkill(1, "Royal Gun",
-[[Fire for 80% damage.
-Every fourth shot deals 270% additional damage.]])
+[[Fire for &y&80% damage&!&.
+Every fourth shot deals &y&270% additional damage&!&.]])
 
 Duke:setLoadoutSkill(2, "Kinetic Replicator",
 [[Mark an enemy with a kinetic replicator.

@@ -58,12 +58,12 @@ baroness:setLoadoutInfo(
 [[Trained for the front lines, and packing enough heat for crowd control.
 Able to wipe out crowds with grenades and relocate enemies wherever she pleases,
 the &y&Baroness&!& has the tools for the job. 
-&y&Don't let it get personal.]], sprSkills)
+&y&Don't let it get personal&!&.]], sprSkills)
 
 -- Skill descriptions
 baroness:setLoadoutSkill(1, "Pulling the Trigger",
 [[Hurl MG rounds for &y&95% damage&!&.
-&lt&Vehicle:&!& Fire a laser &y&increasing in damage the longer it hits enemies.]])
+&lt&Vehicle:&!& Fire a laser that &y&increases in damage the longer it hits enemies&!&.]])
 
 baroness:setLoadoutSkill(2, "Steady Target",
 [[Pick up an enemy, dealing &y&100% damage&!& and disabling them.
@@ -71,10 +71,10 @@ Lasts 4 seconds.]])
 
 baroness:setLoadoutSkill(3, "Active Relocation",
 [[Summon a hovering vehicle that &b&increases movement speed&!&,
-&r&but strips the ability to jump or climb. &b&Can attack while moving.]])
+&r&but strips the ability to jump or climb. &b&Can attack while moving&!&.]])
 
 baroness:setLoadoutSkill(4, "Saturated O-Charge",
-[[Throw a grenade which seeks enemies and &y&explodes for 3x320% damage.]])
+[[Throw a grenade which seeks enemies and &y&explodes for 3x320% damage&!&.]])
 
 -- Color of highlights during selection
 baroness.loadoutColor = Color.fromRGB(117, 135, 119)

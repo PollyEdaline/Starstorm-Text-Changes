@@ -52,7 +52,7 @@ and &y&Execution&!& to keep the damage flowing.
 -- Skill descriptions
 
 executioner:setLoadoutSkill(1, "Pistol",
-[[Shoot enemies for &y&90% damage.]])
+[[Shoot enemies for &y&90% damage&!&.]])
 
 executioner:setLoadoutSkill(2, "Ion Burst",
 [[Slain enemies ionize your bullets. Spend your charges to
@@ -64,8 +64,8 @@ You &b&cannot be hit&!& while dashing.]])
 
 executioner:setLoadoutSkill(4, "Execution",
 [[Launch into the air and slam down with a projected axe.
-&y&Deals less damage the more enemies are hit.
-&y&Max damage of 1500% on single target.]])
+&y&Deals less damage the more enemies are hit&!&.
+&y&Max damage of 1500% on single target&!&.]])
 
 -- Color of highlights during selection
 executioner.loadoutColor = Color.fromHex(0xB5D6F2)

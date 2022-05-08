@@ -31,9 +31,9 @@ local phrases = {
 		"Candidate, demonstrate!",
 		"Candidate, endure!",
 		"Interesting candidate.",
-		"Astounding resilience..",
-		"Powerful being..",
-		"Fair contender..",
+		"Astounding resilience...",
+		"Powerful being...",
+		"Fair contender...",
 		"Step up your strength!"
 	},
 	phase2 = {
@@ -288,7 +288,7 @@ obj.Arraign1:addCallback("create", function(self)
 	obj.EfFlash:create(0,0):set("parent", self.id):set("rate", 0.08)
 	
 	if not net.online then
-		createDialogue({"You have gotten this far..", "Candidate, prevail. Or fall victim to my judgement."}, {{sprArraignPortrait, 1}, {sprArraignPortrait, 1}})
+		createDialogue({"You have gotten this far...", "Candidate, prevail. Or fall victim to my judgement."}, {{sprArraignPortrait, 1}, {sprArraignPortrait, 1}})
 	end
 end)
 

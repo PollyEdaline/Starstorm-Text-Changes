@@ -91,11 +91,11 @@ technician:setLoadoutSkill(2, "Forced Shutdown",
 
 technician:setLoadoutSkill(3, "24/7 Energy",
 [[Deploy a vending machine which grants a &b&move&!& and &y&attack speed boost&!& when used.
-&b&Upgraded:&!& Also grants &y&Critical Strike chance.]])
+&b&Upgraded:&!& Also grants &y&Critical Strike chance&!&.]])
 
 technician:setLoadoutSkill(4, "Backup Firewall",
-[[Place a stationary drone turret that fires in the direction it was built for &y&70% damage.&!& 
-&b&Upgraded:&!& Fires for &y&80% damage.]])
+[[Place a stationary drone turret that fires in the direction it was built for &y&70% damag&!&.
+&b&Upgraded:&!& Fires for &y&80% damage&!&.]])
 
 -- Color of highlights during selection
 technician.loadoutColor = Color.fromRGB(107,173,186)

@@ -40,7 +40,7 @@ Mortarman:setLoadoutInfo(
 [[The &y&Artillerist&!& is a mid-long ranged mortar wielding soldier focused
 on dealing damage at the widest coverage, no enemy is too big to fight.
 &y&Low Launch&!& yourself to distance yourself from threats and &y&Load&!&
-up to 8 missiles and blast enemies away from afar with &y&Tracking Munition.]], sprSkills)
+up to 8 missiles and blast enemies away from afar with &y&Tracking Munition&!&.]], sprSkills)
 
 if global.aprilFools then
 	Mortarman.displayName = "Bombardier"
@@ -55,17 +55,17 @@ end
 -- Skill descriptions
 
 Mortarman:setLoadoutSkill(1, "Salvo",
-[[Fire all loaded mortar bombs for &y&250% damage each.]])
+[[Fire all loaded mortar bombs for &y&250% damage each&!&.]])
 
 Mortarman:setLoadoutSkill(2, "Load",
 [[Load an &y&extra shell&!& onto the mortar.]])
 
 Mortarman:setLoadoutSkill(3, "Low Launch",
 [[Launch a mortar bomb below you that &b&knocks all characters back&!&.
-&y&Deals 250% damage.]])
+&y&Deals 250% damage&!&.]])
 
 Mortarman:setLoadoutSkill(4, "Tracking Munition",
-[[For 4 seconds, launched mortar bombs &y&seek enemies.]])
+[[For 4 seconds, launched mortar bombs &y&seek enemies&!&.]])
 
 -- Color of highlights during selection
 Mortarman.loadoutColor = Color.fromHex(0xA06EC8)
@@ -77,7 +77,7 @@ Mortarman.idleSprite = sprites.idle
 Mortarman.titleSprite = sprites.walk
 
 -- Endquote
-Mortarman.endingQuote = "..and so he left, permeated in shrapnel."
+Mortarman.endingQuote = "..and so he left, permeated with shrapnel."
 
 Mortarman:addCallback("init", function(player)
 	local playerAc = player:getAccessor()

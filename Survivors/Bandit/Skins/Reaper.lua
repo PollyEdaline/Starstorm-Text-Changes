@@ -26,7 +26,7 @@ local sprSkill = Sprite.load("ReaperSkill", path.."Skill", 1, 0, 0)
 local sprSparks = Sprite.load("ReaperSparks", path.."Sparks", 3, 9, 5)
 local sShoot = Sound.load("ReaperShoot1", path.."Shoot1")
 
-SurvivorVariant.setLoadoutSkill(Reaper, ".32 Revolver", "Fire a bullet for &y&175% damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Reaper, ".32 Revolver", "Fire a bullet for &y&175% damage&!&.", sprSkill)
 
 callback.register("onSkinInit", function(player, skin)
 	if skin == Reaper then

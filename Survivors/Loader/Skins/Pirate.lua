@@ -23,9 +23,9 @@ SurvivorVariant.setInfoStats(Pirate, {{"Strength", 7}, {"Vitality", 5}, {"Toughn
 SurvivorVariant.setDescription(Pirate, "WIP.")
 
 local sprSkills = Sprite.load("PirateSkills", path.."Skills", 6, 0, 0)
-SurvivorVariant.setLoadoutSkill(Pirate, "Sabotage", "Attack for &y&130% damage&!&. Tap once for a kick, twice for a light shot and thrice for a heavy shot dealing &y&190% damage.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(Pirate, "Sabotage", "Attack for &y&130% damage&!&. Tap once for a kick, twice for a light shot and thrice for a heavy shot dealing &y&190% damage&!&.", sprSkills, 1)
 SurvivorVariant.setLoadoutSkill(Pirate, "No Mercy", "For 3 seconds, &y&all Sabotage attacks are heavy cannon shots. Allows primary to be held.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Pirate, "Feed the Shaarv", "Summon a Shaarv, attacking an enemy and &y&dealing up to 100%x10 damage.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Pirate, "Feed the Shaarv", "Summon a Shaarv, attacking an enemy and &y&dealing up to 100%x10 damage&!&.", sprSkills, 3)
 
 
 Pirate.endingQuote = "..and so he left, with ages worth of treasure."

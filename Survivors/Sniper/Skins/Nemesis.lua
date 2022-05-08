@@ -35,7 +35,7 @@ local NemesisSniper = SurvivorVariant.new(survivor, "Nemesis Sniper", sprSelect,
 	drone_signal = Sprite.find("NemesisSniperDroneSignal", "Starstorm")
 }, efColor)
 SurvivorVariant.setInfoStats(NemesisSniper, {{"Strength", 9}, {"Vitality", 4}, {"Toughness", 3}, {"Agility", 3}, {"Difficulty", 4}, {"Tactics", 8}})
-SurvivorVariant.setDescription(NemesisSniper, "The &y&Nemesis Sniper&!& arrived without invitation, determined to take out targets with a railgun and a state of the art support drone. &r&Overheating causes the weapon to be unusable temporarily.")
+SurvivorVariant.setDescription(NemesisSniper, "The &y&Nemesis Sniper&!& arrived without invitation, determined to take out targets with a railgun and a state of the art support drone. &r&Overheating causes the weapon to be unusable temporarily&!&.")
 
 local sprSkills = Sprite.load("NemesisSniperSkills", path.."Skills", 5, 0, 0)
 local sprSparks = spr.Sparks10r
@@ -44,9 +44,9 @@ local sShoot1_1 = Sound.find("NemesisSniperShoot1_1", "Starstorm")
 local sShoot1_2 = Sound.find("NemesisSniperShoot1_2", "Starstorm")
 local sShoot2_1 = Sound.find("NemesisSniperShoot2_1", "Starstorm")
 
-SurvivorVariant.setLoadoutSkill(NemesisSniper, "Take Out", "Shoot an enemy for &y&175% damage.&!& &r&Heats up the weapon.", sprSkills, 1)
-SurvivorVariant.setLoadoutSkill(NemesisSniper, "Steady Discharge", "Release all the captured heat from the weapon, &y&increasing damage the higher the heat level&!& for &y&up to 1400% damage.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(NemesisSniper, "SPOT: CONDUIT", "Send SPOT to &y&distract the most dangerous enemy nearby for 3 seconds, shocking it for &y&4x100% damage.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(NemesisSniper, "Take Out", "Shoot an enemy for &y&175% damage&!&. &r&Heats up the weapon&!&.", sprSkills, 1)
+SurvivorVariant.setLoadoutSkill(NemesisSniper, "Steady Discharge", "Release all the captured heat from the weapon, &y&increasing damage the higher the heat level&!& for &y&up to 1400% damage&!&.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(NemesisSniper, "SPOT: CONDUIT", "Send SPOT to &y&distract the most dangerous enemy nearby&!& for 3 seconds, shocking it for &y&4x100% damage&!&.", sprSkills, 3)
 
 NemesisSniper.endingQuote = "..and so they left, finding a home amongst the stars."
 

@@ -29,7 +29,7 @@ SurvivorVariant.setDescription(FungusMan, "The Engineer's passion for fungi is w
 local sprSkill = Sprite.load("FungusManSkill", path.."Skill", 2, 0, 0)
 local sprSkill2 = Sprite.load("FungusManSkill2", path.."Skill2", 25, 0, 11)
 
-SurvivorVariant.setLoadoutSkill(FungusMan, "Fungi-Turret", "&y&Drop a turret&!& that &g&heals nearby allies&!& and shoots &y&poisonous roots at enemies.", sprSkill, 2)
+SurvivorVariant.setLoadoutSkill(FungusMan, "Fungi-Turret", "&y&Drop a turret&!& that &g&heals nearby allies&!& and shoots &y&poisonous roots at enemies&!&.", sprSkill, 2)
 
 FungusMan.endingQuote = "..and so he left, more spore and fungus than man."
 

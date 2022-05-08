@@ -36,7 +36,7 @@ local sShoot1_1 = {
 }
 local sShoot1_2 = Sound.load("AssassinShoot1_2", path.."Shoot1_2")
 
-SurvivorVariant.setLoadoutSkill(Assassin, "Stab", "Pierce through enemies at very close range for &y&200% bleeding damage.", sprSkill)
+SurvivorVariant.setLoadoutSkill(Assassin, "Stab", "Pierce through enemies at very close range for &y&200% bleeding damage&!&.", sprSkill)
 
 Assassin.endingQuote = "..and so he left, laughing maniacally."
 

@@ -31,9 +31,9 @@ if not global.rormlflag.ss_disable_enemies then
 	local sShootOriginal = sfx.CowboyShoot1
 	local sShoot2Original = sfx.CowboyShoot2
 
-	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Gunslinger", "Fire a bullet for &y&220% damage.", sprSkills)
-	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Restrain", "Throw a lasso to &b&restrain&!& and &b&pull&!& enemies. &y&Restrained enemies can be mounted.", sprSkills, 2)
-	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Lights Out", "Fire your shotgun, dealing &y&600% damage&!&. If the ability kills all enemies struck, &b&all cooldowns are reset to 0.", spr.CowboySkills, 7)
+	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Gunslinger", "Fire a bullet for &y&220% damage&!&.", sprSkills)
+	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Restrain", "Throw a lasso to &b&restrain&!& and &b&pull&!& enemies. &y&Restrained enemies can be mounted&!&.", sprSkills, 2)
+	SurvivorVariant.setLoadoutSkill(NemesisBandit, "Lights Out", "Fire your shotgun, dealing &y&600% damage&!&. If the ability kills all enemies struck, &b&all cooldowns are reset to 0&!&.", spr.CowboySkills, 7)
 	
 	NemesisBandit.endingQuote = "..and so he left, with absolutely no regrets."
 	

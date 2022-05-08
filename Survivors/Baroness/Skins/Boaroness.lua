@@ -33,10 +33,10 @@ SurvivorVariant.setDescription(Boaroness, "Molded by the planet, the &y&Boarones
 local sprSkills = Sprite.load("BoaronessSkills", path.."Skills", 6, 0, 0)
 local sShoot4 = Sound.load("BoaronessShoot4", path.."Shoot4")
 
-SurvivorVariant.setLoadoutSkill(Boaroness, "Bo Lance", "Attack at a short range for &y&120% piercing damage.", sprSkills)
---SurvivorVariant.setLoadoutSkill(Boaroness, "Steady Target", "Pick up an enemy &y&pulling it close and disabling it for 4 seconds.", sprSkills, 2)
-SurvivorVariant.setLoadoutSkill(Boaroness, "Active Relocation", "Summon a war boar, &b&increasing movement speed. Can attack while moving.", sprSkills, 3)
-SurvivorVariant.setLoadoutSkill(Boaroness, "Ambush", "Command a &y&group of boars&!& to &y&charge&!& towards the direction you are facing for &y&120% DPS.", sprSkills, 4)
+SurvivorVariant.setLoadoutSkill(Boaroness, "Bo Lance", "Attack at a short range for &y&120% piercing damage&!&.", sprSkills)
+--SurvivorVariant.setLoadoutSkill(Boaroness, "Steady Target", "Pick up an enemy, &y&pulling it close and disabling it for 4 seconds&!&.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Boaroness, "Active Relocation", "Summon a war boar, &b&increasing movement speed. Can attack while moving&!&.", sprSkills, 3)
+SurvivorVariant.setLoadoutSkill(Boaroness, "Ambush", "Command a &y&group of boars&!& to &y&charge&!& towards the direction you are facing for &y&120% DPS&!&.", sprSkills, 4)
 
 Boaroness.endingQuote = "..and so she left, ready to start all over again."
 
