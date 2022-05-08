@@ -38,7 +38,7 @@ shieldDebuff:addCallback("end", function(actor)
 end)
 
 SurvivorVariant.setLoadoutSkill(Legionary, "Sovereign Bash", "Impact your sword against the ground for &y&340% damage&!& to nearby enemies.", sprSkills)
-SurvivorVariant.setLoadoutSkill(Legionary, "Shield Breaker", "Swing your sword, creating a moving whirlind that &b&weakens enemies&!& for &y&50% damage&!&.", sprSkills, 2)
+SurvivorVariant.setLoadoutSkill(Legionary, "Shield Breaker", "Swing your sword, creating a moving whirlwind that &b&weakens enemies&!& for &y&50% damage&!&.", sprSkills, 2)
 
 Legionary.endingQuote = "..and so he left, determined to prove his legacy."
 
@@ -89,7 +89,7 @@ callback.register("onSkinInit", function(player, skin)
 		sprSkills, 1, 85)
 		player:setSkill(2,
 		"Shield Breaker",
-		"Swing your sword, creating a moving whirlind that weakens enemies for 50% damage.",
+		"Swing your sword, creating a moving whirlwind that weakens enemies for 50% damage.",
 		sprSkills, 2, 5 * 60)
 	end
 end)

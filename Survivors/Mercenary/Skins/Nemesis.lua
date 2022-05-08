@@ -38,7 +38,7 @@ if not global.rormlflag.ss_disable_enemies then
 
 	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Quick Trigger", "Fire a shotgun forward dealing &y&500% damage&!&.", sprSkills, 2)
 	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Blinding Slide", "Quickly slide forwards. &b&You can attack while sliding&!&.", sprSkills, 3)
-	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Devitalize", "Target the nearest enemy, attacking them for &y&850% damage&!&. &b&You cannot be hit for the duration&!&.", sprSkills, 5)
+	SurvivorVariant.setLoadoutSkill(NemesisMercenary, "Devitalize", "Target the nearest enemy, attacking them for &y&850% damage&!&. &b&You &b&cannot be hit for the duration&!&.", sprSkills, 5)
 	
 	callback.register("onSkinInit", function(player, skin)
 		if skin == NemesisMercenary then

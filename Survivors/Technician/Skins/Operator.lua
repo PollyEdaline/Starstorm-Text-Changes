@@ -54,7 +54,9 @@ local sprSkill = Sprite.load("OperatorSkill", path.."Skill", 2, 0, 0)
 local sShoot = Sound.find("Technician_Shoot1A", "Starstorm")
 
 SurvivorVariant.setLoadoutSkill(Operator, "Fine Tune", "Swing a wrench for &y&150% damage&!&. Hitting &y&gadgets&!& three times &b&upgrades them&!&.", sprSkill)
-SurvivorVariant.setLoadoutSkill(Operator, "Radial Amplifier", "Place a stationary antenna. &y&All damage done around it is increased by 50%.&!& &b&Upgraded:&!& Double range&!&.", sprSkill, 2)
+SurvivorVariant.setLoadoutSkill(Operator, "Radial Amplifier", 
+[[Place a stationary antenna. &y&All damage done around it is increased by 50%.&!&
+&b&Upgraded:&!& Double range&!&.]], sprSkill, 2)
 Operator.endingQuote = "..and so he left, by striking the control panel three times."
 
 
